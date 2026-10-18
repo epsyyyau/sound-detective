@@ -6,8 +6,7 @@ body.route-phone-active {
 }
 
 body.route-phone-active > main,
-body.route-phone-active > .correct-answer-overlay,
-body.route-phone-active > .reward-message-dialog { display: none !important; }
+body.route-phone-active > .correct-answer-overlay { display: none !important; }
 
 #route-phone-stage {
   position: fixed;

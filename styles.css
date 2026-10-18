@@ -1,4 +1,4 @@
-html { touch-action: manipulation; }
+html, body, button, a, input, select, textarea, [role="button"] { touch-action: manipulation; }
 
 /* Keep Chinese and English teaching letterforms independently configurable. */
 @font-face {

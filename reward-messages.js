@@ -14,6 +14,10 @@
 
   let dialog;
   function show(index) {
+    if (window.parent !== window && new URLSearchParams(location.search).has("route-phone-frame")) {
+      window.parent.postMessage({ type: "sound-detective:reward", index }, location.origin);
+      return;
+    }
     if (!dialog) {
       dialog = document.createElement("dialog");
       dialog.className = "reward-message-dialog";
@@ -27,6 +31,15 @@
     if (!dialog.open) dialog.showModal();
     dialog.querySelector("button").focus();
   }
+
+  window.addEventListener("message", event => {
+    if (event.origin !== location.origin ||
+        event.source !== document.getElementById("route-phone-frame")?.contentWindow ||
+        !document.body.classList.contains("route-phone-active") ||
+        event.data?.type !== "sound-detective:reward" ||
+        !Number.isInteger(event.data.index)) return;
+    show(event.data.index);
+  });
 
   window.RewardMessages = { show, rewards };
 })();

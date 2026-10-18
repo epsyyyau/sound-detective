@@ -60,6 +60,11 @@
 .reward-message-continue:focus-visible { background: #e4eef0; }
 
 @media (max-width: 380px), (max-height: 480px) {
+  .reward-message-dialog {
+    width: calc(100vh - 24px);
+    height: auto;
+    aspect-ratio: 1336 / 1128;
+  }
   .reward-message-icon { width: 70px; height: 70px; }
   .reward-message-text { margin-bottom: 8px; font-size: 1rem; }
   .reward-message-continue { min-height: 40px; }
