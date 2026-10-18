@@ -1,3 +1,5 @@
+html { touch-action: manipulation; }
+
 /* Keep Chinese and English teaching letterforms independently configurable. */
 @font-face {
   font-family: "Fredoka";

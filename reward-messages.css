@@ -1,8 +1,9 @@
 .reward-message-dialog {
   position: relative;
-  width: min(500px, calc(100vw - 24px), calc(100dvh * 1.15));
-  max-width: none;
-  aspect-ratio: 1336 / 1128;
+  width: 500px;
+  max-width: calc(100vw - 24px);
+  height: 422px;
+  max-height: calc(100vh - 24px);
   box-sizing: border-box;
   padding: 0;
   border: 0;
