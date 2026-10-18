@@ -1,0 +1,45 @@
+.library-view-switch {
+  display:flex;
+  justify-self:end;
+  padding:3px;
+  border:1px solid #c6d5d3;
+  border-radius:8px;
+  background:#fff;
+}
+.library-view-switch button {
+  min-width:64px;
+  min-height:44px;
+  padding:8px 12px;
+  border:0;
+  border-radius:5px;
+  background:transparent;
+  color:#344b54;
+  font:inherit;
+  font-weight:700;
+  cursor:pointer;
+}
+.library-view-switch button[aria-pressed="true"] { background:#dfefeb; color:#09676b; }
+.library-view-switch button:focus-visible { outline:3px solid #09676b; outline-offset:2px; }
+.detective-sound-library[data-library-view="simple"] { background:#f7faf9; }
+.detective-sound-library[data-library-view="simple"] .sound-group[data-sound-group] .sound-tile {
+  padding:10px;
+  border:2px solid #c4d1cf;
+  border-radius:6px;
+  background:#fff;
+  box-shadow:none;
+  transform:none;
+}
+.detective-sound-library[data-library-view="simple"] .sound-tile::before { display:none; }
+.detective-sound-library[data-library-view="simple"] .sound-group[data-sound-group] .sound-tile:hover {
+  border-color:#08787c;
+  background:#eef7f5;
+  transform:none;
+}
+@media(max-width:680px) {
+  .detective-sound-library .library-hero { grid-template-columns:72px minmax(0,1fr); }
+  .detective-sound-library .library-title-block { min-width:0; }
+  .detective-sound-library .library-title-lockup { gap:8px; flex-wrap:wrap; }
+  .detective-sound-library .library-hero h1 { font-size:24px; }
+  .detective-sound-library .library-title-icon { width:40px; height:40px; }
+  .library-view-switch { grid-column:1 / -1; justify-self:center; }
+}

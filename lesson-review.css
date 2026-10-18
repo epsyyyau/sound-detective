@@ -1,0 +1,20 @@
+[data-learn-sounds] .learn-sound-button:not(.has-sound-image):not(.has-duration-cue) { min-height:136px; gap:8px; }
+[data-learn-sounds] .learn-sound-button:not(.has-sound-image):not(.has-duration-cue) > strong { font-size:3.5rem; }
+[data-learn-sounds].many-sounds .learn-sound-button:not(.has-sound-image):not(.has-duration-cue) { min-height:104px; }
+[data-learn-sounds].many-sounds .learn-sound-button:not(.has-sound-image):not(.has-duration-cue) > strong { font-size:3rem; }
+
+/* Twelve tracks allow three equal cards above four equal cards. */
+[data-learn-sounds].many-sounds:has(> :nth-child(7)):not(:has(> :nth-child(8))) {
+  grid-template-columns:repeat(12,minmax(0,1fr));
+  max-width:620px;
+  gap:12px;
+  margin-bottom:18px;
+}
+[data-learn-sounds].many-sounds:has(> :nth-child(7)):not(:has(> :nth-child(8))) > * { grid-column:span 3; }
+[data-learn-sounds].many-sounds:has(> :nth-child(7)):not(:has(> :nth-child(8))) > :nth-child(-n+3) { grid-column:span 4; }
+@media(max-width:680px) {
+  [data-learn-sounds].many-sounds:has(> :nth-child(7)):not(:has(> :nth-child(8))) { gap:8px; }
+  [data-learn-sounds].many-sounds .learn-sound-button:not(.has-sound-image):not(.has-duration-cue) { min-height:90px; padding:6px 2px; }
+  [data-learn-sounds].many-sounds .learn-sound-button:not(.has-sound-image):not(.has-duration-cue) > strong { font-size:2rem; }
+  [data-learn-sounds] .learn-sound-button small { font-size:.75rem; overflow-wrap:anywhere; }
+}

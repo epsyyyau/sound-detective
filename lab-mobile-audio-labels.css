@@ -1,0 +1,46 @@
+@media(max-width:560px), (max-width:1000px) and (orientation:portrait) {
+  #game.is-potion-game[data-sound-group="1"] .magic-audio {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:32px;
+    width:100%;
+    padding:0;
+    margin-bottom:34px;
+  }
+  #game.is-stamp-game[data-sound-group="7"] .magic-audio {
+    top:auto;
+    bottom:calc(100% + 72px);
+  }
+}
+
+@media(max-width:560px) {
+  #game.is-magnet-game[data-sound-group="3"] .magic-workspace {
+    gap:38px;
+  }
+  #game.is-magnet-game[data-sound-group="3"] .magic-word-station {
+    height:250px;
+  }
+  #game.is-magnet-game[data-sound-group="3"] .magic-audio {
+    top:-34px;
+  }
+  #game.is-scanner-game[data-sound-group="6"] .magic-audio {
+    top:auto;
+  }
+  #game.is-bubble-game[data-sound-group="2"] .magic-audio {
+    margin-bottom:38px;
+  }
+  #game.is-potion-game[data-sound-group="1"] .letter-card > span {
+    inset:44% 16% 23%;
+    font-size:34px;
+    line-height:1;
+  }
+  #game.is-potion-game[data-sound-group="1"] .letter-card[aria-pressed="true"]::after {
+    inset:43% 14% 22%;
+  }
+}
+
+@media(max-width:360px) {
+  #game.is-potion-game[data-sound-group="1"] .magic-audio { gap:24px; }
+  #game.is-potion-game[data-sound-group="1"] .letter-card > span { font-size:32px; }
+}

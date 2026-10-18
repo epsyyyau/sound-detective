@@ -1,0 +1,26 @@
+.group-mission-hint {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:52px;
+  margin:0;
+  padding:8px 12px;
+  color:#164f56;
+  font-size:16px;
+  font-weight:700;
+  line-height:1.5;
+  text-align:center;
+  pointer-events:none;
+}
+.group-mission-description { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+.magic-page #setup > .group-mission-hint { position:absolute; top:100%; left:0; width:100%; }
+@media(min-width:901px) {
+  .magic-page:has(#setup:not([hidden])) { width:min(100%,1440px,calc((100svh - 72px) * 1.7768 + 16px)); padding-bottom:60px; }
+}
+@media(min-width:761px) {
+  .train-page:has(#setup:not([hidden])) { width:min(100%,calc((100svh - 52px) * 1.7768)); }
+  .family-map:has(.group-mission-hint) .family-map-canvas { width:min(100%,1200px,calc((100dvh - 148px) * 1.7768)); }
+}
+@media(max-width:900px) {
+  .magic-page #setup > .group-mission-hint { position:static; }
+}

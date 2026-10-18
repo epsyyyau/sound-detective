@@ -1,0 +1,113 @@
+body:has(.train-page) { background:#eef7e2 url('assets/game-style/train-background.png') center / cover fixed; }
+.train-page { width:min(100%,1240px); margin:auto; padding:8px 20px 12px; }
+.train-page:has(#setup:not([hidden])) { width:min(100%,1100px); }
+.train-page:has(#setup:not([hidden])) .train-header > img { width:46px; height:46px; }
+.train-page [hidden] { display: none !important; }
+.train-header { position:relative; display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 6px; }
+.train-header h1 { font-size:2rem; margin:0; }
+.train-header > img { width: 54px; height: 54px; object-fit: contain; }
+.train-panel { padding:16px 22px; border:0; border-radius:0; background:transparent; text-align:center; box-shadow:none; }
+.train-panel h2 { margin:8px 0 12px; font-size:1.5rem; }
+#play { padding:10px 12px; }
+#play h2 { margin:8px 0 6px; font-size:1.5rem; }
+#play .train-progress { margin: 4px 0 8px; }
+#play .gesture-hint { margin: 6px 0; }
+#play .train-controls { margin: 8px 0; }
+.train-kicker { color: var(--teal-dark); margin: 0; font-weight: 900; }
+.train-page button { min-height:48px; padding:10px 22px; border:2px solid transparent; border-radius:8px; background:var(--teal-dark); color:white; font:inherit; font-size:1rem; font-weight:700; cursor:pointer; }
+.train-page button:hover { filter: brightness(1.08); }
+.train-page button:focus-visible, .train-page a:focus-visible { outline: 3px solid #265ab0; outline-offset: 4px; }
+.train-page button:disabled { opacity: .55; cursor: default; }
+.train-page .secondary { background: #fff0ce; color: #704513; border-color: #e2b75c; }
+.train-page .quiet { background:#fffdf2e8; color:var(--teal-dark); padding:8px 16px; box-shadow:0 3px 8px #29463716; }
+#setup.train-panel { padding:8px 16px; }
+#setup.train-panel h2 { margin:0 0 8px; font-size:1.25rem; }
+.train-groups { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px 16px; max-width:960px; margin:8px auto 0; }
+.train-groups button { background: #e6f5ee; color: var(--ink); border-color: #b4dcca; text-align: left; }
+.train-groups strong { display: block; color: var(--teal-dark); }
+.train-groups button { padding:6px 10px 10px; }
+.train-groups strong { padding-inline: 8px; }
+.group-train { position:relative; isolation:isolate; display:flex; width:min(100%,440px); margin:6px auto 0; padding-bottom:8px; align-items:end; }
+.group-train::before, .train-stage::before { content:""; position:absolute; left:0; right:0; top:86%; height:20%; background:url('assets/game-style/train-track.png') center / 100% 260% no-repeat; pointer-events:none; }
+.group-train-piece { position: relative; z-index: 1; min-width: 0; display: block; }
+.group-train-letter { position:absolute; z-index:2; inset:23% 12% 30%; display:flex; flex-direction:column; align-items:center; justify-content:center; font-family:var(--phonics-font); font-size:20px; font-weight:700; line-height:1; color:var(--ink); }
+.group-train-letter small { margin-top:2px; font-family:var(--chinese-font); font-size:9px; white-space:nowrap; }
+.train-topline { display: flex; justify-content: flex-end; align-items: center; gap: 12px; color: var(--teal-dark); pointer-events:none; }
+.train-topline > * { pointer-events:auto; }
+.train-progress { display: flex; gap: 8px; justify-content: center; margin: 8px 0 16px; }
+.train-progress span { width: 34px; height: 8px; border-radius: 8px; background: #dce8e2; }
+.train-progress .done { background: var(--teal-dark); }
+.train-progress .current { background: #e8ae28; }
+.railway { overflow:hidden; padding:32px 8px 42px; margin:0 auto; }
+.train-stage { position:relative; isolation:isolate; width:min(100%,1120px); margin-inline:auto; }
+.train-stage::before { top:90%; }
+.sound-train { position: relative; z-index: 1; width: 100%; }
+.sound-train { display:flex; justify-content:center; align-items:flex-end; gap:8px; touch-action:pan-y; transition:gap .5s ease; user-select:none; }
+.sound-train.connected { gap: 0; }
+.sound-train.connected > :not(:first-child) { margin-left:-6px; }
+.sound-train.connected > .train-engine { margin-left:-18px; }
+.train-end { position: relative; min-width: 0; pointer-events: none; }
+.train-sprite { position:absolute; inset:0; display:block; background-repeat:no-repeat; background-size:100% 100%; pointer-events:none; }
+[data-train-part="wagon"] > .train-sprite { transform:translateY(5%); }
+[data-train-part="tender"] > .train-sprite { transform:translateY(4%); }
+[data-train-part="engine"] > .train-sprite { transform:translateY(6%); }
+/* Recolour the illustrated wagon frame while preserving its original wheels. */
+.wagon-frame { filter:var(--wagon-filter,none); mask-image:radial-gradient(ellipse 12% 12% at 28% 80%,transparent 97%,#000 100%),radial-gradient(ellipse 12% 12% at 71% 80%,transparent 97%,#000 100%); mask-composite:intersect; }
+.train-page .sound-car { position:relative; min-width:0; min-height:0; padding:0; border:0; border-radius:0; background:transparent; box-shadow:none; font-family:var(--phonics-font); line-height:1; color:#243d54; transition:transform .2s,filter .2s; container-type:inline-size; }
+.train-page .sound-car:disabled { opacity:1; }
+.car-letter { position:absolute; z-index:2; inset:23% 18% 30%; display:flex; flex-direction:column; align-items:center; justify-content:center; pointer-events:none; font-size:clamp(2rem,28cqw,3.5rem); }
+.train-page .sound-car.lit { transform: translateY(-12px); filter: drop-shadow(0 0 8px #efb72d); }
+.sound-car small { display:block; font-family:var(--chinese-font); font-size:.9rem; margin-top:2px; white-space:nowrap; }
+@media(max-width:650px) { .railway { overflow-x:auto; } .train-stage { min-width:600px; } .sound-train { touch-action:auto; } }
+.train-controls { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin: 12px 0; }
+.train-controls { align-items:center; }
+.sound-car.needs-sound:not(.lit),
+#blend.needs-blend,
+#try-reading.needs-reading,
+#reveal.needs-play,
+#play:not(.is-busy) #answer:not([hidden]) #next:not(:disabled) { animation:train-action-pop 2.2s ease-in-out infinite; transform-origin:center; }
+#play.is-busy .sound-car,
+#play.is-busy #blend,
+#play.is-busy #try-reading,
+#play.is-busy #reveal { animation:none; }
+.train-page .train-play-button, .train-page .train-action-button { display:inline-flex; align-items:center; justify-content:center; flex:none; width:64px; height:64px; min-height:64px; padding:0; border:0; border-radius:50%; background:var(--teal-dark); box-shadow:0 8px 18px #0d74772e; }
+.train-play-button img, .train-action-button img { display:block; width:48%; height:48%; pointer-events:none; }
+.train-page .train-header #change-group { position:absolute; z-index:6; left:88px; top:0; width:72px; height:80px; min-height:0; padding:0; border:0; border-radius:0; background:transparent; box-shadow:none; pointer-events:auto; }
+.train-page .train-header #change-group img { width:100%; height:100%; object-fit:contain; filter:none; transition:transform .18s ease; }
+.train-page:has(#play[hidden]) #change-group { display:none; }
+@media(hover:hover) { .train-page .train-header #change-group:hover img { transform:translateY(-3px) scale(1.04); } }
+@media(max-width:560px) { .train-page .train-header #change-group { left:72px; width:56px; height:64px; } }
+@media(prefers-reduced-motion:reduce) { .train-page .train-header #change-group img { transition:none; } .train-page .train-header #change-group:hover img { transform:none; } }
+.train-reading-button img { width:78%; height:78%; }
+.train-reading-button { position:relative; }
+.train-reading-prompt {
+  position:absolute; top:calc(100% + 6px); left:50%; transform:translateX(-50%);
+  width:max-content; margin:0; padding:0 4px; border-radius:3px;
+  font:700 14px/20px var(--chinese-font); letter-spacing:0; white-space:nowrap;
+  color:#203947; background:#fffaf0e8; pointer-events:none; visibility:hidden;
+}
+.train-reading-button.needs-reading:not(.is-read) .train-reading-prompt { visibility:visible; }
+.train-reading-button.is-read::after { content:''; position:absolute; right:-2px; bottom:-2px; width:24px; height:24px; box-sizing:border-box; border:2px solid white; border-radius:50%; background:#247a4d url('assets/icons/check.svg') center / 17px 17px no-repeat; pointer-events:none; }
+.train-answer .train-action-button img { width:48%; height:48%; border-radius:0; }
+#complete #again img { filter:brightness(0) invert(1); }
+#complete #choose { background:#fff0ce; border:2px solid #e2b75c; }
+.train-page .train-action-button:disabled, .train-page .train-play-button:disabled { background:#6b8082; opacity:.5; box-shadow:none; }
+@keyframes train-action-pop { 0%,100% { transform:scale(.94); } 50% { transform:scale(1.1); } }
+.gesture-hint { color: #576873; font-size: .95rem; margin: 12px 0; }
+.answer-space { min-height: 80px; }
+.train-answer { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 16px; margin-top: 4px; }
+.train-answer img { width: 76px; height: 76px; object-fit: contain; border-radius: 12px; }
+.train-answer strong { font-family: var(--phonics-font); font-size: 2.8rem; color: var(--teal-dark); }
+.train-status { min-height: 1.6em; margin: 10px 0 0; font-size: .95rem; color: #8c441b; }
+.train-status:empty { display: none; }
+.train-collection { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 22px 0; }
+.train-collection button { background: #fff6df; color: var(--teal-dark); border-color: #e5c476; font-size: 1.5rem; }
+.train-collection img { display: block; width: 100px; height: 100px; object-fit: contain; margin-bottom: 8px; }
+@media(max-width:560px) { .train-page { padding: 10px; } .train-header { flex-wrap: wrap; } .train-header > img { display:none; } .train-header .back-link { font-size:.9rem; } .train-groups { grid-template-columns:1fr; } .railway { padding-inline: 2px; } }
+@media(prefers-reduced-motion:reduce) {
+  .sound-train,.train-page .sound-car { transition:none; }
+  .sound-car.needs-sound,#blend.needs-blend,#try-reading.needs-reading,#reveal.needs-play,
+  #play:not(.is-busy) #answer:not([hidden]) #next:not(:disabled) { animation:none; outline:3px solid #e8ae28; outline-offset:4px; }
+}
+@media(max-width:560px) { .train-header h1 { font-size:1.5rem; } }
+@media(max-height:740px) and (min-width:651px) { .railway { padding-top:24px; padding-bottom:36px; } }

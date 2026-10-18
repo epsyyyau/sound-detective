@@ -1,0 +1,78 @@
+/* Shared scene geometry for the approved crane and bridge stations. */
+.train-page:has(#play.is-device-station:not([hidden])) { position:relative; width:min(100%,calc(100svh * 16 / 9)); padding:0; }
+.train-page:has(#play.is-device-station:not([hidden])) .train-header { position:absolute; z-index:4; inset:10px 20px auto; pointer-events:none; }
+.train-page:has(#play.is-device-station:not([hidden])) .train-header a { pointer-events:auto; }
+.train-page:has(#play.is-device-station:not([hidden])) .train-header h1 { position:absolute; left:50%; top:4px; transform:translateX(-50%); white-space:nowrap; font-size:2rem; }
+.train-page:has(#play.is-device-station:not([hidden])) .train-header > img { display:none; }
+#play.is-device-station { --crane-drop:8.2cqw; position:relative; padding:0; aspect-ratio:16/9; container-type:inline-size; overflow:hidden; background:center/100% 100% no-repeat; }
+#play.is-crane-station { background-image:url('assets/game-style/train-crane-scenery.png'); }
+#crane-vehicle { position:absolute; left:16%; top:23%; width:82%; height:81%; pointer-events:none; }
+#play.is-bridge-station { background-image:url('assets/game-style/train-bridge-background.png'); }
+#play.is-device-station .train-topline { position:absolute; z-index:5; inset:12px 18px auto 108px; align-items:flex-start; }
+#play.is-device-station .clue-book { width:156px; height:80px; }
+#play.is-device-station::after { content:attr(data-question-progress); position:absolute; top:100px; right:28px; color:#08777a; font:700 1.4rem var(--phonics-font); }
+#play.is-device-station .railway { position:absolute; inset:0; padding:0; overflow:visible; }
+#play.is-device-station .train-stage { width:100%; height:100%; min-width:0; }
+#play.is-device-station .train-stage::before { display:none; }
+#play.is-device-station .sound-train { position:absolute; inset:0; display:block; width:100%; height:100%; transition:none; }
+#play.is-device-station .sound-car { position:absolute; top:33%; width:13%; height:23%; translate:-50% 0; transition:none; background:url('assets/game-style/cargo-letter-crate.png') center/100% 100% no-repeat; }
+/* Recolour only the illustrated corner brackets, leaving the wood unchanged. */
+#play.is-device-station .sound-car::before { content:''; position:absolute; inset:0; background:inherit; filter:hue-rotate(190deg) saturate(.75); mask:linear-gradient(#000 0 0) top left/24% 24%,linear-gradient(#000 0 0) top right/24% 24%,linear-gradient(#000 0 0) bottom left/24% 24%,linear-gradient(#000 0 0) bottom right/24% 24%; mask-repeat:no-repeat; }
+#play.is-device-station .car-letter { inset:12% 7% 16%; font-size:5rem; }
+#play.is-device-station .sound-car.lit { transform:none; filter:drop-shadow(0 0 10px #fff7ae); }
+#play.is-device-station .sound-car.needs-sound { animation:none; }
+#play.is-device-station .sound-car.needs-sound .car-letter { animation:station-letter-pop 1.8s ease-in-out infinite; }
+#play.is-device-station.is-busy .car-letter { animation:none; }
+#play.is-device-station .sound-train.connected > :not(:first-child) { margin-left:0; }
+#play.is-device-station .cargo-speaker { width:48px; height:48px; bottom:-15px; }
+#play.is-bridge-station .sound-car { top:34%; width:17%; }
+#play.is-bridge-station .sound-car::before { filter:hue-rotate(100deg) saturate(.65); }
+#play.is-bridge-station .sound-train::before { content:''; position:absolute; left:24%; right:20%; top:57%; height:6px; background:#74e3aa; box-shadow:0 0 12px #d1ffe5; opacity:0; }
+#play.is-bridge-station.station-joined .sound-train::before { opacity:1; }
+#station-hook { position:absolute; z-index:3; top:20%; width:4px; height:13%; background:#3c5360; transform-origin:top; pointer-events:none; }
+#station-hook::after { content:''; position:absolute; bottom:-10px; left:-9px; width:22px; height:22px; border:6px solid #edbd43; border-top-color:transparent; border-radius:50%; }
+#play.is-device-station .train-controls { position:absolute; left:0; right:0; top:82%; margin:0; gap:18px; }
+#play.is-device-station .answer-space { position:absolute; left:4%; right:4%; bottom:1%; min-height:0; pointer-events:none; }
+#play.is-device-station .train-answer { flex-wrap:nowrap; gap:12px; padding:6px 12px; background:#fffffff5; border-radius:8px; pointer-events:auto; }
+#play.is-device-station .train-answer img { width:56px; height:56px; }
+#play.is-device-station .train-answer strong { font-size:2rem; }
+#play.is-device-station:has(#answer:not([hidden])) .train-controls { top:80%; left:3%; right:auto; }
+#play.is-device-station #audio-status { position:absolute; top:23%; left:20%; right:20%; background:#fffdf2; }
+@keyframes station-letter-pop { 0%,100% { scale:1; } 50% { scale:1.16; } }
+@media(min-width:651px) and (max-height:740px) {
+  #play.is-device-station .train-action-button,#play.is-device-station .train-play-button { width:56px; height:56px; min-height:56px; }
+}
+@media(max-width:900px) and (min-width:651px) {
+  .train-page:has(#play.is-device-station:not([hidden])) .train-header h1 { font-size:1.4rem; top:75px; }
+  #play.is-device-station .car-letter { font-size:3rem; }
+}
+@media(max-width:650px) {
+  .train-page:has(#play.is-device-station:not([hidden])) { padding:0; }
+  .train-page:has(#play.is-device-station:not([hidden])) .train-header { inset:10px 12px auto; }
+  .train-page:has(#play.is-device-station:not([hidden])) .train-header h1 { font-size:1.25rem; top:77px; }
+  #play.is-device-station { --crane-drop:115px; aspect-ratio:auto; min-height:740px; background-size:100% 100%; }
+  #play.is-device-station .train-topline { left:92px; right:8px; }
+  #play.is-device-station .clue-book { width:110px; height:64px; }
+  #play.is-device-station::after { top:106px; right:12px; font-size:1rem; }
+  #play.is-device-station .sound-car { top:38%; width:23%; height:18%; }
+  #play.is-device-station .sound-car:nth-child(1) { left:24%!important; }
+  #play.is-device-station .sound-car:nth-child(2) { left:50%!important; }
+  #play.is-device-station .sound-car:nth-child(3) { left:76%!important; }
+  #play.is-crane-station #crane-vehicle { left:0; top:26%; width:100%; }
+  #play.is-crane-station .sound-car { width:18%; }
+  #play.is-crane-station .sound-car:nth-child(1) { left:18.5%!important; }
+  #play.is-crane-station .sound-car:nth-child(2) { left:37.5%!important; }
+  #play.is-crane-station .sound-car:nth-child(3) { left:57.5%!important; }
+  #play.is-device-station .sound-train:has(.sound-car:last-child:nth-child(2)) .sound-car:first-child { left:36%!important; }
+  #play.is-device-station .sound-train:has(.sound-car:last-child:nth-child(2)) .sound-car:last-child { left:64%!important; }
+  #play.is-device-station .car-letter { font-size:2.5rem; }
+  #play.is-device-station .cargo-speaker { width:44px; height:44px; }
+  #play.is-device-station .train-controls { top:78%; }
+  #play.is-device-station .answer-space { left:4%; right:4%; bottom:1%; }
+  #play.is-device-station:has(#answer:not([hidden])) .train-controls { top:76%; left:0; right:0; }
+  #station-hook { display:none; }
+}
+@media(prefers-reduced-motion:reduce) {
+  #play.is-device-station .sound-car.needs-sound { outline:none; }
+  #play.is-device-station .sound-car.needs-sound .car-letter { animation:none; scale:1.1; }
+}

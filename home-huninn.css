@@ -1,0 +1,30 @@
+.cover-screen {
+  font-family: var(--chinese-font);
+}
+
+.cover-screen .eyebrow,
+.cover-screen .feature-card h3 {
+  font-weight: 400;
+}
+
+.cover-screen .hero { gap:36px; }
+.cover-screen .feature-grid {
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:24px;
+}
+.cover-screen .feature-card { width:100%; min-width:0; gap:18px; }
+.cover-screen .feature-icon { width:min(100%,224px); height:auto; aspect-ratio:1; object-fit:contain; }
+.cover-screen .feature-card h3 { font-size:1.875rem; white-space:normal; }
+.cover-screen .feature-icon { width:100%; max-width:272px; height:224px; aspect-ratio:auto; }
+@media(max-width:1000px) {
+  .cover-screen .feature-grid { gap:16px; }
+  .cover-screen .feature-card h3 { font-size:1.5rem; }
+}
+@media(max-width:680px) {
+  .cover-screen .hero { gap:24px; }
+  .cover-screen .feature-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px 16px; }
+  .cover-screen .feature-icon { width:min(100%,160px); }
+  .cover-screen .feature-icon { height:160px; }
+  .cover-screen .feature-card { gap:10px; }
+  .cover-screen .feature-card h3 { font-size:1.25rem; }
+}

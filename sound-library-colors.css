@@ -1,0 +1,9 @@
+.library-page .sound-group { background:transparent; box-shadow:none; border-radius:0; }
+.library-page .library-group-number { display:grid; place-items:center; flex:none; width:32px; height:32px; border-radius:50%; background:var(--group-color); color:#20333b; font-size:20px; font-weight:700; line-height:1; }
+.library-page .sound-group[data-sound-group] .sound-tile { background:var(--group-tint); border-color:var(--group-color); color:var(--ink); }
+.library-page .sound-group[data-sound-group] .sound-tile:hover,
+.library-page .sound-group[data-sound-group] .sound-tile:focus-visible { border-color:var(--group-ink); box-shadow:0 4px 10px #25394b1a; }
+.library-page .sound-group[data-sound-group="7"] .sound-grid { grid-template-columns:repeat(12,minmax(0,1fr)); }
+.library-page .sound-group[data-sound-group="7"] .sound-tile { grid-column:span 3; min-width:0; }
+.library-page .sound-group[data-sound-group="7"] .sound-tile:nth-child(-n+3) { grid-column:span 4; }
+.library-page .sound-group[data-sound-group="7"] .sound-tile span { white-space:normal; }

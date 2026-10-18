@@ -1,0 +1,112 @@
+.sound-lesson-page .lesson-panel.sound-file-panel {
+  padding:72px 88px 32px 100px;
+  border:0 solid transparent;
+  border-radius:8px;
+  background:transparent;
+  border-image:url('assets/game-style/detective-sound-folder-faithful.webp') 86% 14% 12% 16% fill / 341px 88px 48px 100px stretch;
+  box-shadow:none;
+}
+.sound-file-panel .learn-sound-button:not(.has-sound-image):not(.has-duration-cue) {
+  background:#fffaf0;
+  border-color:#c5d4bc;
+}
+.sound-file-panel .has-sound-image .sound-name {
+  flex-direction:column;
+  align-items:center;
+  justify-self:center;
+  gap:0;
+}
+.sound-file-panel .has-sound-image .sound-name small { white-space:nowrap; }
+@media(min-width:681px) {
+  .sound-file-panel .learn-sound-button.has-sound-image.is-compact {
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  }
+  .sound-file-panel .has-sound-image.is-compact img { height:110px; }
+}
+.sound-file-panel .answer-options button:not(.is-correct):not(.is-wrong) {
+  background:#fffaf0;
+  border-color:#c5d4bc;
+}
+.sound-file-panel .skip-question-button { background:#fffaf0; }
+.sound-file-panel .lesson-prompt { margin:6px 0 8px; }
+.sound-file-panel .play-sound-button { margin-bottom:12px; }
+.sound-file-panel .quiz-view .answer-feedback { margin-top:8px; }
+.sound-file-panel :is([data-start-quiz], [data-next-question]).lesson-icon-action {
+  position:relative;
+  top:-12px;
+}
+.sound-file-panel [data-start-quiz].lesson-icon-action {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  width:96px;
+  padding:14px;
+  border-radius:32px;
+}
+.sound-file-panel [data-start-quiz] img {
+  width:28px;
+  height:28px;
+  flex:none;
+}
+.sound-file-panel .quiz-view .next-question-button[hidden] {
+  display:grid;
+  visibility:hidden;
+  pointer-events:none;
+}
+@media(min-width:681px) and (max-height:760px) {
+  .sound-lesson-page .lesson-panel.sound-file-panel { padding:72px 88px 22px 100px; }
+  .sound-file-panel .lesson-prompt { margin:4px 0 6px; }
+  .sound-file-panel .learn-sounds { margin-bottom:20px; }
+}
+@media(min-width:681px) and (max-height:900px) {
+  .sound-lesson-page:has(.sound-file-panel) .lesson-header .route-link {
+    width:88px;
+    height:72px;
+    min-height:0;
+    padding:0;
+  }
+  .sound-lesson-page:has(.sound-file-panel) .lesson-header .route-link img {
+    width:88px;
+    height:72px;
+    object-fit:contain;
+  }
+  .sound-lesson-page:has(.sound-file-panel) .lesson-heading {
+    display:grid;
+    grid-template-columns:auto auto;
+    align-items:center;
+    column-gap:16px;
+  }
+  .sound-lesson-page:has(.sound-file-panel) .lesson-heading [data-group-label] {
+    grid-column:1;
+    grid-row:1 / 3;
+    margin:0;
+  }
+  .sound-lesson-page:has(.sound-file-panel) .lesson-heading h1 { grid-column:2; grid-row:1; margin:0; }
+  .sound-lesson-page:has(.sound-file-panel) .lesson-heading > p:last-child { grid-column:2; grid-row:2; }
+}
+@media(max-width:680px) {
+  .sound-lesson-page .lesson-panel.sound-file-panel {
+    padding:62px 32px 36px 44px;
+    border-image-width:188px 48px 26px 55px;
+  }
+  .sound-file-panel [data-learn-sounds]:not(.many-sounds):not(.visual-sounds) {
+    width:calc(100% - 32px);
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:16px;
+    margin:14px auto 24px;
+  }
+  .sound-file-panel [data-learn-sounds]:not(.many-sounds):not(.visual-sounds) .learn-sound-button:not(.has-sound-image):not(.has-duration-cue) {
+    min-height:112px;
+  }
+  .sound-file-panel .quiz-view .lesson-prompt { padding-top:18px; }
+}
+.sound-file-panel .complete-view [data-route-return="true"] {
+  width:96px;
+  height:96px;
+  padding:0;
+  background:transparent;
+  box-shadow:none;
+  border:0;
+}
+.sound-file-panel .complete-view [data-route-return="true"] img { width:100%; height:100%; object-fit:contain; }

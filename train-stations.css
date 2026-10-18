@@ -1,0 +1,115 @@
+/* Approved seven-station scene; all labels remain live, accessible text. */
+.train-page:has(#setup:not([hidden])) { width:min(100%,calc(100svh * 1.7768)); padding:0; }
+.train-page:has(#setup:not([hidden])) .train-header { position:absolute; inset:12px 16px auto; margin:0; }
+.station-scene { aspect-ratio:16/9; background:url('assets/game-style/seven-stations-no-plaques.png') center/100% 100% no-repeat; }
+#setup.train-panel .station-title { position:absolute; top:2%; left:24%; width:52%; height:9%; margin:0; padding:0; font-size:2rem; background:none; }
+.station-platforms.train-groups { position:absolute; inset:0; display:block; }
+.station-platforms .station-group { position:absolute; }
+.station-platforms .station-group::after { display:none; }
+.station-selector-label { position:absolute; top:12.5%; left:42%; width:16%; margin:0; padding:3px; border-radius:6px; background:#fff4d9; text-align:center; font-size:1.15rem; font-weight:700; color:#604329; }
+.station-platforms .station-group { left:0; top:20%; width:50%; height:20%; }
+.station-platforms .station-group:nth-child(even) { left:50%; }
+.station-platforms .station-group:nth-child(n+3) { top:40%; }
+.station-platforms .station-group:nth-child(n+5) { top:60%; }
+.station-platforms .station-group:nth-child(7) { left:25%; top:80%; }
+.station-platforms .station-signpost { left:20.8%; top:31.8%; width:44px; height:44px; transform:translate(-50%,-50%); animation:none; }
+.station-platforms .station-sign { width:44px; height:44px; min-height:0; padding:0; display:grid; place-items:center; background:none; border-radius:50%; color:#fff; font:700 1.8rem/1 var(--phonics-font); text-shadow:0 2px 1px #55634c; }
+.station-platforms .station-sign { animation:station-number-pulse 2s ease-in-out infinite; transform-origin:center; }
+@keyframes station-number-pulse { 0%,100% { transform:scale(.94); } 50% { transform:scale(1.16); } }
+.station-platforms .station-pole { display:none; }
+.station-platforms .group-train { left:39%; top:42%; bottom:auto; width:49%; height:27%; display:flex; gap:0; padding:0; }
+.station-platforms .group-train-piece { flex:1 1 0!important; aspect-ratio:auto!important; height:100%; }
+.station-platforms .train-sprite,.station-platforms [data-train-part='engine'] { display:none; }
+.station-platforms .group-train-letter { inset:0; font-size:1.35rem; }
+.station-platforms .group-train-letter small { font-size:.55rem; line-height:1; margin:0; }
+.station-platforms .station-group:nth-child(2) .station-signpost { left:15.55%; top:42.4%; }
+.station-platforms .station-group:nth-child(3) .station-signpost { top:35.4%; }
+.station-platforms .station-group:nth-child(4) .station-signpost { left:17%; top:35.9%; }
+.station-platforms .station-group:nth-child(5) .station-signpost { top:28.9%; }
+.station-platforms .station-group:nth-child(6) .station-signpost { left:17%; top:28.9%; }
+.station-platforms .station-group:nth-child(2) .group-train { left:39%; top:50%; width:46%; height:24%; }
+.station-platforms .station-group:nth-child(3) .group-train { left:39%; top:40%; width:49%; }
+.station-platforms .station-group:nth-child(4) .group-train { left:30%; top:43%; width:57%; }
+.station-platforms .station-group:nth-child(5) .group-train { left:45%; top:23%; width:48%; height:30%; }
+.station-platforms .station-group:nth-child(6) .group-train { left:36%; top:25%; width:57%; height:30%; }
+.station-platforms .station-group:nth-child(7) .group-train { left:32%; top:23%; width:53%; height:30%; }
+.station-platforms .station-group:nth-child(7) .station-signpost { left:11.25%; top:21.4%; }
+.station-platforms .station-group:nth-child(4) .group-train,
+.station-platforms .station-group:nth-child(5) .group-train,
+.station-platforms .station-group:nth-child(6) .group-train { gap:4px; background:var(--group-color); border-radius:5px; padding:3px; }
+.station-platforms .station-group:nth-child(4) .group-train-piece,
+.station-platforms .station-group:nth-child(5) .group-train-piece,
+.station-platforms .station-group:nth-child(6) .group-train-piece { background:#fff5d9; border:3px solid var(--group-color); border-radius:5px; box-shadow:0 3px 2px #0003; }
+.station-platforms .station-group:hover .group-train-letter { color:#08777a; }
+.train-page:has(#play.is-cargo-station:not([hidden])) { position:relative; width:min(100%,calc(100svh * 1.7768)); padding:0; }
+.train-page:has(#play.is-cargo-station:not([hidden])) .train-header { position:absolute; z-index:4; inset:10px 20px auto; pointer-events:none; }
+.train-page:has(#play.is-cargo-station:not([hidden])) .train-header h1 { position:absolute; top:4px; left:50%; transform:translateX(-50%); white-space:nowrap; font-size:2rem; }
+.train-page:has(#play.is-cargo-station:not([hidden])) .train-header a { pointer-events:auto; }
+.train-page:has(#play.is-cargo-station:not([hidden])) .train-header > img { display:none; }
+#play.is-cargo-station { --cargo-left:20%; --cargo-width:77%; --cargo-drop:7.83cqw; position:relative; padding:0; aspect-ratio:16/9; background:url('assets/game-style/cargo-station-scenery.png') center/100% 100% no-repeat; container-type:inline-size; overflow:hidden; }
+#cargo-vehicle { position:absolute; left:var(--cargo-left); top:43.5%; width:var(--cargo-width); height:auto; pointer-events:none; }
+#play.is-cargo-station::after { content:attr(data-question-progress); position:absolute; right:28px; top:100px; font:700 1.4rem var(--phonics-font); color:#08777a; }
+#play.is-cargo-station .train-topline { position:absolute; z-index:5; inset:12px 18px auto 108px; align-items:flex-start; }
+#play.is-cargo-station .clue-book { width:156px; height:80px; }
+#play.is-cargo-station .railway { position:absolute; inset:0; padding:0; overflow:visible; }
+#play.is-cargo-station .train-stage { width:100%; height:100%; min-width:0; }
+#play.is-cargo-station .train-stage::before { display:none; }
+/* Crate centres match the three pads at 16.25%, 36.25%, 56.25% of the vehicle artwork. */
+#play.is-cargo-station .sound-train { position:absolute; left:var(--cargo-left); top:32%; width:var(--cargo-width); height:23%; display:block; transition:none; }
+#play.is-cargo-station .sound-car { position:absolute; top:0; left:calc(var(--cargo-pad) - 9%); width:18%; height:100%; transition:none; background:url('assets/game-style/cargo-letter-crate.png') center/100% 100% no-repeat; }
+#play.is-cargo-station .sound-car:nth-child(1) { --cargo-pad:16.25%; }
+#play.is-cargo-station .sound-car:nth-child(2) { --cargo-pad:36.25%; }
+#play.is-cargo-station .sound-car:nth-child(3) { --cargo-pad:56.25%; }
+#play.is-cargo-station .car-letter { inset:15% 12% 18%; font-size:5rem; }
+.cargo-speaker { position:absolute; left:50%; bottom:-16px; width:44px; height:44px; padding:10px; transform:translateX(-50%); border-radius:50%; background:#08777a; }
+#play.is-cargo-station .sound-car.lit { filter:drop-shadow(0 0 7px #fff9b6); transform:none; }
+#play.is-cargo-station .sound-train.connected { gap:8%; }
+#play.is-cargo-station .sound-train.connected > :not(:first-child) { margin-left:0; }
+#play.is-cargo-station .train-controls { position:absolute; top:82%; left:0; right:0; margin:0; gap:18px; }
+#play.is-cargo-station .answer-space { position:absolute; left:25%; right:25%; bottom:1%; min-height:0; pointer-events:none; }
+#play.is-cargo-station .train-answer { background:#fffffff5; border-radius:8px; padding:6px 10px; gap:12px; flex-wrap:nowrap; pointer-events:auto; }
+#play.is-cargo-station .train-answer img { width:56px; height:56px; }
+#play.is-cargo-station .train-answer strong { font-size:2rem; }
+#play.is-cargo-station:has(#answer:not([hidden])) .train-controls { top:78%; left:3%; right:auto; }
+#play.is-cargo-station #audio-status { position:absolute; top:12%; left:25%; right:25%; }
+@media(min-width:651px) and (max-height:740px) {
+  #play.is-cargo-station .train-action-button,#play.is-cargo-station .train-play-button { width:56px; height:56px; min-height:56px; }
+}
+@media(max-width:900px) and (min-width:651px) {
+  .station-platforms .group-train-letter { font-size:1rem; }
+  .station-platforms .station-sign { font-size:1.5rem; }
+  #play.is-cargo-station .car-letter { font-size:2.5rem; }
+}
+@media(max-width:650px) {
+  .train-page:has(#setup:not([hidden])) { padding:12px; }
+  .train-page:has(#setup:not([hidden])) .train-header { position:relative; inset:auto; }
+  .station-scene { background:#e3f0da; aspect-ratio:auto; }
+  #setup.train-panel .station-title { position:static; width:auto; height:auto; margin:8px 0; font-size:1.7rem; }
+  .station-selector-label { position:static; width:auto; margin:8px; }
+  .station-platforms.train-groups { display:grid; grid-template-columns:1fr; position:static; }
+  .station-platforms .station-group:nth-child(n) { position:relative; inset:auto; width:100%; height:160px; background-image:url('assets/game-style/seven-stations-no-plaques.png'); background-size:200% 500%; background-position:0 25%; }
+  .station-platforms .station-group:nth-child(even) { background-position-x:100%; }
+  .station-platforms .station-group:nth-child(3),.station-platforms .station-group:nth-child(4) { background-position-y:50%; }
+  .station-platforms .station-group:nth-child(5),.station-platforms .station-group:nth-child(6) { background-position-y:75%; }
+  .station-platforms .station-group:nth-child(7) { background-position:50% 100%; }
+  .station-platforms .station-group::after { display:none; }
+  .station-platforms .group-train-letter { font-size:1rem; }
+  .train-page:has(#play.is-cargo-station:not([hidden])) { padding:0; }
+  .train-page:has(#play.is-cargo-station:not([hidden])) .train-header h1 { font-size:1.25rem; top:75px; }
+  #play.is-cargo-station { --cargo-left:0%; --cargo-width:100%; --cargo-drop:calc(17.23cqw + 68.672px); aspect-ratio:auto; min-height:740px; background-size:auto 100%; }
+  #play.is-cargo-station .train-topline { left:94px; right:8px; }
+  #play.is-cargo-station .clue-book { width:110px; height:64px; }
+  #play.is-cargo-station .sound-train { top:37%; height:16%; }
+  #play.is-cargo-station .sound-car { left:calc(var(--cargo-pad) - 10%); width:20%; }
+  #cargo-vehicle { top:61%; }
+  #play.is-cargo-station::after { right:14px; top:104px; font-size:1rem; }
+  #play.is-cargo-station .car-letter { font-size:2.7rem; }
+  #play.is-cargo-station .train-controls { top:78%; }
+  #play.is-cargo-station .answer-space { left:4%; right:4%; bottom:1%; }
+  #play.is-cargo-station:has(#answer:not([hidden])) .train-controls { top:76%; left:0; right:0; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .station-platforms .station-sign { animation:none; }
+  #play.is-cargo-station .sound-car.needs-sound { animation:none; outline:none; }
+  #play.is-cargo-station .sound-car.needs-sound .car-letter { scale:1.1; }
+}

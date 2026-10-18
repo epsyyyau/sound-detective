@@ -1,0 +1,97 @@
+.segment-sound-page .lesson-panel.analysis-board-panel {
+  --board-bottom-edge:57px;
+  --board-content-gap:24px;
+  padding:74px 76px calc(var(--board-bottom-edge) + var(--board-content-gap));
+  border:0 solid transparent;
+  border-radius:0;
+  background:transparent;
+  border-image:url('assets/game-style/detective-analysis-board-faithful.webp') 45% 18% 15% 18% fill / 172px 100px 57px 100px stretch;
+  box-shadow:none;
+}
+.analysis-board-panel .segment-sound-options button:not(.is-correct):not(.is-wrong) { background:#f7fbfd; border-color:#bed4e0; }
+.analysis-board-panel .lesson-progress { margin-right:32px; }
+/* Reserve the filled tile and feedback sizes before the first selection. */
+.segment-sound-page .analysis-board-panel .segment-sound-slots > span {
+  height:96px;
+  min-height:96px;
+  grid-template-rows:1fr;
+  align-content:center;
+}
+.segment-sound-page .analysis-board-panel .segment-sound-slots > span:has(small):not(.has-duration-cue) {
+  grid-template-rows:auto auto;
+}
+.segment-sound-page .analysis-board-panel .segment-sound-slots > span.has-duration-cue {
+  grid-template-rows:auto 16px auto;
+}
+.segment-sound-page .analysis-board-panel .segment-sound-slots strong { line-height:1; }
+.sound-lesson-page.segment-sound-page .analysis-board-panel .answer-feedback {
+  position:absolute;
+  top:100%;
+  left:0;
+  right:0;
+  min-height:0;
+  line-height:1.4;
+  margin:4px 0 0;
+  font-size:0.85rem;
+}
+@media(min-width:681px) and (max-height:760px) {
+  .segment-sound-page .lesson-panel.analysis-board-panel { min-height:0; padding-top:66px; }
+}
+@media(min-width:681px) and (max-height:900px) {
+  .sound-lesson-page.segment-sound-page { padding-top:8px; padding-bottom:8px; }
+  .segment-sound-page .lesson-header { margin-bottom:4px; }
+  .segment-sound-page .lesson-heading [data-group-label] { flex-direction:row; justify-content:center; gap:8px; }
+  .segment-sound-page .lesson-heading .lesson-group-circle { width:36px; height:36px; }
+  .segment-sound-page .lesson-heading h1 { font-size:1.85rem; line-height:1.2; }
+  .segment-sound-page.has-clue-progress .clue-progress { margin-bottom:0; }
+  .segment-sound-page.has-clue-progress .lesson-panel.analysis-board-panel { padding-top:72px; }
+  .segment-sound-page .analysis-board-panel .segment-prompt h2 { font-size:1.65rem; }
+  .segment-sound-page .analysis-board-panel .play-word-button.question-play-button {
+    width:60px;
+    height:60px;
+    margin-bottom:8px;
+  }
+  .segment-sound-page .analysis-board-panel .segment-sound-slots > span { height:88px; min-height:88px; padding:4px; }
+  .segment-sound-page .analysis-board-panel .segment-sound-slots { margin-bottom:6px; }
+  .segment-sound-page .analysis-board-panel .segment-arrange-tools button { width:44px; height:44px; min-height:44px; }
+  .segment-sound-page .analysis-board-panel .segment-sound-options { min-height:76px; }
+  .segment-sound-page .analysis-board-panel .segment-sound-options button { min-height:72px; padding:5px; }
+}
+@media(max-width:680px) {
+  .segment-sound-page .lesson-header {
+    position:relative;
+    display:block;
+    margin-bottom:6px;
+    padding-inline:54px;
+  }
+  .segment-sound-page .lesson-header .route-link {
+    position:absolute;
+    top:0;
+    left:0;
+    width:52px;
+    height:52px;
+  }
+  .segment-sound-page.has-clue-progress .circle-level-track:has(> button:only-child) {
+    display:none;
+  }
+  .segment-sound-page.has-clue-progress .clue-progress {
+    margin-bottom:4px;
+  }
+  .segment-sound-page .analysis-board-panel .segment-sound-slots > span { height:76px; min-height:76px; }
+  .segment-sound-page .lesson-panel.analysis-board-panel {
+    --board-bottom-edge:39px;
+    --board-content-gap:12px;
+    padding:54px 30px calc(var(--board-bottom-edge) + var(--board-content-gap));
+    border-image-width:118px 69px 39px 69px;
+  }
+  .segment-sound-page .analysis-board-panel .segment-prompt { margin:4px 0; }
+  .segment-sound-page .analysis-board-panel .play-word-button { margin-bottom:5px; }
+  .segment-sound-page .analysis-board-panel .segment-sound-slots { margin-bottom:4px; }
+  .segment-sound-page .analysis-board-panel .segment-arrange-tools { margin-bottom:4px; }
+  .segment-sound-page .analysis-board-panel .segment-arrange-tools button {
+    width:44px;
+    height:44px;
+    min-height:44px;
+    padding:6px;
+  }
+}

@@ -1,0 +1,295 @@
+body:has(.family-page #family-complete:not([hidden])),
+body:has(.train-page #complete:not([hidden])),
+body:has(.magic-page #complete:not([hidden])) { margin:0; }
+
+.family-page:has(#family-complete:not([hidden])),
+.train-page:has(#complete:not([hidden])),
+.magic-page:has(#complete:not([hidden])) { width:100%; max-width:none; padding:0; }
+
+.family-page:has(#family-complete:not([hidden])) .family-header,
+.train-page:has(#complete:not([hidden])) .train-header,
+.magic-page:has(#complete:not([hidden])) .magic-header {
+  position:absolute; z-index:5; top:0; left:0; right:0; width:100%; padding:10px 3%;
+  pointer-events:none;
+}
+.family-page:has(#family-complete:not([hidden])) .family-header a,
+.train-page:has(#complete:not([hidden])) .train-header a,
+.magic-page:has(#complete:not([hidden])) .magic-header a { pointer-events:auto; }
+
+.family-page #family-complete,
+.train-page #complete,
+.magic-page #complete {
+  width:100%; max-width:none; min-height:100svh; margin:0; box-sizing:border-box;
+  background-size:100% 100%; background-position:center; background-repeat:no-repeat;
+}
+.family-page #family-complete {
+  display:flex; flex-direction:column; justify-content:center; align-items:center;
+  padding:96px 19% 16px;
+  background-image:url('assets/game-style/family-completion-post-office.png');
+}
+.family-page #family-complete-title,
+.train-page #complete .train-kicker,
+.magic-page #complete-title { position:relative; z-index:1; color:#173f49; background:#fff8eacb; padding:4px 16px; border-radius:4px; }
+.family-page #family-complete .family-collection { gap:16px; width:100%; margin:12px 0; }
+.family-page #family-complete .family-collection-row { flex-wrap:nowrap; gap:clamp(8px,1.2vw,16px); }
+.family-page #family-complete .family-collection button {
+  position:relative; isolation:isolate; overflow:visible;
+  width:clamp(112px,10vw,150px); min-height:clamp(150px,19vh,184px);
+  padding:18px 8px 8px; gap:4px; border:3px solid #bc8458; border-radius:4px;
+  background:#fff9e9; box-shadow:inset 0 0 0 5px #f6e4bd,0 5px 8px #3e493136;
+  outline:none;
+}
+.family-page #family-complete .family-collection button::before {
+  content:''; position:absolute; z-index:0; pointer-events:none;
+  top:8px; right:8px; bottom:8px; left:8px; width:auto; height:auto;
+  border:2px dashed #d2ad82; border-radius:2px; background:transparent;
+}
+.family-page #family-complete .family-collection button::after {
+  content:''; position:absolute; z-index:0; pointer-events:none;
+  width:23px; height:23px; top:-5px; right:-5px;
+  border:2px solid #aa634e; border-radius:2px;
+  background:linear-gradient(135deg,#f8e5b2 49%,#cc715c 50%);
+  box-shadow:0 2px 3px #5b382d33;
+}
+.family-page #family-complete .family-collection button > * { position:relative; z-index:1; }
+.family-page #family-complete .family-collection img { width:min(88px,75%); height:clamp(86px,11vh,108px); }
+.family-page #family-complete .collection-word { font-size:clamp(24px,2.4vw,31px); }
+.family-page #family-complete .family-actions { gap:18px; }
+
+/* Each station files its collected words in the material used by that case. */
+.family-page #family-complete:is([data-sound-group="1"],[data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) .family-collection button {
+  border:0; border-radius:0; background-color:transparent;
+  background-position:center; background-size:100% 100%; background-repeat:no-repeat;
+  box-shadow:none;
+}
+.family-page #family-complete:is([data-sound-group="1"],[data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) .family-collection button::before,
+.family-page #family-complete:is([data-sound-group="1"],[data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) .family-collection button::after { content:none; }
+.family-page #family-complete[data-sound-group="1"] .family-collection button {
+  min-height:168px; padding:23px 13px 17px; gap:2px;
+  background-image:url('assets/game-style/family-complete-stamp-scallop-v2.png');
+}
+.family-page #family-complete[data-sound-group="1"] .family-collection-row:nth-child(odd) button:nth-child(even),
+.family-page #family-complete[data-sound-group="1"] .family-collection-row:nth-child(even) button:nth-child(odd) {
+  background-image:url('assets/game-style/family-complete-stamp-rounded-v2.png');
+}
+.family-page #family-complete[data-sound-group="1"] .family-collection img {
+  height:86px;
+}
+.family-page #family-complete[data-sound-group="2"] .family-collection button {
+  min-height:181px; padding:18px 13px 17px; gap:0;
+  justify-content:space-between;
+  background-image:url('assets/game-style/family-complete-photo-v2.png');
+}
+.family-page #family-complete[data-sound-group="2"] .family-collection img {
+  height:96px;
+}
+.family-page #family-complete[data-sound-group="2"] .collection-word {
+  font-size:clamp(23px,2.3vw,29px);
+}
+.family-page #family-complete[data-sound-group="3"] .family-collection button {
+  min-height:180px; padding:43px 14px 13px; gap:3px;
+  background-image:url('assets/game-style/family-complete-cargo-v2.png');
+}
+.family-page #family-complete[data-sound-group="3"] .family-collection img {
+  height:82px;
+}
+.family-page #family-complete[data-sound-group="3"] .collection-word {
+  font-size:clamp(23px,2.3vw,29px);
+}
+.family-page #family-complete[data-sound-group="4"] .family-collection button {
+  min-height:184px; padding:30px 14px 40px; gap:2px;
+  background-image:url('assets/game-style/family-complete-traffic-ticket-v2.png');
+}
+.family-page #family-complete[data-sound-group="4"] .family-collection img {
+  height:74px;
+}
+.family-page #family-complete[data-sound-group="4"] .collection-word {
+  font-size:clamp(23px,2.3vw,29px);
+}
+.family-page #family-complete[data-sound-group="5"] .family-collection button {
+  min-height:180px; padding:19px 13px 22px; gap:3px;
+  background-image:url('assets/game-style/family-complete-library-folio-v2.png');
+}
+.family-page #family-complete[data-sound-group="5"] .family-collection img {
+  height:88px;
+}
+.family-page #family-complete[data-sound-group="5"] .collection-word {
+  font-size:clamp(23px,2.3vw,29px);
+}
+.family-page #family-complete[data-sound-group="6"] .family-collection button {
+  min-height:184px; padding:28px 13px 17px; gap:2px;
+  background-image:url('assets/game-style/family-complete-workshop-sign-v2.png');
+}
+.family-page #family-complete[data-sound-group="6"] .family-collection img {
+  height:86px;
+}
+.family-page #family-complete[data-sound-group="6"] .collection-word {
+  font-size:clamp(23px,2.3vw,29px);
+}
+.family-page #family-complete[data-sound-group="7"] .family-collection button {
+  min-height:184px; padding:38px 13px 22px; gap:2px;
+  background-image:url('assets/game-style/family-complete-bridge-plaque-v2.png');
+}
+.family-page #family-complete[data-sound-group="7"] .family-collection img {
+  height:76px;
+}
+.family-page #family-complete[data-sound-group="7"] .collection-word {
+  font-size:clamp(23px,2.3vw,29px);
+}
+
+.train-page #complete {
+  display:flex; flex-direction:column; justify-content:center; align-items:center;
+  padding:96px 18% 28px;
+  background-image:url('assets/game-style/train-completion-terminal.png');
+}
+.train-page #complete .clue-finish-stamp { margin:0 0 8px; }
+.train-page #complete .train-collection { flex-wrap:nowrap; gap:clamp(8px,1.2vw,16px); width:100%; margin:16px 0; }
+.train-page #complete .train-collection button {
+  position:relative; isolation:isolate; flex:1 1 0; min-width:0; width:auto; min-height:200px;
+  padding:31px 12px 38px; gap:2px; border:0; border-radius:0;
+  background:transparent url('assets/game-style/train-complete-ticket-neutral-v2.png') center / 100% 100% no-repeat;
+  box-shadow:none; outline:none;
+}
+.train-page #complete .train-collection button::before,
+.train-page #complete .train-collection button::after {
+  content:''; position:absolute; z-index:0; pointer-events:none;
+  left:8%; right:8%; width:auto; border:0; clip-path:none;
+  background:var(--group-color,#f2ce39); mix-blend-mode:multiply;
+}
+.train-page #complete .train-collection button::before {
+  top:5.6%; height:10.8%; border-radius:8px 8px 2px 2px;
+}
+.train-page #complete .train-collection button::after {
+  top:auto; bottom:5%; height:8.5%; border-radius:2px 2px 8px 8px; opacity:.78;
+}
+.train-page #complete .train-collection button > * { position:relative; z-index:1; }
+.train-page #complete .train-collection button:focus-visible { outline:3px solid #087b80; outline-offset:4px; }
+.train-page #complete .train-collection img { width:min(96px,82%); height:80px; }
+.train-page #complete .train-collection strong { font-size:clamp(24px,2.3vw,32px); }
+.train-page #complete .train-controls { margin:8px 0 0; }
+
+.magic-page #complete { background-image:url('assets/game-style/lab-paper-room.webp'); }
+.magic-page #complete .magic-collection { gap:clamp(8px,1vw,14px); margin:14px 0 6px; }
+.magic-page #complete .magic-collection button {
+  position:relative; isolation:isolate; overflow:visible; flex:0 0 clamp(130px,11.4vw,158px);
+  width:clamp(130px,11.4vw,158px); min-height:0; aspect-ratio:1041 / 1449;
+  padding:clamp(42px,4.8vw,52px) 12px clamp(19px,2vw,27px); gap:3px; border:0; border-radius:0; outline:none;
+  color:#173f49; background:transparent url('assets/game-style/lab-complete-specimen-card-neutral.png') center / 100% 100% no-repeat;
+  box-shadow:none;
+}
+.magic-page #complete .magic-collection button::before {
+  content:''; position:absolute; z-index:0; pointer-events:none;
+  top:17.2%; left:18%; width:64%; height:7%;
+  border:0; border-radius:99px; background:var(--group-color); opacity:.74;
+  mix-blend-mode:multiply; box-shadow:none;
+}
+.magic-page #complete .magic-collection button::after {
+  content:''; position:absolute; z-index:0; pointer-events:none;
+  top:88%; left:18%; width:64%; height:6%;
+  border:0; border-radius:99px; background:var(--group-color); opacity:.74; mix-blend-mode:multiply;
+}
+.magic-page #complete .magic-collection button > * { position:relative; z-index:1; }
+.magic-page #complete .magic-collection button:focus-visible { outline:3px solid #087b80; outline-offset:3px; }
+.magic-page #complete .magic-collection img { width:min(88px,100%); height:clamp(70px,11vh,86px); }
+.magic-page #complete .magic-collection span { font-size:clamp(25px,2.4vw,32px); }
+
+/* The replay seal is shared; each game's return keeps its own illustrated logo. */
+.family-page #family-complete #family-again.round-replay-button,
+.train-page #complete #again.round-replay-button,
+.magic-page #complete #again.round-replay-button {
+  display:grid; place-items:center; flex:none;
+  width:80px; height:80px; min-height:80px; padding:0;
+  border:0; border-radius:50%; background:transparent; box-shadow:none;
+  transition:transform .18s ease;
+}
+.family-page #family-complete #family-again.round-replay-button img,
+.train-page #complete #again.round-replay-button img,
+.magic-page #complete #again.round-replay-button img {
+  display:block; width:100%; height:100%; object-fit:contain;
+  filter:none; pointer-events:none;
+}
+.family-page #family-complete #family-again.round-replay-button:hover,
+.train-page #complete #again.round-replay-button:hover,
+.magic-page #complete #again.round-replay-button:hover { transform:rotate(-8deg) scale(1.06); }
+.round-replay-button:focus-visible { outline:4px solid #225eb5; outline-offset:4px; }
+@media(prefers-reduced-motion:reduce) {
+  .round-replay-button { transition:none !important; }
+}
+
+@media(max-width:1000px) {
+  .family-page #family-complete { padding-inline:12%; }
+  .train-page #complete { padding-inline:12%; }
+  .magic-page #complete { background-size:cover; }
+}
+@media(max-width:700px) {
+  .family-page #family-complete,.train-page #complete,.magic-page #complete {
+    min-height:100svh; height:auto; padding:108px 14px 28px; background-size:cover;
+  }
+  .family-page #family-complete .family-collection-row,
+  .train-page #complete .train-collection { flex-wrap:wrap; justify-content:center; }
+  .family-page #family-complete .family-collection button { width:min(42vw,150px); min-height:164px; }
+  .train-page #complete { justify-content:flex-start; padding-top:170px; }
+  .train-page #complete .train-collection button { flex:0 0 min(42vw,150px); min-height:200px; }
+  .magic-page #complete .magic-collection button { flex-basis:min(42vw,150px); width:min(42vw,150px); min-height:0; }
+}
+@media(max-width:700px) {
+  .magic-page #complete { justify-content:flex-start; }
+  .magic-page #complete .magic-collection { gap:8px; }
+  .magic-page #complete .magic-collection button {
+    flex:0 0 calc((100% - 16px) / 3);
+    width:calc((100% - 16px) / 3);
+    max-width:116px;
+    padding:35px 8px 17px;
+    gap:2px;
+  }
+  .magic-page #complete .magic-collection img { width:min(68px,100%); height:58px; }
+  .magic-page #complete .magic-collection span { font-size:24px; line-height:1.1; }
+}
+@media(max-width:700px) {
+  .family-page #family-complete { justify-content:flex-start; }
+  .family-page #family-complete .family-collection {
+    display:grid;
+    grid-template-columns:repeat(6,minmax(0,1fr));
+    gap:8px 0;
+    width:100%;
+    max-width:348px;
+    margin:12px 0 6px;
+  }
+  .family-page #family-complete .family-collection-row { display:contents; }
+  .family-page #family-complete[data-sound-group] .family-collection button {
+    grid-column:span 2;
+    justify-self:center;
+    width:calc(100% - 4px);
+    max-width:110px;
+    min-height:0;
+    aspect-ratio:4 / 5;
+    padding:var(--review-card-top,18px) 8px var(--review-card-bottom,14px);
+    gap:2px;
+  }
+  .family-page #family-complete .family-collection-row:last-child button:nth-child(3) { grid-column:2 / span 2; }
+  .family-page #family-complete .family-collection-row:last-child button:nth-child(4) { grid-column:4 / span 2; }
+  .family-page #family-complete[data-sound-group] .family-collection img {
+    width:min(66px,82%);
+    height:var(--review-image-height,58px);
+  }
+  .family-page #family-complete[data-sound-group] .collection-word { font-size:22px; line-height:1.1; }
+  .family-page #family-complete[data-sound-group="1"] { --review-card-top:20px; --review-card-bottom:13px; }
+  .family-page #family-complete[data-sound-group="2"] { --review-card-top:18px; --review-card-bottom:15px; }
+  .family-page #family-complete[data-sound-group="3"] { --review-card-top:31px; --review-card-bottom:10px; --review-image-height:54px; }
+  .family-page #family-complete[data-sound-group="4"] { --review-card-top:23px; --review-card-bottom:25px; --review-image-height:52px; }
+  .family-page #family-complete[data-sound-group="5"] { --review-card-top:18px; --review-card-bottom:18px; }
+  .family-page #family-complete[data-sound-group="6"] { --review-card-top:23px; --review-card-bottom:15px; }
+  .family-page #family-complete[data-sound-group="7"] { --review-card-top:29px; --review-card-bottom:18px; --review-image-height:54px; }
+}
+@media(max-width:350px) {
+  .family-page #family-complete .family-collection { grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; }
+  .family-page #family-complete[data-sound-group] .family-collection button { grid-column:auto; width:100%; max-width:132px; }
+  .family-page #family-complete .family-collection-row:last-child button:nth-child(3),
+  .family-page #family-complete .family-collection-row:last-child button:nth-child(4) { grid-column:auto; }
+}
+@media(max-width:340px) {
+  .magic-page #complete .magic-collection button {
+    flex-basis:min(42vw,125px);
+    width:min(42vw,125px);
+  }
+}

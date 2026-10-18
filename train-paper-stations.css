@@ -1,0 +1,122 @@
+/* Paper groups share reserved header, controls and answer space. */
+body:has(#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]):not([hidden])) { background:#e5f2da; }
+.train-page:has(#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]):not([hidden])) {
+  position:relative; width:min(100%,1440px,calc(100svh * 16 / 9)); padding:0;
+}
+.train-page:has(#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]):not([hidden])) .train-header {
+  position:absolute; z-index:6; inset:12px 20px auto; margin:0; pointer-events:none;
+}
+.train-page:has(#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]):not([hidden])) .train-header a { pointer-events:auto; }
+.train-page:has(#play:is([data-sound-group="3"],[data-sound-group="4"]):not([hidden])) .train-header h1 {
+  position:absolute; left:50%; transform:translateX(-50%); white-space:nowrap;
+}
+#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) {
+  position:relative; width:100%; min-width:0; min-height:0; padding:0; aspect-ratio:16 / 9;
+  overflow:hidden; container-type:inline-size; background-color:#fff9e8; background-size:100% 100%;
+}
+#play[data-sound-group="2"] { background-image:url('assets/game-style/train-paper-two-station.webp'); }
+#play[data-sound-group="2"] #cargo-vehicle { bottom:29%; }
+#play[data-sound-group="2"] .sound-train { bottom:calc(29% + var(--deck-offset) + var(--cargo-drop)); }
+#play[data-sound-group="3"] {
+  --crane-drop:48px; --deck-offset:10.9cqw; --crate-size:12.88cqw;
+  --crane-left:4%; --crane-width-factor:.92;
+  background-image:url('assets/game-style/train-paper-three-background.webp'); background-size:100% 88%; background-position:top;
+}
+#play[data-sound-group="3"] #crane-vehicle { left:4%; top:auto; bottom:29%; width:92%; height:auto; }
+#play[data-sound-group="3"] .sound-train {
+  inset:auto; left:4%; bottom:calc(29% + var(--deck-offset) + var(--crane-drop));
+  width:92%; height:var(--crate-size);
+}
+#play[data-sound-group="3"] .sound-car {
+  top:0; width:14%; height:100%; background-image:url('assets/game-style/train-paper-two-crate.png');
+}
+#play[data-sound-group="3"] .sound-car::before { display:none; }
+#play[data-sound-group="3"] #station-hook { top:25%; height:8%; }
+#play[data-sound-group="4"] { background-image:url('assets/game-style/train-paper-four-open-river.webp'); }
+#bridge-deck { position:absolute; inset:0; pointer-events:none; }
+#play[data-sound-group="4"] .bridge-span {
+  position:absolute; top:54%; left:calc(21% + var(--span-index) * 22%);
+  width:22%; height:13%; object-fit:fill; translate:var(--bridge-offset) 0;
+}
+#play[data-sound-group="4"] .sound-car {
+  top:35%; width:19%; height:13cqw;
+  background-image:url('assets/game-style/train-paper-four-sign.png');
+}
+#play[data-sound-group="4"] .sound-car::before { display:none; }
+#play[data-sound-group="4"] .sound-train::before { display:none; }
+#play:is([data-sound-group="3"],[data-sound-group="4"]) .car-letter { inset:13% 14% 30%; font-size:64px; color:#203947; }
+#play[data-sound-group="4"] .car-letter { font-size:88px; }
+#play:is([data-sound-group="3"],[data-sound-group="4"]) .cargo-speaker { width:30px; height:30px; padding:5px; bottom:8%; }
+#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) .train-topline {
+  position:absolute; z-index:5; inset:0 0 auto; height:25%; pointer-events:none;
+}
+#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) #counter { position:absolute; top:12px; right:18px; }
+#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) .clue-book {
+  position:absolute; top:100px; left:50%; transform:translateX(-50%); width:270px; height:48px;
+  background:#fff9e8d9; border-radius:8px; pointer-events:auto;
+}
+#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) .clue-book-pages { inset:2px 7px; display:flex; gap:8px; }
+#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) .clue-page { display:contents; }
+#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) .clue-slot { flex:1; height:44px; border:2px solid #a5bbb6; border-radius:50%; background:#fffdf4; }
+#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) .clue-slot.is-current { border-color:#087a7b; }
+#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) .clue-slot:not(.is-collected) > img { visibility:hidden; }
+#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"])::after { top:84px; right:28px; font-size:18px; }
+#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) .train-controls,
+#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]):has(#answer:not([hidden])) .train-controls {
+  position:absolute; top:77%; left:0; right:0; margin:0; gap:16px;
+}
+#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) :is(.train-action-button,.train-play-button) {
+  width:64px; height:64px; min-height:64px; box-shadow:0 3px 0 #26565433;
+}
+#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) .answer-space {
+  position:absolute; left:12px; right:12px; bottom:2%; height:72px; min-height:72px;
+  display:flex; align-items:center; justify-content:center; pointer-events:none;
+}
+#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) .train-answer {
+  flex-wrap:nowrap; gap:12px; margin:0; padding:4px 12px; max-width:100%; background:#ffffffe8; border-radius:8px; pointer-events:auto;
+}
+#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) .train-answer > img { width:56px; height:56px; }
+#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) .train-answer strong { font-size:36px; min-width:0; overflow-wrap:anywhere; }
+#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) .train-answer .train-action-button img { width:48%; height:48%; }
+@media(max-width:1000px) {
+  #play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) { aspect-ratio:auto; min-height:740px; }
+  #play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) .clue-book { top:194px; }
+  #play:is([data-sound-group="3"],[data-sound-group="4"]) .car-letter { font-size:44px; }
+}
+@media(max-width:650px) {
+  .train-page:has(#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]):not([hidden])) { width:100%; }
+  .train-page:has(#play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]):not([hidden])) .train-header { inset:10px; }
+  #play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) { min-height:max(740px,100svh); }
+  #play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) {
+    --paper-scene-top:270px;
+    background-size:100% auto; background-position:center var(--paper-scene-top);
+  }
+  #play[data-sound-group="2"] { --paper-rail:39.4cqw; }
+  #play[data-sound-group="3"] { --paper-rail:45cqw; }
+  #play[data-sound-group="2"] #cargo-vehicle,
+  #play[data-sound-group="3"] #crane-vehicle { bottom:calc(100% - var(--paper-scene-top) - var(--paper-rail)); }
+  #play[data-sound-group="2"] .sound-train { bottom:calc(100% - var(--paper-scene-top) - var(--paper-rail) + var(--deck-offset) + var(--cargo-drop)); }
+  #play[data-sound-group="3"] .sound-train { bottom:calc(100% - var(--paper-scene-top) - var(--paper-rail) + var(--deck-offset) + var(--crane-drop)); }
+  #play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) #counter { top:12px; right:12px; }
+  #play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"])::after { top:80px; right:16px; }
+  #play[data-sound-group="3"] { --deck-offset:11.38cqw; --crate-size:17.28cqw; --crane-left:2%; --crane-width-factor:.96; }
+  #play[data-sound-group="3"] #crane-vehicle { left:2%; top:auto; width:96%; }
+  #play[data-sound-group="3"] .sound-train { left:2%; width:96%; }
+  #play[data-sound-group="3"] .sound-car { top:0; width:18%; }
+  /* Override the old mobile pad coordinates, retaining each live sound's position. */
+  #play[data-sound-group="3"] .sound-car:nth-child(n),
+  #play[data-sound-group="4"] .sound-car:nth-child(n) { left:var(--paper-pad) !important; }
+  #play[data-sound-group="3"] #station-hook { display:block; top:calc(var(--paper-scene-top) + 15cqw); height:8%; }
+  #play[data-sound-group="4"] .sound-car { top:calc(var(--paper-scene-top) + 16cqw); width:22%; height:16cqw; }
+  #play[data-sound-group="4"] .bridge-span { top:calc(var(--paper-scene-top) + 30.4cqw); height:7.3cqw; }
+  #play[data-sound-group="4"] .sound-train::before { top:calc(var(--paper-scene-top) + 32cqw); }
+  #play:is([data-sound-group="3"],[data-sound-group="4"]) .car-letter { font-size:32px; inset:12% 12% 30%; }
+  #play:is([data-sound-group="3"],[data-sound-group="4"]) .cargo-speaker { width:22px; height:22px; padding:3px; }
+  #play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) :is(.train-action-button,.train-play-button) { width:56px; height:56px; min-height:56px; }
+  #play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) .train-controls,
+  #play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]):has(#answer:not([hidden])) .train-controls { top:calc(var(--paper-scene-top) + 56.25cqw + 24px); }
+  #play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) .answer-space { top:calc(var(--paper-scene-top) + 56.25cqw + 112px); bottom:auto; }
+  #play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) .train-answer { gap:8px; padding:4px 8px; }
+  #play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) .train-answer strong { font-size:30px; }
+  #play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) .train-answer > img { width:48px; height:48px; }
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" role="img" aria-label="調查車返回起點">
+  <defs>
+    <filter id="paper-shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="1.2" flood-color="#315451" flood-opacity=".3"/>
+    </filter>
+  </defs>
+  <path d="M59 22C52 9 36 7 24 13c-5 2-9 6-12 11" fill="none" stroke="#fff9e8" stroke-width="12" stroke-linecap="round"/>
+  <path d="M59 22C52 9 36 7 24 13c-5 2-9 6-12 11" fill="none" stroke="#087b81" stroke-width="6" stroke-linecap="round"/>
+  <path d="m8 14 2 15 14-8" fill="#087b81" stroke="#fff9e8" stroke-width="2" stroke-linejoin="round"/>
+  <g filter="url(#paper-shadow)">
+    <path d="M13 35v27" stroke="#624f39" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M14 35h15l-4 7 4 7H14z" fill="#f6cb57" stroke="#9a6d36" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M28 48h6l4-7h17l7 7h2v9H28z" fill="#75b994" stroke="#286d68" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M40 43h13l4 5H37z" fill="#a8d7eb" stroke="#286d68" stroke-width="1.5" stroke-linejoin="round"/>
+    <circle cx="37" cy="57" r="4.5" fill="#4c4b4e" stroke="#fff1d4" stroke-width="2"/>
+    <circle cx="56" cy="57" r="4.5" fill="#4c4b4e" stroke="#fff1d4" stroke-width="2"/>
+    <circle cx="61" cy="51" r="2" fill="#f8c852"/>
+  </g>
+</svg>

@@ -1,0 +1,65 @@
+.reward-message-dialog {
+  position: relative;
+  width: min(500px, calc(100vw - 24px), calc(100dvh * 1.15));
+  max-width: none;
+  aspect-ratio: 1336 / 1128;
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  background: url('assets/reward-messages/paper-note-frame-no-tape.png') center / 100% 100% no-repeat;
+  color: #213943;
+  text-align: center;
+  overflow: visible;
+}
+
+.reward-message-dialog::backdrop { background: #193a3d9c; }
+
+.reward-message-icon {
+  display: block;
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(70px, 21vw, 100px);
+  height: clamp(70px, 21vw, 100px);
+  object-fit: contain;
+  margin: 0;
+}
+
+.reward-message-text {
+  position: absolute;
+  top: 66%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: clamp(1rem, 3.5vw, 1.25rem);
+  font-weight: 800;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+.reward-message-continue {
+  position: absolute;
+  top: 73%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 112px;
+  min-height: 44px;
+  padding: 8px 20px;
+  border: 2px solid #53727b;
+  border-radius: 4px;
+  background: #f7f1e4;
+  color: #233b3d;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.reward-message-continue:hover,
+.reward-message-continue:focus-visible { background: #e4eef0; }
+
+@media (max-width: 380px), (max-height: 480px) {
+  .reward-message-icon { width: 70px; height: 70px; }
+  .reward-message-text { margin-bottom: 8px; font-size: 1rem; }
+  .reward-message-continue { min-height: 40px; }
+}

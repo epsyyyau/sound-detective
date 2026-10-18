@@ -1,0 +1,129 @@
+.sound-lesson-page .level-track.circle-level-track {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  margin: 0 auto 16px;
+  overflow: visible;
+}
+
+.sound-lesson-page .circle-level-track:has(> button:only-child) {
+  display: none;
+}
+
+.sound-lesson-page .circle-level-track button {
+  display: flex;
+  flex: 0 0 56px;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  min-width: 0;
+  padding: 4px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--ink);
+  text-align: center;
+}
+
+.sound-lesson-page .circle-level-track button:disabled {
+  opacity: 1;
+  filter: none;
+  cursor: default;
+}
+
+.sound-lesson-page .circle-level-track i {
+  flex: none;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #c9dcd6;
+  background: #fffaf2;
+  color: #647482;
+  font-size: 1.2rem;
+}
+
+.sound-lesson-page .circle-level-track .is-current i {
+  border-color: var(--teal-dark);
+  background: var(--teal-dark);
+  color: white;
+  box-shadow: 0 3px 8px rgba(13, 116, 119, 0.15);
+}
+
+.sound-lesson-page .circle-level-track .is-complete i {
+  background: var(--mint);
+  color: var(--teal-dark);
+}
+
+.sound-lesson-page .circle-level-track button:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+}
+
+.lesson-panel .lesson-icon-action,
+.correct-answer-dialog .lesson-icon-action {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  min-height: 64px;
+  margin: 12px auto 0;
+  padding: 15px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--teal-dark);
+  color: white;
+  cursor: pointer;
+}
+
+.lesson-icon-action img {
+  display: block;
+  width: 34px;
+  height: 34px;
+}
+
+.lesson-panel .lesson-icon-action:focus-visible,
+.correct-answer-dialog .lesson-icon-action:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 4px;
+}
+
+.lesson-icon-action[hidden] {
+  display: none;
+}
+
+@media (min-width: 681px) and (max-height: 900px) {
+  .sound-lesson-page .lesson-header {
+    margin-bottom: 8px;
+  }
+
+  .sound-lesson-page .lesson-heading h1 {
+    font-size: 2rem;
+  }
+
+  .sound-lesson-page .lesson-panel.missing-lesson-panel {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .sound-lesson-page .pseudoword-question-tools {
+    position: static;
+    justify-content: flex-end;
+    margin: 4px 0;
+  }
+
+  .sound-lesson-page .pseudoword-question-view .missing-prompt,
+  .sound-lesson-page .segment-prompt {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .sound-lesson-page .level-track.circle-level-track {
+    gap: 8px;
+  }
+
+}

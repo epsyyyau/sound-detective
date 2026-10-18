@@ -1,0 +1,111 @@
+{
+  "mode": "built-in image_gen",
+  "revisedWords": [
+    "lip",
+    "gap",
+    "sing",
+    "den",
+    "moon",
+    "sun",
+    "point",
+    "queen",
+    "thin",
+    "web",
+    "fin",
+    "kit",
+    "big"
+  ],
+  "images": [
+    {
+      "word": "lip",
+      "prompt": "Use case: precise-object-edit. Edit target: attached lip phonics vocabulary cartoon. Preserve clean rounded 2D digital cartoon style, smooth fills and subtle shading, white square background, crisp margins. No text, labels or watermark. Requested change: Crop tightly to ONLY lower face and pink lips, from just below nose to chin; no nose, eyes, forehead, hair or upper head visible. Lips enlarged as main subject. Add one clear teal arrow pointing precisely at lower lip. Remove pointing hand to keep simple.",
+      "reference": "/Users/natalieyyyau/Documents/Sound Detective 2/assets/pictures/cartoon-v2/lip.png",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-7439bc9f-2101-4763-88ec-37195509359f.png",
+      "output": "assets/pictures/cartoon-v4/lip.png"
+    },
+    {
+      "word": "gap",
+      "prompt": "Use case: precise-object-edit. Edit target: attached gap phonics vocabulary cartoon. Preserve clean rounded 2D digital cartoon style, smooth fills and subtle shading, white square background, crisp margins. No text, labels or watermark. Requested change: Make the EMPTY GAP between the two fence sections dramatically clearer and wider, both fence sections end facing the central empty opening. Add ONE bold teal downward arrow whose tip ends in the empty space between them. No connecting rail crossing the opening.",
+      "reference": "/Users/natalieyyyau/Documents/Sound Detective 2/assets/pictures/cartoon-v2/gap.png",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-456a8ab0-3eb1-4f79-aa78-faed48aec577.png",
+      "output": "assets/pictures/cartoon-v4/gap.png"
+    },
+    {
+      "word": "sing",
+      "prompt": "Use case: precise-object-edit. Edit target: attached sing phonics vocabulary cartoon. Preserve clean rounded 2D digital cartoon style, smooth fills and subtle shading, white square background, crisp margins. No text, labels or watermark. Requested change: Reframe as a large waist-up half-body portrait only, no legs or feet. Preserve cheerful singing mouth, microphone and two musical notes. Enlarge face and upper torso to occupy the image.",
+      "reference": "/Users/natalieyyyau/Documents/Sound Detective 2/assets/pictures/cartoon-v2/sing.png",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-6e50aa29-dc5d-45ff-b07b-9848d0b4a321.png",
+      "output": "assets/pictures/cartoon-v4/sing.png"
+    },
+    {
+      "word": "den",
+      "prompt": "Use case: precise-object-edit. Edit target: attached den phonics vocabulary cartoon. Preserve clean rounded 2D digital cartoon style, smooth fills and subtle shading, white square background, crisp margins. No text, labels or watermark. Requested change: Remove the fox completely, no animals anywhere. Make the hollow underground den entrance the clear main subject, with dark empty opening beneath the roots and visible earth edges. Add one teal arrow pointing inside the empty den entrance.",
+      "reference": "/Users/natalieyyyau/Documents/Sound Detective 2/assets/pictures/cartoon-v3/den.png",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-c4173a67-e228-4a03-8821-8f849f96f306.png",
+      "output": "assets/pictures/cartoon-v4/den.png"
+    },
+    {
+      "word": "moon",
+      "prompt": "Use case: precise-object-edit. Edit target: attached moon phonics vocabulary cartoon. Preserve clean rounded 2D digital cartoon style, smooth fills and subtle shading, white square background, crisp margins. No text, labels or watermark. Requested change: Remove ALL facial features from the moon, no eyes, ears, nose, mouth, cheeks. Preserve moon shape and lunar craters; natural celestial object in the same clean cartoon style.",
+      "reference": "/Users/natalieyyyau/Documents/Sound Detective 2/assets/pictures/cartoon-v3/moon.png",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-b2525ba4-0a4c-487a-b1d2-e0cf829b96b9.png",
+      "output": "assets/pictures/cartoon-v4/moon.png"
+    },
+    {
+      "word": "sun",
+      "prompt": "Use case: precise-object-edit. Edit target: attached sun phonics vocabulary cartoon. Preserve clean rounded 2D digital cartoon style, smooth fills and subtle shading, white square background, crisp margins. No text, labels or watermark. Requested change: Remove ALL facial features from the sun, no eyes, ears, nose, mouth, cheeks. Plain warm golden circular sun with rays, same clean cartoon style.",
+      "reference": "/Users/natalieyyyau/Documents/Sound Detective 2/assets/pictures/cartoon-v3/sun.png",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-5c4a33a5-8a34-4632-9cad-62e412adf799.png",
+      "output": "assets/pictures/cartoon-v4/sun.png"
+    },
+    {
+      "word": "point",
+      "prompt": "Use case: precise-object-edit. Edit target: attached point phonics vocabulary cartoon. Preserve clean rounded 2D digital cartoon style, smooth fills and subtle shading, white square background, crisp margins. No text, labels or watermark. Requested change: Remove the fingernail on the extended INDEX finger; smooth uninterrupted skin colour, no nail, nail outline or shiny nail patch. Keep exactly same hand-only close-up composition, teal sleeve, index extended next to raised thumb, three other fingers curled. No person or face.",
+      "reference": "/Users/natalieyyyau/Documents/Sound Detective 2/assets/pictures/cartoon-v3/point.png",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-5ac516b3-bebe-4099-b0c6-84f431282e13.png",
+      "output": "assets/pictures/cartoon-v4/point.png"
+    },
+    {
+      "word": "queen",
+      "prompt": "Use case: precise-object-edit. Edit target: attached queen phonics vocabulary cartoon. Preserve clean rounded 2D digital cartoon style, smooth fills and subtle shading, white square background, crisp margins. No text, labels or watermark. Requested change: Redesign as a clearly ADULT regal queen, mature confident face, upright commanding seated pose on grand royal throne, large ornate gold crown, rich purple royal robe with white ermine trim, gold sceptre held firmly. Not a child or princess, no tiara or princess ballgown. Friendly but dignified authority. Single queen and throne, simplified at small size.",
+      "reference": "/Users/natalieyyyau/Documents/Sound Detective 2/assets/pictures/cartoon-v3/queen.png",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-5ed4fdc9-0a4b-4fd3-b993-2a5e76723210.png",
+      "output": "assets/pictures/cartoon-v4/queen.png"
+    },
+    {
+      "word": "thin",
+      "prompt": "Use case: precise-object-edit. Edit target: attached thin phonics vocabulary cartoon. Preserve clean rounded 2D digital cartoon style, smooth fills and subtle shading, white square background, crisp margins. No text, labels or watermark. Requested change: Preserve two books of equal height, one very thin teal book and one thick red book. Add ONE bold teal arrow above pointing clearly at the THIN TEAL BOOK, tip touching its narrow top edge, never the thick book. Keep clear contrast in thickness.",
+      "reference": "/Users/natalieyyyau/Documents/Sound Detective 2/assets/pictures/cartoon-v3/thin.png",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-3a77dca5-ad04-42fd-9ff0-829bfd68a95d.png",
+      "output": "assets/pictures/cartoon-v4/thin.png"
+    },
+    {
+      "word": "web",
+      "prompt": "Use case: precise-object-edit. Edit target: attached web phonics vocabulary cartoon. Preserve clean rounded 2D digital cartoon style, smooth fills and subtle shading, white square background, crisp margins. No text, labels or watermark. Requested change: Remove spider entirely. Show ONLY an empty spider web, crisp grey strands radiating from centre with concentric connecting threads. No spiders, animals, faces or insects.",
+      "reference": "/Users/natalieyyyau/Documents/Sound Detective 2/assets/pictures/cartoon-v3/web.png",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-aad60fa7-8d61-4e20-bab9-c83bf653ff0b.png",
+      "output": "assets/pictures/cartoon-v4/web.png"
+    },
+    {
+      "word": "fin",
+      "prompt": "Use case: precise-object-edit. Edit target: attached fin phonics vocabulary cartoon. Preserve clean rounded 2D digital cartoon style, smooth fills and subtle shading, white square background, crisp margins. No text, labels or watermark. Requested change: Keep fish, highlight its dorsal fin coral red and all other fish parts muted teal. Add ONE large bold teal arrow above, its tip touching the coral DORSAL FIN on the fish's back. Clearly identify fin, not entire fish.",
+      "reference": "/Users/natalieyyyau/Documents/Sound Detective 2/assets/pictures/cartoon-v3/fin.png",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-8c94eeef-663f-475b-bfff-d469c2c616cd.png",
+      "output": "assets/pictures/cartoon-v4/fin.png"
+    },
+    {
+      "word": "kit",
+      "prompt": "Use case: precise-object-edit. Edit target: attached kit phonics vocabulary cartoon. Preserve clean rounded 2D digital cartoon style, smooth fills and subtle shading, white square background, crisp margins. No text, labels or watermark. Requested change: Replace medical kit with a GENERIC open tool kit / toolbox, teal rectangular carry box with handle and simple visible hammer, screwdriver and spanner inside. No medical cross, bandages, medicines or medical symbols. Tools neatly grouped as one kit.",
+      "reference": "/Users/natalieyyyau/Documents/Sound Detective 2/assets/pictures/cartoon-v3/kit.png",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-ae83b553-3cea-4bb0-a7ff-e43f27cb2460.png",
+      "output": "assets/pictures/cartoon-v4/kit.png"
+    },
+    {
+      "word": "big",
+      "prompt": "Use case: precise-object-edit. Edit target: attached big phonics vocabulary cartoon. Preserve clean rounded 2D digital cartoon style, smooth fills and subtle shading, white square background, crisp margins. No text, labels or watermark. Requested change: Preserve two same-shaped teddy bears of clearly different sizes. Add ONE clear bold teal arrow above pointing directly at the LARGE teddy bear, never the small bear. Show the complete comparison without other changes.",
+      "reference": "/Users/natalieyyyau/Documents/Sound Detective 2/assets/pictures/cartoon-v2/big.png",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-20846f9c-7775-4e92-8ca3-c6ebb5d14f5c.png",
+      "output": "assets/pictures/cartoon-v4/big.png"
+    }
+  ]
+}

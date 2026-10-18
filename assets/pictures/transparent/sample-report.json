@@ -1,0 +1,34 @@
+[
+  {
+    "word": "net",
+    "foregroundFraction": 0.3093
+  },
+  {
+    "word": "mug",
+    "foregroundFraction": 0.4532
+  },
+  {
+    "word": "jug",
+    "foregroundFraction": 0.5035
+  },
+  {
+    "word": "chain",
+    "foregroundFraction": 0.1822
+  },
+  {
+    "word": "cup",
+    "foregroundFraction": 0.4623
+  },
+  {
+    "word": "ring",
+    "foregroundFraction": 0.3334
+  },
+  {
+    "word": "tie",
+    "foregroundFraction": 0.2344
+  },
+  {
+    "word": "web",
+    "foregroundFraction": 0.1561
+  }
+]

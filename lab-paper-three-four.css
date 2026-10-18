@@ -1,0 +1,104 @@
+/* Live controls sit on the same paper equipment shown in the approved previews. */
+.magic-page:has(#game:is(.is-magnet-game,.is-light-grid-game):not([hidden])) { width:min(100%,1440px,calc(100svh * 16 / 9)); padding:0; }
+.magic-page:has(#game:is(.is-magnet-game,.is-light-grid-game):not([hidden])) .magic-header { top:2%; left:31%; right:31%; height:17%; min-height:0; }
+.magic-page:has(#game:is(.is-magnet-game,.is-light-grid-game):not([hidden])) .magic-header h1 { width:100%; height:100%; font-size:0; background:url('assets/game-style/lab-paper-title.png') center/contain no-repeat; text-shadow:none; }
+#game:is(.is-magnet-game,.is-light-grid-game) { container-type:inline-size; height:auto; min-height:0; aspect-ratio:16/9; background:#d5eee3 url('assets/game-style/lab-paper-room.webp') center/100% 100% no-repeat; }
+#game:is(.is-magnet-game,.is-light-grid-game) .magic-toolbar { top:2%; left:2%; right:2%; }
+#game:is(.is-magnet-game,.is-light-grid-game) #back { width:64px; height:64px; padding:0; border:0; border-radius:0; background:none; box-shadow:none; }
+#game:is(.is-magnet-game,.is-light-grid-game) #back img { width:100%; height:100%; }
+#game:is(.is-magnet-game,.is-light-grid-game) #progress { min-height:0; padding:7px 12px; border:2px solid #fffdf4; background:var(--group-selector-color); border-radius:8px; box-shadow:0 2px 2px #29463720; }
+#game:is(.is-magnet-game,.is-light-grid-game) .bubble-progress-group img { display:none; }
+#game:is(.is-magnet-game,.is-light-grid-game) .bubble-progress-group { color:#173f49; }
+#game:is(.is-magnet-game,.is-light-grid-game) .magic-audio button { width:72px; height:72px; padding:15px; border:3px solid #fffbee; background:#138b8c; box-shadow:0 3px 3px #275c5630; }
+#game.is-magnet-game .magic-workspace { inset:29% 8% 23% 10%; gap:5%; }
+#game.is-magnet-game .magnet-rack { content:url('assets/game-style/lab-paper-conveyor.png'); bottom:0; transform:none; }
+#game.is-magnet-game .magic-letters { left:17%; width:81%; bottom:19%; gap:1%; }
+#game.is-magnet-game .letter-card { border-radius:50%; background:#fff3d8; border:4px solid #e5c48c; filter:none; box-shadow:inset 0 0 0 3px #fffaf0,0 3px 2px #355e6633; }
+#game.is-magnet-game .letter-card > span { inset:0; font-size:56px; }
+#game.is-magnet-game .letter-card::after { inset:-3px; border-radius:50%; }
+#game.is-magnet-game .magic-audio { bottom:70%; gap:38px; }
+#game.is-magnet-game .magnet-machine { height:100%; bottom:-13%; aspect-ratio:auto; transform:none; }
+#game.is-magnet-game .magnet-stand { content:url('assets/game-style/lab-paper-magnet-stand.png'); }
+#game.is-magnet-game .magnet-arm > img { content:url('assets/game-style/lab-paper-magnet-arm.png'); }
+#game.is-magnet-game .magnet-arm { right:2.8%; top:calc(21.3% - 35.8cqw); transform-origin:90.6% 67.8%; }
+#game.is-magnet-game #magnet-grip { left:21.5%; top:95.5%; }
+#game.is-magnet-game .pick-sound { background:#fff3d8; border:3px solid #e5c48c; box-shadow:inset 0 0 0 3px #fffaf0; }
+#game.is-magnet-game .magic-choices { bottom:15%; }
+#game.is-magnet-game .magnet-sound { font-size:48px; }
+.magnet-flight { border:3px solid #e5c48c; border-radius:50%; background:#fff3d8; }
+#game.is-magnet-game #position-hint { bottom:-32px; }
+#game.is-light-grid-game .magic-workspace { inset:43% 5% 22%; width:auto; height:auto; transform:none; }
+#game.is-light-grid-game .light-grid-console { content:url('assets/game-style/lab-paper-light-console.png'); }
+#game.is-light-grid-game .magic-choice-station { position:static; }
+/* Coordinates follow the individual ivory windows in the 1500 x 397 artwork. */
+#game.is-light-grid-game .magic-letters,
+#game.is-light-grid-game .magic-choices { inset:0; width:100%; height:100%; display:block; padding:0; pointer-events:none; }
+#game.is-light-grid-game .letter-card,
+#game.is-light-grid-game .pick-sound { position:absolute; top:36%; left:var(--window-x); width:11.3333%; height:41.5%; box-sizing:border-box; border:3px solid transparent; background:none; box-shadow:none; transform:none; outline-offset:-5px; pointer-events:auto; }
+#game.is-light-grid-game .magic-letters > .letter-card:nth-child(1) { --window-x:16.7333%; }
+#game.is-light-grid-game .magic-letters > .letter-card:nth-child(2) { --window-x:31%; }
+#game.is-light-grid-game .magic-letters > .letter-card:nth-child(3) { --window-x:45.5333%; }
+#game.is-light-grid-game .pick-sound { top:48%; width:8.6667%; height:33%; }
+#game.is-light-grid-game .magic-option:nth-child(1) { --window-x:67.5333%; }
+#game.is-light-grid-game .magic-option:nth-child(2) { --window-x:78.2%; }
+#game.is-light-grid-game .magic-option:nth-child(3) { --window-x:88.8667%; }
+#game.is-light-grid-game .letter-card > span,
+#game.is-light-grid-game .light-sound { position:absolute; inset:0; display:grid; place-items:center; width:auto; height:auto; margin:0; padding:0; text-align:center; line-height:1; transform:none; }
+#game.is-light-grid-game .letter-card > span { font-size:56px; }
+#game.is-light-grid-game .light-sound { font-size:48px; }
+#game.is-light-grid-game .magic-audio { left:3%; right:auto; bottom:calc(100% + 32px); gap:38px; }
+#game.is-light-grid-game #position-hint { top:100%; left:17%; right:40%; }
+#game.is-light-grid-game #choice-hint { top:100%; left:67%; right:3%; }
+#game.is-light-grid-game .magic-choices { visibility:visible; }
+#game.is-light-grid-game .light-scanning { border-color:#379862; box-shadow:inset 0 0 18px #87dc8a,0 0 12px #baff9a; }
+#game.is-light-grid-game .light-sweep {
+  z-index:5; inset:0 auto 0 0; width:32%;
+  background:linear-gradient(90deg,transparent,#74e7a2b3 25%,#fffef5 48%,#fffef5 55%,#74e7a2b3 78%,transparent);
+  box-shadow:0 0 16px #afffc5; pointer-events:none;
+}
+#game.is-light-grid-game .bubble-guided > .letter-card:not(:disabled),
+#game.is-light-grid-game .bubble-guided .pick-sound:not(:disabled) { animation-name:paper-light-pad-cue; }
+@keyframes paper-light-pad-cue {
+  0%,100% { border-color:#cda849; box-shadow:inset 0 0 4px #e6ca73; }
+  50% { border-color:#efbc35; box-shadow:inset 0 0 12px #f4d987; }
+}
+#game.is-light-grid-game .circuit-charge { position:absolute; z-index:4; width:12px; height:12px; border-radius:50%; background:#fff5a6; box-shadow:0 0 12px 5px #ffe674; pointer-events:none; }
+#game.is-light-grid-game .circuit-lamp { position:absolute; z-index:2; inset:0; pointer-events:none; opacity:.85; filter:drop-shadow(0 0 5px #fff0a8cc) drop-shadow(0 0 10px #ffe58a88); }
+#game.is-light-grid-game .circuit-lamp img { position:absolute; inset:0; display:block; width:100%; max-width:none; height:100%; clip-path:inset(34.5% 90.6% 38.5% 2.3%); filter:brightness(1.6) saturate(.6) sepia(.3); }
+@media(max-width:1000px) {
+  .magic-page:has(#game:is(.is-magnet-game,.is-light-grid-game):not([hidden])) { width:100%; }
+  .magic-page:has(#game:is(.is-magnet-game,.is-light-grid-game):not([hidden])) .magic-header { top:78px; left:18%; right:18%; height:68px; }
+  #game:is(.is-magnet-game,.is-light-grid-game) { aspect-ratio:auto; min-height:100svh; padding:230px 16px 24px; background-size:auto 100%; }
+  #game:is(.is-magnet-game,.is-light-grid-game) #back { width:52px; height:52px; }
+  #game:is(.is-magnet-game,.is-light-grid-game) .magic-workspace { position:relative; inset:auto; width:min(100%,600px); margin:auto; transform:none; }
+  #game.is-magnet-game .magic-workspace { display:flex; flex-direction:column; gap:54px; padding:0; }
+  #game.is-magnet-game .magic-word-station { height:280px; }
+  #game.is-magnet-game .magic-choice-station { height:300px; }
+  #game.is-magnet-game .magic-word-station::before,#game.is-magnet-game .magic-choice-station::before { display:none; }
+  #game.is-magnet-game .magic-audio { top:0; bottom:auto; left:0; right:0; }
+  #game.is-magnet-game .letter-card > span { font-size:40px; }
+  #game.is-magnet-game .magnet-sound { font-size:40px; }
+  #game.is-light-grid-game .magic-workspace { height:440px; }
+  #game.is-light-grid-game .magic-workspace::after { content:''; position:absolute; z-index:0; left:-6px; top:200px; width:26px; height:205px; border:5px solid #b87940; border-right:0; border-radius:8px 0 0 8px; pointer-events:none; }
+  #game.is-light-grid-game { padding-top:320px; }
+  #game.is-light-grid-game .light-grid-console { display:none; }
+  #game.is-light-grid-game .magic-stage { inset:0 0 auto; height:230px; z-index:1; background:url('assets/game-style/lab-paper-light-console.png') left center/160% 100% no-repeat; }
+  #game.is-light-grid-game .magic-audio { bottom:calc(100% + 40px); left:0; right:0; }
+  /* The main artwork is 160% wide; the right rack is cropped at 290% x 180%. */
+  #game.is-light-grid-game .letter-card { width:18.1333%; }
+  #game.is-light-grid-game .magic-letters > .letter-card:nth-child(1) { --window-x:26.7733%; }
+  #game.is-light-grid-game .magic-letters > .letter-card:nth-child(2) { --window-x:49.6%; }
+  #game.is-light-grid-game .magic-letters > .letter-card:nth-child(3) { --window-x:72.8533%; }
+  #game.is-light-grid-game .letter-card > span { font-size:36px; }
+  #game.is-light-grid-game .magic-choice-station { display:block; position:absolute; z-index:1; top:295px; left:0; right:0; height:120px; background:url('assets/game-style/lab-paper-light-console.png') right bottom/290% 180% no-repeat; }
+  #game.is-light-grid-game .pick-sound { top:6.4%; width:25.1333%; height:59.4%; }
+  #game.is-light-grid-game .magic-option:nth-child(1) { --window-x:5.8467%; }
+  #game.is-light-grid-game .magic-option:nth-child(2) { --window-x:36.78%; }
+  #game.is-light-grid-game .magic-option:nth-child(3) { --window-x:67.7133%; }
+  #game.is-light-grid-game .light-sound { font-size:40px; }
+  #game.is-light-grid-game #position-hint { top:100%; left:0; right:0; }
+  #game.is-light-grid-game #choice-hint { top:100%; left:0; right:0; }
+  #game.is-light-grid-game .circuit-lamp img { width:160%; }
+  #game:is(.is-magnet-game,.is-light-grid-game) .magic-answer-space { position:relative; inset:auto; transform:none; margin:50px auto 0; }
+}
+@media(prefers-reduced-motion:reduce) { #game.is-light-grid-game .circuit-charge { display:none; } }

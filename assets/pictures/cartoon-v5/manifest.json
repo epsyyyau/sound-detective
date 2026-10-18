@@ -1,0 +1,47 @@
+{
+  "mode": "built-in image_gen",
+  "revisedWords": [
+    "zoom",
+    "star",
+    "neck",
+    "mouth",
+    "chat"
+  ],
+  "images": [
+    {
+      "word": "zoom",
+      "prompt": "Use case: precise-object-edit. Edit target: attached zoom vocabulary cartoon. Preserve rounded clean 2D digital cartoon style, smooth fills, subtle shading, crisp edges, white square background. No text or watermark. Requested change: Replace racing car completely. Depict ZOOM IN / magnification: one large teal-handled magnifying glass over a small simple green leaf. Leaf veins seen through lens are clearly enlarged, with a smaller unmagnified section outside lens to communicate enlarging. A small plus symbol on rim can communicate zoom in. No vehicle, motion-speed lines, letters or words. Remove pointing hands for neck/mouth; use arrow instead.",
+      "reference": "/Users/natalieyyyau/Documents/Sound Detective 2/assets/pictures/cartoon-v3/zoom.png",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-de5d3c86-faa0-4034-9ddf-901fe73b1b18.png",
+      "output": "assets/pictures/cartoon-v5/zoom.png"
+    },
+    {
+      "word": "star",
+      "prompt": "Use case: precise-object-edit. Edit target: attached star vocabulary cartoon. Preserve rounded clean 2D digital cartoon style, smooth fills, subtle shading, crisp edges, white square background. No text or watermark. Requested change: Remove all facial features: no eyes, ears, nose, mouth, eyebrows or cheeks. Preserve single friendly golden five-point star shape, smooth shading. Plain star only. Remove pointing hands for neck/mouth; use arrow instead.",
+      "reference": "/Users/natalieyyyau/Documents/Sound Detective 2/assets/pictures/cartoon-v3/star.png",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-bdbf4d17-b0b1-4fdd-ae76-e692be79174c.png",
+      "output": "assets/pictures/cartoon-v5/star.png"
+    },
+    {
+      "word": "neck",
+      "prompt": "Use case: precise-object-edit. Edit target: attached neck vocabulary cartoon. Preserve rounded clean 2D digital cartoon style, smooth fills, subtle shading, crisp edges, white square background. No text or watermark. Requested change: Reframe as close-up from just below the nose down to upper shoulders; no eyes, forehead, hair or upper head visible. The NECK is central, large and fully visible between jaw and teal shirt collar. One bold teal arrow points precisely to the middle side of neck, not mouth or shirt. Clean rounded cartoon like the lip revision. Remove pointing hands for neck/mouth; use arrow instead.",
+      "reference": "/Users/natalieyyyau/Documents/Sound Detective 2/assets/pictures/cartoon-v3/neck.png",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-95c202f8-bcc6-4a1f-940a-15c0e6a5973c.png",
+      "output": "assets/pictures/cartoon-v5/neck.png"
+    },
+    {
+      "word": "mouth",
+      "prompt": "Use case: precise-object-edit. Correct attached phonics vocabulary image for MOUTH, not tongue. Preserve clean rounded 2D cartoon lower-face close-up, white background, no eyes or upper head. Redesign mouth as moderately open smile, dark maroon mouth cavity dominant, small upper teeth strip. REMOVE VISIBLE TONGUE ENTIRELY so no pink tongue or tongue shape inside mouth. Move teal arrow to LEFT of mouth, pointing horizontally right, its tip touching LEFT CORNER of whole mouth opening. Arrow must NOT point at teeth, lips specifically, or any tongue. Keep chin and lower cheeks, no text, no labels. This should clearly depict the whole mouth.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-32ec2092-ec3e-47f7-aa87-43c5ffc42826.png",
+      "output": "assets/pictures/cartoon-v5/mouth-v2.png",
+      "reference": "assets/pictures/cartoon-v5/mouth.png"
+    },
+    {
+      "word": "chat",
+      "prompt": "Use case: precise-object-edit. Edit target: attached chat vocabulary cartoon. Preserve rounded clean 2D digital cartoon style, smooth fills, subtle shading, crisp edges, white square background. No text or watermark. Requested change: Show same two people facing each other chatting, only waist-up HALF-BODY portraits, no legs or feet. Enlarge heads and torsos. Both visibly speaking/listening with friendly gestures, retain simple empty speech bubbles, no words or lettering. Remove pointing hands for neck/mouth; use arrow instead.",
+      "reference": "/Users/natalieyyyau/Documents/Sound Detective 2/assets/pictures/cartoon-v3/chat.png",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-c34642cc-7625-4327-8872-179aec249758.png",
+      "output": "assets/pictures/cartoon-v5/chat.png"
+    }
+  ]
+}

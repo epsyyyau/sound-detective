@@ -1,0 +1,28 @@
+:is(.sound-file-panel,.kraft-clue-panel,.telegram-envelope-panel,.analysis-board-panel) {
+  --tile-paper:#fff4d9;
+  --tile-edge:#d7bd8d;
+}
+:is(.sound-file-panel,.kraft-clue-panel,.telegram-envelope-panel,.analysis-board-panel) :is(.answer-options,.missing-answer-options,.segment-sound-options) button {
+  border-width:2px;
+  border-style:solid;
+}
+:is(.sound-file-panel,.kraft-clue-panel,.telegram-envelope-panel,.analysis-board-panel) :is(.answer-options,.missing-answer-options,.segment-sound-options) button:not(.is-correct):not(.is-wrong) {
+  border:2px solid var(--tile-edge);
+  background:linear-gradient(#fff9e9,var(--tile-paper));
+  box-shadow:inset 0 2px 1px #fffdf5,0 3px 4px #53442635;
+}
+:is(.sound-file-panel,.kraft-clue-panel,.telegram-envelope-panel,.analysis-board-panel) :is(.play-sound-button,.play-word-button,.next-question-button,[data-start-quiz]) {
+  border:2px solid #117a80;
+  background:linear-gradient(145deg,#48bbc1,#07828b);
+  box-shadow:inset 0 2px 2px #c8fbf078,0 3px 4px #24474a30;
+}
+.sound-file-panel .complete-view [data-route-return="true"] { background:transparent; border:0; box-shadow:none; }
+:is(.sound-file-panel,.kraft-clue-panel,.telegram-envelope-panel,.analysis-board-panel) .next-question-button.lesson-icon-action {
+  padding:0;
+  place-items:center;
+}
+:is(.kraft-clue-panel,.telegram-envelope-panel) .word-pattern span:not(.is-missing) {
+  border-color:transparent;
+  background:transparent;
+  box-shadow:none;
+}

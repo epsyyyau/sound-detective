@@ -1,0 +1,16 @@
+a.back-link.practice-return { display:inline-flex; position:relative; z-index:6; isolation:isolate; align-items:center; justify-content:center; align-self:start; flex:0 0 80px; width:80px; height:80px; min-width:80px; min-height:80px; margin-bottom:-32px; padding:0; border:0; border-radius:0; background:transparent; box-shadow:none; }
+.practice-return::before { content:none; }
+.train-page:has(#setup:not([hidden])) a.back-link.practice-return { padding:0; }
+.practice-return img { display:block; width:90%; height:90%; object-fit:contain; }
+.practice-return:hover { transform:translateY(-2px); }
+.practice-return:focus-visible { outline:3px solid #245fa2; outline-offset:3px; }
+.magic-page #game:not(.is-potion-game):not(.is-bubble-game):not(.is-magnet-game):not(.is-light-grid-game):not(.is-mechanical-game) #back,
+.train-page #play #change-group { margin-left:80px; }
+@media (max-width:560px) {
+  a.back-link.practice-return { flex-basis:64px; width:64px; height:64px; min-width:64px; min-height:64px; margin-bottom:-16px; }
+  .magic-page #game:not(.is-potion-game):not(.is-bubble-game):not(.is-magnet-game):not(.is-light-grid-game):not(.is-mechanical-game) #back,
+  .train-page #play #change-group { margin-left:56px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .practice-return:hover { transform:none; }
+}

@@ -1,0 +1,163 @@
+/* Approved paper lab: scenery stays separate from live letters and controls. */
+.magic-page:has(#setup:not([hidden])) { width:min(100%,1440px,calc((100svh - 72px) * 16 / 9 + 16px)); padding:8px 8px 60px; }
+#setup { background-image:url('assets/game-style/lab-paper-cover.webp'); aspect-ratio:1672 / 941; }
+#setup .lab-intro { inset:2% 32% auto; height:20%; }
+#setup .lab-logo { position:fixed; width:0; height:0; }
+#setup .game-cover-title { width:100%; height:100%; font-size:0; background:url('assets/game-style/lab-paper-title.png') center / contain no-repeat; }
+#setup .rack-route { width:24%; height:27%; }
+#setup .rack-label { left:15%; top:12%; }
+#setup .lab-number-sign { width:56px; height:56px; border:3px solid #fffdf0; border-radius:50%; background:var(--group-selector-color); color:#173f49; box-shadow:0 3px 3px #26494330; font-size:1.8rem; }
+#setup .lab-number-sign::before,#setup .lab-number-sign::after { display:none; }
+#setup .rack-sounds { display:none; }
+/* These bounds include each machine in the desktop scene, but not its caption. */
+#setup .lab-station-art { display:block; position:absolute; inset:0; }
+#setup .lab-station-name { position:absolute; top:calc(100% + 12px); bottom:auto; left:50%; transform:translateX(-50%); width:max-content; max-width:100%; padding:0; background:transparent; color:#16404b; font-size:1rem; line-height:1.3; text-align:center; }
+#setup [data-sound-group="1"] { left:4%; top:56%; height:29%; }
+#setup [data-sound-group="2"] { left:10%; top:15%; height:31%; }
+#setup [data-sound-group="3"] { left:27%; top:35%; height:31%; }
+#setup [data-sound-group="4"] { left:49%; top:24%; height:27%; }
+#setup [data-sound-group="5"] { left:42%; top:67%; height:23%; }
+#setup [data-sound-group="6"] { left:76%; top:22%; height:31%; }
+#setup [data-sound-group="7"] { left:73%; top:58%; height:29%; }
+
+.magic-page:has(#game:is(.is-potion-game,.is-bubble-game):not([hidden])) { width:min(100%,1440px,calc(100svh * 16 / 9)); padding:0; }
+.magic-page:has(#game:is(.is-potion-game,.is-bubble-game):not([hidden])) .magic-header { top:2%; left:31%; right:31%; height:17%; min-height:0; }
+.magic-page:has(#game:is(.is-potion-game,.is-bubble-game):not([hidden])) .magic-header h1 { width:100%; height:100%; font-size:0; text-shadow:none; background:url('assets/game-style/lab-paper-title.png') center / contain no-repeat; }
+#game:is(.is-potion-game,.is-bubble-game) { container-type:inline-size; height:auto; min-height:0; aspect-ratio:16 / 9; background:#d5eee3 url('assets/game-style/lab-paper-room.webp') center / 100% 100% no-repeat; }
+#game:is(.is-potion-game,.is-bubble-game) .magic-toolbar { top:2%; left:2%; right:2%; min-height:0; }
+#game:is(.is-potion-game,.is-bubble-game) #back.lab-return { width:64px; height:64px; min-width:64px; padding:0; border:0; border-radius:0; background:none; box-shadow:none; }
+#game:is(.is-potion-game,.is-bubble-game) #back.lab-return img { width:100%; height:100%; }
+#game:is(.is-potion-game,.is-bubble-game) #progress { min-height:0; padding:7px 12px; border:2px solid #fffdf4; background:var(--group-selector-color); border-radius:8px; box-shadow:0 2px 2px #29463720; }
+#game:is(.is-potion-game,.is-bubble-game) .bubble-progress-group { color:#173f49; }
+#game:is(.is-potion-game,.is-bubble-game) .bubble-progress-group img { display:none; }
+#game:is(.is-potion-game,.is-bubble-game) .bubble-progress-count { color:#173f49; }
+#lab-paper-clues { position:absolute; top:19.5%; left:24%; right:24%; display:flex; justify-content:center; gap:8px; }
+#lab-paper-clues > span { display:grid; place-items:center; flex:0 1 32px; height:32px; aspect-ratio:1; border:2px solid #fffdf0; border-radius:50%; background:#e1f1e8aa; }
+#lab-paper-clues .is-collected { background:#fff1bd; }
+#lab-paper-clues img { width:22px; height:22px; }
+#game:is(.is-potion-game,.is-bubble-game) .magic-workspace { inset:28% 10% 23%; display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,1fr); gap:7%; padding:0; }
+#game:is(.is-potion-game,.is-bubble-game) .magic-workspace::after,
+#game:is(.is-potion-game,.is-bubble-game) .magic-word-station::before,
+#game:is(.is-potion-game,.is-bubble-game) .magic-choice-station::after { display:none; }
+#game:is(.is-potion-game,.is-bubble-game) .magic-word-station { display:flex; flex-direction:column; justify-content:end; }
+#game:is(.is-potion-game,.is-bubble-game) .magic-audio { gap:40px; margin:0 0 38px; align-self:flex-start; padding-left:10px; }
+#game:is(.is-potion-game,.is-bubble-game) .magic-audio button { position:relative; width:72px; height:72px; padding:15px; border:3px solid #fffbee; background:#138b8c; box-shadow:0 3px 3px #275c5630; }
+#game:is(.is-potion-game,.is-bubble-game) .magic-audio button::after { position:absolute; top:calc(100% + 4px); left:50%; transform:translateX(-50%); width:max-content; padding:2px 8px; border-radius:3px; background:#fff8e7; color:#173f49; font:700 14px/1.4 var(--chinese-font); }
+#game:is(.is-potion-game,.is-bubble-game) #source-audio::after { content:'聽原字'; }
+#game:is(.is-potion-game,.is-bubble-game) #target-audio::after { content:'聽目標字'; }
+#game:is(.is-potion-game,.is-bubble-game) .magic-stage { height:auto; min-height:0; }
+#game:is(.is-potion-game,.is-bubble-game) .magic-letters,
+#game.is-potion-game .magic-choices { width:100%; gap:4px; padding:0 8px 14px; transform:none; }
+#game:is(.is-potion-game,.is-bubble-game) .magic-letters::before,
+#game.is-potion-game .magic-choices::before { left:0; right:0; bottom:0; height:24%; border:4px solid #c69354; background:#d8ac71; border-radius:4px; box-shadow:inset 0 2px 0 #f9ddb0; }
+#game:is(.is-potion-game,.is-bubble-game) .magic-letters::after,
+#game.is-potion-game .magic-choices::after { left:-3px; right:-3px; bottom:0; height:14px; border:2px solid #b8884f; border-top:4px solid #f4cf93; border-radius:4px; background:#cca16b; box-shadow:0 3px 2px #61462630; }
+#game.is-potion-game .letter-card { height:18cqw; aspect-ratio:auto; background:url('assets/game-style/lab-paper-bottle.png') center / 100% 100% no-repeat; filter:none; }
+#game.is-potion-game .letter-card > span { inset:50% 16% 17%; font-size:56px; }
+#game.is-potion-game .bottle-liquid { left:16%; right:16%; bottom:9%; height:40%; mix-blend-mode:multiply; opacity:.3; pointer-events:none; }
+#game.is-potion-game .letter-card[aria-pressed='true']::after { inset:48% 14% 16%; border-color:#d7b35d; }
+#game.is-potion-game .magic-choice-station { display:flex; align-items:end; }
+#game.is-potion-game .pick-sound,#game.is-potion-game .option-tube { height:17cqw; width:100%; }
+#game.is-potion-game .option-tube img { left:0; width:100%; height:100%; object-fit:fill; content:url('assets/game-style/lab-paper-tube.png'); }
+#game.is-potion-game .tube-liquid,.lab-tube .tube-liquid { opacity:0; }
+#game.is-potion-game .tube-letter { inset:44% 15% 25%; font-size:48px; }
+#game.is-potion-game .listen-sound { top:auto; bottom:0; left:50%; z-index:3; width:36px; height:36px; min-width:36px; min-height:36px; padding:8px; }
+#game.is-potion-game .listen-sound img { width:20px; height:20px; }
+.lab-tube img { left:0; width:100%; height:100%; object-fit:fill; content:url('assets/game-style/lab-paper-tube.png'); }
+.lab-tube .tube-letter { inset:44% 15% 25%; }
+#game.is-bubble-game .letter-card { height:12cqw; aspect-ratio:auto; background:#fff7e5; border:2px solid #deca9f; border-radius:5px; filter:none; }
+#game.is-bubble-game .letter-card > span { font-size:64px; }
+#game.is-bubble-game .magic-choice-station { height:100%; }
+#game.is-bubble-game .bubble-flask { inset:auto 0 0; transform:none; width:100%; height:auto; filter:none; }
+#game.is-bubble-game .magic-choices { inset:21% 28% auto 36%; transform:none; width:auto; display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+#game.is-bubble-game .magic-option { min-width:0; }
+#game.is-bubble-game .magic-option:nth-child(2) { transform:none; grid-column:1; }
+#game.is-bubble-game .magic-option:first-child { grid-column:1 / -1; justify-self:center; width:50%; }
+#game.is-bubble-game .pick-sound { width:100%; height:auto; aspect-ratio:1; min-height:0; }
+#game.is-bubble-game .bubble-sound { font-size:48px; }
+#game:is(.is-potion-game,.is-bubble-game) #feedback { position:absolute; top:25%; left:12%; right:12%; font-size:14px; min-height:0; margin:0; }
+#game:is(.is-potion-game,.is-bubble-game) .magic-answer-space { position:absolute; left:18%; right:18%; bottom:3%; width:auto; height:14%; min-height:0; margin:0; transform:none; border:2px solid #e1cba4; border-radius:8px; background:#fff8e8; box-shadow:0 3px 3px #335b5225; }
+#game:is(.is-potion-game,.is-bubble-game) .magic-answer { display:grid; width:100%; height:100%; min-height:0; grid-template-columns:76px minmax(0,1.3fr) minmax(0,1fr) 54px 54px; grid-template-rows:1fr; grid-template-areas:'picture segments word replay next'; padding:8px 18px; gap:12px; border:0; background:none; box-shadow:none; }
+#answer-segments { grid-area:segments; display:flex; justify-content:center; gap:6px; }
+#answer-segments > span { display:grid; place-items:center; min-width:0; width:52px; height:60px; border:1px solid #dfcba5; border-radius:5px; background:#fffbed; color:#173f49; font:700 40px/1 var(--phonics-font); }
+#answer-segments .is-changed { background:var(--group-selector-color); }
+#game:is(.is-potion-game,.is-bubble-game) .magic-answer > img { grid-area:picture; width:70px; height:70px; }
+#game:is(.is-potion-game,.is-bubble-game) .magic-answer strong { grid-area:word; font-size:48px; }
+#game:is(.is-potion-game,.is-bubble-game) .magic-answer button { width:54px; height:54px; padding:10px; border:2px solid #fff9e8; background:#138b8c; box-shadow:0 2px 3px #275c5630; }
+
+@media(max-width:1000px),(max-height:620px) {
+  .magic-page:has(#setup:not([hidden])) { width:min(100%,900px); }
+  #setup { aspect-ratio:auto; padding:12px 16px 24px; background:#d8eee1; }
+  #setup .lab-intro { position:relative; inset:auto; height:100px; margin-bottom:12px; }
+  #setup .lab-logo { position:absolute; left:0; top:10px; width:64px; height:64px; }
+  #setup .game-cover-title { width:min(70%,380px); }
+  #setup .magic-routes { position:static; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+  #setup .rack-route { position:relative; inset:auto; width:100%; height:auto; padding:0 0 8px; gap:0; }
+  #setup .lab-station-art { position:relative; inset:auto; display:block; width:100%; aspect-ratio:1.8; background:var(--station-art) center / cover no-repeat; border-radius:5px; }
+  #setup .rack-label { position:absolute; top:8px; left:8px; transform:none; }
+  #setup .lab-number-sign { width:44px; height:44px; font-size:1.4rem; }
+  #setup .lab-station-name { position:static; transform:none; width:max-content; max-width:100%; margin-top:12px; font-size:15px; }
+  #setup .rack-route:last-child { grid-column:1 / -1; width:calc(50% - 7px); justify-self:center; }
+}
+@media(max-width:1000px) {
+  .magic-page:has(#game:is(.is-potion-game,.is-bubble-game):not([hidden])) { width:100%; }
+  #game:is(.is-potion-game,.is-bubble-game) { aspect-ratio:auto; min-height:100svh; padding:188px 20px 24px; background-size:auto 100%; }
+  .magic-page:has(#game:is(.is-potion-game,.is-bubble-game):not([hidden])) .magic-header { top:12px; left:23%; right:23%; height:86px; }
+  #game:is(.is-potion-game,.is-bubble-game) #back.lab-return { width:52px; height:52px; min-width:52px; }
+  #game:is(.is-potion-game,.is-bubble-game) #progress { padding:6px; gap:6px; }
+  #game:is(.is-potion-game,.is-bubble-game) .bubble-progress-count { padding-left:6px; font-size:14px; }
+  #lab-paper-clues { top:112px; left:15%; right:15%; }
+  #game:is(.is-potion-game,.is-bubble-game) .magic-workspace { position:relative; inset:auto; display:flex; flex-direction:column; gap:24px; width:min(100%,580px); margin:auto; }
+  #game:is(.is-potion-game,.is-bubble-game) .magic-audio { align-self:center; margin-bottom:38px; }
+  #game:is(.is-potion-game,.is-bubble-game) .magic-audio button { width:64px; height:64px; }
+  #game:is(.is-potion-game,.is-bubble-game) .magic-letters { justify-content:center; padding:0 8px 14px; }
+  #game.is-potion-game .letter-card { height:210px; max-width:145px; }
+  #game.is-potion-game .letter-card > span { font-size:48px; }
+  #game.is-potion-game .pick-sound,#game.is-potion-game .option-tube { height:190px; }
+  #game.is-potion-game .tube-letter { font-size:42px; }
+  #game.is-potion-game .magic-choice-station { width:100%; }
+  #game.is-bubble-game .letter-card { height:116px; max-width:160px; }
+  #game.is-bubble-game .letter-card > span { font-size:48px; }
+  #game.is-bubble-game .magic-choice-station { width:min(100%,440px); height:auto; aspect-ratio:1.3; min-height:0; margin:auto; }
+  #game.is-bubble-game .magic-choices { top:21%; }
+  #game.is-bubble-game .bubble-sound { font-size:42px; }
+  #game:is(.is-potion-game,.is-bubble-game) #feedback { top:153px; left:10px; right:10px; }
+  #game:is(.is-potion-game,.is-bubble-game) .magic-answer-space { position:relative; inset:auto; width:min(100%,580px); height:110px; margin:26px auto 0; transform:none; }
+}
+@media(max-width:560px) {
+  #setup .lab-intro { height:84px; }
+  #setup .lab-logo { width:48px; height:48px; }
+  #setup .magic-routes { gap:16px 10px; }
+  #setup .lab-station-art { aspect-ratio:1.35; }
+  #setup .lab-number-sign { width:40px; height:40px; }
+  #setup .lab-station-name { font-size:14px; }
+  #game:is(.is-potion-game,.is-bubble-game) { padding-inline:16px; }
+  .magic-page:has(#game:is(.is-potion-game,.is-bubble-game):not([hidden])) .magic-header { top:78px; left:18%; right:18%; height:68px; }
+  #lab-paper-clues { top:150px; left:10%; right:10%; }
+  #lab-paper-clues > span { height:26px; flex-basis:26px; }
+  #lab-paper-clues img { width:18px; height:18px; }
+  #game:is(.is-potion-game,.is-bubble-game) { padding-top:220px; }
+  #game:is(.is-potion-game,.is-bubble-game) #feedback { top:187px; }
+  #game.is-potion-game .letter-card { height:166px; }
+  #game.is-potion-game .letter-card > span { font-size:40px; }
+  #game.is-potion-game .pick-sound,#game.is-potion-game .option-tube { height:160px; }
+  #game.is-potion-game .tube-letter { font-size:36px; }
+  #game.is-bubble-game .letter-card { height:90px; }
+  #game.is-bubble-game .letter-card > span { font-size:40px; }
+  #game.is-bubble-game .bubble-sound { font-size:32px; }
+  #game:is(.is-potion-game,.is-bubble-game) .magic-answer-space { height:154px; }
+  #game:is(.is-potion-game,.is-bubble-game) .magic-answer { grid-template-columns:54px minmax(0,1fr) 44px 44px; grid-template-rows:64px 64px; grid-template-areas:'picture segments segments segments' 'picture word replay next'; padding:8px; gap:8px; }
+  #answer-segments > span { width:44px; height:52px; font-size:32px; }
+  #game:is(.is-potion-game,.is-bubble-game) .magic-answer > img { width:52px; height:52px; }
+  #game:is(.is-potion-game,.is-bubble-game) .magic-answer strong { font-size:32px; }
+  #game:is(.is-potion-game,.is-bubble-game) .magic-answer button { width:44px; height:44px; padding:8px; }
+  #game:is(.is-potion-game,.is-bubble-game) .magic-answer button img { width:24px; height:24px; }
+}
+#setup .rack-route[data-sound-group="1"] { --station-art:url('assets/game-style/lab-paper-station-1.webp'); }
+#setup .rack-route[data-sound-group="2"] { --station-art:url('assets/game-style/lab-paper-station-2.webp'); }
+#setup .rack-route[data-sound-group="3"] { --station-art:url('assets/game-style/lab-paper-station-3.webp'); }
+#setup .rack-route[data-sound-group="4"] { --station-art:url('assets/game-style/lab-paper-station-4.webp'); }
+#setup .rack-route[data-sound-group="5"] { --station-art:url('assets/game-style/lab-paper-station-5.webp'); }
+#setup .rack-route[data-sound-group="6"] { --station-art:url('assets/game-style/lab-paper-station-6.webp'); }
+#setup .rack-route[data-sound-group="7"] { --station-art:url('assets/game-style/lab-paper-station-7.webp'); }
+@media(prefers-reduced-motion:reduce) { #setup .lab-number-sign { animation:none; } }

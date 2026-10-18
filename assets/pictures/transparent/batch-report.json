@@ -1,0 +1,754 @@
+[
+  {
+    "word": "cat",
+    "foregroundFraction": 0.5338
+  },
+  {
+    "word": "hat",
+    "foregroundFraction": 0.3606
+  },
+  {
+    "word": "pin",
+    "foregroundFraction": 0.2883
+  },
+  {
+    "word": "pat",
+    "foregroundFraction": 0.5424
+  },
+  {
+    "word": "sit",
+    "foregroundFraction": 0.2754
+  },
+  {
+    "word": "rain",
+    "foregroundFraction": 0.4444
+  },
+  {
+    "word": "sat",
+    "foregroundFraction": 0.2748
+  },
+  {
+    "word": "tap",
+    "foregroundFraction": 0.3853
+  },
+  {
+    "word": "nap",
+    "foregroundFraction": 0.4031
+  },
+  {
+    "word": "sap",
+    "foregroundFraction": 0.4321
+  },
+  {
+    "word": "tin",
+    "foregroundFraction": 0.4167
+  },
+  {
+    "word": "sip",
+    "foregroundFraction": 0.4439
+  },
+  {
+    "word": "tip",
+    "foregroundFraction": 0.2287
+  },
+  {
+    "word": "pan",
+    "foregroundFraction": 0.3279
+  },
+  {
+    "word": "pit",
+    "foregroundFraction": 0.3416
+  },
+  {
+    "word": "tan",
+    "foregroundFraction": 0.4072
+  },
+  {
+    "word": "nip",
+    "foregroundFraction": 0.4001
+  },
+  {
+    "word": "rat",
+    "foregroundFraction": 0.2955
+  },
+  {
+    "word": "map",
+    "foregroundFraction": 0.4347
+  },
+  {
+    "word": "hen",
+    "foregroundFraction": 0.3534
+  },
+  {
+    "word": "pen",
+    "foregroundFraction": 0.1495
+  },
+  {
+    "word": "net",
+    "foregroundFraction": 0.3155
+  },
+  {
+    "word": "ham",
+    "foregroundFraction": 0.5222
+  },
+  {
+    "word": "ram",
+    "foregroundFraction": 0.4122
+  },
+  {
+    "word": "dog",
+    "foregroundFraction": 0.3791
+  },
+  {
+    "word": "log",
+    "foregroundFraction": 0.4156
+  },
+  {
+    "word": "pig",
+    "foregroundFraction": 0.4165
+  },
+  {
+    "word": "fig",
+    "foregroundFraction": 0.3962
+  },
+  {
+    "word": "bug",
+    "foregroundFraction": 0.2866
+  },
+  {
+    "word": "rug",
+    "foregroundFraction": 0.3786
+  },
+  {
+    "word": "cap",
+    "foregroundFraction": 0.3948
+  },
+  {
+    "word": "mat",
+    "foregroundFraction": 0.3964
+  },
+  {
+    "word": "pet",
+    "foregroundFraction": 0.3883
+  },
+  {
+    "word": "gap",
+    "foregroundFraction": 0.3261
+  },
+  {
+    "word": "lip",
+    "foregroundFraction": 0.8178
+  },
+  {
+    "word": "dig",
+    "foregroundFraction": 0.3665
+  },
+  {
+    "word": "nail",
+    "foregroundFraction": 0.1551
+  },
+  {
+    "word": "seed",
+    "foregroundFraction": 0.2896
+  },
+  {
+    "word": "feed",
+    "foregroundFraction": 0.3908
+  },
+  {
+    "word": "cook",
+    "foregroundFraction": 0.5131
+  },
+  {
+    "word": "hook",
+    "foregroundFraction": 0.2377
+  },
+  {
+    "word": "chip",
+    "foregroundFraction": 0.2477
+  },
+  {
+    "word": "chop",
+    "foregroundFraction": 0.6685
+  },
+  {
+    "word": "dish",
+    "foregroundFraction": 0.4602
+  },
+  {
+    "word": "lap",
+    "foregroundFraction": 0.3337
+  },
+  {
+    "word": "bin",
+    "foregroundFraction": 0.4225
+  },
+  {
+    "word": "dip",
+    "foregroundFraction": 0.3344
+  },
+  {
+    "word": "hug",
+    "foregroundFraction": 0.5364
+  },
+  {
+    "word": "mug",
+    "foregroundFraction": 0.4862
+  },
+  {
+    "word": "jug",
+    "foregroundFraction": 0.5361
+  },
+  {
+    "word": "tug",
+    "foregroundFraction": 0.3571
+  },
+  {
+    "word": "hit",
+    "foregroundFraction": 0.4353
+  },
+  {
+    "word": "can",
+    "foregroundFraction": 0.519
+  },
+  {
+    "word": "get",
+    "foregroundFraction": 0.4287
+  },
+  {
+    "word": "wet",
+    "foregroundFraction": 0.3301
+  },
+  {
+    "word": "ten",
+    "foregroundFraction": 0.3199
+  },
+  {
+    "word": "men",
+    "foregroundFraction": 0.5553
+  },
+  {
+    "word": "dam",
+    "foregroundFraction": 0.665
+  },
+  {
+    "word": "jog",
+    "foregroundFraction": 0.252
+  },
+  {
+    "word": "pail",
+    "foregroundFraction": 0.4453
+  },
+  {
+    "word": "look",
+    "foregroundFraction": 0.5703
+  },
+  {
+    "word": "sing",
+    "foregroundFraction": 0.5569
+  },
+  {
+    "word": "mop",
+    "foregroundFraction": 0.1577
+  },
+  {
+    "word": "top",
+    "foregroundFraction": 0.3659
+  },
+  {
+    "word": "hop",
+    "foregroundFraction": 0.2281
+  },
+  {
+    "word": "pop",
+    "foregroundFraction": 0.3357
+  },
+  {
+    "word": "rip",
+    "foregroundFraction": 0.4501
+  },
+  {
+    "word": "big",
+    "foregroundFraction": 0.4571
+  },
+  {
+    "word": "rail",
+    "foregroundFraction": 0.5124
+  },
+  {
+    "word": "pain",
+    "foregroundFraction": 0.3421
+  },
+  {
+    "word": "weed",
+    "foregroundFraction": 0.4877
+  },
+  {
+    "word": "reed",
+    "foregroundFraction": 0.4145
+  },
+  {
+    "word": "moat",
+    "foregroundFraction": 0.5332
+  },
+  {
+    "word": "lie",
+    "foregroundFraction": 0.4889
+  },
+  {
+    "word": "wish",
+    "foregroundFraction": 0.4598
+  },
+  {
+    "word": "sail",
+    "foregroundFraction": 0.4675
+  },
+  {
+    "word": "boat",
+    "foregroundFraction": 0.4422
+  },
+  {
+    "word": "pie",
+    "foregroundFraction": 0.5375
+  },
+  {
+    "word": "jet",
+    "foregroundFraction": 0.3021
+  },
+  {
+    "word": "jam",
+    "foregroundFraction": 0.5462
+  },
+  {
+    "word": "goat",
+    "foregroundFraction": 0.3465
+  },
+  {
+    "word": "ant",
+    "foregroundFraction": 0.2609
+  },
+  {
+    "word": "bag",
+    "foregroundFraction": 0.5492
+  },
+  {
+    "word": "bat",
+    "foregroundFraction": 0.3059
+  },
+  {
+    "word": "bath",
+    "foregroundFraction": 0.5244
+  },
+  {
+    "word": "bed",
+    "foregroundFraction": 0.4489
+  },
+  {
+    "word": "bee",
+    "foregroundFraction": 0.3674
+  },
+  {
+    "word": "blue",
+    "foregroundFraction": 0.3049
+  },
+  {
+    "word": "boil",
+    "foregroundFraction": 0.3847
+  },
+  {
+    "word": "book",
+    "foregroundFraction": 0.5069
+  },
+  {
+    "word": "boot",
+    "foregroundFraction": 0.372
+  },
+  {
+    "word": "box",
+    "foregroundFraction": 0.4844
+  },
+  {
+    "word": "bun",
+    "foregroundFraction": 0.5023
+  },
+  {
+    "word": "bus",
+    "foregroundFraction": 0.5515
+  },
+  {
+    "word": "car",
+    "foregroundFraction": 0.4782
+  },
+  {
+    "word": "chain",
+    "foregroundFraction": 0.2187
+  },
+  {
+    "word": "chat",
+    "foregroundFraction": 0.5565
+  },
+  {
+    "word": "chick",
+    "foregroundFraction": 0.36
+  },
+  {
+    "word": "chin",
+    "foregroundFraction": 0.535
+  },
+  {
+    "word": "cloud",
+    "foregroundFraction": 0.3889
+  },
+  {
+    "word": "coat",
+    "foregroundFraction": 0.4367
+  },
+  {
+    "word": "coin",
+    "foregroundFraction": 0.5018
+  },
+  {
+    "word": "corn",
+    "foregroundFraction": 0.4136
+  },
+  {
+    "word": "cue",
+    "foregroundFraction": 0.0852
+  },
+  {
+    "word": "cup",
+    "foregroundFraction": 0.4766
+  },
+  {
+    "word": "dad",
+    "foregroundFraction": 0.4329
+  },
+  {
+    "word": "den",
+    "foregroundFraction": 0.662
+  },
+  {
+    "word": "desk",
+    "foregroundFraction": 0.4152
+  },
+  {
+    "word": "fan",
+    "foregroundFraction": 0.4302
+  },
+  {
+    "word": "feet",
+    "foregroundFraction": 0.4333
+  },
+  {
+    "word": "fin",
+    "foregroundFraction": 0.3953
+  },
+  {
+    "word": "fish",
+    "foregroundFraction": 0.409
+  },
+  {
+    "word": "fog",
+    "foregroundFraction": 0.6984
+  },
+  {
+    "word": "foot",
+    "foregroundFraction": 0.3621
+  },
+  {
+    "word": "fork",
+    "foregroundFraction": 0.1647
+  },
+  {
+    "word": "fox",
+    "foregroundFraction": 0.4468
+  },
+  {
+    "word": "fuel",
+    "foregroundFraction": 0.525
+  },
+  {
+    "word": "glue",
+    "foregroundFraction": 0.2757
+  },
+  {
+    "word": "hammer",
+    "foregroundFraction": 0.2327
+  },
+  {
+    "word": "hand",
+    "foregroundFraction": 0.3868
+  },
+  {
+    "word": "jeep",
+    "foregroundFraction": 0.5045
+  },
+  {
+    "word": "kick",
+    "foregroundFraction": 0.2922
+  },
+  {
+    "word": "kid",
+    "foregroundFraction": 0.2812
+  },
+  {
+    "word": "king",
+    "foregroundFraction": 0.4674
+  },
+  {
+    "word": "kit",
+    "foregroundFraction": 0.5897
+  },
+  {
+    "word": "leg",
+    "foregroundFraction": 0.216
+  },
+  {
+    "word": "letter",
+    "foregroundFraction": 0.5793
+  },
+  {
+    "word": "lid",
+    "foregroundFraction": 0.3943
+  },
+  {
+    "word": "load",
+    "foregroundFraction": 0.4963
+  },
+  {
+    "word": "mail",
+    "foregroundFraction": 0.4447
+  },
+  {
+    "word": "man",
+    "foregroundFraction": 0.2266
+  },
+  {
+    "word": "moon",
+    "foregroundFraction": 0.3875
+  },
+  {
+    "word": "moth",
+    "foregroundFraction": 0.4193
+  },
+  {
+    "word": "mouth",
+    "foregroundFraction": 0.78
+  },
+  {
+    "word": "neck",
+    "foregroundFraction": 0.8106
+  },
+  {
+    "word": "out",
+    "foregroundFraction": 0.4832
+  },
+  {
+    "word": "paint",
+    "foregroundFraction": 0.5373
+  },
+  {
+    "word": "pant",
+    "foregroundFraction": 0.2758
+  },
+  {
+    "word": "point",
+    "foregroundFraction": 0.256
+  },
+  {
+    "word": "pot",
+    "foregroundFraction": 0.4325
+  },
+  {
+    "word": "pouch",
+    "foregroundFraction": 0.4394
+  },
+  {
+    "word": "quack",
+    "foregroundFraction": 0.3218
+  },
+  {
+    "word": "queen",
+    "foregroundFraction": 0.5139
+  },
+  {
+    "word": "quiz",
+    "foregroundFraction": 0.4935
+  },
+  {
+    "word": "red",
+    "foregroundFraction": 0.4097
+  },
+  {
+    "word": "ring",
+    "foregroundFraction": 0.4668
+  },
+  {
+    "word": "road",
+    "foregroundFraction": 0.5281
+  },
+  {
+    "word": "room",
+    "foregroundFraction": 0.58
+  },
+  {
+    "word": "run",
+    "foregroundFraction": 0.3021
+  },
+  {
+    "word": "sack",
+    "foregroundFraction": 0.497
+  },
+  {
+    "word": "see",
+    "foregroundFraction": 0.615
+  },
+  {
+    "word": "shark",
+    "foregroundFraction": 0.3141
+  },
+  {
+    "word": "shell",
+    "foregroundFraction": 0.4587
+  },
+  {
+    "word": "ship",
+    "foregroundFraction": 0.4806
+  },
+  {
+    "word": "shop",
+    "foregroundFraction": 0.5973
+  },
+  {
+    "word": "sister",
+    "foregroundFraction": 0.4059
+  },
+  {
+    "word": "six",
+    "foregroundFraction": 0.472
+  },
+  {
+    "word": "snap",
+    "foregroundFraction": 0.239
+  },
+  {
+    "word": "snip",
+    "foregroundFraction": 0.5203
+  },
+  {
+    "word": "spin",
+    "foregroundFraction": 0.2964
+  },
+  {
+    "word": "spoon",
+    "foregroundFraction": 0.1907
+  },
+  {
+    "word": "stamp",
+    "foregroundFraction": 0.402
+  },
+  {
+    "word": "star",
+    "foregroundFraction": 0.4115
+  },
+  {
+    "word": "storm",
+    "foregroundFraction": 0.4228
+  },
+  {
+    "word": "tail",
+    "foregroundFraction": 0.344
+  },
+  {
+    "word": "teeth",
+    "foregroundFraction": 0.4071
+  },
+  {
+    "word": "that",
+    "foregroundFraction": 0.249
+  },
+  {
+    "word": "them",
+    "foregroundFraction": 0.317
+  },
+  {
+    "word": "thin",
+    "foregroundFraction": 0.4146
+  },
+  {
+    "word": "this",
+    "foregroundFraction": 0.3015
+  },
+  {
+    "word": "tie",
+    "foregroundFraction": 0.2451
+  },
+  {
+    "word": "toad",
+    "foregroundFraction": 0.4342
+  },
+  {
+    "word": "train",
+    "foregroundFraction": 0.4046
+  },
+  {
+    "word": "van",
+    "foregroundFraction": 0.5055
+  },
+  {
+    "word": "vest",
+    "foregroundFraction": 0.5022
+  },
+  {
+    "word": "vet",
+    "foregroundFraction": 0.532
+  },
+  {
+    "word": "web",
+    "foregroundFraction": 0.4821
+  },
+  {
+    "word": "wig",
+    "foregroundFraction": 0.3893
+  },
+  {
+    "word": "win",
+    "foregroundFraction": 0.2979
+  },
+  {
+    "word": "wing",
+    "foregroundFraction": 0.4081
+  },
+  {
+    "word": "wood",
+    "foregroundFraction": 0.5034
+  },
+  {
+    "word": "wool",
+    "foregroundFraction": 0.4223
+  },
+  {
+    "word": "yak",
+    "foregroundFraction": 0.498
+  },
+  {
+    "word": "yam",
+    "foregroundFraction": 0.485
+  },
+  {
+    "word": "yes",
+    "foregroundFraction": 0.2824
+  },
+  {
+    "word": "zip",
+    "foregroundFraction": 0.7242
+  },
+  {
+    "word": "zoo",
+    "foregroundFraction": 0.6614
+  },
+  {
+    "word": "zoom",
+    "foregroundFraction": 0.4118
+  }
+]

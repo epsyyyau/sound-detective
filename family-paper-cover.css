@@ -1,0 +1,47 @@
+.family-page:has(#family-map:not([hidden])) { width:100%; padding:8px 12px; background:#d9efe4; }
+.family-page:has(#family-map:not([hidden])) .family-header { max-width:1220px; height:80px; min-height:80px; margin:0 auto; grid-template-columns:1fr minmax(0,420px) 1fr; }
+.family-page:has(#family-map:not([hidden])) #family-map-title { width:100%; height:78px; margin:0; font-size:0; background:url('assets/family-map/paper-town-title.png') center/contain no-repeat; }
+.family-map-actions { gap:4px; }
+.family-page .family-map-actions button { border:0; border-radius:0; background:none; box-shadow:none; }
+.family-map-scroll { overflow:visible; }
+.family-map > .group-mission-hint { display:none; }
+.family-map:has(.group-mission-hint) .family-map-canvas { width:min(100%,1200px,calc((100svh - 104px)*1672/941)); }
+.family-map-canvas { width:min(100%,1200px,calc((100svh - 104px)*1672/941)); min-width:0; isolation:isolate; }
+.family-mobile-route,.family-cover-landmark { display:none; }
+.family-page .family-stop { box-shadow:none; color:#173f49; }
+.family-page .family-stop:hover,.family-page .family-stop:active { background:none; transform:none; box-shadow:none; }
+.family-stop-sign { top:44%; left:0; width:46px; height:62px; overflow:visible; transform:translateX(-12%); isolation:isolate; }
+.family-stop-sign::before { content:''; position:absolute; z-index:-1; bottom:0; left:18px; width:9px; height:31px; border:1px solid #997651; background:#b99570; }
+.family-stop-number { display:grid; place-items:center; top:0; left:0; width:46px; height:40px; border:3px solid var(--group-color); border-radius:5px; transform:none; background:var(--group-tint); box-shadow:0 3px 0 #38634b35; color:#173f49; font:700 24px/1 var(--phonics-font); }
+.family-map.is-armed .family-stop:not(:disabled) .family-stop-sign { animation:none; }
+.family-map.is-armed .family-stop:not(:disabled) .family-stop-number { animation:family-number-invite 1.8s ease-in-out infinite; animation-delay:var(--sign-delay); }
+@keyframes family-number-invite { 0%,100% { scale:1; } 50% { scale:1.09; } }
+.family-cover-caption { position:absolute; width:max-content; transform:translate(-50%,-50%); text-align:center; white-space:nowrap; color:#123f46; font:700 20px/1.25 var(--chinese-font); text-shadow:0 1px #edfacf; pointer-events:none; }
+@media(min-width:1001px), (min-width:701px) and (orientation:landscape) {
+  .family-stop:is([data-sound-group="3"],[data-sound-group="5"],[data-sound-group="6"]) .family-cover-caption { font-size:18px; line-height:1.1; }
+}
+.family-page .family-map-train { z-index:3; transform:translate(-50%,-82%); transform-origin:50% 82%; pointer-events:none; animation:none; }
+.family-map-train img { transform:scaleX(var(--train-facing,1)); animation:none; }
+@media(max-width:700px), (max-width:1000px) and (orientation:portrait) {
+  .family-page:has(#family-map:not([hidden])) { padding:6px 0; }
+  .family-page:has(#family-map:not([hidden])) .family-header { height:92px; min-height:92px; padding:0 8px; grid-template-columns:48px minmax(0,1fr) 92px; gap:4px; }
+  .family-page:has(#family-map:not([hidden])) #family-map-title { grid-column:2; grid-row:1; height:80px; }
+  .family-page:has(#family-map:not([hidden])) .family-header > .back-link { grid-column:1; grid-row:1; align-self:center; flex-basis:44px; width:44px; height:44px; min-width:44px; min-height:44px; margin:0; }
+  .family-page .family-map-actions button { width:44px; height:44px; padding:9px; }
+  .family-map-canvas,.family-map:has(.group-mission-hint) .family-map-canvas { width:100%; min-width:0; aspect-ratio:400/1000; background:#ddecce; }
+  .family-map-background,.family-map-route { display:none; }
+  .family-mobile-route { display:block; position:absolute; inset:0; width:100%; height:100%; pointer-events:none; }
+  .family-mobile-route path { fill:none; stroke:#afbdc5; stroke-width:30; stroke-linecap:round; stroke-linejoin:round; }
+  .family-mobile-route use { fill:none; stroke:#fff9df; stroke-width:3; stroke-dasharray:6 10; }
+  .family-page .family-stop { left:var(--mobile-x)!important; top:var(--mobile-y)!important; width:42%!important; height:17%!important; }
+  .family-cover-landmark { position:absolute; display:block; inset:0 0 28%; overflow:hidden; mask-image:radial-gradient(ellipse 72% 72% at center,#000 55%,transparent 100%); pointer-events:none; }
+  .family-cover-landmark img { position:absolute; max-width:none; }
+  .family-stop-sign { top:32%; left:0; width:36px; height:52px; transform:none; }
+  .family-stop-number { width:36px; height:34px; border-width:2px; font-size:22px; }
+  .family-stop-sign::before { left:14px; width:8px; height:27px; }
+  .family-cover-caption { top:74%!important; left:-5%!important; right:-5%; width:auto; transform:none; white-space:normal; font-size:16px; }
+  .family-page .family-map-train { width:24%; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .family-map.is-armed .family-stop:not(:disabled) .family-stop-number { animation:none; outline:2px solid #0c7478; }
+}

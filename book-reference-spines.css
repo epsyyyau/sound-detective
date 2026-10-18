@@ -1,0 +1,170 @@
+.book-shelf {
+  background-image:url('assets/book-game/reading-room-tall-wall-v4.png');
+}
+.book-platform-return {
+  position:absolute;
+  z-index:5;
+  top:12px;
+  left:18px;
+  display:block;
+  width:64px;
+  height:64px;
+}
+.book-platform-return img {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+.book-platform-return:hover { transform:translateY(-2px); }
+.book-platform-return:focus-visible { outline:3px solid #155f9e; outline-offset:3px; }
+.book-shelf h1 {
+  top:0;
+  width:390px;
+  aspect-ratio:3 / 1;
+  display:block;
+  color:#104d59;
+  text-shadow:none;
+}
+.book-shelf h1 .book-title-art {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  filter:none;
+}
+.book-shelf .shelf-scene {
+  top:12%;
+  width:min(700px,94vw);
+  height:507px;
+  zoom:1;
+}
+.book-shelf .shelf-scene::after {
+  content:'';
+  position:absolute;
+  z-index:3;
+  left:0;
+  right:0;
+  bottom:0;
+  height:72px;
+  background:url('assets/book-game/paper-cut-wall-shelf-v2.png') center/100% auto no-repeat;
+  pointer-events:none;
+}
+.book-shelf .reference-book-art {
+  position:absolute;
+  z-index:2;
+  left:50%;
+  bottom:55px;
+  display:block;
+  width:529px;
+  height:405px;
+  transform:translateX(-50%);
+}
+.reference-book-source {
+  position:relative;
+  width:1150px;
+  height:880px;
+  transform:scale(.46);
+  transform-origin:top left;
+}
+.book-shelf .reference-book-source .story-cover {
+  position:absolute;
+  top:0;
+  display:block;
+  height:880px;
+  min-width:0;
+  padding:0;
+  border:0;
+  border-radius:0;
+  background-color:transparent;
+  background-image:url('assets/book-game/paper-story-spines-transparent-v2.png');
+  background-size:1536px 1024px;
+  background-repeat:no-repeat;
+  box-shadow:none;
+  filter:none;
+  transform:none;
+  transition:transform 220ms cubic-bezier(.2,.8,.2,1),filter 220ms ease;
+  cursor:pointer;
+}
+.book-shelf .reference-book-source .story-cover::before,
+.book-shelf .reference-book-source .story-cover::after { display:none; }
+.book-shelf .reference-book-source .story-cover:hover,
+.book-shelf .reference-book-source .story-cover:focus-visible,
+.book-shelf .reference-book-source .story-cover.is-picked {
+  z-index:20;
+  transform:translateY(-36px);
+  filter:drop-shadow(8px 16px 9px #283b3280);
+}
+.book-shelf .reference-book-source .story-cover:focus-visible {
+  outline:7px solid #fff9d3;
+  outline-offset:2px;
+}
+.book-shelf .reference-book-source .story-cat {
+  left:0; width:151px; background-position:-199px -76px; z-index:8;
+}
+.book-shelf .reference-book-source .story-hen {
+  left:151px; width:151px; background-position:-350px -76px; z-index:7;
+}
+.book-shelf .reference-book-source .story-train {
+  left:302px; width:138px; background-position:-501px -76px; z-index:9;
+}
+.book-shelf .reference-book-source .story-pup {
+  left:440px; width:135px; background-position:-639px -76px; z-index:10;
+}
+.book-shelf .reference-book-source .story-pin {
+  left:575px; width:137px; background-position:-774px -76px; z-index:11;
+}
+.book-shelf .reference-book-source .story-pig {
+  left:704px; width:117px; background-position:-911px -76px; z-index:12;
+}
+.book-shelf .reference-book-source .story-king {
+  left:821px; width:155px; background-position:-1036px -76px; z-index:13;
+}
+.book-shelf .reference-book-source .story-quack {
+  left:976px; width:150px; background-position:-1199px -76px; z-index:14;
+}
+.book-shelf .reference-book-source .story-train,
+.book-shelf .reference-book-source .story-pup,
+.book-shelf .reference-book-source .story-quack {
+  clip-path:polygon(6% 0,100% 0,100% 100%,0 100%,0 5%);
+}
+.book-shelf .reference-book-source .story-pup {
+  clip-path:polygon(6% 0,94% 0,97% 3%,100% 6%,100% 100%,0 100%,0 5%);
+}
+.book-shelf .reference-book-source .story-pin {
+  clip-path:polygon(0 0,94% 0,97% 3%,100% 6%,100% 100%,0 100%);
+}
+.book-shelf .reference-book-source .story-cat {
+  clip-path:polygon(0 0,100% 0,100% 92%,99% 95%,96% 98%,94% 100%,0 100%);
+}
+.book-shelf .reference-book-source .story-pig {
+  clip-path:polygon(0 0,100% 0,100% 92%,98% 96%,94% 99%,90% 100%,8% 100%,5% 98%,3% 95%,3% 89%,0 89%);
+}
+.book-shelf .reference-book-source .story-king {
+  clip-path:polygon(0 0,100% 0,100% 100%,10% 100%,8% 98%,6% 95%,5% 90%,0 90%);
+}
+@media(min-width:1350px) and (min-height:760px) {
+  .book-shelf h1 { width:430px; }
+  .book-shelf .shelf-scene { width:780px; height:570px; }
+  .book-shelf .reference-book-art { bottom:60px; width:598px; height:458px; }
+  .reference-book-source { transform:scale(.52); }
+}
+@media(max-width:900px) {
+  .book-shelf .shelf-scene { top:20%; width:min(720px,94vw); height:590px; }
+  .book-shelf .reference-book-art { bottom:55px; width:633px; height:484px; }
+  .reference-book-source { transform:scale(.55); }
+}
+@media(max-width:700px) {
+  .book-shelf h1 { top:7%; width:min(310px,82vw); }
+  .book-shelf .shelf-scene { top:26%; width:96vw; height:360px; }
+  .book-shelf .reference-book-art { bottom:39px; width:322px; height:246px; }
+  .reference-book-source { transform:scale(.28); }
+  .book-platform-return { top:8px; left:8px; width:42px; height:42px; }
+}
+@media(max-width:370px) {
+  .book-shelf .reference-book-art { width:265px; height:202px; }
+  .reference-book-source { transform:scale(.23); }
+}
+@media(prefers-reduced-motion:reduce) {
+  .book-shelf .reference-book-source .story-cover { transition:none; }
+}

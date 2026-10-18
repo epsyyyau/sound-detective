@@ -1,0 +1,89 @@
+body:has(.workshop-page) { margin:0; background:#e1e8df; }
+.library-page.workshop-page { position:relative; width:100%; min-height:100svh; height:100svh; margin:0; padding:0; background:url('assets/practice-room/detective-office-paper-v5.png') center/100% 100% no-repeat; }
+.library-page.workshop-page::before { content:''; position:absolute; inset:0; background:url('assets/practice-room/detective-office-paper-no-soon-v1.png') center/100% 100% no-repeat; mask-image:radial-gradient(ellipse 7% 4% at 73.5% 95.4%,#000 55%,transparent 100%); pointer-events:none; }
+.workshop-page .library-hero { position:absolute; inset:0; width:auto; max-width:none; margin:0; display:block; pointer-events:none; }
+.workshop-page .home-link { position:absolute; left:3.5%; top:3.5%; width:6%; height:11%; min-width:44px; min-height:44px; margin:0; padding:0; border:0; background:none; pointer-events:auto; z-index:3; }
+.workshop-page .home-link img { opacity:1; width:100%; height:100%; object-fit:contain; }
+.workshop-page .library-hero h1,
+.workshop-page .practice-entry h2,
+.workshop-page .practice-soon { position:absolute; width:1px; height:1px; padding:0; margin:0; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+.workshop-page .practice-grid { display:contents; }
+.workshop-page .practice-window { position:absolute; min-width:0; }
+.workshop-page #sound-blending { left:10.47%; top:21.25%; width:44.38%; height:32.4%; --caption-bottom:0; --caption-width:40%; --caption-x:51%; --office-art:url('assets/practice-room/office-paper-train.png'); }
+.workshop-page #sound-changing { left:58.61%; top:18.06%; width:31.1%; height:36%; --caption-bottom:0; --caption-width:48%; --caption-x:53%; --office-art:url('assets/practice-room/office-paper-lab.png'); }
+.workshop-page #word-families { left:10.47%; top:56.32%; width:42.46%; height:37%; --caption-bottom:0; --caption-width:36%; --caption-x:50%; --office-art:url('assets/practice-room/office-paper-town.png'); }
+.workshop-page #sentence-reading { left:55.02%; top:56.32%; width:37.08%; height:41.12%; --caption-bottom:9%; --caption-width:40%; --caption-x:50%; --office-art:url('assets/practice-room/office-paper-book.png'); }
+.workshop-page .practice-entry { position:absolute; inset:0; display:block; color:#123f46; text-decoration:none; }
+.workshop-page .practice-art { position:absolute; inset:0 0 16%; }
+.workshop-page .practice-entry[href]::after { content:''; position:absolute; left:var(--caption-x); bottom:var(--caption-bottom); width:var(--caption-width); border-bottom:3px solid #0c737b; transform:translateX(-50%); opacity:0; pointer-events:none; }
+.workshop-page .practice-entry[href]:is(:hover,:focus-visible)::after { opacity:1; }
+.workshop-page .practice-entry[href]:focus-visible,
+.workshop-page .home-link:focus-visible { outline:3px solid #0c737b; outline-offset:3px; border-radius:4px; }
+@media(max-width:900px) and (orientation:portrait), (max-width:560px) {
+  .library-page.workshop-page::before { display:none; }
+  .library-page.workshop-page { height:auto; min-height:100svh; padding:12px; background:#e1e8df url('assets/practice-room/office-paper-wall.png') center/cover no-repeat; }
+  .workshop-page .library-hero { position:relative; inset:auto; display:flex; align-items:center; justify-content:center; height:140px; min-height:0; margin:0 0 12px; }
+  .workshop-page .home-link { left:0; top:0; width:44px; height:44px; }
+  .workshop-page .home-link img { opacity:1; width:100%; height:100%; object-fit:contain; }
+  .workshop-page .library-hero h1 { position:static; clip-path:none; overflow:visible; width:min(100%,520px); height:100%; margin:0; font-size:0; background:url('assets/practice-room/office-paper-title.png') center bottom/contain no-repeat; }
+  .workshop-page .practice-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px 12px; }
+  .workshop-page .practice-grid :is(#sound-blending,#sound-changing,#word-families,#sentence-reading) { position:static; width:100%; height:auto; }
+  .workshop-page .practice-entry { position:relative; display:flex; flex-direction:column; align-items:center; min-height:0; padding:0 0 26px; }
+  .workshop-page .practice-art { position:relative; inset:auto; width:100%; aspect-ratio:1.5; background:var(--office-art) center/contain no-repeat; }
+  .workshop-page .practice-entry h2 { position:static; clip-path:none; overflow:visible; width:100%; height:auto; min-height:48px; margin:8px 0 0; white-space:normal; text-align:center; color:#123f46; font:700 18px/1.4 var(--chinese-font); }
+  .workshop-page #sound-blending h2 { font-size:17px; }
+  .workshop-page .practice-entry[href]::after { display:none; }
+  .workshop-page .practice-entry[href]:is(:hover,:focus-visible,:active) h2 { text-decoration:underline; text-underline-offset:5px; }
+  .workshop-page .practice-soon { position:absolute; clip-path:none; overflow:visible; width:100%; height:24px; left:0; bottom:0; margin:0; text-align:center; color:#35575b; font-size:15px; }
+}
+@media(max-width:560px) {
+  .library-page.workshop-page {
+    display:flex;
+    flex-direction:column;
+    height:auto;
+    min-height:100svh;
+    padding:10px 12px max(58px,env(safe-area-inset-bottom));
+    background:#dce5d9 url('assets/practice-room/office-paper-mobile-v1.png') center/cover no-repeat;
+  }
+  .workshop-page .library-hero {
+    display:grid;
+    grid-template-columns:44px minmax(0,1fr) 4px;
+    gap:0;
+    height:clamp(84px,14svh,118px);
+    margin:0;
+  }
+  .workshop-page .home-link { position:relative; grid-column:1; align-self:start; left:auto; top:auto; }
+  .workshop-page .library-hero h1 {
+    grid-column:2;
+    width:100%;
+    background-image:url('assets/practice-room/office-paper-title-mobile-v2.png');
+    background-position:center;
+  }
+  .workshop-page .practice-grid {
+    width:min(100%,460px);
+    margin:auto;
+    gap:clamp(10px,1.8svh,16px) 10px;
+  }
+  .workshop-page .practice-grid .practice-window { display:flex; min-height:clamp(150px,22svh,180px); }
+  .workshop-page .practice-entry {
+    box-sizing:border-box;
+    width:100%;
+    flex:1;
+    justify-content:center;
+    padding:9px 7px 11px;
+    border:1px solid #dfd9c5;
+    border-radius:7px;
+    background:rgb(255 252 243 / 88%);
+    box-shadow:0 3px 9px rgb(37 57 75 / 12%);
+  }
+  .workshop-page .practice-art { height:clamp(76px,13svh,110px); aspect-ratio:auto; }
+  .workshop-page .practice-entry h2,
+  .workshop-page #sound-blending h2 {
+    min-height:0;
+    margin:4px 0 0;
+    font-size:17px;
+    line-height:1.35;
+  }
+  .workshop-page .practice-entry[href]:active { transform:translateY(1px); }
+  .workshop-page .creator-mark { width:42px; }
+}

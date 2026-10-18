@@ -1,0 +1,15 @@
+/* Shared pastel group identity for selectors and lesson badges; feedback and difficulty stay separate. */
+[data-sound-group="1"] { --group-selector-color:#f7e7a0; }
+[data-sound-group="2"] { --group-selector-color:#f3b8b3; }
+[data-sound-group="3"] { --group-selector-color:#b8d9f2; }
+[data-sound-group="4"] { --group-selector-color:#bce0c5; }
+[data-sound-group="5"] { --group-selector-color:#d7c4ed; }
+[data-sound-group="6"] { --group-selector-color:#f6d2ac; }
+[data-sound-group="7"] { --group-selector-color:#f3c5df; }
+.library-group-filter button[data-sound-group],
+.library-page .library-group-number,
+.learning-map .map-group-switch button[data-sound-group],
+.learning-map .selected-group-label h2 {
+  background:var(--group-selector-color);
+  color:#20333b;
+}

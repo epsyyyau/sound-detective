@@ -1,0 +1,99 @@
+.clue-sr { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+.train-page #change-group img { filter:brightness(0) invert(1); }
+.clue-progress { display:flex; align-items:center; gap:12px; flex-shrink:0; }
+.clue-progress #counter { display:grid; place-items:center; flex:none; width:64px; height:64px; border:3px solid #fffdf4; border-radius:50%; background:var(--group-color); color:var(--ink); font-family:var(--phonics-font); font-size:2rem; font-weight:700; line-height:1; box-shadow:0 3px 8px #29463716; }
+.train-page .clue-book {
+  position:relative;
+  width:240px;
+  height:96px;
+  min-height:0;
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent url('assets/game-style/clue-notebook.png') center / 100% 100% no-repeat;
+  color:var(--teal-dark);
+}
+.train-page .clue-book:disabled { opacity:1; cursor:wait; }
+.clue-book-pages { position:absolute; inset:15% 7% 17%; display:grid; grid-template-columns:1fr 1fr; gap:14px; align-items:center; }
+.clue-page { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:5px; min-width:0; }
+.clue-page:last-child { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.clue-slot {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  min-width:0;
+  height:44px;
+  border:1px dashed #b0c4b3;
+  border-radius:4px;
+  background:#ffffff60;
+  color:#245f59;
+}
+.clue-slot > img { display:block; width:24px; height:24px; object-fit:contain; opacity:.35; }
+.clue-slot.is-current { animation:clue-slot-pop 1.9s ease-in-out infinite; border-color:#b28a40; }
+.clue-slot.is-collected { border:1px solid #bfd1bd; background:#fffdf7; }
+.clue-slot.is-collected > img { width:100%; height:100%; padding:3px; opacity:1; }
+.clue-stamp {
+  position:absolute;
+  z-index:1;
+  right:2%;
+  bottom:0;
+  padding:2px 7px;
+  border:2px solid #a35639;
+  border-radius:4px;
+  background:#fff9e5eb;
+  color:#a35639;
+  font-size:.8rem;
+  font-weight:900;
+  transform:rotate(-9deg);
+  pointer-events:none;
+  animation:clue-stamp-in .3s ease-out;
+}
+.clue-flyer { position:fixed; z-index:20; object-fit:contain; pointer-events:none; }
+.clue-dialog {
+  width:min(680px,calc(100% - 24px));
+  max-height:calc(100dvh - 32px);
+  margin:auto;
+  padding:16px;
+  border:2px solid #9cbca8;
+  border-radius:8px;
+  background:#eff5e8;
+  color:var(--ink);
+  box-shadow:0 12px 48px #173f3938;
+}
+.clue-dialog::backdrop { background:#18362c66; }
+.clue-dialog-header { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:8px; }
+.clue-dialog-header h2 { margin:0; font-size:1.25rem; }
+.train-page .clue-close { display:grid; place-items:center; width:44px; height:44px; min-height:44px; padding:8px; border:0; background:transparent; }
+.clue-close img { width:28px; height:28px; }
+.clue-review-book { position:relative; width:100%; aspect-ratio:5 / 2; background:url('assets/game-style/clue-notebook.png') center / 100% 100% no-repeat; }
+.clue-review-book .clue-book-pages { inset:14% 7% 17%; gap:30px; }
+.clue-review-book .clue-page { gap:8px; }
+.train-page .clue-review-book .clue-slot { height:138px; padding:6px; background:#ffffff70; border:1px dashed #aabdac; color:#245f59; }
+.train-page .clue-review-book button.clue-slot { background:#fffdf7; border:1px solid #aabdac; }
+.clue-review-book .clue-slot > img { width:32px; height:32px; }
+.clue-review-book .clue-slot.is-collected > img { width:100%; height:82px; padding:0; }
+.clue-review-book .clue-slot > span { width:100%; margin-top:6px; font-family:var(--phonics-font); font-size:1.25rem; text-align:center; overflow-wrap:anywhere; }
+.clue-review-book .clue-stamp { right:5%; bottom:3%; font-size:1.125rem; }
+.clue-review-book .is-current { animation:none; }
+.clue-finish-stamp { display:inline-block; margin:8px 0 12px; padding:4px 20px; border:3px solid #a35639; border-radius:4px; background:#fff9e5; color:#a35639; font-size:1.5rem; font-weight:900; transform:rotate(-7deg); animation:clue-stamp-in .3s ease-out; }
+@keyframes clue-slot-pop { 0%,100% { transform:scale(.96); } 50% { transform:scale(1.055); } }
+@keyframes clue-stamp-in { from { opacity:0; scale:1.2; } to { opacity:1; scale:1; } }
+@media(max-width:650px) {
+  .clue-progress { gap:6px; }
+  .clue-progress #counter { width:48px; height:48px; font-size:1.5rem; }
+  .train-page .clue-book { width:210px; height:88px; }
+  .clue-book-pages { gap:10px; }
+  .train-topline { flex-wrap:wrap; gap:4px; }
+  .clue-progress { margin-left:auto; }
+  .clue-dialog { padding:10px; }
+  .clue-review-book { aspect-ratio:auto; min-height:360px; background-size:100% 100%; }
+  .clue-review-book .clue-book-pages { inset:7% 8% 9%; grid-template-columns:1fr 1fr; gap:20px; align-items:start; }
+  .clue-review-book .clue-page,
+  .clue-review-book .clue-page:last-child { grid-template-columns:1fr; gap:8px; }
+  .train-page .clue-review-book .clue-slot { height:96px; }
+  .clue-review-book .clue-slot.is-collected > img { height:55px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .clue-slot.is-current,.clue-stamp,.clue-finish-stamp { animation:none; }
+}

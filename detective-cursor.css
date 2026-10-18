@@ -1,0 +1,42 @@
+@media (any-hover: hover) and (any-pointer: fine) {
+  :root {
+    --detective-cursor: url("assets/paper-pencil-cursor.png") 2 2, auto;
+  }
+
+  /* Keep the approved cursor on game controls that define their own cursor. */
+  html,
+  body,
+  body * {
+    cursor: var(--detective-cursor) !important;
+  }
+
+  body :is(input:not([type]), input[type="text"], input[type="search"], input[type="email"], input[type="password"], input[type="number"], input[type="tel"], input[type="url"], textarea, [contenteditable="true"], [contenteditable=""]),
+  body :is([contenteditable="true"], [contenteditable=""]) * {
+    cursor: text !important;
+  }
+
+  body [draggable="true"],
+  body [draggable="true"] * {
+    cursor: grab !important;
+  }
+
+  body [draggable="true"]:active,
+  body [draggable="true"]:active * {
+    cursor: grabbing !important;
+  }
+
+  body :is(:disabled, [aria-disabled="true"]),
+  body :is(:disabled, [aria-disabled="true"]) * {
+    cursor: not-allowed !important;
+  }
+
+  body [aria-busy="true"],
+  body [aria-busy="true"] * {
+    cursor: wait !important;
+  }
+
+  body .train-page .clue-book:disabled,
+  body .train-page .clue-book:disabled * {
+    cursor: wait !important;
+  }
+}

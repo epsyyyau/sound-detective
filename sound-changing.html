@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>一「聲」之差 | 小小「聲」探</title>
+  <link rel="icon" href="assets/favicon-paper-32.png">
+  <link rel="stylesheet" href="styles.css?v=20261013-ck-grouped-audited"><link rel="stylesheet" href="game-cover-titles.css?v=20261011-platform-huninn"><link rel="stylesheet" href="sound-changing.css?v=20261014-progress-corner"><link rel="stylesheet" href="bubble-catch.css?v=20261011-platform-huninn">
+  <link rel="stylesheet" href="group-colors.css?v=20261008">
+  <link rel="stylesheet" href="potion-guidance.css?v=20261010-strong-audio-cue">
+  <link rel="stylesheet" href="potion-scene.css?v=20261011-platform-huninn">
+  <link rel="stylesheet" href="magnet-swap.css?v=20261011-platform-huninn">
+  <link rel="stylesheet" href="light-grid.css?v=20261011-pop">
+  <link rel="stylesheet" href="mechanical-swap.css?v=20261011-answer-spacing">
+  <link rel="stylesheet" href="sound-scanner.css?v=20261011-scanner">
+  <link rel="stylesheet" href="lab-completion.css?v=20261011">
+  <script src="extra-word-assets.js?v=20261013-lap-tip&amp;rerecorded=1" defer></script>
+  <script src="bubble-catch.js?v=20261010-1" defer></script>
+  <script src="sound-changing.js?v=20261014-lab-complete-frame&amp;scanner=1&amp;personal-audio=1&amp;lab-return=1&amp;answer-spacing=1&amp;rerecorded=1&amp;ue=4&amp;th=20261018&amp;shuffle=all" defer></script>
+  <link rel="stylesheet" href="practice-return.css?v=20261013-paper-navigation">
+  <link rel="stylesheet" href="group-mission-hints.css?v=20261012-1">
+  <script src="group-mission-hints.js?v=20261012-1" defer></script>
+  <link rel="stylesheet" href="group-selector-pastels.css?v=20261012-1">
+  <link rel="stylesheet" href="lab-paper.css?v=20261013-captions">
+  <link rel="stylesheet" href="lab-step-guidance.css?v=20261018-stamp-audio-up">
+  <link rel="stylesheet" href="lab-paper-three-four.css?v=20261013-aligned-bulb">
+  <link rel="stylesheet" href="lab-paper-five-seven.css?v=20261013-scanner-lamp">
+  <link rel="stylesheet" href="lab-audio-centering.css?v=20261013-centered-pair">
+  <link rel="stylesheet" href="practice-evidence-frames.css?v=20261013-final">
+  <link rel="stylesheet" href="detective-cursor.css?v=20261013-paper-pencil">
+  <link rel="stylesheet" href="game-cover-return.css?v=20261013-logos">
+  <link rel="stylesheet" href="practice-cover-full-bleed.css?v=20261017-phone-height-3">
+  <link rel="stylesheet" href="practice-game-full-bleed.css?v=20261017-phone-height-5">
+  <link rel="stylesheet" href="themed-completions.css?v=20261017-lab-mobile-overview-fit">
+  <link rel="stylesheet" href="practice-skip.css?v=20261014-1">
+  <link rel="stylesheet" href="creator-mark.css?v=20261016-tooltip">
+  <link rel="stylesheet" href="lab-mobile-audio-labels.css?v=20261018-stamp-audio-up">
+  <link rel="stylesheet" href="lab-cover-mobile-scene.css?v=20261017-one-scene-2">
+  <link rel="stylesheet" href="office-landscape.css?v=20261018-tablet-scale">
+  <script src="office-landscape.js?v=20261018-tablet-scale" defer></script>
+</head>
+<body class="office-landscape">
+<main class="magic-page">
+  <header class="magic-header"><a class="back-link practice-return" href="practice-room.html" aria-label="返回聲探事務所" title="返回聲探事務所"><img src="assets/navigation-paper/office.png" alt="" aria-hidden="true"></a><h1>一「聲」之差</h1></header>
+  <section id="setup" class="magic-panel">
+    <span class="creator-mark" tabindex="0" role="img" aria-label="yyy 標誌。本平台由實習教育心理學家設計"><img src="assets/yyy-logo-transparent.png" alt=""><span class="creator-mark-tooltip" aria-hidden="true">本平台由實習教育心理學家設計</span></span>
+    <div class="lab-intro"><img class="lab-logo" src="assets/game-style/lab-paper-logo-simple.png" alt=""><h2 class="game-cover-title">一「聲」之差</h2></div>
+    <div id="routes" class="magic-routes" role="group" aria-label="選擇實驗組別"></div>
+  </section>
+  <section id="game" class="magic-panel" hidden>
+    <div class="magic-toolbar"><button id="back" class="quiet lab-return" aria-label="返回組別選擇" title="返回組別選擇"><img src="assets/game-style/lab-paper-logo-simple.png" alt="" aria-hidden="true"></button><span id="progress"></span><button id="skip-round" class="practice-skip" type="button" aria-label="跳過本組題目，查看字詞總覽">跳過</button></div>
+    <div id="lab-paper-clues" aria-label="已收集的換音線索" hidden></div>
+    <h2 id="instruction" tabindex="-1">先讀原字，再聽變字任務。</h2>
+    <div class="magic-workspace">
+    <img id="light-grid-console" class="light-grid-console" src="assets/game-style/light-grid-console.png" alt="" aria-hidden="true" hidden>
+    <div class="magic-word-station">
+    <div class="magic-audio"><button id="source-audio" class="secondary" aria-label="播放原字" title="播放原字">♫ 聽原字</button><button id="target-audio" aria-label="播放目標字" title="播放目標字" hidden>♫ 聽變字任務</button></div>
+    <div id="stage" class="magic-stage">
+      <img id="rotary-machine" class="mechanical-art" src="assets/game-style/rotary-machine.png" alt="" aria-hidden="true" hidden>
+      <img id="rotary-lever" src="assets/game-style/lab-paper-rotary.png" alt="" aria-hidden="true" hidden>
+      <img id="scanner-machine" class="mechanical-art" src="assets/game-style/lab-paper-scanner.png" alt="" aria-hidden="true" hidden>
+      <img id="stamp-machine" class="mechanical-art" src="assets/game-style/stamp-machine.png" alt="" aria-hidden="true" hidden>
+      <div id="stamp-head" aria-hidden="true" hidden><i class="stamp-spring"></i><i class="stamp-pad"></i></div>
+      <img id="magnet-rack" class="magnet-rack" src="assets/game-style/magnet-rack.png" alt="" aria-hidden="true" hidden>
+      <div id="letters" class="magic-letters" aria-label="選擇要換的聲音位置"></div>
+      <div id="potion-stream" class="potion-stream" aria-hidden="true" hidden></div>
+      <p id="position-hint" class="lab-step-hint" role="status">選擇要更換的字母音</p>
+    </div>
+    </div>
+    <div class="magic-choice-station">
+    <div id="magnet-machine" class="magnet-machine" aria-hidden="true" hidden><img class="magnet-stand" src="assets/game-style/magnet-stand.png" alt=""><div id="magnet-arm" class="magnet-arm"><img src="assets/game-style/magnet-arm.png" alt=""><i id="magnet-grip"></i></div></div>
+    <div id="choices" class="magic-choices" aria-label="候選聲音試管"></div>
+    <img id="bubble-flask" class="bubble-flask" src="assets/game-style/lab-paper-bubbles.png" alt="" aria-hidden="true" hidden>
+    <p id="choice-hint" class="lab-step-hint" role="status">選擇新的字母音</p>
+    </div>
+    </div>
+    <div id="test-tube" class="lab-tube" aria-hidden="true" hidden></div>
+    <p id="feedback" class="magic-feedback" role="status"></p>
+    <div class="magic-answer-space"><div id="answer" class="magic-answer" hidden><img id="picture" alt=""><div id="answer-segments" lang="en" hidden></div><img id="answer-arrow" src="assets/icons/arrow-right.svg" alt="" aria-hidden="true"><strong id="answer-word" lang="en"></strong><button id="answer-audio" class="secondary" aria-label="重聽新字">♫ 再聽</button><button id="next">下一題 →</button></div></div>
+  </section>
+  <section id="complete" class="magic-panel" hidden><h2 id="complete-title" tabindex="-1">換音線索已集齊！</h2><div id="collection" class="magic-collection"></div><p id="review-status" role="status"></p><div class="complete-actions"><button id="again" class="round-replay-button" aria-label="再玩一次" title="再玩一次"><img src="assets/game-style/replay-paper-seal-v2.png" alt="" aria-hidden="true"></button><button id="choose-route" aria-label="返回一「聲」之差首頁" title="返回一「聲」之差首頁"><img src="assets/game-style/lab-paper-logo-simple.png" alt="" aria-hidden="true"></button></div></section>
+</main>
+</body></html>

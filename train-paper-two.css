@@ -1,0 +1,85 @@
+/* Cargo geometry belongs to group two; the shared loading state machine is unchanged. */
+body:has(#play[data-sound-group="2"]:not([hidden])) { background:#e5f2da; }
+.train-page:has(#play[data-sound-group="2"]:not([hidden])) {
+  position:relative; width:min(100%,1440px,calc(100svh * 16 / 9)); padding:0;
+}
+.train-page:has(#play[data-sound-group="2"]:not([hidden])) .train-header {
+  position:absolute; z-index:4; inset:12px 20px auto; margin:0; pointer-events:none;
+}
+.train-page:has(#play[data-sound-group="2"]:not([hidden])) .train-header a { pointer-events:auto; }
+.train-page:has(#play[data-sound-group="2"]:not([hidden])) .train-header h1 {
+  position:absolute; top:6px; left:50%; transform:translateX(-50%); white-space:nowrap; font-size:30px;
+}
+#play[data-sound-group="2"] {
+  --cargo-left:4%; --cargo-width:92%; --cargo-drop:48px;
+  --deck-offset:10.9cqw; --crate-size:12.88cqw;
+  position:relative; width:100%; min-width:0; padding:0; aspect-ratio:16 / 9;
+  min-height:620px; overflow:hidden; container-type:inline-size;
+  background:url('assets/game-style/train-paper-two-background.webp') center / cover no-repeat;
+}
+#play[data-sound-group="2"] .train-topline { position:absolute; z-index:5; inset:12px 18px auto auto; }
+#play[data-sound-group="2"] .clue-book { width:156px; height:80px; }
+#play[data-sound-group="2"]::after { top:98px; right:28px; font-size:20px; }
+#play[data-sound-group="2"] .railway { position:absolute; inset:0; padding:0; overflow:visible; }
+#play[data-sound-group="2"] .train-stage { width:100%; height:100%; min-width:0; }
+#play[data-sound-group="2"] #cargo-vehicle {
+  left:var(--cargo-left); top:auto; bottom:34%; width:var(--cargo-width); height:auto;
+}
+#play[data-sound-group="2"] .sound-train {
+  left:var(--cargo-left); top:auto; bottom:calc(34% + var(--deck-offset) + var(--cargo-drop));
+  width:var(--cargo-width); height:var(--crate-size); display:block; transition:none;
+}
+#play[data-sound-group="2"] .sound-car {
+  top:0; left:calc(var(--cargo-pad) - 7%); width:14%; height:100%;
+  background:url('assets/game-style/train-paper-two-crate.png') center / 100% 100% no-repeat;
+}
+#play[data-sound-group="2"] .sound-car:nth-child(1) { --cargo-pad:14.7%; }
+#play[data-sound-group="2"] .sound-car:nth-child(2) { --cargo-pad:34.1%; }
+#play[data-sound-group="2"] .sound-car:nth-child(3) { --cargo-pad:54%; }
+#play[data-sound-group="2"] .car-letter { inset:13% 16% 33%; font-size:64px; color:#203947; }
+#play[data-sound-group="2"] .cargo-speaker { width:36px; height:36px; padding:7px; bottom:10%; }
+#play[data-sound-group="2"] .sound-car.needs-sound:not(.lit) { animation:none; outline:none; }
+#play[data-sound-group="2"] .sound-car.needs-sound .car-letter { animation:paper-letter-cue 2s ease-in-out infinite; }
+#play[data-sound-group="2"] .train-controls,
+#play[data-sound-group="2"]:has(#answer:not([hidden])) .train-controls {
+  position:absolute; top:73%; left:0; right:0; margin:0; gap:16px;
+}
+#play[data-sound-group="2"] .train-action-button,
+#play[data-sound-group="2"] .train-play-button { width:64px; height:64px; min-height:64px; box-shadow:0 3px 0 #26565433; }
+#play[data-sound-group="2"] .answer-space {
+  position:absolute; left:12px; right:12px; bottom:2%; height:80px; min-height:80px;
+  display:flex; align-items:center; justify-content:center; pointer-events:none;
+}
+#play[data-sound-group="2"] .train-answer {
+  flex-wrap:nowrap; gap:14px; margin:0; padding:6px 14px; max-width:100%;
+  background:#ffffffe0; border-radius:8px; pointer-events:auto;
+}
+#play[data-sound-group="2"] .train-answer > img { width:60px; height:60px; }
+#play[data-sound-group="2"] .train-answer .train-action-button img { width:48%; height:48%; }
+#play[data-sound-group="2"] .train-answer strong { font-size:36px; overflow-wrap:anywhere; min-width:0; }
+#play[data-sound-group="2"] #audio-status { position:absolute; top:20%; left:15%; right:15%; padding:4px; background:#fffdf0; z-index:3; }
+@media(max-width:1000px) {
+  #play[data-sound-group="2"] { aspect-ratio:auto; min-height:680px; }
+  .train-page:has(#play[data-sound-group="2"]:not([hidden])) .train-header h1 { top:84px; font-size:26px; }
+  #play[data-sound-group="2"] .car-letter { font-size:44px; }
+}
+@media(max-width:650px) {
+  .train-page:has(#play[data-sound-group="2"]:not([hidden])) { width:100%; }
+  .train-page:has(#play[data-sound-group="2"]:not([hidden])) .train-header { inset:10px; }
+  .train-page:has(#play[data-sound-group="2"]:not([hidden])) .train-header h1 { top:92px; font-size:24px; }
+  #play[data-sound-group="2"] { min-height:max(680px,100svh); --cargo-left:2%; --cargo-width:96%; --deck-offset:11.38cqw; --crate-size:17.28cqw; }
+  #play[data-sound-group="2"] .train-topline { inset:12px 8px auto auto; }
+  #play[data-sound-group="2"] .clue-book { width:110px; height:64px; }
+  #play[data-sound-group="2"] .clue-slot { height:30px; }
+  #play[data-sound-group="2"]::after { top:80px; right:16px; font-size:18px; }
+  #play[data-sound-group="2"] .sound-car { left:calc(var(--cargo-pad) - 9%); width:18%; }
+  #play[data-sound-group="2"] .car-letter { inset:12% 14% 34%; font-size:32px; }
+  #play[data-sound-group="2"] .cargo-speaker { width:22px; height:22px; padding:4px; bottom:9%; }
+  #play[data-sound-group="2"] .train-action-button,
+  #play[data-sound-group="2"] .train-play-button { width:56px; height:56px; min-height:56px; }
+  #play[data-sound-group="2"] .train-answer { padding:6px 10px; gap:10px; }
+  #play[data-sound-group="2"] .train-answer strong { font-size:32px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  #play[data-sound-group="2"] .sound-car.needs-sound .car-letter { animation:none; outline:2px solid #0e777a; outline-offset:2px; border-radius:6px; }
+}

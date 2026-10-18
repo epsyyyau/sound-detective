@@ -1,0 +1,38 @@
+/* Signal faces stay at the station while the separate locomotive departs. */
+#play.is-signal-station { background-image:url('assets/game-style/train-signals-background.png'); overflow:clip; }
+#signal-engine { position:absolute; left:0; top:53%; width:25%; height:28%; object-fit:contain; pointer-events:none; }
+#play.is-signal-station .sound-car { top:28.3%; width:13%; height:21.5%; border-radius:50%; background:none; }
+#play.is-signal-station .sound-car::before { display:none; }
+#play.is-signal-station .car-letter { inset:5% 0 10%; font-size:4.5rem; }
+#play.is-signal-station .car-letter small { font-size:.9rem; }
+#play.is-signal-station .cargo-speaker { bottom:-12px; }
+#play.is-signal-station .sound-car.lit { filter:none; }
+#play.is-signal-station .signal-lamp { position:absolute; top:-51%; left:30%; width:24%; height:24%; border-radius:50%; pointer-events:none; }
+#play.is-signal-station .sound-car:nth-child(2) .signal-lamp { left:26%; }
+#play.is-signal-station .sound-car:nth-child(3) .signal-lamp { left:22%; }
+#play.is-signal-station .signal-heard .signal-lamp { background:#74e78b; border:3px solid #287840; box-shadow:0 0 12px #b5ffb7,inset 0 0 8px #efffe6; }
+#play.is-signal-station .signal-switch { position:absolute; left:20%; top:195%; width:38%; height:5%; border:2px solid #744794; border-radius:4px; background:#b796d9; transform-origin:left center; rotate:-18deg; pointer-events:none; }
+#play.is-signal-station .signal-open .signal-switch { rotate:0deg; background:#8ae3a1; border-color:#348a52; box-shadow:0 0 8px #d8ffe1; }
+#play.is-signal-station .train-controls { top:84%; }
+#play.is-signal-station .answer-space { bottom:1%; }
+@media(max-width:900px) and (min-width:651px) {
+  .train-page:has(#play.is-signal-station:not([hidden])) .train-header h1 { top:4px; }
+  #play.is-signal-station .car-letter { font-size:3rem; }
+  #play.is-signal-station .cargo-speaker { width:40px; height:40px; bottom:-20px; }
+  #play.is-signal-station .train-action-button,#play.is-signal-station .train-play-button { width:48px; height:48px; min-height:48px; }
+}
+@media(max-width:650px) {
+  #play.is-signal-station { min-height:800px; background-size:147% 100%; background-position:left top; }
+  #play.is-signal-station .sound-car { top:28.3%; width:19%; height:21.5%; }
+  #play.is-signal-station .sound-car:nth-child(1) { left:27.5%!important; }
+  #play.is-signal-station .sound-car:nth-child(2) { left:55.4%!important; }
+  #play.is-signal-station .sound-car:nth-child(3) { left:84.2%!important; }
+  #play.is-signal-station .car-letter { font-size:2.5rem; }
+  #play.is-signal-station .sound-car:nth-child(n) .signal-lamp { top:-85px; left:calc(50% - 16px); width:24px; height:32px; }
+  #play.is-signal-station #signal-engine { left:0; top:57%; width:31%; height:23%; }
+  #play.is-signal-station .train-controls { top:84%; }
+  #play.is-signal-station:has(#answer:not([hidden])) .train-controls { top:78%; }
+}
+@media(prefers-reduced-motion:reduce) {
+  #play.is-signal-station .signal-switch { transition:none; }
+}

@@ -1,0 +1,64 @@
+/* Tunnel signs remain fixed; express wagons leave with their locomotive. */
+#play:is(.is-cargo-station,.is-device-station) .train-answer {
+  width:fit-content;
+  max-width:100%;
+  box-sizing:border-box;
+  margin:4px auto 0;
+  padding:8px 16px;
+  background:rgb(255 255 255 / 76%);
+}
+#play:is(.is-cargo-station,.is-device-station) .train-answer strong { min-width:0; overflow-wrap:anywhere; }
+#play.is-tunnel-station { background-image:url('assets/game-style/train-tunnels-background.webp'); overflow:clip; }
+#tunnel-engine { position:absolute; left:0; top:54%; width:22%; height:27%; object-fit:contain; pointer-events:none; }
+#play.is-tunnel-station .sound-car { top:25.5%; width:16%; height:14%; background:none; }
+#play.is-tunnel-station .sound-car::before { display:none; }
+#play.is-tunnel-station .car-letter { inset:0; font-size:4.5rem; }
+#play.is-tunnel-station .car-letter small { font-size:.8rem; }
+#play.is-tunnel-station .cargo-speaker { left:auto; right:-15px; bottom:-10px; transform:none; }
+#play.is-tunnel-station .tunnel-glow { position:absolute; z-index:-1; top:120%; left:3%; width:94%; height:155%; border-radius:50% 50% 0 0; background:radial-gradient(ellipse at 50% 40%,#fff3a8c9,#ffb83d80 50%,transparent 75%); opacity:0; pointer-events:none; }
+#play.is-tunnel-station .tunnel-heard .tunnel-glow { opacity:.55; }
+#play.is-tunnel-station .tunnel-linked .tunnel-glow { opacity:.65; }
+#play.is-tunnel-station .sound-car.lit { filter:none; }
+#play.is-express-station { background-image:url('assets/game-style/train-express-background.webp'); }
+#express-turntable { position:absolute; inset:0; background:url('assets/game-style/train-express-background.webp') center/100% 100% no-repeat; clip-path:ellipse(42% 21% at 48% 62%); transform-origin:48% 62%; pointer-events:none; }
+#express-engine { position:absolute; left:79%; top:35%; width:21%; height:25%; object-fit:contain; pointer-events:none; }
+#play.is-express-station .sound-train { transform-origin:48% 62%; }
+#play.is-express-station .sound-car { top:34%; width:17%; height:27%; background:url('assets/game-style/train-wagon.png') center/100% 100% no-repeat; }
+#play.is-express-station .sound-car::before { filter:hue-rotate(285deg) saturate(.75); mask:radial-gradient(ellipse 12% 12% at 28% 80%,transparent 97%,#000 100%),radial-gradient(ellipse 12% 12% at 71% 80%,transparent 97%,#000 100%); mask-composite:intersect; }
+#play.is-express-station .car-letter { inset:20% 12% 30%; font-size:4rem; }
+#play.is-express-station .cargo-speaker { bottom:2%; }
+#play.is-tunnel-station .train-controls,#play.is-express-station .train-controls { top:84%; }
+#play.is-tunnel-station:has(#answer:not([hidden])) .train-controls,
+#play.is-express-station:has(#answer:not([hidden])) .train-controls { top:82%; }
+#play.is-tunnel-station .answer-space,#play.is-express-station .answer-space { left:4%; right:4%; bottom:2%; }
+@media(max-width:900px) and (min-width:651px) {
+  .train-page:has(#play.is-tunnel-station:not([hidden])) .train-header h1,
+  .train-page:has(#play.is-express-station:not([hidden])) .train-header h1 { top:4px; }
+  #play.is-tunnel-station .car-letter,#play.is-express-station .car-letter { font-size:3rem; }
+}
+@media(max-width:650px) {
+  #play.is-tunnel-station,#play.is-express-station { min-height:800px; background-color:#edf6e8; background-size:100% auto; background-position:center 350px; }
+  #play.is-tunnel-station .sound-car:nth-child(n) { top:23%; width:25%; height:14%; border:3px solid #eda15c; border-radius:8px; background:#fff6df; }
+  #play.is-tunnel-station .sound-car:nth-child(1) { left:22%!important; }
+  #play.is-tunnel-station .sound-car:nth-child(2) { left:50%!important; }
+  #play.is-tunnel-station .sound-car:nth-child(3) { left:78%!important; }
+  #play.is-tunnel-station .car-letter { font-size:2.5rem; }
+  #play.is-tunnel-station .car-letter small { font-size:.65rem; white-space:normal; }
+  #play.is-tunnel-station .cargo-speaker { left:calc(50% - 22px); right:auto; bottom:-46px; }
+  #play.is-tunnel-station .tunnel-glow { display:none; }
+  #play.is-tunnel-station .tunnel-heard { box-shadow:0 0 15px #e7bc45; }
+  #play.is-tunnel-station #tunnel-engine { top:calc(350px + 29cqw); left:0; width:26%; height:16cqw; }
+  #play.is-express-station { background-position:center 370px; }
+  #play.is-express-station .sound-car:nth-child(n) { top:23%; width:23%; height:20%; }
+  #play.is-express-station .sound-car:nth-child(1) { left:23%!important; }
+  #play.is-express-station .sound-car:nth-child(2) { left:48%!important; }
+  #play.is-express-station .sound-car:nth-child(3) { left:73%!important; }
+  #play.is-express-station .car-letter { font-size:2.4rem; }
+  #play.is-express-station .sound-train { transform-origin:50% 33%; }
+  #play.is-express-station .sound-train::before { content:''; display:block; position:absolute; left:5%; right:5%; top:41%; height:8px; border-block:2px solid #798983; background:#c9b7a6; }
+  #play.is-express-station #express-turntable { inset:370px 0 auto; height:auto; aspect-ratio:16/9; }
+  #play.is-express-station #express-engine { top:51%; left:73%; width:26%; height:12%; }
+  #play.is-tunnel-station:has(#answer:not([hidden])) .train-controls,
+  #play.is-express-station:has(#answer:not([hidden])) .train-controls { top:77%; left:0; right:0; }
+  #play.is-tunnel-station .answer-space,#play.is-express-station .answer-space { left:4%; right:4%; bottom:1%; }
+}

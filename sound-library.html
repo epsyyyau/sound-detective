@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>聲音線索圖鑑 | 小小「聲」探</title>
+    <meta
+      name="description"
+      content="小小「聲」探聲音線索圖鑑：按系統化 phonics 次序整理英語 letter sounds。"
+    >
+    <meta name="application-name" content="小小「聲」探">
+    <meta name="apple-mobile-web-app-title" content="小小「聲」探">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-paper-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon-paper.png">
+    <link rel="stylesheet" href="styles.css?v=20261013-ck-grouped-audited">
+    <link rel="stylesheet" href="group-colors.css?v=20261008">
+    <link rel="stylesheet" href="sound-library-colors.css?v=20261011-ue-pair">
+    <link rel="stylesheet" href="sound-library-frames.css?v=20261018-duration-label-fit">
+    <link rel="stylesheet" href="sound-library-groups.css?v=20261018-duration-label-fit">
+    <link rel="stylesheet" href="sound-library-view.css?v=20261011-2">
+    <link rel="stylesheet" href="group-selector-pastels.css?v=20261012-1">
+    <link rel="stylesheet" href="detective-cursor.css?v=20261013-paper-pencil">
+    <link rel="stylesheet" href="creator-mark.css?v=20261016-tooltip">
+    <link rel="stylesheet" href="sound-library-phone-fit.css?v=20261018-even-rows-3">
+  </head>
+  <body>
+    <main class="library-page detective-sound-library">
+      <span class="creator-mark" tabindex="0" role="img" aria-label="yyy 標誌。本平台由實習教育心理學家設計"><img src="assets/yyy-logo-transparent.png" alt=""><span class="creator-mark-tooltip" aria-hidden="true">本平台由實習教育心理學家設計</span></span>
+      <header class="library-hero">
+        <a class="back-link home-link" href="index.html" aria-label="返回首頁" title="返回首頁">
+          <img src="assets/navigation-paper/platform-logo.png" alt="">
+        </a>
+        <div class="library-title-block">
+          <div class="library-title-lockup">
+            <h1>聲音線索圖鑑</h1>
+            <img
+              class="library-title-icon"
+              src="assets/聲音圖鑑-transparent.png"
+              alt=""
+              aria-hidden="true"
+            >
+          </div>
+        </div>
+        <div class="library-view-switch" role="group" aria-label="圖鑑顯示方式">
+          <button type="button" data-library-view="theme" aria-pressed="true">主題</button>
+          <button type="button" data-library-view="simple" aria-pressed="false">簡潔</button>
+        </div>
+      </header>
+
+      <p class="audio-status" data-audio-status aria-live="polite"></p>
+
+      <nav class="library-group-filter" aria-label="選擇組別">
+        <button type="button" data-library-group="1" data-sound-group="1" aria-label="第 1 組" aria-pressed="false">1</button>
+        <button type="button" data-library-group="2" data-sound-group="2" aria-label="第 2 組" aria-pressed="false">2</button>
+        <button type="button" data-library-group="3" data-sound-group="3" aria-label="第 3 組" aria-pressed="false">3</button>
+        <button type="button" data-library-group="4" data-sound-group="4" aria-label="第 4 組" aria-pressed="false">4</button>
+        <button type="button" data-library-group="5" data-sound-group="5" aria-label="第 5 組" aria-pressed="false">5</button>
+        <button type="button" data-library-group="6" data-sound-group="6" aria-label="第 6 組" aria-pressed="false">6</button>
+        <button type="button" data-library-group="7" data-sound-group="7" aria-label="第 7 組" aria-pressed="false">7</button>
+        <button type="button" data-library-group="all" aria-pressed="true">總覽</button>
+      </nav>
+
+      <section class="sound-groups" aria-label="七組英語拼音聲音">
+        <article class="sound-group" data-sound-group="1">
+          <div class="group-heading">
+            <span class="library-group-number" role="img" aria-label="第 1 組">1</span>
+          </div>
+          <div class="sound-grid">
+            <button class="sound-tile"><strong>s</strong></button>
+            <button class="sound-tile"><strong>a</strong></button>
+            <button class="sound-tile"><strong>t</strong></button>
+            <button class="sound-tile"><strong>i</strong></button>
+            <button class="sound-tile"><strong>p</strong></button>
+            <button class="sound-tile"><strong>n</strong></button>
+          </div>
+        </article>
+
+        <article class="sound-group" data-sound-group="2">
+          <div class="group-heading">
+            <span class="library-group-number" role="img" aria-label="第 2 組">2</span>
+          </div>
+          <div class="sound-grid">
+            <div class="same-sound-unit" aria-label="c、k 和 ck 代表相同聲音">
+              <button class="sound-tile"><strong>c</strong></button>
+              <button class="sound-tile"><strong>k</strong></button>
+              <button class="sound-tile"><strong>ck</strong></button>
+              <span>相同聲音</span>
+            </div>
+            <button class="sound-tile"><strong>e</strong></button>
+            <button class="sound-tile"><strong>h</strong></button>
+            <button class="sound-tile"><strong>r</strong></button>
+            <button class="sound-tile"><strong>m</strong></button>
+            <button class="sound-tile"><strong>d</strong></button>
+          </div>
+        </article>
+
+        <article class="sound-group" data-sound-group="3">
+          <div class="group-heading">
+            <span class="library-group-number" role="img" aria-label="第 3 組">3</span>
+          </div>
+          <div class="sound-grid">
+            <button class="sound-tile"><strong>g</strong></button>
+            <button class="sound-tile"><strong>o</strong></button>
+            <button class="sound-tile"><strong>u</strong></button>
+            <button class="sound-tile"><strong>l</strong></button>
+            <button class="sound-tile"><strong>f</strong></button>
+            <button class="sound-tile"><strong>b</strong></button>
+          </div>
+        </article>
+
+        <article class="sound-group" data-sound-group="4">
+          <div class="group-heading">
+            <span class="library-group-number" role="img" aria-label="第 4 組">4</span>
+          </div>
+          <div class="sound-grid">
+            <button class="sound-tile"><strong>ai</strong></button>
+            <button class="sound-tile"><strong>j</strong></button>
+            <button class="sound-tile"><strong>oa</strong></button>
+            <button class="sound-tile"><strong>ie</strong></button>
+            <button class="sound-tile"><strong>ee</strong></button>
+            <button class="sound-tile"><strong>or</strong></button>
+          </div>
+        </article>
+
+        <article class="sound-group" data-sound-group="5">
+          <div class="group-heading">
+            <span class="library-group-number" role="img" aria-label="第 5 組">5</span>
+          </div>
+          <div class="sound-grid">
+            <button class="sound-tile"><strong>z</strong></button>
+            <button class="sound-tile"><strong>w</strong></button>
+            <button class="sound-tile"><strong>ng</strong></button>
+            <button class="sound-tile"><strong>v</strong></button>
+            <button class="sound-tile duration-sound-tile"><strong>oo</strong><span class="duration-arrow is-short" aria-hidden="true"></span><small>短音</small></button>
+            <button class="sound-tile duration-sound-tile"><strong>oo</strong><span class="duration-arrow is-long" aria-hidden="true"></span><small>長音</small></button>
+          </div>
+        </article>
+
+        <article class="sound-group" data-sound-group="6">
+          <div class="group-heading">
+            <span class="library-group-number" role="img" aria-label="第 6 組">6</span>
+          </div>
+          <div class="sound-grid">
+            <button class="sound-tile"><strong>y</strong></button>
+            <button class="sound-tile"><strong>x</strong></button>
+            <button class="sound-tile"><strong>ch</strong></button>
+            <button class="sound-tile"><strong>sh</strong></button>
+            <button class="sound-tile"><strong>th</strong><span>（不震動）</span></button>
+            <button class="sound-tile"><strong>th</strong><span>（會震動）</span></button>
+          </div>
+        </article>
+
+        <article class="sound-group" data-sound-group="7">
+          <div class="group-heading">
+            <span class="library-group-number" role="img" aria-label="第 7 組">7</span>
+          </div>
+          <div class="sound-grid">
+            <button class="sound-tile"><strong>qu</strong></button>
+            <button class="sound-tile"><strong>ou</strong></button>
+            <button class="sound-tile"><strong>oi</strong></button>
+            <button class="sound-tile"><strong>ue</strong><span>u音</span></button>
+            <button class="sound-tile"><strong>ue</strong><span>oo長音</span></button>
+            <button class="sound-tile"><strong>er</strong></button>
+            <button class="sound-tile"><strong>ar</strong></button>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="sound-library.js?v=20261013-ck-grouped-audited&amp;personal-audio=1&amp;rerecorded=1&amp;ue=3&amp;frames=1&amp;th=20261018b"></script>
+    <script src="sound-library-groups.js?v=20261011-1"></script>
+    <script src="sound-library-view.js?v=20261011-1"></script>
+  </body>
+</html>

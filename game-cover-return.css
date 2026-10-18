@@ -1,0 +1,8 @@
+.magic-page #complete #choose-route,
+.train-page #complete #choose,
+.family-page #family-complete #family-choose:not(.is-catalog-action){width:80px;height:80px;min-height:0;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none}
+.magic-page #complete #choose-route img,
+.train-page #complete #choose img,
+.family-page #family-complete #family-choose:not(.is-catalog-action) img{display:block;width:100%;height:100%;object-fit:contain;filter:none;pointer-events:none}
+.family-page .paper-back{background:transparent;border-radius:0;min-width:44px}
+.family-page .paper-back img{width:100%;height:100%;object-fit:contain;rotate:0deg;filter:none}

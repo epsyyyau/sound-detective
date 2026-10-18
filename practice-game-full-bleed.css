@@ -1,0 +1,145 @@
+/* Expand gameplay scenery without changing the equipment's local coordinate system. */
+body:has(.train-page #play:not([hidden])),
+body:has(.magic-page #game:not([hidden])) { margin:0; }
+.train-page:has(#play[data-sound-group]:not([hidden])),
+.magic-page:has(#game[data-sound-group]:not([hidden])) { width:100%; max-width:none; padding:0; margin:0; }
+.train-page #play[data-sound-group] .train-topline { inset:0 0 auto; height:25%; pointer-events:none; }
+.train-page #play[data-sound-group] #counter { position:absolute; top:12px; right:18px; }
+.train-page #play[data-sound-group] .clue-book {
+  position:absolute; top:100px; left:50%; right:auto; transform:translateX(-50%);
+  width:270px; height:48px; background:#fff9e8e8; border-radius:8px; pointer-events:auto;
+}
+.train-page #play[data-sound-group] .clue-book-pages { inset:2px 7px; display:flex; gap:8px; }
+.train-page #play[data-sound-group] .clue-page { display:contents; }
+.train-page #play[data-sound-group] .clue-slot { flex:1; height:44px; border:2px solid #a5bbb6; border-radius:50%; background:#fffdf4; }
+.train-page #play[data-sound-group] .clue-slot.is-current { border-color:#087a7b; }
+.train-page #play[data-sound-group] .clue-slot:not(.is-collected)>img { visibility:hidden; }
+@media(min-width:1001px) {
+  .train-page #play[data-sound-group],
+  .magic-page #game[data-sound-group] { width:100%; height:100svh; min-height:0; aspect-ratio:auto; background-size:100% 100%; background-position:center; }
+  /* Scenery and moving parts share a height-based coordinate plane. */
+  .train-page #play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"]) {
+    --train-scene-height:132svh;
+    --train-scene-top:-10svh;
+    background-size:100% var(--train-scene-height); background-position:center var(--train-scene-top);
+  }
+  .train-page #play[data-sound-group="3"] { --train-scene-height:116svh; }
+  .train-page #play[data-sound-group="4"] { --train-scene-height:120svh; }
+  .train-page #play:is([data-sound-group="5"],[data-sound-group="6"]) { --train-scene-height:128svh; }
+  .train-page #play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"]) .railway {
+    top:var(--train-scene-top); height:var(--train-scene-height); bottom:auto;
+  }
+  .train-page #play:is([data-sound-group="2"],[data-sound-group="3"]) {
+    --deck-offset:calc(var(--train-scene-height) * .193778);
+    --crate-size:calc(var(--train-scene-height) * .228978);
+  }
+  .train-page #play:is([data-sound-group="2"],[data-sound-group="3"]) :is(#cargo-vehicle,#crane-vehicle) { height:36.5%; object-fit:fill; }
+  .train-page #play[data-sound-group="3"] #crane-vehicle { bottom:19.5%; }
+  .train-page #play[data-sound-group="3"] .sound-train { bottom:calc(19.5% + var(--deck-offset) + var(--crane-drop)); }
+  .train-page #play[data-sound-group="4"] .sound-car { height:23.111%; }
+  .train-page #play[data-sound-group="5"] #signal-engine { height:23.395%; object-fit:fill; }
+  /* Lamp centres and diameters follow the illustrated 1672 x 941 scene. */
+  .train-page #play[data-sound-group="5"].is-signal-station .sound-car:nth-child(n) .signal-lamp {
+    top:128.4%; left:50%; width:26%; height:32.7%; aspect-ratio:auto;
+    transform:translate(-50%,-50%); border:0; background:transparent;
+  }
+  .train-page #play[data-sound-group="5"].is-signal-station .sound-car.signal-heard .signal-lamp { background:#f1d27e; }
+  .train-page #play[data-sound-group="5"].is-signal-station .sound-car.signal-open .signal-lamp { background:#8ac799; }
+  .train-page #play[data-sound-group="6"] #tunnel-engine { height:25.76%; object-fit:fill; }
+  .train-page #play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"]) .train-controls,
+  .train-page #play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"]):has(#answer:not([hidden])) .train-controls {
+    top:auto; bottom:12px; left:50%; right:auto; transform:translateX(-50%); width:max-content; padding:8px 12px 32px;
+    background:#fffdf2ed; border-radius:8px; z-index:6;
+  }
+  .train-page #play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"]) .answer-space {
+    left:auto; right:16px; bottom:26px; width:max-content; max-width:calc(50% - 170px); z-index:6;
+  }
+  .train-page #play[data-sound-group="6"] .train-controls,
+  .train-page #play[data-sound-group="6"]:has(#answer:not([hidden])) .train-controls { bottom:32px; }
+  .train-page #play[data-sound-group="6"] .answer-space { bottom:46px; }
+}
+.train-page #play[data-sound-group] .answer-space { justify-content:flex-end; }
+@media(max-width:1000px) {
+  .train-page #play[data-sound-group] { min-height:max(800px,100svh); }
+  .train-page #play[data-sound-group="6"] { min-height:max(800px,100svh,calc(var(--paper-scene-top) + 56.25cqw + 184px)); }
+  .train-page #play[data-sound-group] .clue-book { top:194px; }
+  .magic-page #game[data-sound-group] { min-height:100svh; }
+}
+/* Keep the mobile rail strip registered while filling its formerly blank surroundings. */
+@media(max-width:1000px) {
+  .train-page #play[data-sound-group="2"] { --game-scene:url('assets/game-style/train-paper-two-station.webp'); }
+  .train-page #play[data-sound-group="3"] { --game-scene:url('assets/game-style/train-paper-three-background.webp'); }
+  .train-page #play[data-sound-group="4"] { --game-scene:url('assets/game-style/train-paper-four-empty-river.webp'); }
+  .train-page #play[data-sound-group="5"] { --game-scene:url('assets/game-style/train-paper-five-background.webp'); }
+  .train-page #play[data-sound-group="6"] { --game-scene:url('assets/game-style/train-paper-six-background.webp'); }
+  .train-page #play[data-sound-group="7"] { --game-scene:url('assets/game-style/train-paper-seven-connected.webp'); }
+  .train-page #play:is([data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) {
+    background-image:var(--game-scene),url('assets/game-style/train-background.png');
+    background-size:100% auto,cover; background-position:center var(--paper-scene-top),center; background-repeat:no-repeat;
+  }
+}
+@media(max-width:650px) {
+  .train-page #play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"]) {
+    background-image:var(--game-scene),url('assets/game-style/train-background.png');
+    background-size:100% auto,cover; background-position:center var(--paper-scene-top),center; background-repeat:no-repeat;
+  }
+}
+@media(min-width:1001px) and (max-height:650px) {
+  .train-page #play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"]) { --train-scene-top:0px; }
+  .train-page:has(#play[data-sound-group]:not([hidden])) .train-header h1 { width:260px; }
+  .train-page:has(#play[data-sound-group]:not([hidden])) .train-title-art { width:260px; height:58px; }
+  .train-page #play[data-sound-group] .clue-book { top:80px; }
+}
+
+@media(max-width:700px) and (min-height:700px) and (orientation:portrait) {
+  .train-page #play[data-sound-group] { min-height:100svh; }
+  .train-page #play[data-sound-group="6"] {
+    min-height:max(100svh,calc(var(--paper-scene-top) + 56.25cqw + 184px));
+  }
+  .magic-page #game:is(.is-potion-game,.is-bubble-game) { padding-top:188px; padding-bottom:6px; }
+  .magic-page #game:is(.is-potion-game,.is-bubble-game) { overflow-x:clip; }
+  .magic-page #game:is(.is-potion-game,.is-bubble-game) .magic-workspace { gap:8px; }
+  .magic-page #game:is(.is-potion-game,.is-bubble-game) .magic-audio { margin-bottom:10px; }
+  .magic-page #game.is-potion-game .letter-card { height:124px; }
+  .magic-page #game.is-potion-game .pick-sound,
+  .magic-page #game.is-potion-game .option-tube { height:124px; }
+  .magic-page #game:is(.is-potion-game,.is-bubble-game) .magic-answer-space { margin-top:6px; height:138px; }
+  .magic-page #game.is-bubble-game .magic-answer-space {
+    position:absolute; inset:auto 16px 8px; width:auto; margin:0; z-index:10; visibility:hidden;
+  }
+  .magic-page #game.is-bubble-game .magic-answer-space:has(#answer:not([hidden])) { visibility:visible; }
+  .magic-page #game.is-bubble-game #choice-hint { bottom:0; }
+}
+@media(max-width:1000px) {
+  .train-page #play[data-sound-group="5"] {
+    --paper-scene-top:252px;
+    background-color:#cbdafd;
+    background-image:var(--game-scene),linear-gradient(to bottom,#cbdafd 0 var(--paper-scene-top),#fff8e9 var(--paper-scene-top));
+    background-size:100% auto,100% 100%;
+    background-position:center var(--paper-scene-top),center;
+    background-repeat:no-repeat;
+  }
+  .train-page #play[data-sound-group="5"] .sound-car:nth-child(n) {
+    top:calc(var(--paper-scene-top) + 19cqw);
+    left:calc(28.7% + var(--sound-position) * 21.3%)!important;
+    width:clamp(44px,12cqw,66px);
+    height:clamp(44px,12cqw,66px);
+    padding:0;
+    border:0;
+    border-radius:50%;
+    background:transparent;
+  }
+  .train-page #play[data-sound-group="5"] .car-letter {
+    inset:0;
+    font-size:clamp(28px,6cqw,38px);
+  }
+  .train-page #play[data-sound-group="5"] .car-letter:has(small) { transform:translateY(-3px); }
+  .train-page #play[data-sound-group="5"] .car-letter small { font-size:11px; margin-top:0; }
+  .train-page #play[data-sound-group="5"] .cargo-speaker {
+    z-index:1; left:calc(50% + 22px); bottom:-19px; width:18px; height:18px; padding:2px;
+  }
+  .train-page #play[data-sound-group="5"].is-signal-station .sound-car .signal-lamp {
+    top:100%; left:50%; width:20px; height:20px; aspect-ratio:1;
+    transform:translateX(-50%);
+  }
+}

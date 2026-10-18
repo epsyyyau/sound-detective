@@ -1,0 +1,15 @@
+/* Centre the listening pair over the three learning windows, excluding machinery. */
+#game[data-sound-group] .magic-audio { justify-content:center; padding-left:0; padding-right:0; }
+#game:is(.is-potion-game,.is-bubble-game) .magic-audio { width:100%; align-self:center; }
+#game.is-magnet-game .magic-audio { left:17%; right:2%; }
+#game.is-light-grid-game .magic-audio { left:16.7333%; right:43.1334%; }
+#game.is-rotary-game .magic-audio { left:8.9%; right:23.1%; }
+#game.is-scanner-game .magic-audio { left:21.3%; right:31.4%; }
+#game.is-stamp-game .magic-audio { left:11%; right:12%; }
+@media(max-width:1000px) {
+  #game.is-magnet-game .magic-audio { top:-44px; }
+  #game.is-light-grid-game .magic-audio { left:26.7733%; right:9.0134%; }
+}
+@media(max-width:560px) {
+  #game.is-scanner-game .magic-audio { left:13.885%; right:17.53%; }
+}

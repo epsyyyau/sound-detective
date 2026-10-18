@@ -1,0 +1,780 @@
+{
+  "mode": "built-in image_gen",
+  "styleReference": "assets/pictures/cartoon-v2/look.png",
+  "newWords": [
+    "ant",
+    "bag",
+    "bat",
+    "bath",
+    "bed",
+    "bee",
+    "blue",
+    "boil",
+    "book",
+    "boot",
+    "box",
+    "bun",
+    "bus",
+    "car",
+    "chain",
+    "chat",
+    "chick",
+    "chin",
+    "cloud",
+    "coat",
+    "coin",
+    "corn",
+    "cue",
+    "cup",
+    "dad",
+    "den",
+    "desk",
+    "fan",
+    "feet",
+    "fin",
+    "fish",
+    "fog",
+    "foot",
+    "fork",
+    "fox",
+    "fuel",
+    "glue",
+    "hammer",
+    "hand",
+    "jeep",
+    "kick",
+    "kid",
+    "king",
+    "kit",
+    "leg",
+    "letter",
+    "lid",
+    "load",
+    "mail",
+    "man",
+    "moon",
+    "moth",
+    "mouth",
+    "neck",
+    "out",
+    "paint",
+    "pant",
+    "point",
+    "pot",
+    "pouch",
+    "quack",
+    "queen",
+    "quiz",
+    "red",
+    "ring",
+    "road",
+    "room",
+    "run",
+    "sack",
+    "see",
+    "shark",
+    "shell",
+    "ship",
+    "shop",
+    "sister",
+    "six",
+    "snap",
+    "snip",
+    "spin",
+    "spoon",
+    "stamp",
+    "star",
+    "storm",
+    "sun",
+    "tail",
+    "teeth",
+    "that",
+    "them",
+    "thin",
+    "this",
+    "tie",
+    "toad",
+    "train",
+    "van",
+    "vest",
+    "vet",
+    "web",
+    "wig",
+    "win",
+    "wing",
+    "wood",
+    "wool",
+    "yak",
+    "yam",
+    "yes",
+    "zip",
+    "zoo",
+    "zoom"
+  ],
+  "revisedWords": [
+    "look",
+    "hop"
+  ],
+  "images": [
+    {
+      "word": "look",
+      "prompt": "Remove ball and shadow, focus close-up face and upper body while preserving clean rounded cartoon looking pose.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-adf08226-b61d-4dbe-8b81-b480d1eb1c09.png",
+      "output": "assets/pictures/cartoon-v3/look.png"
+    },
+    {
+      "word": "hop",
+      "prompt": "Use case: precise-object-edit. Edit this phonics illustration for 'hop'. Preserve same boy, outfit, clean rounded cartoon, white square background. Make clearly HOPPING UP on one leg rather than static balancing: both shoes fully off ground, one knee raised, lower hopping foot at least 15% canvas above a small oval ground shadow. Add three bold teal upward motion strokes beneath hopping foot and curved action strokes beside body. Dynamic joyful airborne pose. No text.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-84bbc729-db77-4e32-83b5-9b3b2f6fe46d.png",
+      "output": "assets/pictures/cartoon-v3/hop.png"
+    },
+    {
+      "word": "ant",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One friendly ant, six legs, antennae, three body segments.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-674dbdf7-8601-4fe5-9780-12b080611914.png",
+      "output": "assets/pictures/cartoon-v3/ant.png"
+    },
+    {
+      "word": "bag",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One teal school backpack, handle and shoulder straps.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-5eaa9903-dfe5-4177-aa75-a8b469d84be9.png",
+      "output": "assets/pictures/cartoon-v3/bag.png"
+    },
+    {
+      "word": "bat",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One friendly flying bat animal, spread membranous wings, ears.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-be441533-ecf2-4312-afe3-bd476bc27e07.png",
+      "output": "assets/pictures/cartoon-v3/bat.png"
+    },
+    {
+      "word": "bath",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Child bathing in bathtub, fully concealed beneath bubbles up to shoulders, cheerful face, no nudity.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-db942ef4-d726-46c4-964a-d793f32e360d.png",
+      "output": "assets/pictures/cartoon-v3/bath.png"
+    },
+    {
+      "word": "bed",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One cozy single bed with teal blanket, pillow and wooden headboard.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-4c51bd53-43b3-4102-b37a-aaf944a26c1c.png",
+      "output": "assets/pictures/cartoon-v3/bed.png"
+    },
+    {
+      "word": "bee",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One friendly yellow black bee with two wings and antennae.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-3425233b-ee5b-4e68-a2ff-fcce83be8f20.png",
+      "output": "assets/pictures/cartoon-v3/bee.png"
+    },
+    {
+      "word": "blue",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: A single large irregular blue paint swatch and blue paintbrush. Only blue pigment; clear colour concept.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-3083392a-67a9-48e5-8d9c-4bb6a5c29746.png",
+      "output": "assets/pictures/cartoon-v3/blue.png"
+    },
+    {
+      "word": "boil",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Metal saucepan of boiling water, large bubbling surface and steam wisps, no person.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-9b3d1fc9-932b-44e8-8fa6-31b290b526b2.png",
+      "output": "assets/pictures/cartoon-v3/boil.png"
+    },
+    {
+      "word": "book",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One open illustrated book with cream pages and purple cover, NO lettering.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-843ca2f6-14ec-49f7-9fde-02e539beed03.png",
+      "output": "assets/pictures/cartoon-v3/book.png"
+    },
+    {
+      "word": "boot",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One yellow rain boot.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-a34282aa-2a5b-4836-9d97-2c7d90f181d4.png",
+      "output": "assets/pictures/cartoon-v3/boot.png"
+    },
+    {
+      "word": "box",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One open brown cardboard box.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-10f44ece-4283-443e-8ad9-3e59da0be24a.png",
+      "output": "assets/pictures/cartoon-v3/box.png"
+    },
+    {
+      "word": "bun",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One round bread bun, golden crust.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-f527ee81-a104-4322-b52a-e0f2ba609f5c.png",
+      "output": "assets/pictures/cartoon-v3/bun.png"
+    },
+    {
+      "word": "bus",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One yellow passenger bus, wheels and windows, no lettering.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-f9c7f8c1-052c-45a5-b2ef-c58686387b47.png",
+      "output": "assets/pictures/cartoon-v3/bus.png"
+    },
+    {
+      "word": "car",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One red compact car.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-b4097fd5-d75d-452c-897a-1ce548edaef9.png",
+      "output": "assets/pictures/cartoon-v3/car.png"
+    },
+    {
+      "word": "chain",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: A short curved metal chain of clearly interlocking oval links.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-b2b35897-7bcc-4366-b5a2-6f00b4d639f5.png",
+      "output": "assets/pictures/cartoon-v3/chain.png"
+    },
+    {
+      "word": "chat",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Two children facing each other chatting, open smiling mouths, small blank speech bubbles.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-9a4aaae4-71db-4f3c-abb4-8fa2486441d3.png",
+      "output": "assets/pictures/cartoon-v3/chat.png"
+    },
+    {
+      "word": "chick",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One fluffy yellow baby chicken.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-1460bae4-cfdc-47bb-8995-20336042cb42.png",
+      "output": "assets/pictures/cartoon-v3/chick.png"
+    },
+    {
+      "word": "chin",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Closeup smiling child's face, index fingertip pointing clearly to chin below lower lip.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-16d8222d-413e-49a2-b107-826325168550.png",
+      "output": "assets/pictures/cartoon-v3/chin.png"
+    },
+    {
+      "word": "cloud",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One soft white cloud with pale blue outlines.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-5fe3789c-5c60-4101-a19f-35ac652ba866.png",
+      "output": "assets/pictures/cartoon-v3/cloud.png"
+    },
+    {
+      "word": "coat",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One teal long coat with sleeves, buttons and collar, on hanger.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-b9089c2f-e661-4e8b-842a-ce1c048dd5f5.png",
+      "output": "assets/pictures/cartoon-v3/coat.png"
+    },
+    {
+      "word": "coin",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One golden coin with embossed star, no numbers or letters.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-1fd24ba1-e131-4c23-abe9-7571235ad515.png",
+      "output": "assets/pictures/cartoon-v3/coin.png"
+    },
+    {
+      "word": "corn",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One yellow corn cob with green husk peeled back.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-fbe1ca2a-62a4-465e-8399-7d9e1ac08a91.png",
+      "output": "assets/pictures/cartoon-v3/corn.png"
+    },
+    {
+      "word": "cue",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One long slender wooden snooker cue with dark grip and small blue tip, diagonally centered, no balls.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-fd8db9f5-95ee-45aa-99c8-d0c7276d5325.png",
+      "output": "assets/pictures/cartoon-v3/cue.png"
+    },
+    {
+      "word": "cup",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One simple yellow teacup with handle on saucer, no steam.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-76c85987-ab49-485b-8649-f0a780374df8.png",
+      "output": "assets/pictures/cartoon-v3/cup.png"
+    },
+    {
+      "word": "dad",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Friendly adult father hugging his small child, father dominant, dark hair.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-e8826223-d780-48c3-b2ba-85e67fd5d128.png",
+      "output": "assets/pictures/cartoon-v3/dad.png"
+    },
+    {
+      "word": "den",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: A woodland animal den: hollow earth burrow under tree roots, friendly fox peeking out.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-dc22cba5-0808-43c2-8ed7-82df87eaea23.png",
+      "output": "assets/pictures/cartoon-v3/den.png"
+    },
+    {
+      "word": "desk",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One child's wooden school desk and matching chair, pencil and closed book.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-0752c817-10c1-436b-af7e-487b8f912d23.png",
+      "output": "assets/pictures/cartoon-v3/desk.png"
+    },
+    {
+      "word": "fan",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One teal electric tabletop fan, protective circular grille.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-07a1a831-0898-4f7d-b574-2fa5796cd9c9.png",
+      "output": "assets/pictures/cartoon-v3/fan.png"
+    },
+    {
+      "word": "feet",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Exactly two bare feet shown side by side with ankles, five toes each, no other body parts.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-a67c8f3b-7e31-47b6-987a-7e027afa4d28.png",
+      "output": "assets/pictures/cartoon-v3/feet.png"
+    },
+    {
+      "word": "fin",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Side view one friendly fish with a single dorsal fin highlighted coral; all other fins muted teal.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-8ffd1665-62c6-4040-8a47-9adbd0bc8fce.png",
+      "output": "assets/pictures/cartoon-v3/fin.png"
+    },
+    {
+      "word": "fish",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One friendly orange fish, complete body and fins, no water scenery.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-1b278428-0b2b-4f27-8814-43ddc7c4b6f6.png",
+      "output": "assets/pictures/cartoon-v3/fish.png"
+    },
+    {
+      "word": "fog",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: A small landscape of trees and path partially obscured by thick pale mist, clearly foggy.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-9b8246b2-8bb6-433e-9da2-2f6f686d638a.png",
+      "output": "assets/pictures/cartoon-v3/fog.png"
+    },
+    {
+      "word": "foot",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Exactly ONE bare foot and ankle in side three-quarter view, five toes.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-60281e4e-53a6-47fd-992a-692246ab5b1d.png",
+      "output": "assets/pictures/cartoon-v3/foot.png"
+    },
+    {
+      "word": "fork",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One silver dining fork, four tines.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-c3a0d966-ba54-4729-98ac-b8270021c877.png",
+      "output": "assets/pictures/cartoon-v3/fork.png"
+    },
+    {
+      "word": "fox",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One cute orange fox with bushy white-tipped tail.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-65b854f1-3eab-4d3c-87c7-75a936669620.png",
+      "output": "assets/pictures/cartoon-v3/fox.png"
+    },
+    {
+      "word": "fuel",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One fuel pump with hose and nozzle, blank display, NO letters or digits.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-24476bae-df12-4f94-a7f8-dbd98aa1e4c2.png",
+      "output": "assets/pictures/cartoon-v3/fuel.png"
+    },
+    {
+      "word": "glue",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One white squeeze glue bottle with orange nozzle, small glue drop, no label.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-27551e64-9bf2-4f78-bce2-d28a796cb783.png",
+      "output": "assets/pictures/cartoon-v3/glue.png"
+    },
+    {
+      "word": "hammer",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One metal claw hammer with wooden handle.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-d0b57179-1b64-4abe-a65d-91c923278f1c.png",
+      "output": "assets/pictures/cartoon-v3/hammer.png"
+    },
+    {
+      "word": "hand",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One open hand palm forward, thumb and four fingers clearly five digits.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-a78779c8-2e1c-4ed2-959c-55fe1a3c931c.png",
+      "output": "assets/pictures/cartoon-v3/hand.png"
+    },
+    {
+      "word": "jeep",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One green boxy off-road jeep, spare wheel, no logos.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-0a73135b-5efa-4948-88d3-ce3bc3abb07c.png",
+      "output": "assets/pictures/cartoon-v3/jeep.png"
+    },
+    {
+      "word": "kick",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Child kicking football, foot making contact, motion strokes show kick.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-c51cef56-16f7-466b-8ca5-1a838a94a1ba.png",
+      "output": "assets/pictures/cartoon-v3/kick.png"
+    },
+    {
+      "word": "kid",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One cheerful young child waving, teal shirt yellow shorts.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-2ca37472-e36f-4a4c-91d8-d09ae10d79ca.png",
+      "output": "assets/pictures/cartoon-v3/kid.png"
+    },
+    {
+      "word": "king",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Friendly king in crown and red cape seated on simple throne.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-cd930b90-76e3-43ba-8904-93692b112369.png",
+      "output": "assets/pictures/cartoon-v3/king.png"
+    },
+    {
+      "word": "kit",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One open small first-aid kit with bandage and gauze, plain red cross only.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-e0b4e41a-08d9-4832-81f2-9b605b6c3d48.png",
+      "output": "assets/pictures/cartoon-v3/kit.png"
+    },
+    {
+      "word": "leg",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One child's leg from upper thigh to ankle and blue shoe, clear knee, no other body parts.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-fa5343ed-1acf-40a2-ac0c-8557833b0cfd.png",
+      "output": "assets/pictures/cartoon-v3/leg.png"
+    },
+    {
+      "word": "letter",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One cream envelope with a letter sheet emerging, no writing.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-63fd564a-4b05-4136-8d28-2d0f4c3a00b6.png",
+      "output": "assets/pictures/cartoon-v3/letter.png"
+    },
+    {
+      "word": "lid",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One round silver pot lid with knob, beside matching pot to show purpose.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-9a789f5a-2701-4ec7-bf92-99276821e06f.png",
+      "output": "assets/pictures/cartoon-v3/lid.png"
+    },
+    {
+      "word": "load",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: A small cart loaded with stacked parcels and sacks, visibly carrying a load.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-e1977d2d-3485-49da-9bf8-ee0ac38c2280.png",
+      "output": "assets/pictures/cartoon-v3/load.png"
+    },
+    {
+      "word": "mail",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One open mailbox with two envelopes, no text.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-069e4951-66e2-45b5-95f7-b33390e9bbbf.png",
+      "output": "assets/pictures/cartoon-v3/mail.png"
+    },
+    {
+      "word": "man",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One friendly adult man standing, teal shirt and trousers, full body.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-1c6895b3-df3d-4b2a-a12b-83ec1eec63db.png",
+      "output": "assets/pictures/cartoon-v3/man.png"
+    },
+    {
+      "word": "moon",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One crescent moon with subtle face and tiny stars.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-b55199c0-f07c-45b5-9f84-8bb78c4e673b.png",
+      "output": "assets/pictures/cartoon-v3/moon.png"
+    },
+    {
+      "word": "moth",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One moth with fuzzy body and beige brown patterned wings spread, distinct from butterfly.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-b2b35de9-00d8-4c22-9a18-6272da68ea3b.png",
+      "output": "assets/pictures/cartoon-v3/moth.png"
+    },
+    {
+      "word": "mouth",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Close-up child's face focused on smiling open mouth, index fingertip pointing beside mouth.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-5d871476-68cf-4100-928a-d1d5a0145b05.png",
+      "output": "assets/pictures/cartoon-v3/mouth.png"
+    },
+    {
+      "word": "neck",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Child's head and shoulders, index finger pointing to clearly visible neck between chin and collar.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-588f127a-8616-4814-90b2-1fa5e96603b7.png",
+      "output": "assets/pictures/cartoon-v3/neck.png"
+    },
+    {
+      "word": "out",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: A child stepping OUT of open doorway, outward arrow shape and motion strokes, no words.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-2554c2bd-e59a-438b-a812-dc49ecb1cf11.png",
+      "output": "assets/pictures/cartoon-v3/out.png"
+    },
+    {
+      "word": "paint",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Three paint cans red green silver, paint drips and paintbrush, no lettering.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-ed8b0c40-d8ef-47fd-bd12-58dc1659805d.png",
+      "output": "assets/pictures/cartoon-v3/paint.png"
+    },
+    {
+      "word": "pant",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: A child after running panting, hands on knees, open mouth and breath puff strokes, no distress.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-c0c91ea8-d65b-4f80-b310-00223cee81a7.png",
+      "output": "assets/pictures/cartoon-v3/pant.png"
+    },
+    {
+      "word": "point",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One hand pointing sideways with INDEX finger, thumb beside finger and other three fingers curled.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-a33552c1-1e24-41de-9b56-824615b7e54b.png",
+      "output": "assets/pictures/cartoon-v3/point.png"
+    },
+    {
+      "word": "pot",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One cooking pot with two small handles, lid off, no steam.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-d24be841-8e2f-474b-b044-401157eb16fb.png",
+      "output": "assets/pictures/cartoon-v3/pot.png"
+    },
+    {
+      "word": "pouch",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One small teal drawstring pouch, gathered opening and string ties.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-49832d4c-fcf6-4aa3-96cb-9f011a7cc643.png",
+      "output": "assets/pictures/cartoon-v3/pouch.png"
+    },
+    {
+      "word": "quack",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One cheerful yellow duck with open beak and sound stroke marks, NO written quack.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-8de8a0bb-cb83-4f10-aa0f-ff72bd5392c1.png",
+      "output": "assets/pictures/cartoon-v3/quack.png"
+    },
+    {
+      "word": "queen",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One friendly queen wearing crown and pink royal dress.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-2f4ac7dd-7117-41a0-9b47-0cda8938c6cb.png",
+      "output": "assets/pictures/cartoon-v3/queen.png"
+    },
+    {
+      "word": "quiz",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Child considering a blank quiz sheet with checkboxes and shapes, thoughtful pose, no words or numbers.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-788336ed-1e84-471e-9c35-f1fdda3f98ce.png",
+      "output": "assets/pictures/cartoon-v3/quiz.png"
+    },
+    {
+      "word": "red",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One large irregular RED paint swatch and red paintbrush. Only red pigment.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-6da16744-4f87-4052-88f6-47f206521feb.png",
+      "output": "assets/pictures/cartoon-v3/red.png"
+    },
+    {
+      "word": "ring",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One gold ring with blue gemstone.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-a310045f-5dd7-4aed-b794-85a6d4c88ef1.png",
+      "output": "assets/pictures/cartoon-v3/ring.png"
+    },
+    {
+      "word": "road",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: A curving grey road with white dashed central markings, tiny grass edges, no vehicles.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-3afc4d5e-152f-4ecb-9f16-91d14df2377f.png",
+      "output": "assets/pictures/cartoon-v3/road.png"
+    },
+    {
+      "word": "room",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One child's bedroom corner with bed, window, rug and wardrobe, coherent small room, white margins.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-6996c91c-8a84-47c4-aa8d-b9eeb07d5e51.png",
+      "output": "assets/pictures/cartoon-v3/room.png"
+    },
+    {
+      "word": "run",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Child running, long stride both feet airborne, strong motion strokes, teal shirt yellow shorts.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-cc6eaf12-b3e7-4d83-8210-0df0f4885d6e.png",
+      "output": "assets/pictures/cartoon-v3/run.png"
+    },
+    {
+      "word": "sack",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One large tan burlap sack tied near top.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-4ba6d4b6-7d68-48b9-88b2-42024e242781.png",
+      "output": "assets/pictures/cartoon-v3/sack.png"
+    },
+    {
+      "word": "see",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Close-up child with wide open eyes looking forward, index finger near eye without touching it, visual focus on eyes.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-ffcd2fa4-4b39-47df-9289-a532fe441024.png",
+      "output": "assets/pictures/cartoon-v3/see.png"
+    },
+    {
+      "word": "shark",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One friendly grey shark swimming, recognizable dorsal fin, no frightening teeth.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-1fff4958-367e-45ac-8865-2adc83e8b377.png",
+      "output": "assets/pictures/cartoon-v3/shark.png"
+    },
+    {
+      "word": "shell",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One pink seashell, scalloped fan shape.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-9877749b-7eb6-4c9f-a250-48b0adae8e47.png",
+      "output": "assets/pictures/cartoon-v3/shell.png"
+    },
+    {
+      "word": "ship",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One large blue passenger ship with deck cabins, portholes and smokestack, distinct from rowboat.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-9e213948-435a-4bde-a66f-47cc3f85efd4.png",
+      "output": "assets/pictures/cartoon-v3/ship.png"
+    },
+    {
+      "word": "shop",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One small shop storefront, striped awning, window with groceries, no signs or text.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-15f54ba9-e192-4447-9f12-ea5390420b61.png",
+      "output": "assets/pictures/cartoon-v3/shop.png"
+    },
+    {
+      "word": "sister",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Older girl smiling with younger sibling, sister dominant, friendly family bond.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-d13197ee-73f2-4946-a7f8-6dc0b614aa73.png",
+      "output": "assets/pictures/cartoon-v3/sister.png"
+    },
+    {
+      "word": "six",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: EXACTLY SIX red apples in TWO rows of THREE, no numbers.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-4e76736f-b042-4283-a8ad-c3ecbab674a0.png",
+      "output": "assets/pictures/cartoon-v3/six.png"
+    },
+    {
+      "word": "snap",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Two hands snapping one thin twig in two, clear break with short action strokes.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-461972de-5198-4730-a235-e8a7009ec923.png",
+      "output": "assets/pictures/cartoon-v3/snap.png"
+    },
+    {
+      "word": "snip",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Close-up safe scissors cutting a strip of paper, blade contact and tiny motion marks.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-09cce5e3-64c1-4a32-a7db-0ece7e01d723.png",
+      "output": "assets/pictures/cartoon-v3/snip.png"
+    },
+    {
+      "word": "spin",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Child spinning in place, curved circular motion lines around body, teal shirt yellow shorts.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-8a8ddb7c-0e1b-4bf0-ae53-bc557bd5311a.png",
+      "output": "assets/pictures/cartoon-v3/spin.png"
+    },
+    {
+      "word": "spoon",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One silver spoon.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-18d6d0fd-4d6c-4f24-b3bc-02835d5f2d59.png",
+      "output": "assets/pictures/cartoon-v3/spoon.png"
+    },
+    {
+      "word": "stamp",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: A rubber stamp pressing down on paper, red star imprint and short impact strokes, no text.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-f0144e4f-63ec-472a-b1b9-cb4d2a0a3535.png",
+      "output": "assets/pictures/cartoon-v3/stamp.png"
+    },
+    {
+      "word": "star",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One cheerful golden five-point star.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-9eb5fb60-ec66-481c-8456-9e356b651c61.png",
+      "output": "assets/pictures/cartoon-v3/star.png"
+    },
+    {
+      "word": "storm",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: A dark storm cloud, rain and single lightning bolt above small grass patch.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-d2f75eaa-9fc9-4cd2-b99f-e1c3f90b17c3.png",
+      "output": "assets/pictures/cartoon-v3/storm.png"
+    },
+    {
+      "word": "sun",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One warm golden sun with friendly face and rays.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-2a890ce2-6076-4c1a-8a2b-82e39fd91fab.png",
+      "output": "assets/pictures/cartoon-v3/sun.png"
+    },
+    {
+      "word": "tail",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: A friendly orange cat from rear three-quarter view with raised curled tail emphasized, body muted, tail bright.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-b13d46ba-3c99-42a0-9b00-7644f669903b.png",
+      "output": "assets/pictures/cartoon-v3/tail.png"
+    },
+    {
+      "word": "teeth",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Close-up wide smiling mouth showing neat white teeth, no whole body.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-59ce413c-ffdb-4655-bf8a-81d53a35913b.png",
+      "output": "assets/pictures/cartoon-v3/teeth.png"
+    },
+    {
+      "word": "that",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Child pointing at a red toy car FAR AWAY on a distant shelf, distance clear, no lettering.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-66f80ddf-a0d1-4aa6-8f7a-3a6db8389141.png",
+      "output": "assets/pictures/cartoon-v3/that.png"
+    },
+    {
+      "word": "them",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One child foreground gesturing toward a separate group of three smiling children in distance, no text.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-d868ad15-a81c-4d44-8c6c-5acdbc0f6e4c.png",
+      "output": "assets/pictures/cartoon-v3/them.png"
+    },
+    {
+      "word": "thin",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Two books standing side by side equal height, one obviously VERY THIN and other thick, thin book bright teal.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-d82b1d3e-0b22-4c03-b128-5bd0c3dc32f6.png",
+      "output": "assets/pictures/cartoon-v3/thin.png"
+    },
+    {
+      "word": "this",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Child pointing to a red toy car held CLOSE beside own chest, no lettering.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-d224f0ea-cf5a-4c98-b3e6-8c32dca1ae83.png",
+      "output": "assets/pictures/cartoon-v3/this.png"
+    },
+    {
+      "word": "tie",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One red necktie with knot, centered.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-cfa40683-3f07-4892-82b6-81131cad566e.png",
+      "output": "assets/pictures/cartoon-v3/tie.png"
+    },
+    {
+      "word": "toad",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One cute squat brown toad with bumpy skin, short legs, distinct from smooth green frog.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-68244ce2-d370-4f46-a83d-b85a2b25dc91.png",
+      "output": "assets/pictures/cartoon-v3/toad.png"
+    },
+    {
+      "word": "train",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One cute green steam train engine pulling two short passenger carriages, no lettering.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-0c9c2150-41be-433e-9520-14e39a6e2f18.png",
+      "output": "assets/pictures/cartoon-v3/train.png"
+    },
+    {
+      "word": "van",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One white teal delivery van, no lettering.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-b5a664ea-78f4-4343-bb74-7b726fa3064c.png",
+      "output": "assets/pictures/cartoon-v3/van.png"
+    },
+    {
+      "word": "vest",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One sleeveless orange vest with buttons and V neck, no sleeves.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-6b0a6da9-8186-47c4-af9c-b987758f2df3.png",
+      "output": "assets/pictures/cartoon-v3/vest.png"
+    },
+    {
+      "word": "vet",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Friendly veterinarian examining a puppy on table with stethoscope, no text.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-747b1138-47dc-496e-9349-12104070011c.png",
+      "output": "assets/pictures/cartoon-v3/vet.png"
+    },
+    {
+      "word": "web",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One clearly formed spiderweb with small friendly spider.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-273ca6b1-74a6-494e-b491-3c86f36b5327.png",
+      "output": "assets/pictures/cartoon-v3/web.png"
+    },
+    {
+      "word": "wig",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One brown bob hairstyle wig on simple plain wig stand.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-6cdb93a4-8cea-452c-9f60-c6b300323672.png",
+      "output": "assets/pictures/cartoon-v3/wig.png"
+    },
+    {
+      "word": "win",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One cheerful child holding gold trophy overhead, small confetti, no text or digits.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-5c4e1331-3e8a-4a50-a4d3-31f69b538b06.png",
+      "output": "assets/pictures/cartoon-v3/win.png"
+    },
+    {
+      "word": "wing",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One bird's extended feathered wing, white and blue feathers, entire wing visible.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-865bf0dc-3870-4a0e-9765-a7363c83a3cb.png",
+      "output": "assets/pictures/cartoon-v3/wing.png"
+    },
+    {
+      "word": "wood",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Three short timber planks with visible grain, one end shows tree rings, no tools.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-892f6cd1-d779-4789-b5c2-e78410bd0f58.png",
+      "output": "assets/pictures/cartoon-v3/wood.png"
+    },
+    {
+      "word": "wool",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One fluffy cream ball of wool yarn, loose strand and two knitting needles.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-f4313156-b8fe-4419-b197-31a5032a7b56.png",
+      "output": "assets/pictures/cartoon-v3/wool.png"
+    },
+    {
+      "word": "yak",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One cute shaggy brown yak, long fringed hair and curved horns.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-4d798102-95eb-444c-9125-49effd2754ff.png",
+      "output": "assets/pictures/cartoon-v3/yak.png"
+    },
+    {
+      "word": "yam",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One whole purple-skinned yam and sliced piece showing pale creamy flesh, not orange sweet potato.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-64388ac3-f1a2-436b-8343-0f820db4528c.png",
+      "output": "assets/pictures/cartoon-v3/yam.png"
+    },
+    {
+      "word": "yes",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One cheerful child nodding, small nod motion curves above head and green checkmark beside, no words.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-6305a9c0-79f1-4034-8288-804f15ae8ee9.png",
+      "output": "assets/pictures/cartoon-v3/yes.png"
+    },
+    {
+      "word": "zip",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: Close-up of zipper on teal fabric, metal teeth and pull tab, half unzipped.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-5d570489-1769-4910-91c4-8810066822c6.png",
+      "output": "assets/pictures/cartoon-v3/zip.png"
+    },
+    {
+      "word": "zoo",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: A small zoo entrance with giraffe and elephant beyond gate, no lettering.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-6e4f7e93-64dd-4243-9edb-eb7d879a12d8.png",
+      "output": "assets/pictures/cartoon-v3/zoo.png"
+    },
+    {
+      "word": "zoom",
+      "prompt": "Use case: scientific-educational. ONE original phonics vocabulary cartoon. Match reference clean rounded 2D digital cartoon, smooth fills, subtle shading, friendly cute proportions and crisp edges. White square backdrop, centered subject fills 75%, generous margins. No text, letters, numerals, labels, watermark, border, watercolor, paper texture, brushwork, storybook look, realism or 3D. Reference is STYLE ONLY. Subject: One red toy-like racing car rushing forward with long speed lines, dramatic movement, no text.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-9449a03c-b87d-488c-b0b7-34408d98bb24.png",
+      "output": "assets/pictures/cartoon-v3/zoom.png"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+/* The phone cover uses one continuous town illustration; desktop and tablet keep the route map. */
+@media (max-width:600px) and (orientation:portrait) {
+  .family-page:has(#family-map:not([hidden])) { padding:0; background:#b4e9b6; }
+  .family-page:has(#family-map:not([hidden])) .family-header {
+    position:absolute;
+    z-index:6;
+    inset:0 4px auto;
+    height:14svh;
+    min-height:76px;
+    max-height:116px;
+    padding:0 4px;
+    background:none;
+    grid-template-columns:48px minmax(0,1fr) 92px;
+  }
+  .family-page:has(#family-map:not([hidden])) #family-map-title { height:100%; }
+  .family-page .family-map-canvas,
+  .family-page .family-map:has(.group-mission-hint) .family-map-canvas {
+    height:max(100svh,760px);
+    min-height:760px;
+    aspect-ratio:auto;
+    background:#b4e9b6 url('assets/family-map/paper-town-cover-mobile-v1.png') center / 100% 100% no-repeat;
+  }
+  .family-page .family-map-background,
+  .family-page .family-mobile-route,
+  .family-page .family-map-train,
+  .family-page .family-cover-landmark { display:none; }
+  .family-page .family-stop {
+    width:48%!important;
+    height:17%!important;
+    min-height:44px;
+  }
+  .family-page .family-stop[data-sound-group="1"] { left:1%!important; top:19%!important; }
+  .family-page .family-stop[data-sound-group="2"] { left:51%!important; top:19%!important; }
+  .family-page .family-stop[data-sound-group="3"] { left:1%!important; top:37%!important; }
+  .family-page .family-stop[data-sound-group="4"] { left:51%!important; top:37%!important; }
+  .family-page .family-stop[data-sound-group="5"] { left:1%!important; top:55%!important; }
+  .family-page .family-stop[data-sound-group="6"] { left:51%!important; top:55%!important; }
+  .family-page .family-stop[data-sound-group="7"] { left:15%!important; top:77%!important; width:70%!important; height:17%!important; }
+  .family-page .family-stop-sign { top:2%; left:5%; }
+  .family-page .family-stop-number { background:var(--group-tint); }
+  .family-page .family-cover-caption {
+    top:auto!important;
+    bottom:0;
+    left:50%!important;
+    right:auto;
+    width:max-content;
+    max-width:96%;
+    transform:translateX(-50%);
+    padding:2px 6px;
+    border-radius:3px;
+    background:#fff9e9ed;
+    color:#123f46;
+    font-size:14px;
+    font-weight:700;
+    line-height:1.35;
+    white-space:nowrap;
+    text-shadow:none;
+    box-shadow:0 1px 3px #183f3b30;
+  }
+  .family-page .family-stop:focus-visible { outline:3px solid #0c8388; outline-offset:-3px; }
+  .family-page #family-map > .group-mission-hint { bottom:3px; }
+  .family-page #family-map .creator-mark { position:absolute; z-index:7; right:8px; bottom:8px; width:42px; }
+}

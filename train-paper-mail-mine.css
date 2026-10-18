@@ -1,0 +1,94 @@
+/* Separate vehicles cross the shared rail; sound signs remain fixed. */
+.train-page:has(#play:is([data-sound-group="5"],[data-sound-group="6"]):not([hidden])) .train-header h1 {
+  position:absolute; left:50%; transform:translateX(-50%); white-space:nowrap;
+}
+#play[data-sound-group="5"] { background-image:url('assets/game-style/train-paper-five-background.webp'); }
+#play[data-sound-group="6"] { background-image:url('assets/game-style/train-paper-six-background.webp'); }
+/* The moving cart must occlude lamps inside the sound-train stacking context. */
+#play[data-sound-group="6"] #tunnel-engine { z-index:2; }
+#play:is([data-sound-group="5"],[data-sound-group="6"]) :is(#signal-engine,#tunnel-engine) {
+  left:0; top:auto; bottom:27%; width:21%; height:auto; object-fit:contain;
+}
+#play:is([data-sound-group="5"],[data-sound-group="6"]) .sound-car:nth-child(n) {
+  left:var(--paper-pad)!important; top:35.5%; width:13%; height:18.2%; border:0; background:none;
+}
+#play[data-sound-group="6"] .sound-car:nth-child(n) { top:40.5%; width:13%; height:11%; container-type:normal; }
+#play:is([data-sound-group="5"],[data-sound-group="6"]) .car-letter { inset:0; font-size:64px; color:#203947; }
+#play:is([data-sound-group="5"],[data-sound-group="6"]) .car-letter small { font-size:14px; }
+#play:is([data-sound-group="5"],[data-sound-group="6"]) .cargo-speaker {
+  left:50%; right:auto; transform:translateX(-50%); bottom:0; width:28px; height:28px; padding:4px;
+}
+#play[data-sound-group="6"] .cargo-speaker { bottom:-32px; }
+#play[data-sound-group="5"] .signal-lamp:nth-child(n) {
+  top:105%; left:32%; width:36%; height:auto; aspect-ratio:1; border:3px solid #62506d; background:#433c49;
+}
+#play[data-sound-group="5"] .signal-heard .signal-lamp { background:#f1d27e; box-shadow:inset 0 0 8px #fff8dc; }
+#play[data-sound-group="5"] .signal-open .signal-lamp { background:#8ac799; box-shadow:inset 0 0 8px #eef9d4; }
+#play[data-sound-group="5"] .signal-switch { visibility:hidden; }
+#play[data-sound-group="6"] .tunnel-glow {
+  /* The lantern glass is at y=565 in the 1672 x 941 scene. */
+  z-index:1; top:177.66%; left:calc(50% + var(--lamp-correction)); width:var(--tunnel-glow-width,94%); height:160%;
+  transform:translate(-50%,-50%); border-radius:0; opacity:0;
+  background:radial-gradient(ellipse at center,#fffcebe8 0%,#fff0bfc9 13%,#ffdb77a8 34%,#ffc14f69 57%,transparent 77%);
+  filter:drop-shadow(0 0 8px #ffe18a8c);
+}
+#play[data-sound-group="6"] .sound-car:is(:first-child,:nth-child(3)) .tunnel-glow {
+  --tunnel-glow-width:106%;
+  --tunnel-glow-mobile-width:14cqw;
+}
+#play[data-sound-group="6"] .sound-car:first-child .tunnel-glow { --beam-cut-left:10%; }
+#play[data-sound-group="6"] .sound-car:nth-child(3) .tunnel-glow { --beam-cut-right:10%; }
+#play[data-sound-group="6"] .tunnel-glow::before {
+  content:''; position:absolute; top:49%; left:-4%; width:108%; height:75%;
+  clip-path:polygon(43% 0,57% 0,calc(100% - var(--beam-cut-right,0%)) 100%,var(--beam-cut-left,0%) 100%);
+  background:radial-gradient(ellipse at 50% 4%,#fff0bfaa 0%,#ffda7a82 34%,#ffbd4b38 61%,transparent 81%);
+  filter:blur(6px);
+}
+#play[data-sound-group="6"] .tunnel-glow::after {
+  content:''; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+  width:8%; height:12%; border-radius:2px; background:#fffef0;
+  box-shadow:0 0 9px 4px #fff4c2d9,0 0 26px 13px #ffd46ba6;
+}
+#play[data-sound-group="6"] :is(.tunnel-heard,.tunnel-linked) .tunnel-glow { opacity:1; }
+#play[data-sound-group="6"] .train-reading-button:is(.needs-reading,.is-read) .train-reading-prompt { visibility:visible; }
+#setup .station-vehicle { position:absolute; left:40%; top:32%; width:58%; height:46%; object-fit:contain; pointer-events:none; }
+#setup [data-sound-group="6"] .station-vehicle { left:20%; top:42%; width:72%; height:38%; }
+@media(max-width:1000px) {
+  #play:is([data-sound-group="5"],[data-sound-group="6"]) {
+    --paper-scene-top:380px; min-height:max(800px,100svh);
+    background-size:100% auto; background-position:center var(--paper-scene-top);
+  }
+  #play:is([data-sound-group="5"],[data-sound-group="6"]) .sound-car:nth-child(n) {
+    top:264px; left:calc(18% + var(--sound-position) * 32%)!important;
+    width:26%; height:84px; border:2px solid #c6b4da; border-radius:8px; background:#fffaf0;
+  }
+  #play[data-sound-group="6"] .sound-car:nth-child(n) { border-color:#d9b78c; }
+  #play:is([data-sound-group="5"],[data-sound-group="6"]) .car-letter { inset:0 0 22px; font-size:40px; }
+  #play:is([data-sound-group="5"],[data-sound-group="6"]) .car-letter small { font-size:12px; }
+  #play:is([data-sound-group="5"],[data-sound-group="6"]) .cargo-speaker { bottom:3px; width:22px; height:22px; padding:3px; }
+  #play[data-sound-group="5"] .signal-lamp:nth-child(n) { top:calc(100% + 6px); left:calc(50% - 9px); width:18px; height:18px; border-width:2px; }
+  #play[data-sound-group="6"] .tunnel-glow {
+    display:block; left:calc(50% + var(--tunnel-shift));
+    top:calc(var(--paper-scene-top) - 266px + 33.7919cqw);
+    width:var(--tunnel-glow-mobile-width,16cqw); height:18cqw;
+  }
+  #play[data-sound-group="6"] .tunnel-glow::after { width:1.2cqw; height:1.6cqw; box-shadow:0 0 5px 2px #fff4c2d9,0 0 13px 5px #ffd46ba6; }
+  #play:is([data-sound-group="5"],[data-sound-group="6"]) :is(#signal-engine,#tunnel-engine) {
+    top:auto; bottom:calc(100% - var(--paper-scene-top) - 41.1cqw); width:24%; height:auto;
+  }
+  #play:is([data-sound-group="5"],[data-sound-group="6"]) .train-controls,
+  #play:is([data-sound-group="5"],[data-sound-group="6"]):has(#answer:not([hidden])) .train-controls {
+    top:calc(var(--paper-scene-top) + 56.25cqw + 16px); left:0; right:0;
+  }
+  #play:is([data-sound-group="5"],[data-sound-group="6"]) .answer-space {
+    top:calc(var(--paper-scene-top) + 56.25cqw + 104px); bottom:auto;
+  }
+  #play[data-sound-group="6"] { min-height:max(800px,100svh,calc(var(--paper-scene-top) + 56.25cqw + 184px)); }
+  #play[data-sound-group="6"] .train-controls,
+  #play[data-sound-group="6"]:has(#answer:not([hidden])) .train-controls { top:calc(var(--paper-scene-top) + 56.25cqw); }
+}
+@media(max-width:650px) {
+  #play:is([data-sound-group="5"],[data-sound-group="6"]) .car-letter { font-size:32px; }
+  #setup .station-vehicle { left:38%; top:38%; width:58%; height:42%; }
+  #setup [data-sound-group="6"] .station-vehicle { left:18%; top:43%; width:72%; height:37%; }
+}

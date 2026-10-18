@@ -1,0 +1,91 @@
+/* Cover-only sizing: keep each scene and its hit targets in one coordinate system. */
+body:has(.train-page #setup:not([hidden])),
+body:has(.magic-page #setup:not([hidden])),
+body:has(.family-page #family-map:not([hidden])) { margin:0; }
+.train-page:has(#setup:not([hidden])),
+.magic-page:has(#setup:not([hidden])),
+.family-page:has(#family-map:not([hidden])) { width:100%; max-width:none; min-height:100svh; margin:0; padding:0; }
+.train-page #setup.train-panel { width:100%; max-width:none; margin:0; padding:0; border:0; border-radius:0; }
+.train-page #setup .station-scene { width:100%; height:100svh; min-height:100svh; aspect-ratio:auto; }
+.train-page #setup .station-group:nth-child(7) { --name-y:76%; }
+.magic-page:has(#setup:not([hidden])) .magic-header { position:absolute; z-index:8; inset:12px 16px auto; margin:0; pointer-events:none; }
+.magic-page:has(#setup:not([hidden])) .magic-header .practice-return { pointer-events:auto; }
+.magic-page #setup { width:100%; height:100svh; min-height:100svh; aspect-ratio:auto; margin:0; border:0; border-radius:0; }
+.family-page:has(#family-map:not([hidden])) { position:relative; }
+.family-page:has(#family-map:not([hidden])) .family-header { position:absolute; z-index:6; inset:0 12px auto; width:auto; max-width:none; height:18svh; min-height:112px; max-height:160px; grid-template-columns:1fr minmax(0,46%) 1fr; margin:0; }
+.family-page:has(#family-map:not([hidden])) #family-map-title { height:100%; }
+.family-map,.train-page #setup { position:relative; }
+.family-map .group-mission-description { top:0; left:0; }
+.family-map #family-map-status { position:absolute; top:0; left:0; width:1px; height:1px; margin:0; overflow:hidden; clip-path:inset(50%); }
+.family-page .family-map-canvas,
+.family-page .family-map:has(.group-mission-hint) .family-map-canvas { width:100%; max-width:none; min-width:0; height:100svh; aspect-ratio:auto; margin:0; }
+.train-page #setup > .group-mission-hint,
+.magic-page #setup > .group-mission-hint,
+.family-page #family-map > .group-mission-hint {
+  display:block; position:absolute; z-index:9; inset:auto auto 0 50%; transform:translateX(-50%);
+  width:max-content; max-width:calc(100% - 32px); min-height:0; margin:0; padding:6px 16px;
+  border:1px solid #b6cdc1; border-radius:6px; background:#fffdf5f5; color:#164f56;
+  box-shadow:0 2px 6px #254c4526; font-size:16px; line-height:1.5; text-align:center;
+}
+.train-page #setup > .group-mission-hint:empty,
+.magic-page #setup > .group-mission-hint:empty,
+.family-page #family-map > .group-mission-hint:empty { visibility:hidden; }
+.train-page #setup .station-group:is(:hover,:focus-visible) .station-scene-name,
+.magic-page #setup .rack-route:is(:hover,:focus-visible) .lab-station-name,
+.family-page #family-map .family-stop:is(:hover,:focus-visible) .family-cover-caption { text-decoration:underline; text-underline-offset:5px; text-decoration-thickness:2px; }
+@media(min-width:1001px) and (min-height:621px) {
+  .magic-page #setup .lab-station-name { top:calc(100% + 6px); font-size:18px; }
+  .magic-page #setup [data-sound-group="1"] .lab-station-name { left:45%; top:calc(100% - 8px); }
+  .magic-page #setup [data-sound-group="4"] .lab-station-name { left:78%; }
+  .magic-page #setup [data-sound-group="6"] .lab-station-name { left:42%; top:calc(100% - 16px); }
+  .magic-page #setup [data-sound-group="7"] .lab-station-name { left:28%; top:calc(100% - 12px); }
+}
+@media(max-width:1000px) {
+  .magic-page #setup { height:auto; min-height:100svh; padding:80px 16px 80px; background:#d8eee1 url('assets/game-style/lab-paper-room.webp') center top/auto 300% no-repeat; }
+  .magic-page #setup .lab-logo { display:none; }
+}
+@media(max-width:760px), (max-width:1000px) and (orientation:portrait) {
+  .train-page #setup .station-scene { height:auto; min-height:100svh; aspect-ratio:853/1844; }
+  .train-page #setup > .group-mission-hint { position:relative; inset:auto; transform:none; min-height:52px; margin:0 auto; }
+  .train-page #setup { background:url('assets/game-style/train-cover-mobile.webp') center bottom/100% auto no-repeat; }
+  .train-page #setup .station-group:nth-child(7) { --name-y:85%; }
+}
+@media(max-width:700px), (max-width:1000px) and (orientation:portrait) {
+  .family-page:has(#family-map:not([hidden])) .family-header { position:relative; inset:auto; height:92px; min-height:92px; grid-template-columns:48px minmax(0,1fr) 92px; padding:0 8px; background:url('assets/family-map/paper-town-cover.png') center top/cover no-repeat; }
+  .family-page:has(#family-map:not([hidden])) #family-map-title { height:80px; }
+  .family-page .family-map-canvas,
+  .family-page .family-map:has(.group-mission-hint) .family-map-canvas { height:auto; min-height:calc(100svh - 92px); aspect-ratio:400/1000; }
+}
+
+@media(max-width:1000px) and (min-height:620px) and (orientation:portrait) {
+  .train-page #setup .station-scene {
+    height:calc(100svh - 54px);
+    min-height:0;
+    aspect-ratio:auto;
+  }
+  .train-page #setup { background-repeat:no-repeat; background-size:100% calc(100svh - 54px); }
+  .train-page #setup > .group-mission-hint { height:52px; }
+
+  .magic-page:has(#setup:not([hidden])) { min-height:100svh; padding:0; }
+  .magic-page #setup { height:100svh; min-height:0; padding:64px 12px 14px; overflow:hidden; }
+  .magic-page #setup .lab-intro { height:64px; margin:0; }
+  .magic-page #setup .magic-routes { gap:4px 10px; }
+  .magic-page #setup .rack-route { min-height:0; padding:0; }
+  .magic-page #setup .lab-station-art { aspect-ratio:2.15; }
+  .magic-page #setup .lab-station-name { margin-top:2px; }
+
+  .family-page:has(#family-map:not([hidden])) { min-height:100svh; padding:0; }
+  .family-page .family-map-canvas,
+  .family-page .family-map:has(.group-mission-hint) .family-map-canvas {
+    height:calc(100svh - 92px);
+    min-height:0;
+    aspect-ratio:auto;
+  }
+  .family-page .family-stop { height:22%!important; }
+}
+
+@media(min-width:701px) and (max-width:1000px) and (orientation:portrait) {
+  .magic-page #setup { padding:64px 24px 20px; }
+  .magic-page #setup .lab-intro { height:76px; }
+  .magic-page #setup .lab-station-art { aspect-ratio:2.5; }
+}

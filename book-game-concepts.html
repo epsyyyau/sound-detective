@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>句句有聲｜故事書</title>
+  <link rel="icon" href="assets/favicon-paper-32.png">
+  <link rel="preload" as="image" href="assets/book-game/reveal-picture-paper-seal-v2.png">
+  <link rel="stylesheet" href="styles.css?v=20261011-fredoka">
+  <link rel="stylesheet" href="detective-cursor.css?v=20261013-paper-pencil">
+  <link rel="stylesheet" href="book-game-concepts.css?v=20261016-cover-glow-only">
+  <link rel="stylesheet" href="book-reference-spines.css?v=20261016-pink-spine-edge">
+  <link rel="stylesheet" href="book-reading-pages.css?v=20261017-story-back-art">
+  <link rel="stylesheet" href="creator-mark.css?v=20261016-tooltip">
+  <script src="book-game-concepts.js?v=20261018-king-page-4-upload" defer></script>
+  <link rel="stylesheet" href="office-landscape.css?v=20261018-tablet-scale">
+  <script src="office-landscape.js?v=20261018-tablet-scale" defer></script>
+</head>
+<body class="office-landscape">
+  <main class="book-game-concepts">
+    <section id="book-shelf" class="book-shelf" aria-labelledby="book-game-title">
+      <span class="creator-mark" tabindex="0" role="img" aria-label="yyy 標誌。本平台由實習教育心理學家設計"><img src="assets/yyy-logo-transparent.png" alt=""><span class="creator-mark-tooltip" aria-hidden="true">本平台由實習教育心理學家設計</span></span>
+      <a class="book-platform-return" href="practice-room.html" aria-label="返回聲探事務所" title="返回聲探事務所"><img src="assets/navigation-paper/office.png" alt="" aria-hidden="true"></a>
+      <h1 id="book-game-title"><img class="book-title-art" src="assets/book-game/story-paper-title-v2.png" alt="句句有「聲」"></h1>
+      <div class="shelf-scene">
+        <div class="book-choices reference-book-art" role="group" aria-label="選擇故事書">
+          <div class="reference-book-source">
+            <button class="story-cover story-cat" type="button" data-book="cat" aria-label="選擇《Cat in a Cap》"></button>
+            <button class="story-cover story-hen" type="button" data-book="hen" aria-label="選擇《Hen and Pen》"></button>
+            <button class="story-cover story-train" type="button" data-book="train" aria-label="選擇《Chick on the Track》"></button>
+            <button class="story-cover story-pup" type="button" data-book="pup" aria-label="選擇《Pup in the Rain》"></button>
+            <button class="story-cover story-pin" type="button" data-book="pin" aria-label="選擇《Pin in a Tin》"></button>
+            <button class="story-cover story-pig" type="button" data-book="pig" aria-label="選擇《Pig and Bug》"></button>
+            <button class="story-cover story-king" type="button" data-book="king" aria-label="選擇《King and Ring》"></button>
+            <button class="story-cover story-quack" type="button" data-book="quack" aria-label="選擇《Duck in a Sack》"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="book-preview" class="book-preview" aria-label="故事書封面" hidden>
+      <button id="book-preview-return" class="book-return" type="button" aria-label="返回書架" title="返回書架"><img src="assets/practice-room/reading-book.png" alt=""></button>
+      <div class="book-preview-stage">
+        <div id="book-preview-mockup" class="book-preview-mockup" hidden>
+          <img src="assets/book-game/cat-book-complete-cover-v1.png" alt="">
+          <button id="book-preview-mockup-open" class="book-preview-corner" type="button" aria-label="揭開《Cat in a Cap》" title="揭開《Cat in a Cap》"></button>
+        </div>
+        <div class="book-preview-volume">
+          <span class="book-preview-pages" aria-hidden="true"></span>
+          <span class="book-preview-spine" aria-hidden="true"></span>
+          <div id="book-preview-inside" class="book-preview-inside" aria-hidden="true"><span class="book-preview-picture-cue"></span></div>
+          <div class="book-preview-leaf">
+            <div class="book-preview-front">
+              <img id="book-preview-image" alt="">
+              <span id="book-preview-title" class="book-preview-title" lang="en"></span>
+              <button id="book-preview-open" class="book-preview-corner" type="button" aria-label="揭開本書" title="揭開本書"></button>
+            </div>
+            <div class="book-preview-back" aria-hidden="true"><p id="book-preview-first-sentence" lang="en"></p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="book-open" class="book-open" aria-label="故事書打開頁" hidden>
+      <button id="book-return" class="book-return" type="button" aria-label="返回封面" title="返回封面"><img src="assets/practice-room/reading-book.png" alt=""></button>
+      <div id="book-spread" class="book-spread">
+        <span class="book-spread-page-side" aria-hidden="true"></span>
+        <div class="book-reading-left">
+          <p id="book-sentence" class="book-sentence" lang="en"></p>
+          <button id="book-previous" class="book-previous-corner" type="button" aria-label="上一頁" title="上一頁"></button>
+          <span id="book-the-end" class="book-the-end" lang="en" hidden>The end</span>
+          <span id="book-page-count" class="book-page-count" aria-live="polite"></span>
+        </div>
+        <div class="book-reading-right">
+          <button id="book-reveal" class="book-reveal" type="button" aria-label="揭曉圖片" title="揭曉圖片"><span class="book-reveal-picture" aria-hidden="true"></span></button>
+          <div id="book-picture" class="book-picture" role="group" tabindex="-1" aria-label="故事插畫" hidden>
+            <img id="book-spread-image" alt="">
+            <span id="book-page-placeholder" class="book-preview-picture-cue" aria-hidden="true" hidden></span>
+            <div id="book-scene" class="book-scene" role="img" hidden></div>
+          </div>
+          <button id="book-next" class="book-next-corner" type="button" aria-label="下一頁" title="下一頁" hidden></button>
+        </div>
+      </div>
+    </section>
+    <section id="book-back-cover" class="book-back-cover" aria-label="故事書封底" hidden>
+      <img src="assets/book-game/cat-book-back-cover-v1.png" alt="《Cat in a Cap》封底：小貓躲在藍色帽子裏，帽子放在綠色地氈上，旁邊有星星。">
+      <div id="book-generic-back" class="book-generic-back" role="img" aria-label="故事書封底" hidden>
+        <span class="book-generic-back-spine" aria-hidden="true"></span>
+        <span class="book-generic-back-pages" aria-hidden="true"></span>
+        <span class="book-generic-back-board" aria-hidden="true"><span class="book-generic-back-stars">✦ ✦</span><img class="book-generic-back-art" src="" alt=""><span class="book-generic-back-stars book-generic-back-stars-bottom">✦ ✦</span></span>
+      </div>
+      <div class="book-back-controls">
+        <button id="book-back-previous" class="book-back-previous" type="button" aria-label="返回最後一頁" title="返回最後一頁"></button>
+        <button id="book-back-replay" class="book-back-action" type="button" aria-label="再讀一次" title="再讀一次"><img src="assets/game-style/replay-paper-seal-v2.png" alt=""></button>
+        <button id="book-back-shelf" class="book-back-action" type="button" aria-label="返回書架" title="返回書架"><img src="assets/practice-room/reading-book.png" alt=""></button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

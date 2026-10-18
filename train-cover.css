@@ -1,0 +1,93 @@
+/* Live controls align with the approved artwork; gameplay styles stay separate. */
+.train-page:has(#setup:not([hidden])) {
+  width:min(100%,1400px,calc((100svh - 52px) * 1672 / 941));
+  padding:0;
+}
+.train-page:has(#setup:not([hidden])) .train-header {
+  position:absolute; inset:12px 16px auto; margin:0; pointer-events:none;
+}
+.train-page:has(#setup:not([hidden])) .practice-return { pointer-events:auto; }
+.train-page:has(#setup:not([hidden])) .practice-return::before { display:none; }
+#setup .station-scene {
+  aspect-ratio:1672 / 941;
+  background:url('assets/game-style/train-cover-map.webp') center / 100% 100% no-repeat;
+}
+#setup.train-panel .station-title {
+  position:absolute; top:2%; left:20%; width:60%; height:9%;
+  margin:0; padding:0; font-size:32px; color:#203c43; background:none;
+}
+#setup .station-selector-label {
+  position:absolute; top:12%; left:35%; width:30%; margin:0; padding:0;
+  background:none; color:#203c43; font-size:18px;
+}
+#setup .station-platforms { position:absolute; inset:0; display:block; max-width:none; margin:0; }
+#setup .station-group:nth-child(n) {
+  position:absolute; inset:auto; left:var(--scene-x); top:var(--scene-y);
+  width:var(--scene-w); height:var(--scene-h); min-height:0;
+  padding:0; border:0; background:none; box-shadow:none; transform:none;
+}
+#setup .station-group:nth-child(1) { --scene-x:0%; --scene-y:60%; --scene-w:34%; --scene-h:30%; --badge-x:19.4%; --badge-y:21.3%; --name-x:55%; }
+#setup .station-group:nth-child(2) { --scene-x:12%; --scene-y:16%; --scene-w:28%; --scene-h:26%; --badge-x:16.8%; --badge-y:32.7%; }
+#setup .station-group:nth-child(3) { --scene-x:19%; --scene-y:42%; --scene-w:30%; --scene-h:24%; --badge-x:25%; --badge-y:31.3%; --name-x:62%; }
+#setup .station-group:nth-child(4) { --scene-x:48%; --scene-y:24%; --scene-w:28%; --scene-h:27%; --badge-x:14%; --badge-y:19%; --name-x:57%; }
+#setup .station-group:nth-child(5) { --scene-x:36%; --scene-y:66%; --scene-w:24%; --scene-h:25%; --badge-x:16.7%; --badge-y:28%; --name-x:62.5%; --name-y:88%; }
+#setup .station-group:nth-child(6) { --scene-x:78%; --scene-y:14%; --scene-w:22%; --scene-h:36%; --badge-x:34%; --badge-y:19%; --name-x:59%; --name-y:89%; }
+#setup .station-group:nth-child(7) { --scene-x:69%; --scene-y:64%; --scene-w:31%; --scene-h:32%; --badge-x:16%; --badge-y:19%; --name-x:45%; --name-y:84%; }
+#setup .group-train, #setup .station-pole, #setup .station-group::after { display:none; }
+#setup .station-group .station-signpost {
+  left:var(--badge-x); top:var(--badge-y); width:56px; height:56px;
+  transform:translate(-50%,-50%); animation:none;
+}
+#setup .station-sign {
+  display:grid; place-items:center; width:56px; height:56px; min-height:0; padding:0;
+  border:3px solid #fff8e8; border-radius:50%;
+  background:color-mix(in srgb,var(--group-color) 70%,white);
+  color:#213a42; font:700 30px/1 var(--phonics-font); text-shadow:none;
+  box-shadow:0 3px 0 #385b5a40,0 5px 8px #385b5a24;
+  animation:train-cover-pop 2.8s ease-in-out var(--pop-delay) infinite;
+}
+#setup .station-scene-name {
+  position:absolute; left:var(--name-x,54%); top:var(--name-y,85%);
+  transform:translate(-50%,-50%); white-space:nowrap; pointer-events:none;
+  font-size:22px; line-height:1.3; color:#203c43;
+  text-shadow:0 1px 3px #f3ffdd,0 0 6px #f3ffdd;
+}
+#setup .station-group:hover { filter:none; }
+#setup .station-group:focus-visible { outline:none; }
+#setup .station-group:is(:hover,:focus-visible) .station-sign {
+  animation:none; transform:translateY(-4px) scale(1.12);
+  outline:3px solid #186e75; outline-offset:3px;
+}
+#setup .station-group:is(:hover,:focus-visible) .station-scene-name { text-decoration:underline; text-underline-offset:5px; }
+#setup .station-group:active .station-sign { transform:scale(.98); }
+@keyframes train-cover-pop {
+  0%,60%,100% { transform:translateY(0) scale(1); }
+  25% { transform:translateY(-5px) scale(1.12); }
+  40% { transform:translateY(0) scale(1.02); }
+}
+@media(max-width:760px), (max-width:1000px) and (orientation:portrait) {
+  .train-page:has(#setup:not([hidden])) {
+    width:min(100%,480px,max(320px,calc((100svh - 64px) * 853 / 1844))); padding:0;
+  }
+  #setup .station-scene { aspect-ratio:853 / 1844; background-image:url('assets/game-style/train-cover-mobile.webp'); }
+  .train-page:has(#setup:not([hidden])) .train-header { inset:8px 10px auto; }
+  .train-page:has(#setup:not([hidden])) .practice-return { width:44px; height:44px; min-width:44px; min-height:44px; padding:0; margin:0; }
+  #setup.train-panel .station-title { top:6%; left:10%; width:80%; height:5%; font-size:24px; }
+  #setup .station-selector-label { top:12%; font-size:18px; }
+  #setup .station-group:nth-child(n) {
+    --scene-x:0%; --scene-y:17%; --scene-w:50%; --scene-h:20%;
+    --badge-x:21%; --badge-y:20%; --name-x:50%; --name-y:87%;
+  }
+  #setup .station-group:nth-child(even) { --scene-x:50%; --badge-x:16%; }
+  #setup .station-group:nth-child(3), #setup .station-group:nth-child(4) { --scene-y:38%; --name-y:85%; }
+  #setup .station-group:nth-child(5), #setup .station-group:nth-child(6) { --scene-y:59%; --scene-h:19%; --badge-y:16%; }
+  #setup .station-group:nth-child(7) { --scene-x:23%; --scene-y:79%; --scene-w:54%; --scene-h:20%; --badge-x:20%; --badge-y:17%; --name-y:85%; }
+  #setup .station-group .station-signpost, #setup .station-sign { width:44px; height:44px; }
+  #setup .station-sign { font-size:26px; }
+  #setup .station-scene-name { font-size:18px; }
+  #setup .group-mission-hint { min-height:64px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  #setup .station-sign { animation:none; }
+  #setup .station-group:is(:hover,:focus-visible) .station-sign { transform:none; }
+}

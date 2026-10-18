@@ -1,0 +1,77 @@
+/* A single illustrated lab scene replaces the separate station tiles on phones. */
+@media (max-width:600px) and (orientation:portrait) {
+  .magic-page:has(#setup:not([hidden])) #setup {
+    height:max(100svh,760px);
+    min-height:760px;
+    padding:0;
+    overflow:visible;
+    background:#a9dcca url('assets/game-style/lab-paper-cover-mobile-v1.png') center / 100% 100% no-repeat;
+  }
+  .magic-page #setup .lab-intro {
+    position:absolute;
+    z-index:2;
+    inset:5% 12% auto 19%;
+    width:auto;
+    height:9%;
+    min-height:60px;
+    margin:0;
+    pointer-events:none;
+  }
+  .magic-page #setup .game-cover-title { width:100%; height:100%; }
+  .magic-page #setup .magic-routes {
+    position:absolute;
+    inset:0;
+    display:block;
+    margin:0;
+  }
+  .magic-page #setup .rack-route,
+  .magic-page #setup .rack-route:last-child {
+    position:absolute;
+    display:block;
+    width:48%;
+    height:20%;
+    min-height:44px;
+    margin:0;
+    padding:0;
+    border:0;
+    border-radius:0;
+    background:transparent;
+    box-shadow:none;
+    cursor:pointer;
+  }
+  .magic-page #setup .rack-route[data-sound-group="1"] { left:2%; top:18%; }
+  .magic-page #setup .rack-route[data-sound-group="2"] { left:50%; top:18%; }
+  .magic-page #setup .rack-route[data-sound-group="3"] { left:2%; top:39%; }
+  .magic-page #setup .rack-route[data-sound-group="4"] { left:50%; top:39%; }
+  .magic-page #setup .rack-route[data-sound-group="5"] { left:2%; top:58%; }
+  .magic-page #setup .rack-route[data-sound-group="6"] { left:50%; top:58%; }
+  .magic-page #setup .rack-route[data-sound-group="7"] { left:24%; top:77%; width:52%; height:20%; }
+  .magic-page #setup .lab-station-art { display:none; }
+  .magic-page #setup .rack-label {
+    position:absolute;
+    inset:4px auto auto 8px;
+    transform:none;
+    margin:0;
+    padding:0;
+  }
+  .magic-page #setup .lab-number-sign { width:36px; height:36px; font-size:20px; }
+  .magic-page #setup .lab-station-name {
+    position:absolute;
+    inset:auto auto 1% 50%;
+    transform:translateX(-50%);
+    width:max-content;
+    max-width:95%;
+    margin:0;
+    padding:2px 6px;
+    border-radius:3px;
+    background:#fff9e9e8;
+    color:#143e45;
+    font-size:14px;
+    font-weight:700;
+    line-height:1.35;
+    white-space:nowrap;
+    box-shadow:0 1px 3px #183f3b30;
+  }
+  .magic-page #setup .rack-route:focus-visible { outline:3px solid #0c8388; outline-offset:-3px; }
+  .magic-page #setup .creator-mark { position:absolute; right:8px; bottom:8px; width:42px; }
+}

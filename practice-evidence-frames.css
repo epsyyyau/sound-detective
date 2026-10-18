@@ -1,0 +1,20 @@
+/* One coherent collectible frame per developed game. */
+.train-collection,.magic-collection,.family-collection-row { align-items:stretch; }
+#complete h2:focus,#family-complete h2:focus { outline:none; }
+.magic-page #complete { background-image:url('assets/game-style/lab-paper-room.webp'); }
+.train-collection button,.magic-collection button,.family-collection button { position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center; width:156px; min-height:186px; gap:10px; padding:20px 14px 14px; color:#173f49; font:700 28px/1.2 var(--phonics-font); box-sizing:border-box; box-shadow:0 3px 5px #263f3a22; }
+.train-collection button { border:2px solid #b78a68; border-radius:6px; background:#fff7e5; outline:1px dashed #bb9972; outline-offset:-9px; }
+.train-collection button::before,.train-collection button::after { content:''; position:absolute; top:52%; width:14px; height:14px; border-radius:50%; background:#cee7d1; border:1px solid #b78a68; }
+.train-collection button::before { left:-8px; clip-path:inset(0 0 0 50%); }
+.train-collection button::after { right:-8px; clip-path:inset(0 50% 0 0); }
+#complete .magic-collection button { border:2px solid #7faaa3; border-top:8px solid #a5c8bf; border-radius:6px; background:#f6fcf7; width:156px; min-height:186px; padding:20px 14px 14px; font-size:28px; }
+.magic-collection button::before { content:''; position:absolute; width:34px; height:10px; top:-5px; left:calc(50% - 17px); border:2px solid #647c75; border-radius:3px; background:#e1ebe2; }
+.family-collection button { border:2px solid #9a9bb5; border-top:8px solid #b4b4ce; border-radius:6px; background:#fbf9ff; }
+.family-collection button::before { content:''; position:absolute; top:-14px; left:12px; width:52px; height:10px; border:2px solid #9a9bb5; border-bottom:0; border-radius:4px 4px 0 0; background:#b4b4ce; }
+.train-collection img,#complete .magic-collection img,.family-collection img { width:100px; height:100px; object-fit:contain; margin:0; border-radius:0; }
+.train-collection button:focus-visible,.magic-collection button:focus-visible,.family-collection button:focus-visible { outline:3px solid #087b80; outline-offset:4px; }
+@media(max-width:650px) {
+  .train-collection,#complete .magic-collection,.family-collection-row { gap:14px; }
+  .train-collection button,#complete .magic-collection button,.family-collection button { width:132px; min-height:166px; padding:16px 10px 12px; font-size:26px; }
+  .train-collection img,#complete .magic-collection img,.family-collection img { width:86px; height:86px; }
+}

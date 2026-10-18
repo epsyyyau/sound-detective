@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>聲探查案路線 | 小小「聲」探</title>
+    <meta name="description" content="小小「聲」探聲探查案路線：七組拼音學習活動。">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-paper-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon-paper.png">
+    <link rel="stylesheet" href="styles.css?v=20261013-ck-coverage">
+    <link rel="stylesheet" href="group-colors.css?v=20261008">
+    <link rel="stylesheet" href="learning-map.css?v=20261017-phone-fit-5">
+    <link rel="stylesheet" href="group-selector-pastels.css?v=20261012-1">
+    <link rel="stylesheet" href="detective-cursor.css?v=20261013-paper-pencil">
+    <link rel="stylesheet" href="creator-mark.css?v=20261016-tooltip">
+    <link rel="stylesheet" href="route-phone-landscape.css?v=20261018">
+  </head>
+  <body>
+    <main class="map-page learning-map" data-sound-group="1">
+      <span class="creator-mark" tabindex="0" role="img" aria-label="yyy 標誌。本平台由實習教育心理學家設計"><img src="assets/yyy-logo-transparent.png" alt=""><span class="creator-mark-tooltip" aria-hidden="true">本平台由實習教育心理學家設計</span></span>
+      <header class="learning-map-heading">
+        <a class="back-link home-link" href="index.html" aria-label="返回首頁" title="返回首頁">
+          <img src="assets/navigation-paper/platform-logo.png" alt="">
+        </a>
+        <div class="learning-map-title">
+          <div>
+            <h1>聲探查案路線</h1>
+          </div>
+          <img src="assets/navigation-paper/route.png" alt="" aria-hidden="true">
+        </div>
+      </header>
+      <section class="map-selectors" aria-label="學習選項">
+        <div class="map-group-picker">
+        <span class="map-group-label" id="group-picker-label">選擇組別</span>
+        <div class="map-group-switch" role="group" aria-labelledby="group-picker-label">
+          <button type="button" data-group="1" data-sound-group="1" aria-label="第 1 組" aria-pressed="true" aria-controls="selected-journey">1</button>
+          <button type="button" data-group="2" data-sound-group="2" aria-label="第 2 組" aria-pressed="false" aria-controls="selected-journey">2</button>
+          <button type="button" data-group="3" data-sound-group="3" aria-label="第 3 組" aria-pressed="false" aria-controls="selected-journey">3</button>
+          <button type="button" data-group="4" data-sound-group="4" aria-label="第 4 組" aria-pressed="false" aria-controls="selected-journey">4</button>
+          <button type="button" data-group="5" data-sound-group="5" aria-label="第 5 組" aria-pressed="false" aria-controls="selected-journey">5</button>
+          <button type="button" data-group="6" data-sound-group="6" aria-label="第 6 組" aria-pressed="false" aria-controls="selected-journey">6</button>
+          <button type="button" data-group="7" data-sound-group="7" aria-label="第 7 組" aria-pressed="false" aria-controls="selected-journey">7</button>
+        </div>
+        </div>
+        <div class="map-mode-switch" role="group" aria-label="學習模式">
+          <button type="button" data-mode="light" aria-pressed="true" aria-controls="selected-journey">輕量版</button>
+          <button type="button" data-mode="challenge" aria-pressed="false" aria-controls="selected-journey">挑戰版</button>
+        </div>
+      </section>
+      <section id="selected-journey" class="selected-journey" aria-labelledby="selected-group-title">
+        <header class="selected-group-heading" aria-live="polite" aria-atomic="true">
+          <div class="selected-group-label">
+            <h2 id="selected-group-title" aria-label="第 1 組">1</h2>
+            <span id="selected-mode-label">輕量版</span>
+          </div>
+          <p id="selected-group-sounds" class="selected-group-sounds">s · a · t · i · p · n</p>
+        </header>
+        <ol class="map-stage-list" aria-label="四個學習關卡">
+          <li><a class="map-stage" data-stage="letter" href="letter-sounds.html?group=1">
+            <img src="assets/learning-map/letter-detective-logo.webp" width="512" height="512" alt="" draggable="false">
+            <span>字母「聲」探</span>
+          </a></li>
+          <li><a class="map-stage" data-stage="missing" href="missing-sounds.html?group=1">
+            <img src="assets/learning-map/missing-detective-logo.webp" width="512" height="512" alt="" draggable="false">
+            <span>缺音「聲」探</span>
+          </a></li>
+          <li><a class="map-stage" data-stage="pseudoword" href="pseudoword-sounds.html?group=1">
+            <img src="assets/learning-map/pseudoword-detective-logo.webp" width="512" height="512" alt="" draggable="false">
+            <span>暗號「聲」探</span>
+          </a></li>
+          <li><a class="map-stage" data-stage="segment" href="segment-sounds.html?group=1">
+            <img src="assets/learning-map/segment-detective-logo.webp" width="512" height="512" alt="" draggable="false">
+            <span>拆音「聲」探</span>
+          </a></li>
+        </ol>
+      </section>
+    </main>
+    <script src="learning-map.js?v=20261013-ck-coverage&amp;names=20261011&amp;th=20261018"></script>
+    <script src="route-phone-landscape.js?v=20261018"></script>
+  </body>
+</html>

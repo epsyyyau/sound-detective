@@ -1,0 +1,53 @@
+/* The disk, wagons and engine share one pivot, with letters kept live. */
+.train-page:has(#play[data-sound-group="7"]:not([hidden])) .train-header h1 {
+  position:absolute; left:50%; transform:translateX(-50%); white-space:nowrap;
+}
+#play[data-sound-group="7"] { background-image:url('assets/game-style/train-paper-seven-connected.webp'); }
+#play[data-sound-group="7"] #express-turntable {
+  inset:0; width:100%; height:100%; aspect-ratio:auto;
+  background:url('assets/game-style/train-paper-seven-connected.webp') center/100% 100% no-repeat;
+  clip-path:ellipse(33% 16% at 48% 52%); transform-origin:48% 52%;
+}
+#play[data-sound-group="7"] .sound-train { transform-origin:48% 52%; }
+#play[data-sound-group="7"] .sound-train::before { display:none; }
+#play[data-sound-group="7"] .sound-car:nth-child(n) {
+  left:var(--paper-pad)!important; top:42%; width:17%; height:14%; border:0;
+  background:url('assets/game-style/train-paper-seven-wagon.png') center/100% 100% no-repeat;
+}
+#play[data-sound-group="7"] .sound-car::before { display:none; }
+#play[data-sound-group="7"] .car-letter { inset:12% 12% 35%; font-size:56px; color:#203947; }
+#play[data-sound-group="7"] .car-letter small { font-size:12px; }
+#play[data-sound-group="7"] .cargo-speaker { bottom:0; width:32px; height:32px; padding:5px; }
+#play[data-sound-group="7"] #express-engine {
+  left:79%; top:31%; width:18%; height:26%; object-fit:contain;
+  transform-origin:var(--engine-pivot-x) 80.769%;
+}
+#play[data-sound-group="7"] .train-answer { gap:24px; padding-inline:18px; }
+@media(max-width:1000px) {
+  #play[data-sound-group="7"] {
+    --paper-scene-top:270px; min-height:max(800px,100svh);
+    background-size:100% auto; background-position:center var(--paper-scene-top);
+  }
+  #play[data-sound-group="7"] #express-turntable {
+    inset:var(--paper-scene-top) 0 auto; height:56.25cqw;
+  }
+  #play[data-sound-group="7"] .sound-train { transform-origin:48% calc(var(--paper-scene-top) + 29.25cqw); }
+  #play[data-sound-group="7"] .sound-car:nth-child(n) {
+    top:calc(var(--paper-scene-top) + 23.625cqw); width:20%; height:9cqw;
+  }
+  #play[data-sound-group="7"] .car-letter { font-size:40px; }
+  #play[data-sound-group="7"] #express-engine {
+    left:79%; top:calc(var(--paper-scene-top) + 17.4375cqw); width:18%; height:14.625cqw;
+  }
+  #play[data-sound-group="7"] .train-controls,
+  #play[data-sound-group="7"]:has(#answer:not([hidden])) .train-controls {
+    top:calc(var(--paper-scene-top) + 56.25cqw + 16px); left:0; right:0;
+  }
+  #play[data-sound-group="7"] .answer-space { top:calc(var(--paper-scene-top) + 56.25cqw + 104px); bottom:auto; }
+}
+@media(max-width:650px) {
+  #play[data-sound-group="7"] .sound-car:nth-child(n) { width:22%; height:10cqw; }
+  #play[data-sound-group="7"] .car-letter { font-size:32px; inset:0 8% 30%; }
+  #play[data-sound-group="7"] .cargo-speaker { bottom:-28px; width:28px; height:28px; padding:4px; }
+  #play[data-sound-group="7"] .car-letter small { font-size:10px; }
+}

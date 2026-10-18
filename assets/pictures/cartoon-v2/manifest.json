@@ -1,0 +1,367 @@
+{
+  "mode": "built-in image_gen",
+  "styleReference": "assets/pictures/cartoon-v1/sit.png",
+  "newWords": [
+    "mat",
+    "pet",
+    "gap",
+    "lip",
+    "dig",
+    "nail",
+    "seed",
+    "feed",
+    "cook",
+    "hook",
+    "chip",
+    "chop",
+    "dish",
+    "lap",
+    "bin",
+    "dip",
+    "hug",
+    "mug",
+    "jug",
+    "tug",
+    "hit",
+    "can",
+    "get",
+    "wet",
+    "ten",
+    "men",
+    "dam",
+    "jog",
+    "pail",
+    "look",
+    "sing",
+    "mop",
+    "top",
+    "hop",
+    "pop",
+    "rip",
+    "big",
+    "rail",
+    "pain",
+    "weed",
+    "reed",
+    "moat",
+    "lie",
+    "wish",
+    "sail",
+    "boat",
+    "pie",
+    "jet",
+    "jam",
+    "goat"
+  ],
+  "revisedWords": [
+    "tap"
+  ],
+  "images": [
+    {
+      "word": "tap",
+      "prompt": "Edit target image: change ONLY the hand pose so the INDEX FINGER (finger immediately next to thumb) clearly taps the teal table. Show thumb on one side of extended index and THREE curled fingers (middle, ring, little) together on the other side. Anatomically correct five digits, never an extended middle finger. Keep same clean rounded 2D cartoon style, teal sleeve/table, white background, orange tap marks, framing. Make the index identity visually unambiguous.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-86cd41e4-73b6-4d01-9d1b-c7c36581b4c4.png",
+      "output": "assets/pictures/cartoon-v2/tap.png"
+    },
+    {
+      "word": "mat",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A rectangular teal floor mat with simple border, lying flat, clearly a doormat.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-174c2513-a664-4f60-a766-f30d711be139.png",
+      "output": "assets/pictures/cartoon-v2/mat.png"
+    },
+    {
+      "word": "pet",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A child lovingly cuddling a small puppy, warm friendly pet relationship.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-3c17e59e-02b4-428a-82f0-387ade33b7d9.png",
+      "output": "assets/pictures/cartoon-v2/pet.png"
+    },
+    {
+      "word": "gap",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: Two wooden fence sections separated by a conspicuously clear empty gap, isolated minimal scene.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-525eaa2c-072e-4d03-9862-548613b35a56.png",
+      "output": "assets/pictures/cartoon-v2/gap.png"
+    },
+    {
+      "word": "lip",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: Close-up smiling child's lower face, with one INDEX finger beside the clearly visible pink lips, no text.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-543b1470-cf35-4b96-b53d-3380f983666e.png",
+      "output": "assets/pictures/cartoon-v2/lip.png"
+    },
+    {
+      "word": "dig",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A dark-haired child using a small shovel to dig earth, little mound and hole.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-aab9250b-80c8-46b0-9285-e3290932dcf1.png",
+      "output": "assets/pictures/cartoon-v2/dig.png"
+    },
+    {
+      "word": "nail",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: One large silver metal construction nail, flat round head and sharp pointed shaft, diagonal.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-2d758f2c-3a48-4ef3-8bd5-94e9759a3cd1.png",
+      "output": "assets/pictures/cartoon-v2/nail.png"
+    },
+    {
+      "word": "seed",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: Three brown seeds, one split seed with a tiny green sprout, focus on seed.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-e8bb7d7c-f7b4-4ad7-b6e3-ec87f47cc4e4.png",
+      "output": "assets/pictures/cartoon-v2/seed.png"
+    },
+    {
+      "word": "feed",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A child holding a small bowl and feeding a seated puppy, kibble being offered.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-6637a612-db21-4a91-b035-2091175ed3ec.png",
+      "output": "assets/pictures/cartoon-v2/feed.png"
+    },
+    {
+      "word": "cook",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A child in chef apron safely stirring a pot with spoon at a countertop, no flames.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-d55698bc-625a-4d0f-9d93-9466386968d1.png",
+      "output": "assets/pictures/cartoon-v2/cook.png"
+    },
+    {
+      "word": "hook",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: One simple curved metal J-shaped hook with mounting base, clearly hook not fishing rod.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-2cf68cfd-9c45-4d0f-9642-9f9eff6e6f8b.png",
+      "output": "assets/pictures/cartoon-v2/hook.png"
+    },
+    {
+      "word": "chip",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: One golden potato French fry with crisp rectangular form, single fry not packet.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-6150c67a-aa42-48bd-9be4-78d9e7e66506.png",
+      "output": "assets/pictures/cartoon-v2/chip.png"
+    },
+    {
+      "word": "chop",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: Child-safe cooking illustration of adult hands slicing a carrot on chopping board with kitchen knife, clear chopped carrot pieces.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-dda7750f-fdb4-4b42-a6da-85b864049726.png",
+      "output": "assets/pictures/cartoon-v2/chop.png"
+    },
+    {
+      "word": "dish",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: One clean round white dinner plate with teal rim, angled view, empty.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-bcb53ded-f294-4d14-9119-32b00a7fd664.png",
+      "output": "assets/pictures/cartoon-v2/dish.png"
+    },
+    {
+      "word": "lap",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A seated child with an open book resting across thighs, emphasize lap, cropped shoulders to feet.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-3fa8f58e-39eb-44ca-be4e-ce7f9f4552b0.png",
+      "output": "assets/pictures/cartoon-v2/lap.png"
+    },
+    {
+      "word": "bin",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A simple teal rubbish bin with lid open and a crumpled paper beside it, no symbols.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-d25867e7-969c-4236-9cdc-1dfeaca11509.png",
+      "output": "assets/pictures/cartoon-v2/bin.png"
+    },
+    {
+      "word": "dip",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A hand dipping a breadstick into a small bowl of red sauce, sauce visibly coating tip.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-455fa686-1348-4919-9f46-05fb9ea0effa.png",
+      "output": "assets/pictures/cartoon-v2/dip.png"
+    },
+    {
+      "word": "hug",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: Two friendly children embracing with both arms, clear hug, full torso.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-65a67ee8-a230-456e-8bea-b92909c73e42.png",
+      "output": "assets/pictures/cartoon-v2/hug.png"
+    },
+    {
+      "word": "mug",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: One coral ceramic mug with a large curved handle, no steam, empty.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-d131d962-cd20-4739-b8ac-8f72f6184650.png",
+      "output": "assets/pictures/cartoon-v2/mug.png"
+    },
+    {
+      "word": "jug",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: One teal water jug with handle and pronounced pouring spout, water visible.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-e72a1391-b2e8-42a6-97e1-561296d324a1.png",
+      "output": "assets/pictures/cartoon-v2/jug.png"
+    },
+    {
+      "word": "tug",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: Two children gently tugging opposite ends of a rope, happy focused expressions, clear taut rope.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-5c320276-83e6-4a20-926f-db1ee620ba51.png",
+      "output": "assets/pictures/cartoon-v2/tug.png"
+    },
+    {
+      "word": "hit",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A child hitting a ball with a bat on a sports field, just ball bat child, safe playful action.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-b2f33877-a5d6-4022-9362-27929dc1e5b3.png",
+      "output": "assets/pictures/cartoon-v2/hit.png"
+    },
+    {
+      "word": "can",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: One closed silver food can with pale teal blank label, no writing.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-0527c162-6d53-4071-a303-09c11e2de518.png",
+      "output": "assets/pictures/cartoon-v2/can.png"
+    },
+    {
+      "word": "get",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A child receiving a gift box from another child's hands, focus receiving, no words.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-b20aa97b-471c-43f3-b43d-01fd9eb4c32a.png",
+      "output": "assets/pictures/cartoon-v2/get.png"
+    },
+    {
+      "word": "wet",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A teal T-shirt hanging on a wooden clothes hanger, soaked with water, visible blue water droplets dripping from hem into a small puddle. No person.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-220a0817-2fd1-4779-967b-eaff04989cef.png",
+      "output": "assets/pictures/cartoon-v2/wet.png"
+    },
+    {
+      "word": "ten",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: Exactly TEN red apples arranged in two neat rows of FIVE, clearly countable, no numerals.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-4ff5c637-173d-4ac3-be8b-3e1d0491bce8.png",
+      "output": "assets/pictures/cartoon-v2/ten.png"
+    },
+    {
+      "word": "men",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: Three friendly adult men standing together, different hairstyles and shirt colors, full body.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-6394591d-91f7-4568-bd87-6c07946ba4a1.png",
+      "output": "assets/pictures/cartoon-v2/men.png"
+    },
+    {
+      "word": "dam",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A stone dam across a blue river, water reservoir above and small flowing spillway below, minimal compact scene.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-a1bb8645-c15f-461b-bf61-deb87ce149dd.png",
+      "output": "assets/pictures/cartoon-v2/dam.png"
+    },
+    {
+      "word": "jog",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A dark-haired girl gently jogging in sportswear, full body clear running pose.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-343a44c5-befe-42ca-a498-74e3e3800883.png",
+      "output": "assets/pictures/cartoon-v2/jog.png"
+    },
+    {
+      "word": "pail",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A small blue bucket with curved carry handle, empty, clearly pail.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-7dad8caf-b2f6-408c-92b3-1e369a661c68.png",
+      "output": "assets/pictures/cartoon-v2/pail.png"
+    },
+    {
+      "word": "look",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A child holding hand above eyes peering toward a red ball, looking action, minimal scene.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-72001a31-0ee1-42ba-b01d-eb3868e94918.png",
+      "output": "assets/pictures/cartoon-v2/look.png"
+    },
+    {
+      "word": "sing",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A cheerful child singing into a microphone, mouth open, two simple music-note symbols.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-ab937f09-bec4-423c-82f9-0a3f4b2326b5.png",
+      "output": "assets/pictures/cartoon-v2/sing.png"
+    },
+    {
+      "word": "mop",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: One household mop with teal handle and soft white string head beside small puddle.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-6c793aa9-4c13-406f-9aaa-a0b8e6e54fe0.png",
+      "output": "assets/pictures/cartoon-v2/mop.png"
+    },
+    {
+      "word": "top",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: One colorful toy spinning top, conical striped coral teal yellow body and short spindle.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-a398a540-1b6a-4fe9-ab5f-73eac69e8f15.png",
+      "output": "assets/pictures/cartoon-v2/top.png"
+    },
+    {
+      "word": "hop",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A cheerful child hopping on ONE leg, other knee raised, arms balancing.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-b20f148f-9efc-4f3c-a4f6-54f2ed2ad33e.png",
+      "output": "assets/pictures/cartoon-v2/hop.png"
+    },
+    {
+      "word": "pop",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A red balloon bursting into visible fragments, small yellow burst marks, no text.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-c57c2108-20f1-48c8-b4e4-352a7e882843.png",
+      "output": "assets/pictures/cartoon-v2/pop.png"
+    },
+    {
+      "word": "rip",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: Two hands tearing a sheet of white paper apart, clear jagged tear.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-1df078c3-ff6c-4689-9700-0dd035bf4d32.png",
+      "output": "assets/pictures/cartoon-v2/rip.png"
+    },
+    {
+      "word": "big",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: Two same-shaped teddy bears side by side, one MUCH bigger than other, emphasize size contrast, no text.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-421e9861-2b48-4566-a9f6-2b28b7390a53.png",
+      "output": "assets/pictures/cartoon-v2/big.png"
+    },
+    {
+      "word": "rail",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A short stretch of railway tracks with two silver rails and brown sleepers, clear perspective.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-acfc8d9c-ee26-4348-bde5-38d053a9769d.png",
+      "output": "assets/pictures/cartoon-v2/rail.png"
+    },
+    {
+      "word": "pain",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A child sitting holding a bumped knee with mild uncomfortable expression, small coral accent marks at knee, no injury or blood.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-d167fccb-f241-44c9-9e91-45afea85ebb9.png",
+      "output": "assets/pictures/cartoon-v2/pain.png"
+    },
+    {
+      "word": "weed",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A hand pulling a dandelion weed with roots from soil, other little plants remain.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-5e33f367-7e59-45dc-b6e0-801c06656a8d.png",
+      "output": "assets/pictures/cartoon-v2/weed.png"
+    },
+    {
+      "word": "reed",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A compact cluster of tall green reeds and tan seed heads by a tiny patch of blue water.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-0f5127a0-6966-4c99-be9d-e9e4bd6a193c.png",
+      "output": "assets/pictures/cartoon-v2/reed.png"
+    },
+    {
+      "word": "moat",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A small friendly stone castle encircled by a clearly visible blue water moat and tiny bridge.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-1838fd19-16a8-4fd5-9c60-01da7ddeba13.png",
+      "output": "assets/pictures/cartoon-v2/moat.png"
+    },
+    {
+      "word": "lie",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A child lying flat awake on a pillow and mat, eyes OPEN, distinguish from sleeping.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-0fe7f09f-f1e2-4122-9fc2-9ec5dcaa3ad0.png",
+      "output": "assets/pictures/cartoon-v2/lie.png"
+    },
+    {
+      "word": "wish",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A child eyes closed hands clasped making a wish beside a small birthday cake with one candle.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-afab849e-3803-49ba-88eb-7a6995ac8793.png",
+      "output": "assets/pictures/cartoon-v2/wish.png"
+    },
+    {
+      "word": "sail",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A simple triangular white sail on mast of small teal sailboat, sail fills most of composition.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-85f825ed-6529-4ab0-afe6-56cadfb42270.png",
+      "output": "assets/pictures/cartoon-v2/sail.png"
+    },
+    {
+      "word": "boat",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A small cheerful teal wooden rowboat floating on a small patch blue water, no sail.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-e263f98c-92b7-445c-a978-e9778b15c477.png",
+      "output": "assets/pictures/cartoon-v2/boat.png"
+    },
+    {
+      "word": "pie",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A golden baked fruit pie with lattice top in dish, one slice separated, no words.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-0eb8235e-ca64-436d-b527-1a3635c5e32f.png",
+      "output": "assets/pictures/cartoon-v2/pie.png"
+    },
+    {
+      "word": "jet",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: One small white and teal jet aeroplane with swept wings, full aircraft visible.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-15f434cb-fff5-4eb8-97d6-fc2a886343f5.png",
+      "output": "assets/pictures/cartoon-v2/jet.png"
+    },
+    {
+      "word": "jam",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A clear jar filled with red strawberry jam, plain cream lid, strawberry fruit beside it, NO text label.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-16ff5e10-d534-43b9-ab41-49ec71257683.png",
+      "output": "assets/pictures/cartoon-v2/jam.png"
+    },
+    {
+      "word": "goat",
+      "prompt": "Use case: scientific-educational. ONE original children's phonics vocabulary illustration. Match reference clean rounded 2D digital CARTOON, smooth fills, soft minimal shading, crisp edges, cute friendly proportions, clear literal meaning. White square background, subject fills ~75% with ample margin. NO text, letters, numbers, labels, watermark, border, paper grain, watercolor, brushwork, handpainted storybook, realism or 3D. Reference is STYLE ONLY, do not copy its sitting pose into unrelated subjects. Subject: A friendly white goat with small straight horns and little beard, full body standing.",
+      "source": "/Users/natalieyyyau/.codex/generated_images/019f07f8-7b2c-7343-9d6f-0fd0c63f2c0a/exec-ec4fd78d-5948-4e10-be5e-2beb7ace3643.png",
+      "output": "assets/pictures/cartoon-v2/goat.png"
+    }
+  ]
+}

@@ -1,0 +1,1133 @@
+{
+  "method": "Local rembg foreground segmentation; original files retained.",
+  "images": [
+    {
+      "word": "cat",
+      "source": "assets/pictures/cartoon-v1/cat.png",
+      "sourceSha256": "56b9a6ebae3bf5fc84173a5e5e006dffe3fd1078ca41bcb2d85d12cf46623476",
+      "output": "assets/pictures/transparent/cat.png"
+    },
+    {
+      "word": "hat",
+      "source": "assets/pictures/cartoon-v1/hat.png",
+      "sourceSha256": "3ef7120f4c979742a2e30c02954cedf16e4afaaab05ad9dff3b4c104d0ff5b06",
+      "output": "assets/pictures/transparent/hat.png"
+    },
+    {
+      "word": "pin",
+      "source": "assets/pictures/cartoon-v1/pin.png",
+      "sourceSha256": "1881481c708b4ca3f39c025ce97feb844f5b6183289188c31972a399caacb26a",
+      "output": "assets/pictures/transparent/pin.png"
+    },
+    {
+      "word": "pat",
+      "source": "assets/pictures/cartoon-v1/pat.png",
+      "sourceSha256": "a2bc45acf535107c280d96ca4854ba659278cefc779428dc1f1780dcd2004184",
+      "output": "assets/pictures/transparent/pat.png"
+    },
+    {
+      "word": "sit",
+      "source": "assets/pictures/cartoon-v1/sit.png",
+      "sourceSha256": "5fae499c37f0f8b0b4734c92787bd35f9317a9cdefb80d745e12102b5134ddaf",
+      "output": "assets/pictures/transparent/sit.png"
+    },
+    {
+      "word": "rain",
+      "source": "assets/pictures/cartoon-v1/rain.png",
+      "sourceSha256": "e4925c65130916443f97b61a6c103528a64b464f1a8772f4643c32a3915ab18e",
+      "output": "assets/pictures/transparent/rain.png"
+    },
+    {
+      "word": "sat",
+      "source": "assets/pictures/cartoon-v1/sat.png",
+      "sourceSha256": "ba192f809e3b0de75652b56cb38e22aa3afeae1177bd2265c56160e8f317b722",
+      "output": "assets/pictures/transparent/sat.png"
+    },
+    {
+      "word": "tap",
+      "source": "assets/pictures/cartoon-v2/tap.png",
+      "sourceSha256": "9efe678c7e68463afd1ccc2aefb6cf74e6258ccd8bad18dd7b953fbc30dd6b72",
+      "output": "assets/pictures/transparent/tap.png"
+    },
+    {
+      "word": "nap",
+      "source": "assets/pictures/cartoon-v1/nap.png",
+      "sourceSha256": "e118c197677f0cf9794eb716fd62b2df3171b36ee11b58cc84a55eb00fcdd400",
+      "output": "assets/pictures/transparent/nap.png"
+    },
+    {
+      "word": "sap",
+      "source": "assets/pictures/cartoon-v1/sap.png",
+      "sourceSha256": "e34df4c8704ed362bf3126a6f07b8a813f74f08603d15c9bb587ffb1b8f3a947",
+      "output": "assets/pictures/transparent/sap.png"
+    },
+    {
+      "word": "tin",
+      "source": "assets/pictures/cartoon-v1/tin.png",
+      "sourceSha256": "e30607d67c5df2cfc696cfb373b84c4de64e363c516a787f52e0084f2ee3bc0b",
+      "output": "assets/pictures/transparent/tin.png"
+    },
+    {
+      "word": "sip",
+      "source": "assets/pictures/cartoon-v1/sip.png",
+      "sourceSha256": "ef91643d21c22395e9e5af48d9310d5667f7189c2002d393bcaf34c276b0544d",
+      "output": "assets/pictures/transparent/sip.png"
+    },
+    {
+      "word": "tip",
+      "source": "assets/pictures/cartoon-v1/tip.png",
+      "sourceSha256": "eb86af6d6cac6480bd9a7b5dd198f649d3ba69e9d55fe22e6b15daa05ddf7075",
+      "output": "assets/pictures/transparent/tip.png"
+    },
+    {
+      "word": "pan",
+      "source": "assets/pictures/cartoon-v1/pan.png",
+      "sourceSha256": "2a2f9995d9b3cd35ba482492f90b33dbc50d8395112231756739a8cd13c5620b",
+      "output": "assets/pictures/transparent/pan.png"
+    },
+    {
+      "word": "pit",
+      "source": "assets/pictures/cartoon-v1/pit.png",
+      "sourceSha256": "eee5b4c0d3c958ba1acda1955d152eae7ae9dffb7cd97f5005ac04039c342934",
+      "output": "assets/pictures/transparent/pit.png"
+    },
+    {
+      "word": "tan",
+      "source": "assets/pictures/cartoon-v1/tan.png",
+      "sourceSha256": "c13f8b9c7f6857e102c90b8175af707faca21cf5efcb35bd72bc7e6a22027eae",
+      "output": "assets/pictures/transparent/tan.png"
+    },
+    {
+      "word": "nip",
+      "source": "assets/pictures/cartoon-v1/nip.png",
+      "sourceSha256": "bfe448cc17806a8e9fa3225bd8627cf776524fdfdadf1222acbf577e5e639ac9",
+      "output": "assets/pictures/transparent/nip.png"
+    },
+    {
+      "word": "rat",
+      "source": "assets/pictures/cartoon-v1/rat.png",
+      "sourceSha256": "b9dd86d6b1da2241e31b68f5b0247f06b82773750083aa818a6fbe1a444bbc4c",
+      "output": "assets/pictures/transparent/rat.png"
+    },
+    {
+      "word": "map",
+      "source": "assets/pictures/cartoon-v1/map.png",
+      "sourceSha256": "4864092d6e935db90463bf0455a524f347be1ceea9cdc5ea7425b7bbca3a306a",
+      "output": "assets/pictures/transparent/map.png"
+    },
+    {
+      "word": "hen",
+      "source": "assets/pictures/cartoon-v1/hen.png",
+      "sourceSha256": "64a60f162e9bf418c0a43702bc35085bd3d256c7bf03163e9727ddb51aa5df22",
+      "output": "assets/pictures/transparent/hen.png"
+    },
+    {
+      "word": "pen",
+      "source": "assets/pictures/cartoon-v1/pen.png",
+      "sourceSha256": "7f94d0269d05100af0269e478ff16d02ff7b3e529a40b5a655990d67d37be72f",
+      "output": "assets/pictures/transparent/pen.png"
+    },
+    {
+      "word": "net",
+      "source": "assets/pictures/cartoon-v1/net.png",
+      "sourceSha256": "0f315a66c5d0866be715ec720a7377ffdd9d4ccc002caf9756c8d44a0e981a73",
+      "output": "assets/pictures/transparent/net.png"
+    },
+    {
+      "word": "ham",
+      "source": "assets/pictures/cartoon-v1/ham.png",
+      "sourceSha256": "95ea06faf331dc8bd568fa4843a401fa1fba54d8aba032ab7b9212830f03e1c9",
+      "output": "assets/pictures/transparent/ham.png"
+    },
+    {
+      "word": "ram",
+      "source": "assets/pictures/cartoon-v1/ram.png",
+      "sourceSha256": "bdd01dec6f2a4b1e519365faf6057f0e874a11095497b623801cf533862644f7",
+      "output": "assets/pictures/transparent/ram.png"
+    },
+    {
+      "word": "dog",
+      "source": "assets/pictures/cartoon-v1/dog.png",
+      "sourceSha256": "e7cb3bb1340b045b35842c36ee9e7d53f4ac9d9469d4c63843b2751a1a1afe94",
+      "output": "assets/pictures/transparent/dog.png"
+    },
+    {
+      "word": "log",
+      "source": "assets/pictures/cartoon-v1/log.png",
+      "sourceSha256": "d4e9e9b0420baeb03ef52eebc1c403f6b1be61df967394edce20e107c056b7e7",
+      "output": "assets/pictures/transparent/log.png"
+    },
+    {
+      "word": "pig",
+      "source": "assets/pictures/cartoon-v1/pig.png",
+      "sourceSha256": "1ba1ef24d335816f81cdfd9a60e798ef3d5a2a8e91f9eb08b24f98d263776bb8",
+      "output": "assets/pictures/transparent/pig.png"
+    },
+    {
+      "word": "fig",
+      "source": "assets/pictures/cartoon-v1/fig.png",
+      "sourceSha256": "e468e84f2d191a78c457e2880c37f0cac73a4299a24b70d914934e16424b5e33",
+      "output": "assets/pictures/transparent/fig.png"
+    },
+    {
+      "word": "bug",
+      "source": "assets/pictures/cartoon-v1/bug.png",
+      "sourceSha256": "954cf0ca675f065f3464f59dc2c896e28952464716784c980836f28144842254",
+      "output": "assets/pictures/transparent/bug.png"
+    },
+    {
+      "word": "rug",
+      "source": "assets/pictures/cartoon-v1/rug.png",
+      "sourceSha256": "bea0bbcf65528ea811edbc98972d5729665f61e57122345e7e1c4a0f69381e58",
+      "output": "assets/pictures/transparent/rug.png"
+    },
+    {
+      "word": "cap",
+      "source": "assets/pictures/cartoon-v1/cap.png",
+      "sourceSha256": "94c7020f508260888d016dd889bf645ebfd74e576d9233cfec04f94d47200a92",
+      "output": "assets/pictures/transparent/cap.png"
+    },
+    {
+      "word": "mat",
+      "source": "assets/pictures/cartoon-v2/mat.png",
+      "sourceSha256": "d8ccd3be43e0d552726c4aadeebe5b4eed4428498bf17adb27eec17bfa027b7e",
+      "output": "assets/pictures/transparent/mat.png"
+    },
+    {
+      "word": "pet",
+      "source": "assets/pictures/cartoon-v2/pet.png",
+      "sourceSha256": "b08eced8133bf28997a620d0c60e4df36ea63f1406f5c18a509794f1e7d9cc51",
+      "output": "assets/pictures/transparent/pet.png"
+    },
+    {
+      "word": "gap",
+      "source": "assets/pictures/cartoon-v4/gap.png",
+      "sourceSha256": "8891ec2a8fb1c12cef460d9f51b86d5fd0cd12deb76a7f8a8b42376a228fdff4",
+      "output": "assets/pictures/transparent/gap.png"
+    },
+    {
+      "word": "lip",
+      "source": "assets/pictures/cartoon-v4/lip.png",
+      "sourceSha256": "d54eaa02a1e7c67b70e0338a34ef235d7fbbc1c05d4bae6981e45dc7131034ee",
+      "output": "assets/pictures/transparent/lip.png"
+    },
+    {
+      "word": "dig",
+      "source": "assets/pictures/cartoon-v2/dig.png",
+      "sourceSha256": "4e8031dc186ed67e762cb353744d89cecd1d1be9dae7e360a0cc0a153d21fcd5",
+      "output": "assets/pictures/transparent/dig.png"
+    },
+    {
+      "word": "nail",
+      "source": "assets/pictures/cartoon-v2/nail.png",
+      "sourceSha256": "47f7a158286dd23d5e48c67805bd3b19e822bc1b97b8f0430b7250d077875e5b",
+      "output": "assets/pictures/transparent/nail.png"
+    },
+    {
+      "word": "seed",
+      "source": "assets/pictures/cartoon-v2/seed.png",
+      "sourceSha256": "e374ce72b8fc9eb1d2197f505f795235b64c97a6f49e2948984470fef9c7ad21",
+      "output": "assets/pictures/transparent/seed.png"
+    },
+    {
+      "word": "feed",
+      "source": "assets/pictures/cartoon-v2/feed.png",
+      "sourceSha256": "9c66553cfcdc01fef5ee0fc061468acb921cdfe3b80b566e0fa8d7b6ef5f2d22",
+      "output": "assets/pictures/transparent/feed.png"
+    },
+    {
+      "word": "cook",
+      "source": "assets/pictures/cartoon-v2/cook.png",
+      "sourceSha256": "5fc5df2d2dd9f300472355de55aeb330be569b543bdd3a0dd38bd535bb820a0b",
+      "output": "assets/pictures/transparent/cook.png"
+    },
+    {
+      "word": "hook",
+      "source": "assets/pictures/cartoon-v2/hook.png",
+      "sourceSha256": "01513478ff2b6d16412fc9293e374b1be8488462a751d233911605c4963a811c",
+      "output": "assets/pictures/transparent/hook.png"
+    },
+    {
+      "word": "chip",
+      "source": "assets/pictures/cartoon-v2/chip.png",
+      "sourceSha256": "42ff18cdc35159aa43090a998a552aee9b4f052eac5fa829fa9fae3985693b6a",
+      "output": "assets/pictures/transparent/chip.png"
+    },
+    {
+      "word": "chop",
+      "source": "assets/pictures/cartoon-v2/chop.png",
+      "sourceSha256": "145ba4ddc4bb36e500ef93a56b6673eae98216482f4eeef80fce58638b8436ab",
+      "output": "assets/pictures/transparent/chop.png"
+    },
+    {
+      "word": "dish",
+      "source": "assets/pictures/cartoon-v2/dish.png",
+      "sourceSha256": "d95e50ba740a764f71992dc0487adb7b676455b10a7c5a719a11fb47237a57d4",
+      "output": "assets/pictures/transparent/dish.png"
+    },
+    {
+      "word": "lap",
+      "source": "assets/pictures/cartoon-v2/lap.png",
+      "sourceSha256": "04db5e435394b5ca99119eba37bc2f706a04d783106b65c8bf42568bffe49f8d",
+      "output": "assets/pictures/transparent/lap.png"
+    },
+    {
+      "word": "bin",
+      "source": "assets/pictures/cartoon-v2/bin.png",
+      "sourceSha256": "3cb63313dd02ece6c1dc43e8e8262b0076bd21cf786061aaa26b121a954ff19f",
+      "output": "assets/pictures/transparent/bin.png"
+    },
+    {
+      "word": "dip",
+      "source": "assets/pictures/cartoon-v2/dip.png",
+      "sourceSha256": "4860565c7de030b634329d47b498749ebc7201f3ad145ba94d8a8b3def9f8745",
+      "output": "assets/pictures/transparent/dip.png"
+    },
+    {
+      "word": "hug",
+      "source": "assets/pictures/cartoon-v2/hug.png",
+      "sourceSha256": "164a4640e69135d3b499986ff062574c61d139f351331760c30c0eeb47b57052",
+      "output": "assets/pictures/transparent/hug.png"
+    },
+    {
+      "word": "mug",
+      "source": "assets/pictures/cartoon-v2/mug.png",
+      "sourceSha256": "6c44bdc16d6c46ae493b75728a1caa5deca4008a25385b4bfd475d2836196581",
+      "output": "assets/pictures/transparent/mug.png"
+    },
+    {
+      "word": "jug",
+      "source": "assets/pictures/cartoon-v2/jug.png",
+      "sourceSha256": "2176e1245b0781b055f42a07a73549996a855b77151c8f0c332ec9f9429aa819",
+      "output": "assets/pictures/transparent/jug.png"
+    },
+    {
+      "word": "tug",
+      "source": "assets/pictures/cartoon-v2/tug.png",
+      "sourceSha256": "3a73607c39c1fd8abaeee6977a1b47a2b427efb19b6744509489beba7a44168d",
+      "output": "assets/pictures/transparent/tug.png"
+    },
+    {
+      "word": "hit",
+      "source": "assets/pictures/cartoon-v2/hit.png",
+      "sourceSha256": "ee94a342f7fb447665b47dad010a50f46374f08c1e112cc73d296c474688225a",
+      "output": "assets/pictures/transparent/hit.png"
+    },
+    {
+      "word": "can",
+      "source": "assets/pictures/cartoon-v2/can.png",
+      "sourceSha256": "54b32a3faac2b9e82be207ccb6fb25147e09d16e0a3a32963ccab48f823a52e4",
+      "output": "assets/pictures/transparent/can.png"
+    },
+    {
+      "word": "get",
+      "source": "assets/pictures/cartoon-v2/get.png",
+      "sourceSha256": "9854da7e81567dbec7992b546b52e0ba7a899bd0b6fc88a6c2b0e53c1d2c994a",
+      "output": "assets/pictures/transparent/get.png"
+    },
+    {
+      "word": "wet",
+      "source": "assets/pictures/cartoon-v2/wet.png",
+      "sourceSha256": "3fdf21389b39686a33f22ce95a3947e4910b09c4db01e2c7e707c720ab3d6ec6",
+      "output": "assets/pictures/transparent/wet.png"
+    },
+    {
+      "word": "ten",
+      "source": "assets/pictures/cartoon-v2/ten.png",
+      "sourceSha256": "ceb74fdcd76e699d6ca12601411bc6c24e392946f229fc27726b57d0cec2810b",
+      "output": "assets/pictures/transparent/ten.png"
+    },
+    {
+      "word": "men",
+      "source": "assets/pictures/cartoon-v2/men.png",
+      "sourceSha256": "3648f0add30cc0c1abbd870cd95c2c2c4554af95c1afe677a408c8960e77bcc4",
+      "output": "assets/pictures/transparent/men.png"
+    },
+    {
+      "word": "dam",
+      "source": "assets/pictures/cartoon-v2/dam.png",
+      "sourceSha256": "c0ae6c4a6c74e336151fa0550664bebe0d1ec6c7eb74aeeb91cbbc600a5fe5ff",
+      "output": "assets/pictures/transparent/dam.png"
+    },
+    {
+      "word": "jog",
+      "source": "assets/pictures/cartoon-v2/jog.png",
+      "sourceSha256": "bc43a8d5a0eeb8140d926dab95eb8c400c3426424027918a1166842beadb4c71",
+      "output": "assets/pictures/transparent/jog.png"
+    },
+    {
+      "word": "pail",
+      "source": "assets/pictures/cartoon-v2/pail.png",
+      "sourceSha256": "097652aea39d34cd688c6f9e0d4c5e6698071a51b84b3a045f61b88bdae6cd72",
+      "output": "assets/pictures/transparent/pail.png"
+    },
+    {
+      "word": "look",
+      "source": "assets/pictures/cartoon-v3/look.png",
+      "sourceSha256": "3071047160d6202b5c2fc6e887f0f34ff7f899349369ea81a12d1c3bcfafbfbf",
+      "output": "assets/pictures/transparent/look.png"
+    },
+    {
+      "word": "sing",
+      "source": "assets/pictures/cartoon-v4/sing.png",
+      "sourceSha256": "51b6ec16f2450f5da8966f2ad78c0839d2dde65c26dedd0b463289c431f0169f",
+      "output": "assets/pictures/transparent/sing.png"
+    },
+    {
+      "word": "mop",
+      "source": "assets/pictures/cartoon-v2/mop.png",
+      "sourceSha256": "1f3ef02331b86d94bf2a71cb95e5ff70007aecb3c670201aa3faab47d38c9359",
+      "output": "assets/pictures/transparent/mop.png"
+    },
+    {
+      "word": "top",
+      "source": "assets/pictures/cartoon-v2/top.png",
+      "sourceSha256": "08fcf5c6cf4b067229b7e16526906c330bd55c531e87af093a122e9db77c1a9a",
+      "output": "assets/pictures/transparent/top.png"
+    },
+    {
+      "word": "hop",
+      "source": "assets/pictures/cartoon-v3/hop.png",
+      "sourceSha256": "13d13aaa84fdfd022063bf375704fff5f3c31a8c01a0f31fd7a4b2f382bdd95b",
+      "output": "assets/pictures/transparent/hop.png"
+    },
+    {
+      "word": "pop",
+      "source": "assets/pictures/cartoon-v2/pop.png",
+      "sourceSha256": "aa593a74262322d12fab5238c652effc15866a04883e0617eef6394837543af7",
+      "output": "assets/pictures/transparent/pop.png"
+    },
+    {
+      "word": "rip",
+      "source": "assets/pictures/cartoon-v2/rip.png",
+      "sourceSha256": "634364ee6ee981c4e222c972a9ccdaff758fae9a04a08077da9ecfa5c25ff00f",
+      "output": "assets/pictures/transparent/rip.png"
+    },
+    {
+      "word": "big",
+      "source": "assets/pictures/cartoon-v4/big.png",
+      "sourceSha256": "a12b4f2c4e041ba2900882063c506abedf3faf610559cc1638c45014c168d4b7",
+      "output": "assets/pictures/transparent/big.png"
+    },
+    {
+      "word": "rail",
+      "source": "assets/pictures/cartoon-v2/rail.png",
+      "sourceSha256": "d55c9a9659792a5fe9b5977d61248072ef8aa2be6641feca1260137f03ff6ef1",
+      "output": "assets/pictures/transparent/rail.png"
+    },
+    {
+      "word": "pain",
+      "source": "assets/pictures/cartoon-v2/pain.png",
+      "sourceSha256": "06a92d1372c64ed277be63bce79fce8d36226adabf493fa85ef9f28ff93ecb47",
+      "output": "assets/pictures/transparent/pain.png"
+    },
+    {
+      "word": "weed",
+      "source": "assets/pictures/cartoon-v2/weed.png",
+      "sourceSha256": "998872c6185b0c5a0bcbb9f2e08fb65540c9194e0e6fc5fdae596f5c951bb584",
+      "output": "assets/pictures/transparent/weed.png"
+    },
+    {
+      "word": "reed",
+      "source": "assets/pictures/cartoon-v2/reed.png",
+      "sourceSha256": "184f0ea7c4e79e38ece4ebef3c171dd551d6f022519dd685ae09d2f54a01f5ac",
+      "output": "assets/pictures/transparent/reed.png"
+    },
+    {
+      "word": "moat",
+      "source": "assets/pictures/cartoon-v2/moat.png",
+      "sourceSha256": "50fd6b6617c7f93e02ad9f6d73832c0e72a58df67dccd51d5064325cae37cc0a",
+      "output": "assets/pictures/transparent/moat.png"
+    },
+    {
+      "word": "lie",
+      "source": "assets/pictures/cartoon-v2/lie.png",
+      "sourceSha256": "99a000f1a06b826327eb9b0a588c171e83b1f9af651a9e9eff51967627fa1761",
+      "output": "assets/pictures/transparent/lie.png"
+    },
+    {
+      "word": "wish",
+      "source": "assets/pictures/cartoon-v2/wish.png",
+      "sourceSha256": "ab91ff3ca51bc0388c85833e4095321a756d2967621696d8ca5d4e05a5c5f1b5",
+      "output": "assets/pictures/transparent/wish.png"
+    },
+    {
+      "word": "sail",
+      "source": "assets/pictures/cartoon-v2/sail.png",
+      "sourceSha256": "3e46327e6c749e4f52c94a0872efe7a46f1bed9426b11aa47ce681a5779c66f7",
+      "output": "assets/pictures/transparent/sail.png"
+    },
+    {
+      "word": "boat",
+      "source": "assets/pictures/cartoon-v2/boat.png",
+      "sourceSha256": "a5c6225878b3036f29d044400cce460b820731d46ced231c52e24a59ec5140a9",
+      "output": "assets/pictures/transparent/boat.png"
+    },
+    {
+      "word": "pie",
+      "source": "assets/pictures/cartoon-v2/pie.png",
+      "sourceSha256": "73a9f9cd44533cfec1dcd860cf4e57d7df1f59eef328c10d210da08e8d4b9d6f",
+      "output": "assets/pictures/transparent/pie.png"
+    },
+    {
+      "word": "jet",
+      "source": "assets/pictures/cartoon-v2/jet.png",
+      "sourceSha256": "edfd0afeadae050d36d743f3fbde6953e6bd40f5b614fa6ab02abf340e6a43b5",
+      "output": "assets/pictures/transparent/jet.png"
+    },
+    {
+      "word": "jam",
+      "source": "assets/pictures/cartoon-v2/jam.png",
+      "sourceSha256": "2156dca9e74032b7760cc613b9a19424cdf133a6996607cd105227ad9cdea5eb",
+      "output": "assets/pictures/transparent/jam.png"
+    },
+    {
+      "word": "goat",
+      "source": "assets/pictures/cartoon-v2/goat.png",
+      "sourceSha256": "baf6dd74eeabf2d9c6406f583dd09ddbec7eaf1cd88987239cd37e357d5becfd",
+      "output": "assets/pictures/transparent/goat.png"
+    },
+    {
+      "word": "ant",
+      "source": "assets/pictures/cartoon-v3/ant.png",
+      "sourceSha256": "f2b35608c59566a846fecc3d1c2a953c1162a29b9ad4bd0731b78d060ef90c07",
+      "output": "assets/pictures/transparent/ant.png"
+    },
+    {
+      "word": "bag",
+      "source": "assets/pictures/cartoon-v3/bag.png",
+      "sourceSha256": "d06458b119310a3a1ca58b9cd740335b3059642d29c6b112489a2e831878d9ff",
+      "output": "assets/pictures/transparent/bag.png"
+    },
+    {
+      "word": "bat",
+      "source": "assets/pictures/cartoon-v3/bat.png",
+      "sourceSha256": "5a5dce0229691a1176a6ce5a58f9df3bf5ed9ac1e347e4ef329ff33e7be100ad",
+      "output": "assets/pictures/transparent/bat.png"
+    },
+    {
+      "word": "bath",
+      "source": "assets/pictures/cartoon-v3/bath.png",
+      "sourceSha256": "cca2253ed3acf6c285c7ba0ec5af9ef30f688cc37f0a3f3a0e12a709c448f517",
+      "output": "assets/pictures/transparent/bath.png"
+    },
+    {
+      "word": "bed",
+      "source": "assets/pictures/cartoon-v3/bed.png",
+      "sourceSha256": "c061420d4ded992fca73780758312237b615eda3e2b9282e5d2f596b93f75fd3",
+      "output": "assets/pictures/transparent/bed.png"
+    },
+    {
+      "word": "bee",
+      "source": "assets/pictures/cartoon-v3/bee.png",
+      "sourceSha256": "a3447b65ca1a503bcd6df59095ba1abaf7068724645ccdd5b5fa694ead13d5a7",
+      "output": "assets/pictures/transparent/bee.png"
+    },
+    {
+      "word": "blue",
+      "source": "assets/pictures/cartoon-v3/blue.png",
+      "sourceSha256": "d55c52c0aa8f09e5b24923156f308fe57ed76396e24bbea607a02303bd2d856d",
+      "output": "assets/pictures/transparent/blue.png"
+    },
+    {
+      "word": "boil",
+      "source": "assets/pictures/cartoon-v3/boil.png",
+      "sourceSha256": "b949fc40f4609af2db448e39a8b396a9298e4ad6a6902d63e70d6c9ddacb83ed",
+      "output": "assets/pictures/transparent/boil.png"
+    },
+    {
+      "word": "book",
+      "source": "assets/pictures/cartoon-v3/book.png",
+      "sourceSha256": "83442b5482ed3ea419ae34c11e30f20d57a3dd9a0848fc694517aeb1445bdfae",
+      "output": "assets/pictures/transparent/book.png"
+    },
+    {
+      "word": "boot",
+      "source": "assets/pictures/cartoon-v3/boot.png",
+      "sourceSha256": "186e4e3fd8a2b867c722b095dfaac66956321f7e3fdd138e4e1a415daa9b0823",
+      "output": "assets/pictures/transparent/boot.png"
+    },
+    {
+      "word": "box",
+      "source": "assets/pictures/cartoon-v3/box.png",
+      "sourceSha256": "280052971b619a986c03821b17084552efd97f368f6010cc4e482fa9cbcae3c4",
+      "output": "assets/pictures/transparent/box.png"
+    },
+    {
+      "word": "bun",
+      "source": "assets/pictures/cartoon-v3/bun.png",
+      "sourceSha256": "5be4c25bce67553117d6e1b10ad286d37b1464ad67df7d225350b72325a5a2fe",
+      "output": "assets/pictures/transparent/bun.png"
+    },
+    {
+      "word": "bus",
+      "source": "assets/pictures/cartoon-v3/bus.png",
+      "sourceSha256": "962cb366cb15755b44e19d79ffd5c64bdd6c3ee667ef16105c35d8f511f7f4e7",
+      "output": "assets/pictures/transparent/bus.png"
+    },
+    {
+      "word": "car",
+      "source": "assets/pictures/cartoon-v3/car.png",
+      "sourceSha256": "63949e1fac84dfad072e0d995abf3e8fe426ec51c8c24dd3548598c3d88670df",
+      "output": "assets/pictures/transparent/car.png"
+    },
+    {
+      "word": "chain",
+      "source": "assets/pictures/cartoon-v3/chain.png",
+      "sourceSha256": "c182584d77e1fe6bd731a9d09077056b2dbedb5ad6b8d27043ec56a745949b69",
+      "output": "assets/pictures/transparent/chain.png"
+    },
+    {
+      "word": "chat",
+      "source": "assets/pictures/cartoon-v5/chat.png",
+      "sourceSha256": "148b71e859672f0037c4cceff160b3278422bb0fa0a66e34174725e2d74cae76",
+      "output": "assets/pictures/transparent/chat.png"
+    },
+    {
+      "word": "chick",
+      "source": "assets/pictures/cartoon-v3/chick.png",
+      "sourceSha256": "43241540b22a52582af9bbe61814c06b90edb0fcb29b981a7e5a57b7c8159853",
+      "output": "assets/pictures/transparent/chick.png"
+    },
+    {
+      "word": "chin",
+      "source": "assets/pictures/cartoon-v3/chin.png",
+      "sourceSha256": "c4dff32bff3a7edaecf0d92cb5cb736b900e22d8bbdfb009b153d2b3f53329fc",
+      "output": "assets/pictures/transparent/chin.png"
+    },
+    {
+      "word": "cloud",
+      "source": "assets/pictures/cartoon-v3/cloud.png",
+      "sourceSha256": "bb3173d8071390d842d5ce792cae44be310899cd3c1d2afb5e0eec58e4b09769",
+      "output": "assets/pictures/transparent/cloud.png"
+    },
+    {
+      "word": "coat",
+      "source": "assets/pictures/cartoon-v3/coat.png",
+      "sourceSha256": "31174481623bc19a7b8d9d4ea5c3615b5e3136cf008df9154c024bf827718a83",
+      "output": "assets/pictures/transparent/coat.png"
+    },
+    {
+      "word": "coin",
+      "source": "assets/pictures/cartoon-v3/coin.png",
+      "sourceSha256": "ca6d4170e5f22bec0ab31f6a9b53da6baaab20dd70d6b9bb32c389e7204447ae",
+      "output": "assets/pictures/transparent/coin.png"
+    },
+    {
+      "word": "corn",
+      "source": "assets/pictures/cartoon-v3/corn.png",
+      "sourceSha256": "0cc606ae0975850c9699ff1de639535474a1b65a7030215d8e5f044c23452f15",
+      "output": "assets/pictures/transparent/corn.png"
+    },
+    {
+      "word": "cue",
+      "source": "assets/pictures/cartoon-v3/cue.png",
+      "sourceSha256": "e6945246fe36996d15bad99298ea687f3ab0608f91e38c65282e375569247263",
+      "output": "assets/pictures/transparent/cue.png"
+    },
+    {
+      "word": "cup",
+      "source": "assets/pictures/cartoon-v3/cup.png",
+      "sourceSha256": "b75aba0484ce0227680c50bbe707d4eb570349723e037d62e8def151d5a1c8fb",
+      "output": "assets/pictures/transparent/cup.png"
+    },
+    {
+      "word": "dad",
+      "source": "assets/pictures/cartoon-v3/dad.png",
+      "sourceSha256": "44e724628903adfc4372ce618992baef1f3e75b6178c2d61858083ed5065bf74",
+      "output": "assets/pictures/transparent/dad.png"
+    },
+    {
+      "word": "den",
+      "source": "assets/pictures/cartoon-v4/den.png",
+      "sourceSha256": "476a7d609ae4b51b6961bfd99d67c82cb2f08a2cef7f15e397982c1fac62bffa",
+      "output": "assets/pictures/transparent/den.png"
+    },
+    {
+      "word": "desk",
+      "source": "assets/pictures/cartoon-v3/desk.png",
+      "sourceSha256": "1c645b1dba43b9c85a8c47a83cf62a29f28eec9223fcf4bc7e96598a1d0ab66e",
+      "output": "assets/pictures/transparent/desk.png"
+    },
+    {
+      "word": "fan",
+      "source": "assets/pictures/cartoon-v3/fan.png",
+      "sourceSha256": "3f6ac44edd228460eaaea042b564e54aeb11d20cbb3e13de2e1502cc72ddd868",
+      "output": "assets/pictures/transparent/fan.png"
+    },
+    {
+      "word": "feet",
+      "source": "assets/pictures/cartoon-v3/feet.png",
+      "sourceSha256": "cbb734152f93af650aaf568579f505ac91767c663ce508b15f87aecac7308896",
+      "output": "assets/pictures/transparent/feet.png"
+    },
+    {
+      "word": "fin",
+      "source": "assets/pictures/cartoon-v4/fin.png",
+      "sourceSha256": "f871f5842e0a03f7886ab1c843ac549d84c3fe89067d033bbffb45ca3019c9a0",
+      "output": "assets/pictures/transparent/fin.png"
+    },
+    {
+      "word": "fish",
+      "source": "assets/pictures/cartoon-v3/fish.png",
+      "sourceSha256": "b012359dd82beba4465b1c3829d083efe5817ea0035049c969ca0c3f7f6db95c",
+      "output": "assets/pictures/transparent/fish.png"
+    },
+    {
+      "word": "fog",
+      "source": "assets/pictures/cartoon-v3/fog.png",
+      "sourceSha256": "9879f2f59f8753b1d58b11dbbbaa4f9c66734051a50dd18d485b11f996dc62be",
+      "output": "assets/pictures/transparent/fog.png"
+    },
+    {
+      "word": "foot",
+      "source": "assets/pictures/cartoon-v3/foot.png",
+      "sourceSha256": "8db4d91f35c0cc7b4c58eca08c7ac0b65beab60b2d86445d228bd03831ce2132",
+      "output": "assets/pictures/transparent/foot.png"
+    },
+    {
+      "word": "fork",
+      "source": "assets/pictures/cartoon-v3/fork.png",
+      "sourceSha256": "b217fa28914222426561679083e0299772c1f866f0b6cd4aaf4c90644511d080",
+      "output": "assets/pictures/transparent/fork.png"
+    },
+    {
+      "word": "fox",
+      "source": "assets/pictures/cartoon-v3/fox.png",
+      "sourceSha256": "bbb11c996518efe372f4a84af2beaefe285a4391c3018e2864755afe38f5c9c6",
+      "output": "assets/pictures/transparent/fox.png"
+    },
+    {
+      "word": "fuel",
+      "source": "assets/pictures/cartoon-v3/fuel.png",
+      "sourceSha256": "33d1724de70cb47ed493320207590aec68d8cd383aa529a4933e9c2f94e98d09",
+      "output": "assets/pictures/transparent/fuel.png"
+    },
+    {
+      "word": "glue",
+      "source": "assets/pictures/cartoon-v3/glue.png",
+      "sourceSha256": "dbdbc391a3e17f56e21764b9879b66052f77bf436e5201b4949a5ee9384bf9d1",
+      "output": "assets/pictures/transparent/glue.png"
+    },
+    {
+      "word": "hammer",
+      "source": "assets/pictures/cartoon-v3/hammer.png",
+      "sourceSha256": "3ab61ddeba27c865740872d76f235bc0b2b9ec53a0e4c9736e1109aaf3b75d01",
+      "output": "assets/pictures/transparent/hammer.png"
+    },
+    {
+      "word": "hand",
+      "source": "assets/pictures/cartoon-v3/hand.png",
+      "sourceSha256": "9b64e5432406336daa5e95e65dc8cc1384de413065b38a81dfa8755fe36251d2",
+      "output": "assets/pictures/transparent/hand.png"
+    },
+    {
+      "word": "jeep",
+      "source": "assets/pictures/cartoon-v3/jeep.png",
+      "sourceSha256": "66f2c2c43808551d43ef2ecacfa856c51b2d97ac89c73ffe722a65d36450f402",
+      "output": "assets/pictures/transparent/jeep.png"
+    },
+    {
+      "word": "kick",
+      "source": "assets/pictures/cartoon-v3/kick.png",
+      "sourceSha256": "7558aeef13e024f44c6bb526ea4e3dd1c63ce938bea5e1215489423f80fa7aea",
+      "output": "assets/pictures/transparent/kick.png"
+    },
+    {
+      "word": "kid",
+      "source": "assets/pictures/cartoon-v3/kid.png",
+      "sourceSha256": "8109168c9326128caf3413fb91996875f8130ac8eec255fc9eda5af8442b9245",
+      "output": "assets/pictures/transparent/kid.png"
+    },
+    {
+      "word": "king",
+      "source": "assets/pictures/cartoon-v3/king.png",
+      "sourceSha256": "176a6abb128ca0e6d5f4c445319ebf63274998251c4c3382319ad77c0e7adceb",
+      "output": "assets/pictures/transparent/king.png"
+    },
+    {
+      "word": "kit",
+      "source": "assets/pictures/cartoon-v4/kit.png",
+      "sourceSha256": "0d2b0d5bfe80cdee6c23c0d699a02e00e58f1764d17ea7deaf73985e22217e36",
+      "output": "assets/pictures/transparent/kit.png"
+    },
+    {
+      "word": "leg",
+      "source": "assets/pictures/cartoon-v3/leg.png",
+      "sourceSha256": "e720405daee6e53c8c12d241a0c40115825947e52e2cac5014d3f9f2a322d8d5",
+      "output": "assets/pictures/transparent/leg.png"
+    },
+    {
+      "word": "letter",
+      "source": "assets/pictures/cartoon-v3/letter.png",
+      "sourceSha256": "b4de82bf09015ea85f3700636d3ee6972e8e5999a9324662b63abd33b99073ab",
+      "output": "assets/pictures/transparent/letter.png"
+    },
+    {
+      "word": "lid",
+      "source": "assets/pictures/cartoon-v3/lid.png",
+      "sourceSha256": "bb2687e8cad0558d6a154772fe98ac2060ebe0d1d63d9ec80107e9d1a01448be",
+      "output": "assets/pictures/transparent/lid.png"
+    },
+    {
+      "word": "load",
+      "source": "assets/pictures/cartoon-v3/load.png",
+      "sourceSha256": "3f000abb6cc54fe4206075a685e24ad1eafb34453270dcb27e77db144a3b20ac",
+      "output": "assets/pictures/transparent/load.png"
+    },
+    {
+      "word": "mail",
+      "source": "assets/pictures/cartoon-v3/mail.png",
+      "sourceSha256": "920a236bfd59bb425172bda5a0bc9c760d5465bd714db943e3c9415af4a2a2d1",
+      "output": "assets/pictures/transparent/mail.png"
+    },
+    {
+      "word": "man",
+      "source": "assets/pictures/cartoon-v3/man.png",
+      "sourceSha256": "3fc805e90f03e118324c418d6770758f09fe31c54638b69ffbb2c17ff39f72e7",
+      "output": "assets/pictures/transparent/man.png"
+    },
+    {
+      "word": "moon",
+      "source": "assets/pictures/cartoon-v4/moon.png",
+      "sourceSha256": "3bd726e3701285046c2c49d04d72d919ea7f97c9d645a55a5fd9c1fb447c0b9a",
+      "output": "assets/pictures/transparent/moon.png"
+    },
+    {
+      "word": "moth",
+      "source": "assets/pictures/cartoon-v3/moth.png",
+      "sourceSha256": "bf41c3ad6b05fbd5267f0ee076f1e4b773935da5302915104511ed127fd83840",
+      "output": "assets/pictures/transparent/moth.png"
+    },
+    {
+      "word": "mouth",
+      "source": "assets/pictures/cartoon-v5/mouth-v2.png",
+      "sourceSha256": "981b5d6dcbb0e267ed2987e0bcf08774880e913dd4d75a44873e34477efa5499",
+      "output": "assets/pictures/transparent/mouth.png"
+    },
+    {
+      "word": "neck",
+      "source": "assets/pictures/cartoon-v5/neck.png",
+      "sourceSha256": "21a7bf3d899d8b9969af08b9347f4827e738ee2449630b3ec1d16f198692f9dc",
+      "output": "assets/pictures/transparent/neck.png"
+    },
+    {
+      "word": "out",
+      "source": "assets/pictures/cartoon-v3/out.png",
+      "sourceSha256": "109897c9204492d6c251f548d978595420b2ee0ff7c0c514f901896d0509b225",
+      "output": "assets/pictures/transparent/out.png"
+    },
+    {
+      "word": "paint",
+      "source": "assets/pictures/cartoon-v3/paint.png",
+      "sourceSha256": "d83d72c1bf7912430854b813bd0f2999389c09183248e35e6306043b2bb2df7a",
+      "output": "assets/pictures/transparent/paint.png"
+    },
+    {
+      "word": "pant",
+      "source": "assets/pictures/cartoon-v3/pant.png",
+      "sourceSha256": "64bd6fe758dd483349286b46622f844c418cfbcdbe831cdfd668cde776a24aab",
+      "output": "assets/pictures/transparent/pant.png"
+    },
+    {
+      "word": "point",
+      "source": "assets/pictures/cartoon-v4/point.png",
+      "sourceSha256": "bc7accff23a99a7614362227679ca4a3eeb25cc18d96417ffafd73b1f7c97db2",
+      "output": "assets/pictures/transparent/point.png"
+    },
+    {
+      "word": "pot",
+      "source": "assets/pictures/cartoon-v3/pot.png",
+      "sourceSha256": "d41ef4b42f9d9b306e84c491831265a3a79578c7a0622ba7be080235fff939cd",
+      "output": "assets/pictures/transparent/pot.png"
+    },
+    {
+      "word": "pouch",
+      "source": "assets/pictures/cartoon-v3/pouch.png",
+      "sourceSha256": "ad13126232057fa21f1bc05fbed1b715cf7b616c0598d778fa025fc6dac2fb0e",
+      "output": "assets/pictures/transparent/pouch.png"
+    },
+    {
+      "word": "quack",
+      "source": "assets/pictures/cartoon-v3/quack.png",
+      "sourceSha256": "9e7d1b5b91243873e17464770c0df54024cb9b39dd143f51d099d900852c3711",
+      "output": "assets/pictures/transparent/quack.png"
+    },
+    {
+      "word": "queen",
+      "source": "assets/pictures/cartoon-v4/queen.png",
+      "sourceSha256": "7b0cafd937cabb1032c3f31eaf3535ba3399a60382f8ba69293015c7e886697e",
+      "output": "assets/pictures/transparent/queen.png"
+    },
+    {
+      "word": "quiz",
+      "source": "assets/pictures/cartoon-v3/quiz.png",
+      "sourceSha256": "f8dfd04688135c7fa2a102610e0869d3e67997eae848c4115ad32c31e2c49b25",
+      "output": "assets/pictures/transparent/quiz.png"
+    },
+    {
+      "word": "red",
+      "source": "assets/pictures/cartoon-v3/red.png",
+      "sourceSha256": "11d22a2d78cf3015fb0dee07a6face5a3d038e8db8eaa3505af672dc5b834a70",
+      "output": "assets/pictures/transparent/red.png"
+    },
+    {
+      "word": "ring",
+      "source": "assets/pictures/cartoon-v3/ring.png",
+      "sourceSha256": "626cb7b028c9e0f9c9ac6d41105b8508000677957d014b0d9dde480f7f8b6466",
+      "output": "assets/pictures/transparent/ring.png"
+    },
+    {
+      "word": "road",
+      "source": "assets/pictures/cartoon-v3/road.png",
+      "sourceSha256": "83c37c5294544f72ae8af4d7436149481c556ef8e4cc88e46a89209379a57133",
+      "output": "assets/pictures/transparent/road.png"
+    },
+    {
+      "word": "room",
+      "source": "assets/pictures/cartoon-v3/room.png",
+      "sourceSha256": "6d5efe764588b0a6c767273e9fd8e1d57c3a02f0550c14856392c27dc72b4b8f",
+      "output": "assets/pictures/transparent/room.png"
+    },
+    {
+      "word": "run",
+      "source": "assets/pictures/cartoon-v3/run.png",
+      "sourceSha256": "ac892f10657a3bd3dc5a6920f0cb20d95b98b14581379ab548d82233ebdf3f51",
+      "output": "assets/pictures/transparent/run.png"
+    },
+    {
+      "word": "sack",
+      "source": "assets/pictures/cartoon-v3/sack.png",
+      "sourceSha256": "4d76fd3536b02b943f38ffd3c04070ea464cf0f657c63d97673f11887238d62e",
+      "output": "assets/pictures/transparent/sack.png"
+    },
+    {
+      "word": "see",
+      "source": "assets/pictures/cartoon-v3/see.png",
+      "sourceSha256": "454b1ffb008c57221b55277cfafc6d9c07da2ac2ffd7efb29659b7c15d93626a",
+      "output": "assets/pictures/transparent/see.png"
+    },
+    {
+      "word": "shark",
+      "source": "assets/pictures/cartoon-v3/shark.png",
+      "sourceSha256": "b356dd931a61c8001aa2c77a08369d044212df57fd3afe8b53c088597cd2f30e",
+      "output": "assets/pictures/transparent/shark.png"
+    },
+    {
+      "word": "shell",
+      "source": "assets/pictures/cartoon-v3/shell.png",
+      "sourceSha256": "79a1fd1572b93209f9fcc80f111f9c290c47d87e247b9274f951191669fad64e",
+      "output": "assets/pictures/transparent/shell.png"
+    },
+    {
+      "word": "ship",
+      "source": "assets/pictures/cartoon-v3/ship.png",
+      "sourceSha256": "18ffd4e1b30174493bf4ee9ce16991d68c4b93fcc9b60d076fe5b2b266ca35a1",
+      "output": "assets/pictures/transparent/ship.png"
+    },
+    {
+      "word": "shop",
+      "source": "assets/pictures/cartoon-v3/shop.png",
+      "sourceSha256": "a37d6f7c180c1f014258ca866ae15ed196046972e038abc63880923e525b0bc9",
+      "output": "assets/pictures/transparent/shop.png"
+    },
+    {
+      "word": "sister",
+      "source": "assets/pictures/cartoon-v3/sister.png",
+      "sourceSha256": "f11cffe630a44a0c56b792d97a56dce60cf98668aa336db37a6cfd7bf3746470",
+      "output": "assets/pictures/transparent/sister.png"
+    },
+    {
+      "word": "six",
+      "source": "assets/pictures/cartoon-v3/six.png",
+      "sourceSha256": "f3ebb64b821d87bc04783a6467422506bfcfcdf7bb71f6a9f10bfeac1e930e78",
+      "output": "assets/pictures/transparent/six.png"
+    },
+    {
+      "word": "snap",
+      "source": "assets/pictures/cartoon-v3/snap.png",
+      "sourceSha256": "dcecf1ac9a1b61f61658f263f0b194e707a65836e25bb5a21d82863be3362151",
+      "output": "assets/pictures/transparent/snap.png"
+    },
+    {
+      "word": "snip",
+      "source": "assets/pictures/cartoon-v3/snip.png",
+      "sourceSha256": "e8cf091460102168041d14e4c37d08b8f6d35524f43687754a3e6f87c89bb997",
+      "output": "assets/pictures/transparent/snip.png"
+    },
+    {
+      "word": "spin",
+      "source": "assets/pictures/cartoon-v3/spin.png",
+      "sourceSha256": "0796b917cb97bd4c20381e2b52c127ef5d1a8eacace16c72ab6becb378c8f68e",
+      "output": "assets/pictures/transparent/spin.png"
+    },
+    {
+      "word": "spoon",
+      "source": "assets/pictures/cartoon-v3/spoon.png",
+      "sourceSha256": "1ac1da406c68e7a6ed05f56e9092a2c1cace9fa5b14db44f50bdf8e66394b33a",
+      "output": "assets/pictures/transparent/spoon.png"
+    },
+    {
+      "word": "stamp",
+      "source": "assets/pictures/cartoon-v3/stamp.png",
+      "sourceSha256": "a161c5f6d59bfeb558ba1cb2f8fc3de360b4c36157a2816ef9abac17018c76fc",
+      "output": "assets/pictures/transparent/stamp.png"
+    },
+    {
+      "word": "star",
+      "source": "assets/pictures/cartoon-v5/star.png",
+      "sourceSha256": "359ffb17e5eba1307855a7c3babea7a9c0263c1035ef04e18879410410c25fc0",
+      "output": "assets/pictures/transparent/star.png"
+    },
+    {
+      "word": "storm",
+      "source": "assets/pictures/cartoon-v3/storm.png",
+      "sourceSha256": "8982593a8cb57ed2f8073608d7fe85864301e01842369a11a425df5443dcab3e",
+      "output": "assets/pictures/transparent/storm.png"
+    },
+    {
+      "word": "tail",
+      "source": "assets/pictures/cartoon-v3/tail.png",
+      "sourceSha256": "51775893609d34d07a2208d4485aa7399d004d912ff1f9b2d92dec3ef0fa4cdc",
+      "output": "assets/pictures/transparent/tail.png"
+    },
+    {
+      "word": "teeth",
+      "source": "assets/pictures/cartoon-v3/teeth.png",
+      "sourceSha256": "e26456e334fa9e219fde511fe23c6e4a68e3707e9ad0ff7688a8627def758fe5",
+      "output": "assets/pictures/transparent/teeth.png"
+    },
+    {
+      "word": "that",
+      "source": "assets/pictures/cartoon-v3/that.png",
+      "sourceSha256": "1aa5021b1a29d73a1ddddc5aceb73fa3342f5a96f65794ac9192174939a87813",
+      "output": "assets/pictures/transparent/that.png"
+    },
+    {
+      "word": "them",
+      "source": "assets/pictures/cartoon-v3/them.png",
+      "sourceSha256": "f747cfa2956ed7a45ab0caa60578a4039985660df306184c4449e03060e07a80",
+      "output": "assets/pictures/transparent/them.png"
+    },
+    {
+      "word": "thin",
+      "source": "assets/pictures/cartoon-v4/thin.png",
+      "sourceSha256": "97ee454aadf0163d46c7178f7e8af14ab08cd246b01cf17a194286224077d5b3",
+      "output": "assets/pictures/transparent/thin.png"
+    },
+    {
+      "word": "this",
+      "source": "assets/pictures/cartoon-v3/this.png",
+      "sourceSha256": "77769044de728cdc98e33e075400d99bc085d53d3c17a9a1f52823567f494771",
+      "output": "assets/pictures/transparent/this.png"
+    },
+    {
+      "word": "tie",
+      "source": "assets/pictures/cartoon-v3/tie.png",
+      "sourceSha256": "ea0d51cc8d5ba15fabbe641821faa360768591e5a3761d342a0511e80768cf7e",
+      "output": "assets/pictures/transparent/tie.png"
+    },
+    {
+      "word": "toad",
+      "source": "assets/pictures/cartoon-v3/toad.png",
+      "sourceSha256": "06b846fc4c7cc968b808a5bbb51eae967ae7d2a2fe2b05471a9eef61be926ab7",
+      "output": "assets/pictures/transparent/toad.png"
+    },
+    {
+      "word": "train",
+      "source": "assets/pictures/cartoon-v3/train.png",
+      "sourceSha256": "dedd88296291eb8e428bccd85c6c1cbea69f93e9261a96ad5388bb906b78bac8",
+      "output": "assets/pictures/transparent/train.png"
+    },
+    {
+      "word": "van",
+      "source": "assets/pictures/cartoon-v3/van.png",
+      "sourceSha256": "ee1b6d4120d9e184f3b6eff59c4f330eef68a3674f77048fe0b3c7cede004320",
+      "output": "assets/pictures/transparent/van.png"
+    },
+    {
+      "word": "vest",
+      "source": "assets/pictures/cartoon-v3/vest.png",
+      "sourceSha256": "a4e1f67b2eb62977c4bb6000ee4c26876e0db9f96b1a8d0ab871947e85a6fbcc",
+      "output": "assets/pictures/transparent/vest.png"
+    },
+    {
+      "word": "vet",
+      "source": "assets/pictures/cartoon-v3/vet.png",
+      "sourceSha256": "53ac9b63ec076cf6930c1d48bf7b1e99c2189adccf15306508d5bdb655a723b7",
+      "output": "assets/pictures/transparent/vet.png"
+    },
+    {
+      "word": "web",
+      "source": "assets/pictures/cartoon-v4/web.png",
+      "sourceSha256": "80080a687843db675d8c7b1ef79083b571d33936c1077884cd03072268a49822",
+      "output": "assets/pictures/transparent/web.png"
+    },
+    {
+      "word": "wig",
+      "source": "assets/pictures/cartoon-v3/wig.png",
+      "sourceSha256": "77de2e0a39887ab099edc89120c6cc7f4f129b495dd972d9b7bbf24c198157ab",
+      "output": "assets/pictures/transparent/wig.png"
+    },
+    {
+      "word": "win",
+      "source": "assets/pictures/cartoon-v3/win.png",
+      "sourceSha256": "dd112ca9d412431790f8fd0be75d9b87619fffc92bfd241c721fba4725bf992f",
+      "output": "assets/pictures/transparent/win.png"
+    },
+    {
+      "word": "wing",
+      "source": "assets/pictures/cartoon-v3/wing.png",
+      "sourceSha256": "161b1d0645f263b97c85e776e4da3f2b990b72deab0efe6134f3a77d808138df",
+      "output": "assets/pictures/transparent/wing.png"
+    },
+    {
+      "word": "wood",
+      "source": "assets/pictures/cartoon-v3/wood.png",
+      "sourceSha256": "a612ed2cc0ea4e0d3591af2bd7e38a49d94bf7211a79d1377a3dfbfdbcfc26b3",
+      "output": "assets/pictures/transparent/wood.png"
+    },
+    {
+      "word": "wool",
+      "source": "assets/pictures/cartoon-v3/wool.png",
+      "sourceSha256": "1f02d4ff3ca9a4a65c6eaf19a514b3c39fa094662b0e3ca53453812b6b6b576f",
+      "output": "assets/pictures/transparent/wool.png"
+    },
+    {
+      "word": "yak",
+      "source": "assets/pictures/cartoon-v3/yak.png",
+      "sourceSha256": "aedcf12bad6a75ded4e5287f7a638eeeb42dd166caa021bf8e4ea4a4dad601a4",
+      "output": "assets/pictures/transparent/yak.png"
+    },
+    {
+      "word": "yam",
+      "source": "assets/pictures/cartoon-v3/yam.png",
+      "sourceSha256": "ac240626f855cabd343fdcdb7b2635eb0ecf2a47392ba04e3a3bd73560427d20",
+      "output": "assets/pictures/transparent/yam.png"
+    },
+    {
+      "word": "yes",
+      "source": "assets/pictures/cartoon-v3/yes.png",
+      "sourceSha256": "3d312c404ccbec5d335f2e7a867f533548ce375d55661f5f4fad4bfeb983676e",
+      "output": "assets/pictures/transparent/yes.png"
+    },
+    {
+      "word": "zip",
+      "source": "assets/pictures/cartoon-v3/zip.png",
+      "sourceSha256": "e976dcd0b32210c414e43c859905793c26f50f1962305fd7e0354067b64bb12f",
+      "output": "assets/pictures/transparent/zip.png"
+    },
+    {
+      "word": "zoo",
+      "source": "assets/pictures/cartoon-v3/zoo.png",
+      "sourceSha256": "fbad34da32a0c19dc68dbd794c6115ffd51f6424ab39b1c2c9bdec1a597432fb",
+      "output": "assets/pictures/transparent/zoo.png"
+    },
+    {
+      "word": "zoom",
+      "source": "assets/pictures/cartoon-v5/zoom.png",
+      "sourceSha256": "e54338b8c6cbbf4b822104ed63ad7124f4ae89c98aca8d30bca5e930c44d256b",
+      "output": "assets/pictures/transparent/zoom.png"
+    }
+  ]
+}

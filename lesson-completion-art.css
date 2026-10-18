@@ -1,0 +1,6 @@
+.complete-view .complete-mark { display:grid; place-items:center; width:136px; height:136px; margin:0 auto 16px; background:none; border:0; box-shadow:none; border-radius:0; }
+.complete-view .complete-mark img { display:block; width:100%; height:100%; object-fit:contain; }
+.complete-view .completion-route-link { display:grid; place-items:center; width:88px; height:88px; padding:6px; margin:22px auto 0; background:none; border:0; box-shadow:none; }
+.complete-view .completion-route-link img { width:100%; height:100%; object-fit:contain; filter:none; }
+.complete-view h2 { margin:0; line-height:1.4; }
+@media(max-width:600px) { .complete-view .complete-mark { width:112px; height:112px; } .complete-view .completion-route-link { width:76px; height:76px; } }

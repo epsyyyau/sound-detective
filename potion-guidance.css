@@ -1,0 +1,50 @@
+#game.is-potion-game #instruction:empty { display:none; }
+#game.is-potion-game .magic-audio { gap:42px; margin:8px 0; }
+#game.is-potion-game .magic-stage { height:clamp(200px,calc(100svh - 512px),260px); }
+#game.is-potion-game .bubble-progress-group { color:#94651c; }
+#game.is-potion-game .magic-audio button,
+#game.is-potion-game .magic-answer button {
+  display:grid; place-items:center; flex:none; width:72px; height:72px; min-height:0; padding:17px;
+  border:3px solid #8cddd1; border-radius:50%;
+  background:radial-gradient(ellipse at 32% 17%,#45b7ae,#168787 48%,#075c68);
+  box-shadow:inset 0 3px 3px #e2fff4a6,inset 0 -5px 6px #03495466,0 4px 0 #298d8999,0 7px 8px #24584e33;
+}
+#game.is-potion-game .magic-audio img,
+#game.is-potion-game .magic-answer button img { display:block; width:32px; height:32px; border-radius:0; }
+#game.is-potion-game .magic-audio button:disabled { opacity:1; }
+#game.is-potion-game #source-audio.is-heard,
+#game.is-potion-game #target-audio:not(.is-ready) {
+  background:radial-gradient(ellipse at 30% 15%,#b2c4bf,#869c99 60%,#637d7c);
+  border-color:#cbdad3; box-shadow:inset 0 3px 3px #ffffff88,inset 0 -4px 5px #536e7188,0 4px 0 #788f8f80;
+}
+#game.is-potion-game .letter-card::after { content:''; position:absolute; inset:5% 6%; border:3px solid transparent; border-radius:8px; pointer-events:none; }
+#game.is-potion-game .letter-card:not(:disabled):hover::after,
+#game.is-potion-game .letter-card[aria-pressed='true']::after { border-color:#159d95; box-shadow:0 0 0 2px #fff8df; }
+#game.is-potion-game .bubble-guided:is(button),
+#game.is-potion-game .bubble-guided > .letter-card:not(:disabled),
+#game.is-potion-game .bubble-guided .pick-sound:not(:disabled) { animation:bubble-guide-pop 1.8s ease-in-out infinite; }
+#game.is-potion-game .pick-sound.bubble-wrong { outline:3px solid #d33d3d; outline-offset:2px; }
+#game.is-potion-game .letter-card.bubble-wrong::after { border-color:#d33d3d; box-shadow:none; }
+#game.is-potion-game .pick-sound:not(:disabled):hover { outline:3px solid #159d95; outline-offset:2px; }
+#game.is-potion-game .listen-sound { display:grid; place-items:center; width:44px; height:44px; padding:10px; border-radius:50%; background:#0f7377; }
+#game.is-potion-game .listen-sound img { width:24px; height:24px; }
+#game.is-potion-game #feedback { min-height:1.5em; margin:2px 0; }
+#game.is-potion-game .magic-answer button { width:54px; height:54px; padding:8px; }
+#game.is-potion-game .magic-answer-space { min-height:74px; }
+#game:is(.is-potion-game,.is-bubble-game) .magic-audio button.bubble-guided:not(:disabled) {
+  animation:lab-audio-guide-pop 1.35s ease-in-out infinite;
+}
+@keyframes lab-audio-guide-pop {
+  0%,80%,100% { scale:1; filter:drop-shadow(0 0 2px #fff5c533); }
+  40% { scale:1.16; filter:drop-shadow(0 0 12px #fff9d4) drop-shadow(0 0 5px #25aaa080); }
+}
+@media(max-width:560px) {
+  #game.is-potion-game #next { flex-basis:auto; }
+  #game.is-potion-game .magic-audio button { width:64px; height:64px; padding:13px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  #game:is(.is-potion-game,.is-bubble-game) .magic-audio button.bubble-guided:not(:disabled) { animation:none; outline:4px solid #e2b23e; outline-offset:5px; }
+  #game.is-potion-game .bubble-guided:is(button),
+  #game.is-potion-game .bubble-guided > .letter-card:not(:disabled),
+  #game.is-potion-game .bubble-guided .pick-sound:not(:disabled) { animation:none; outline:3px solid #159d95; outline-offset:4px; }
+}

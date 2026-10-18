@@ -1,0 +1,8 @@
+.game-cover-title {
+  font-family: var(--chinese-font);
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0;
+  color: #18565b;
+  text-shadow: 0 2px 0 #fffbed;
+}

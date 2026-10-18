@@ -1,0 +1,58 @@
+.family-page:has(#family-setup:not([hidden])) { width:100%; padding:0; }
+.family-page:has(#family-setup:not([hidden])) > .family-header { display:none; }
+.family-town { position:relative; container-type:inline-size; width:min(100%,1440px); height:100svh; min-height:640px; max-height:900px; margin:auto; overflow:hidden; background:url('assets/game-style/family-background.png') center / 100% 100% no-repeat; }
+.town-header { position:absolute; z-index:2; inset:12px 24px auto; display:flex; align-items:center; justify-content:space-between; height:72px; }
+.town-header h2 { position:absolute; left:50%; transform:translateX(-50%); margin:0; font-size:36px; line-height:1.3; white-space:nowrap; font-weight:400; }
+.family-page .town-header .practice-return { display:inline-flex; position:relative; z-index:6; isolation:isolate; align-items:center; justify-content:center; flex:0 0 80px; width:80px; height:80px; min-width:80px; min-height:80px; margin-bottom:0; padding:0; border:0; border-radius:0; background:transparent; box-shadow:none; }
+.town-district { color:#526e65; font-size:20px; }
+.town-roads { position:absolute; inset:94px 0 65px; width:100%; height:calc(100% - 159px); pointer-events:none; }
+.town-houses { position:absolute; inset:90px 6% 72px; display:grid; grid-template-columns:repeat(8,minmax(0,1fr)); grid-template-rows:repeat(3,minmax(0,1fr)); align-items:center; justify-items:center; }
+.family-page .town-house { position:relative; grid-column:span 2; display:block; width:min(100%,180px); min-height:0; aspect-ratio:1; padding:0; border:0; border-radius:0; background:none; transition:transform .18s; }
+.town-house:nth-child(9) { grid-column:2 / span 2; }
+.town-house:nth-child(10) { grid-column:4 / span 2; }
+.town-house:nth-child(11) { grid-column:6 / span 2; }
+.town-house:hover,.town-house[aria-expanded='true'] { transform:translateY(-5px); }
+.town-house img { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; pointer-events:none; }
+.town-house .town-roof { clip-path:polygon(0% 48%,50% 5%,100% 48%,100% 60%,89% 60%,50% 23%,11% 60%,0% 60%); filter:var(--town-roof); }
+.town-house span { position:absolute; inset:44% 24% auto; display:grid; place-items:center; height:17%; color:#17666a; font:700 28px/1 var(--phonics-font); }
+.town-pagination { position:absolute; bottom:16px; left:50%; transform:translateX(-50%); display:flex; align-items:center; gap:24px; }
+.town-pagination span { min-width:62px; text-align:center; font:400 24px/1.3 var(--phonics-font); color:#395f59; }
+.family-page .town-icon,.town-dialog .town-icon { display:grid; place-items:center; width:48px; height:48px; min-height:0; padding:10px; border:2px solid #a2d6c8; border-radius:50%; background:#137477; box-shadow:0 3px 2px #5f6f4530; }
+.town-icon img { width:26px; height:26px; }
+.town-previous img { transform:rotate(180deg); }
+.family-town button:disabled,.town-dialog button:disabled { opacity:.4; cursor:default; }
+.town-dialog { width:min(440px,calc(100% - 24px)); max-height:calc(100svh - 24px); overflow-y:auto; padding:24px; color:#21494a; border:3px solid #97bdb0; border-radius:8px; background:#fffaf0; box-shadow:0 14px 50px #244d4a44; font-family:var(--chinese-font); }
+.town-dialog::backdrop { background:#25494b50; backdrop-filter:blur(2px); }
+.town-dialog button { font:inherit; cursor:pointer; -webkit-tap-highlight-color:transparent; }
+.town-dialog button:focus-visible { outline:3px solid #245fa2; outline-offset:4px; }
+.town-dialog .town-close { position:absolute; right:12px; top:12px; display:grid; place-items:center; width:44px; height:44px; border:0; border-radius:50%; background:#137477; padding:9px; }
+.town-close img { width:22px; height:22px; filter:brightness(0) invert(1); }
+.town-heading { display:flex; justify-content:center; align-items:center; gap:14px; margin:14px 0 4px; }
+.town-heading h2 { margin:0; font:700 44px/1.2 var(--phonics-font); color:#137477; }
+.town-recording-state { text-align:center; color:#716c60; font-size:15px; margin:12px 0 22px; min-height:20px; }
+.town-examples { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+.town-dialog .town-example { display:flex; flex-direction:column; align-items:center; gap:10px; min-width:0; padding:0 0 8px; border:0; background:none; color:#20313f; }
+.town-example > img { width:112px; height:112px; object-fit:contain; }
+.town-example-label { display:flex; align-items:center; gap:10px; font:700 32px/1.2 var(--phonics-font); }
+.town-example-label strong { color:#137477; }
+.town-example-label img { width:34px; height:34px; padding:7px; border-radius:50%; background:#137477; }
+.town-status { min-height:20px; margin:14px 0 0; color:#a34037; text-align:center; }
+@media(max-width:680px) {
+  .family-town { height:auto; min-height:100svh; max-height:none; padding:100px 8px 84px; background-size:auto 100%; overflow:visible; }
+  .town-header { inset:10px 10px auto; height:64px; }
+  .town-header h2 { font-size:27px; }
+  .family-page .town-header .practice-return { flex-basis:64px; width:64px; height:64px; min-width:64px; min-height:64px; }
+  .town-district { display:none; }
+  .town-roads { display:none; }
+  .town-houses { position:relative; inset:auto; grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:none; gap:20px 10px; }
+  .family-page .town-house { grid-column:auto; width:min(100%,160px); }
+  .family-page .town-house:last-child { grid-column:1 / -1; }
+  .town-house span { font-size:26px; }
+  .town-examples { gap:12px; }
+  .town-example > img { width:96px; height:96px; }
+  .town-example-label { font-size:28px; gap:8px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .family-page .town-house { transition:none; }
+  .town-house:hover,.town-house[aria-expanded='true'] { transform:none; }
+}

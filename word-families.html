@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>物換「聲」移 | 小小「聲」探</title>
+  <link rel="icon" href="assets/favicon-paper-32.png">
+  <link rel="stylesheet" href="styles.css?v=20261011-fredoka">
+  <link rel="stylesheet" href="game-cover-titles.css?v=20261011-platform-huninn">
+  <link rel="stylesheet" href="word-families.css?v=20261018-return-icon">
+  <link rel="stylesheet" href="family-paper-cover.css?v=20261013-near-house-captions">
+  <link rel="stylesheet" href="group-colors.css?v=20261010-cottage">
+  <script src="extra-word-assets.js?v=20261013-lap-tip&amp;rerecorded=1" defer></script>
+  <script src="word-families.js?v=20261018-no-town&amp;endings=1&amp;rerecorded=1" defer></script>
+  <link rel="stylesheet" href="family-paper-games.css?v=20261017-portrait-layout-2">
+  <script src="family-paper-games.js?v=20261017-slower-car" defer></script>
+  <link rel="stylesheet" href="practice-return.css?v=20261013-paper-navigation">
+  <link rel="stylesheet" href="group-mission-hints.css?v=20261012-1">
+  <link rel="stylesheet" href="practice-evidence-frames.css?v=20261013-final">
+    <link rel="stylesheet" href="detective-cursor.css?v=20261013-paper-pencil">
+  <script src="group-mission-hints.js?v=20261012-1" defer></script>
+  <link rel="stylesheet" href="game-cover-return.css?v=20261013-family-traffic-collection">
+  <link rel="stylesheet" href="practice-cover-full-bleed.css?v=20261017-phone-height-3">
+  <link rel="stylesheet" href="themed-completions.css?v=20261017-family-mobile-overview-fit">
+  <link rel="stylesheet" href="practice-skip.css?v=20261014-1">
+  <link rel="stylesheet" href="creator-mark.css?v=20261016-tooltip">
+  <link rel="stylesheet" href="family-cover-mobile-scene.css?v=20261017-1">
+  <link rel="stylesheet" href="office-landscape.css?v=20261018-tablet-scale">
+  <script src="office-landscape.js?v=20261018-tablet-scale" defer></script>
+</head>
+<body class="office-landscape">
+<main class="family-page">
+  <header class="family-header"><a class="back-link practice-return" href="practice-room.html" aria-label="返回聲探事務所" title="返回聲探事務所"><img src="assets/navigation-paper/office.png" alt="" aria-hidden="true"></a><h1 id="family-map-title" class="game-cover-title" tabindex="-1">物換「聲」移</h1><div class="family-map-actions"><button id="family-startover" class="quiet" type="button" aria-label="調查車返回起點" title="調查車返回起點"><img src="assets/family-map/return-car-to-start.svg" alt="" aria-hidden="true"></button></div></header>
+  <section id="family-map" class="family-map">
+    <span class="creator-mark" tabindex="0" role="img" aria-label="yyy 標誌。本平台由實習教育心理學家設計"><img src="assets/yyy-logo-transparent.png" alt=""><span class="creator-mark-tooltip" aria-hidden="true">本平台由實習教育心理學家設計</span></span>
+    <div class="family-map-scroll">
+      <div id="family-map-canvas" class="family-map-canvas">
+        <img class="family-map-background" src="assets/family-map/paper-town-cover.png" alt="七間紙藝任務屋沿小鎮道路排列">
+        <svg class="family-map-route" viewBox="0 0 1672 941" preserveAspectRatio="none" aria-hidden="true"><path id="family-map-path" d="M 150 823 C 230 760 330 854 450 802 S 650 770 770 800 S 950 840 1080 810 S 1300 800 1430 848 C 1570 890 1650 810 1640 640 C 1640 520 1620 500 1560 440 C 1500 390 1420 445 1310 428 S 1160 410 1070 407 S 920 390 820 408 S 650 450 560 413 S 365 325 250 326 S 90 310 55 255" fill="none" stroke="none"/></svg>
+        <svg class="family-mobile-route" viewBox="0 0 400 1000" preserveAspectRatio="none" aria-hidden="true"><path id="family-mobile-path" d="M 64 210 H 340 Q 380 210 380 250 V 410 Q 380 450 340 450 H 60 Q 20 450 20 490 V 650 Q 20 690 60 690 H 340 Q 380 690 380 730 V 890 Q 380 930 340 930 H 90"/><use href="#family-mobile-path"/></svg>
+        <div id="family-stops" class="family-stops"></div>
+        <div id="family-train" class="family-map-train" role="img" aria-label="聲探調查車"><img src="assets/family-map/paper-spy-car.png" alt=""></div>
+      </div>
+    </div>
+    <p id="family-map-status" class="sr-only" role="status" aria-live="polite"></p>
+  </section>
+  <section id="family-game" class="family-panel" hidden>
+    <div id="family-paper" class="paper-play" hidden></div>
+    <div class="family-toolbar"><button id="family-back" class="family-route-button" aria-label="返回路線圖" title="返回路線圖"><img src="assets/navigation-paper/route.png" alt="" aria-hidden="true"></button><span id="family-progress" role="status" aria-live="polite"></span><button id="family-skip" class="practice-skip" type="button" aria-label="跳過本組題目，查看字詞總覽">跳過</button></div>
+    <h2 id="family-prompt" tabindex="-1"></h2>
+    <div class="family-workspace">
+      <div id="family-onsets" class="family-onsets" role="group" aria-label="選擇字頭"></div>
+      <div class="family-stage" data-sound-group="1">
+        <img class="word-house" src="assets/game-style/family-house-white-door.png" alt="">
+        <img class="house-roof" src="assets/game-style/family-house.png" alt="" aria-hidden="true">
+        <div id="family-word" class="family-word"><span id="family-onset" lang="en" hidden></span><span id="family-ending" lang="en"></span></div>
+        <img id="family-resident" class="family-resident" alt="" hidden>
+      </div>
+      <div class="family-picture-space"><div id="family-pictures" class="family-pictures" aria-label="選擇與字詞相符的圖片" hidden></div></div>
+    </div>
+    <p id="family-feedback" class="family-feedback" role="status"></p>
+    <div class="family-actions"><button id="family-listen" class="family-play-button" aria-label="播放詞語" title="播放詞語" hidden><img src="assets/icons/play.svg" alt="" aria-hidden="true"></button><button id="family-next" class="family-play-button" aria-label="下一題" title="下一題" hidden><img src="assets/icons/arrow-right.svg" alt="" aria-hidden="true"></button></div>
+    <p id="family-audio-status" class="family-audio-status" role="status"></p>
+  </section>
+  <section id="family-complete" class="family-panel" hidden>
+    <h2 id="family-complete-title" tabindex="-1"></h2>
+    <div id="family-collection" class="family-collection"></div>
+    <p id="family-review-status" role="status"></p>
+    <div class="family-actions"><button id="family-again" class="family-play-button family-replay-button round-replay-button" aria-label="再玩一次" title="再玩一次"><img src="assets/game-style/replay-paper-seal-v2.png" alt="" aria-hidden="true"></button><button id="family-choose" class="family-route-button" aria-label="返回物換「聲」移首頁" title="返回物換「聲」移首頁"><img src="assets/game-style/family-paper-return.png" alt="" aria-hidden="true"></button></div>
+  </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.family-page #family-game .practice-skip,
+.train-page #play .practice-skip,
+.magic-page #game .practice-skip {
+  display:inline-flex; align-items:center; justify-content:center; flex:none;
+  min-width:72px; min-height:44px; padding:7px 14px;
+  border:2px solid #15797b; border-radius:6px;
+  background:#fff9e9; color:#145660;
+  box-shadow:0 3px 0 #b9a986,0 5px 8px #263f3a25;
+  font:700 16px/1.2 var(--chinese-font);
+  cursor:pointer;
+}
+.family-page #family-game .practice-skip:hover,
+.train-page #play .practice-skip:hover,
+.magic-page #game .practice-skip:hover { background:#fff1c9; }
+.family-page #family-game .practice-skip:focus-visible,
+.train-page #play .practice-skip:focus-visible,
+.magic-page #game .practice-skip:focus-visible { outline:3px solid #245fa2; outline-offset:3px; }
+.family-page #family-game .family-toolbar .practice-skip,
+.magic-page #game .magic-toolbar .practice-skip { position:relative; z-index:7; }
+.family-page #family-game .paper-play .paper-skip {
+  position:absolute; z-index:7; top:calc(3% + 48px); right:3%;
+}
+.train-page #play #skip-round {
+  position:fixed; z-index:8; top:clamp(94px,14vh,112px); right:18px;
+  pointer-events:auto;
+}
+@media(max-width:700px) {
+  .family-page #family-game .practice-skip,
+  .train-page #play .practice-skip,
+  .magic-page #game .practice-skip { min-width:64px; min-height:44px; padding:6px 10px; font-size:15px; }
+  .train-page #play #skip-round { top:14px; right:82px; }
+}

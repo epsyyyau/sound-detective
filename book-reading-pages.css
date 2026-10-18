@@ -1,0 +1,323 @@
+.book-preview-inside {
+  background:#fff8e8;
+  box-shadow:inset 10px 0 12px #4c453347,5px 4px 1px #8e795f,18px 22px 14px #214c4a69;
+}
+.book-preview-front.has-printed-title .book-preview-title { display:none; }
+.book-preview-mockup {
+  position:relative; width:min(50vw,600px,calc((100svh - 130px) * 1195 / 1316));
+  aspect-ratio:1195 / 1316;
+  animation:book-mockup-pop-out 650ms cubic-bezier(.18,.9,.22,1.25) both;
+}
+.book-preview-mockup img {
+  display:block; width:100%; height:100%; object-fit:contain; pointer-events:none;
+  filter:drop-shadow(18px 22px 14px #214c4a69);
+}
+.book-preview-volume {
+  width:min(50vw,560px,calc((100svh - 150px) * 2 / 3));
+  transform:rotateZ(-7deg);
+}
+.book-preview-volume::before {
+  content:''; position:absolute; z-index:0; inset:-1% -2% -3% -9%;
+  border-radius:5% 4% 4% 5%; background:var(--preview-spine);
+  box-shadow:inset 0 0 0 3px #fff5cf6b,16px 21px 14px #214c4a69;
+}
+.book-preview-spine {
+  z-index:4; left:-9%; top:-.5%; width:13%; height:101%;
+  border-radius:44% 0 0 44% / 4%; transform:none;
+}
+.book-preview-pages {
+  z-index:2; top:auto; bottom:-3%; left:-4%; width:106%; height:5%;
+  border-radius:0 0 9px 11px;
+  clip-path:polygon(4% 0,100% 0,98% 100%,0 100%);
+}
+.book-preview-inside { inset:0 -1% -1% -1%; }
+.book-preview-inside::after { content:none; }
+.book-preview-front {
+  border:8px solid var(--preview-spine); border-radius:7px 13px 11px 4px;
+  box-shadow:inset 6px 0 8px #143b4638,4px 4px 0 #735d42a8,16px 21px 14px #214c4a69;
+}
+.book-game-concepts .book-preview-mockup .book-preview-corner {
+  right:4.5%; bottom:13.5%; width:clamp(54px,13%,76px);
+}
+.book-preview-mockup.is-opening { animation:none; }
+@keyframes book-mockup-pop-out {
+  0% { opacity:0; transform:translateY(110px) scale(.45); }
+  70% { opacity:1; transform:translateY(-10px) scale(1.04); }
+  100% { opacity:1; transform:translateY(0) scale(1); }
+}
+.book-back-cover {
+  min-height:100svh; display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:12px; padding:20px 16px;
+  background:#80d9d4 url('assets/book-game/reading-nook-background-v1.png') center/cover no-repeat;
+}
+.book-back-cover>img {
+  display:block; width:min(50vw,600px,calc((100svh - 150px) * 1195 / 1316));
+  height:auto; filter:drop-shadow(18px 22px 14px #214c4a69);
+  animation:book-back-arrive 480ms ease-out both;
+}
+.book-back-cover[data-book="hen"] { --preview-spine:#cf963e; }
+.book-back-cover[data-book="train"] { --preview-spine:#087f96; }
+.book-back-cover[data-book="pup"] { --preview-spine:#6694c2; }
+.book-back-cover[data-book="pin"] { --preview-spine:#669b5b; }
+.book-back-cover[data-book="pig"] { --preview-spine:#c96a8e; }
+.book-back-cover[data-book="king"] { --preview-spine:#9572b8; }
+.book-back-cover[data-book="quack"] { --preview-spine:#ce863d; }
+.book-generic-back {
+  position:relative; width:min(50vw,560px,calc((100svh - 150px) * 2 / 3));
+  aspect-ratio:2 / 3; transform:rotateZ(7deg);
+  filter:drop-shadow(16px 20px 12px #214c4a69);
+}
+.book-generic-back-board {
+  position:absolute; z-index:2; inset:0 8% 3% 0; display:flex; flex-direction:column;
+  align-items:center; justify-content:center;
+  border:8px solid var(--preview-spine); border-radius:13px 7px 5px 11px;
+  background:var(--preview-spine); color:#fff8dd;
+  box-shadow:inset 0 0 0 3px #fff1c09c,inset 0 0 0 15px #fff1c024;
+}
+.book-generic-back-spine {
+  position:absolute; z-index:3; top:-.5%; right:0; width:13%; height:101%;
+  border-radius:0 44% 44% 0 / 4%;
+  background:linear-gradient(90deg,#25414538,#ffffff55 30%,#26444845 85%),var(--preview-spine);
+  box-shadow:inset 0 0 0 3px #fff5cf7a;
+}
+.book-generic-back-pages {
+  position:absolute; z-index:1; left:0; right:8%; bottom:-1%; height:5%;
+  border:2px solid #aa9777; border-radius:0 0 9px 9px;
+  background:repeating-linear-gradient(0deg,#fff9e9 0 2px,#b5ab91 2px 3px);
+}
+.book-generic-back-stars {
+  position:absolute; top:13%; left:13%; color:#ffe27a;
+  font:700 clamp(24px,4vw,43px)/1 var(--phonics-font); letter-spacing:.15em;
+}
+.book-generic-back-stars-bottom { top:auto; left:auto; right:12%; bottom:12%; }
+.book-generic-back-art { display:block; width:83%; height:59%; object-fit:contain; }
+@keyframes book-back-arrive {
+  from { opacity:0; transform:translateY(18px) scale(.94); }
+  to { opacity:1; transform:translateY(0) scale(1); }
+}
+.book-back-controls { display:flex; align-items:center; justify-content:center; gap:20px; }
+.book-game-concepts .book-back-controls button {
+  width:64px; height:64px; padding:0; border:0; background:transparent; box-shadow:none;
+}
+.book-back-controls img { display:block; width:100%; height:100%; object-fit:contain; }
+.book-game-concepts .book-back-controls .book-back-previous {
+  border:3px solid #fff8df; border-radius:50%; background:#0f7779;
+  color:#fff8df; font:700 36px/1 var(--phonics-font); box-shadow:0 3px 8px #234d4955;
+}
+.book-back-previous::before { content:'←'; }
+.book-back-controls button:hover { transform:scale(1.06); }
+.book-back-controls button:focus-visible { outline:4px solid #fff8df; outline-offset:3px; }
+.book-opening-leaf .book-preview-front.has-printed-title {
+  padding:3%; border:8px solid var(--preview-spine); border-top-width:10px;
+  border-radius:9px 15px 11px 4px; background:#fff1d2;
+  box-shadow:inset 7px 0 8px #703c3950,5px 3px 0 #8d5547,18px 22px 14px #214c4a69;
+}
+.book-opening-leaf .book-preview-front.has-printed-title img {
+  border:3px solid #fff8e6; border-radius:3px; object-position:center;
+}
+@media(max-width:700px) {
+  .book-preview-mockup { width:min(96vw,calc((100svh - 160px) * 1195 / 1316)); }
+  .book-back-cover>img { width:min(96vw,calc((100svh - 150px) * 1195 / 1316)); }
+  .book-preview-volume,.book-generic-back { width:min(72vw,calc((100svh - 150px) * 2 / 3)); }
+}
+.book-preview-picture-cue {
+  position:absolute; left:50%; top:50%; width:34%; aspect-ratio:1;
+  transform:translate(-50%,-50%); border:3px solid #d4b98e;
+  border-radius:3px; background:#fffdf3;
+  box-shadow:0 4px 8px #775b3833;
+}
+.book-preview-picture-cue::before {
+  content:''; position:absolute; left:17%; top:16%; width:22%; aspect-ratio:1;
+  border-radius:50%; background:#e9c776;
+}
+.book-preview-picture-cue::after {
+  content:''; position:absolute; left:13%; right:12%; bottom:12%; height:43%;
+  background:#91b79e; clip-path:polygon(0 100%,35% 20%,60% 70%,78% 38%,100% 100%);
+}
+.book-game-concepts .book-open {
+  min-height:100svh; padding:30px 24px 24px; display:flex; align-items:center;
+  justify-content:center; overflow-x:clip;
+  background:#80d9d4 url('assets/book-game/reading-nook-background-v1.png') center/cover no-repeat;
+}
+.book-game-concepts .book-spread {
+  position:relative; display:grid; grid-template-columns:repeat(2,minmax(0,1fr));
+  width:min(calc(100vw - 60px),calc((100svh - 80px) * 4 / 3),1120px);
+  aspect-ratio:4/3; transform-origin:center; perspective:1200px;
+  filter:drop-shadow(15px 21px 12px #214c4a70);
+}
+.book-spread.is-opening-cover {
+  pointer-events:none;
+  animation:book-cover-spread 1100ms cubic-bezier(.23,.68,.2,1) both;
+}
+.book-spread.is-opening-cover .book-reading-left {
+  animation:book-inside-reveal 1100ms ease-out both;
+}
+.book-opening-leaf {
+  position:absolute; z-index:5; left:50%; top:0; width:50%; height:100%;
+  transform-origin:left center; transform-style:preserve-3d; pointer-events:none;
+  animation:book-cover-leaf 1100ms cubic-bezier(.25,.55,.2,1) both;
+}
+.book-opening-leaf .book-preview-front,.book-opening-back {
+  position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden;
+}
+.book-opening-back {
+  display:grid; place-items:center; transform:rotateY(180deg); border:5px solid #e7d3aa;
+  border-radius:10px 2px 2px 8px;
+  background:linear-gradient(90deg,#e2c99e,#fff8e8 20%,#fff6e1);
+  box-shadow:inset -9px 0 15px #9e86614a;
+}
+.book-opening-back p {
+  width:100%; margin:0; padding:9% 10% 14%; color:#173f49;
+  font:700 clamp(24px,3vw,42px)/1.35 var(--phonics-font);
+  text-align:left; overflow-wrap:anywhere;
+}
+@keyframes book-cover-spread {
+  from { transform:translateX(-24%) scale(.92); }
+  to { transform:translateX(0) scale(1); }
+}
+@keyframes book-cover-leaf { from { transform:rotateY(0); } to { transform:rotateY(-180deg); } }
+@keyframes book-inside-reveal { 0%,25% { opacity:0; } 75%,100% { opacity:1; } }
+.book-spread::before {
+  content:''; position:absolute; z-index:0; top:-2%; left:50%; right:-1%; height:4%;
+  border:1px solid #aa9777; border-radius:6px 7px 0 0;
+  background:repeating-linear-gradient(0deg,#fff8e8 0 2px,#beaf95 2px 3px);
+  transform:skewX(-35deg);
+}
+.book-spread-page-side {
+  position:absolute; z-index:0; top:0; right:-12px; bottom:-4px; width:18px;
+  border:1px solid #9f8b6d; border-left:0; border-radius:0 8px 8px 0;
+  background:repeating-linear-gradient(0deg,#fff8e7 0 3px,#c5b79c 3px 4px);
+  box-shadow:inset -5px 0 6px #89725157,5px 5px 0 #866e53;
+  transform:skewY(-1deg);
+}
+.book-reading-left,.book-reading-right {
+  position:relative; z-index:1; min-width:0; height:100%; overflow:hidden;
+  border:5px solid #e7d3aa; background:#fff8e8;
+}
+.book-reading-left {
+  display:grid; place-items:center; border-radius:12px 2px 2px 8px;
+  border-right:0;
+  background:linear-gradient(90deg,#e2c99e 0%,#f7e9d0 8%,#fff8e8 21%,#fff6e1 100%);
+  box-shadow:inset -9px 0 15px #9e86614a,inset 2px 0 2px #fff9ec;
+  transform-origin:right center; transform:rotateY(4deg) rotateZ(-.15deg);
+}
+.book-reading-right {
+  border-radius:2px 10px 8px 2px; border-left:2px solid #bb9d70;
+  box-shadow:inset 8px 0 12px #9d7e5547,6px 3px 0 #866e53;
+}
+.book-game-concepts .book-sentence {
+  position:static; display:block; width:100%; max-width:100%; margin:0;
+  padding:9% 10% 14%; color:#173f49;
+  font:700 clamp(24px,3vw,42px)/1.35 var(--phonics-font);
+  text-align:left; overflow-wrap:anywhere;
+}
+.book-game-concepts .book-page-count {
+  position:absolute; bottom:18px; right:17px; min-width:0;
+  color:#75634e; font:700 15px/1.2 var(--phonics-font);
+}
+.book-the-end {
+  position:absolute; bottom:clamp(45px,7%,68px); left:50%; transform:translateX(-50%);
+  color:#75634e; font:700 clamp(16px,2vw,24px)/1.2 var(--phonics-font);
+  white-space:nowrap;
+}
+.book-game-concepts .book-previous-corner {
+  position:absolute; z-index:2; left:10px; bottom:9px; width:46px; height:46px;
+  padding:0; border:0; border-radius:50%; background:transparent;
+  box-shadow:none; color:#0f6670; font:700 30px/1 var(--phonics-font);
+}
+.book-previous-corner::before { content:'←'; }
+.book-previous-corner:disabled { visibility:hidden; }
+.book-reveal,.book-picture { position:absolute; inset:4%; }
+.book-game-concepts .book-reveal {
+  display:grid; place-items:center; width:92%; height:92%; padding:0;
+  border:2px solid #eadbbf; border-radius:3px;
+  background:linear-gradient(125deg,#fffaf0,#fff4dd); box-shadow:inset 0 0 0 7px #fffdf674;
+}
+.book-reveal-picture {
+  display:block; width:clamp(130px,36%,170px); aspect-ratio:1;
+  background:url('assets/book-game/reveal-picture-paper-seal-v2.png') center/contain no-repeat;
+  filter:drop-shadow(0 8px 8px #755c3c40);
+  animation:book-picture-hint 2.4s ease-in-out infinite;
+}
+@keyframes book-picture-hint { 0%,100% { transform:rotate(0) scale(1); } 50% { transform:rotate(-3deg) scale(1.05); } }
+.book-picture { inset:8% 10%; overflow:hidden; border:2px solid #f0e0be; border-radius:3px; background:#dcebd8; }
+.book-picture.has-page-art { inset:10% 8%; border:0; background:#fff6e5; }
+.book-picture.is-revealed { animation:book-picture-reveal 400ms ease-out both; }
+@keyframes book-picture-reveal { from { opacity:0; transform:scale(.94); } to { opacity:1; transform:scale(1); } }
+.book-picture>img { display:block; width:100%; height:100%; object-fit:cover; object-position:90% center; }
+.book-picture.has-page-art>img { object-fit:contain; object-position:center; }
+.book-picture .book-scene {
+  position:absolute; z-index:1; inset:0; width:100%; height:100%;
+  border-radius:0; box-shadow:inset 0 0 0 7px #fff7de90,inset 0 -30px 0 #b6d9a8;
+}
+.book-game-concepts .book-next-corner {
+  position:absolute; z-index:4; right:-5px; bottom:-5px; width:clamp(88px,26%,118px); aspect-ratio:1;
+  padding:0; border:0; border-radius:0; background:transparent; box-shadow:none;
+}
+.book-next-corner::before {
+  content:''; position:absolute; inset:4% 4% 0 0;
+  border-radius:0 0 8px 0;
+  background:radial-gradient(ellipse at 77% 80%,#7f624273,transparent 63%);
+  animation:book-curl-shadow 2.4s ease-in-out infinite;
+}
+.book-next-corner::after {
+  content:''; position:absolute; inset:0;
+  background:url('assets/book-game/reading-page-curl.svg') right bottom/contain no-repeat;
+  transform-origin:right bottom;
+  animation:book-page-curl 2.4s ease-in-out infinite;
+}
+@keyframes book-page-curl {
+  0%,100% { transform:scale(.78) rotate(-2deg); }
+  50% { transform:scale(1) rotate(1deg); }
+}
+@keyframes book-curl-shadow { 0%,100% { opacity:.25; } 50% { opacity:.6; } }
+.book-game-concepts .book-next-corner:focus-visible,
+.book-game-concepts .book-previous-corner:focus-visible,
+.book-game-concepts .book-reveal:focus-visible { outline:4px solid #0d7981; outline-offset:-5px; }
+.book-game-concepts .book-spread.is-turning-next::after,
+.book-game-concepts .book-spread.is-turning-previous::after {
+  content:none;
+}
+.book-turn-leaf {
+  position:absolute; z-index:5; top:0; left:50%; width:50%; height:100%;
+  transform-origin:left center; transform-style:preserve-3d; pointer-events:none;
+  animation:book-leaf-next 950ms ease-in-out both;
+}
+.book-turn-leaf.is-previous {
+  left:0; transform-origin:right center;
+  animation-name:book-leaf-previous;
+}
+.book-turn-face,.book-turn-back {
+  position:absolute; inset:0; overflow:hidden; backface-visibility:hidden;
+  border-radius:4px; background:#fff8e8;
+  box-shadow:0 5px 15px #3048464d;
+}
+.book-turn-back {
+  transform:rotateY(180deg);
+  border:5px solid #e7d3aa;
+  background:linear-gradient(90deg,#e3cda8,#fff8e8 14%,#fff6e1 100%);
+}
+.book-turn-face>.book-reading-left,.book-turn-face>.book-reading-right {
+  width:100%; height:100%; transform:none; box-shadow:none;
+}
+@keyframes book-leaf-next { from { transform:rotateY(0); } to { transform:rotateY(-180deg); } }
+@keyframes book-leaf-previous { from { transform:rotateY(0); } to { transform:rotateY(180deg); } }
+@media(max-width:700px) {
+  .book-game-concepts .book-open { padding:68px 10px 24px; justify-content:center; }
+  .book-game-concepts .book-spread { width:calc(100vw - 20px); }
+  .book-game-concepts .book-sentence { font-size:clamp(18px,4.5vw,28px); line-height:1.28; padding:7% 8% 17%; }
+  .book-opening-back p { font-size:clamp(18px,4.5vw,28px); line-height:1.28; padding:7% 8% 17%; }
+  .book-game-concepts .book-page-count { bottom:9px; right:8px; font-size:12px; }
+}
+@media(max-width:480px) {
+  .book-game-concepts .book-spread { aspect-ratio:auto; min-height:max(330px,calc((100vw - 20px) * 1.02)); }
+  .book-reading-left,.book-reading-right { border-width:3px; }
+  .book-game-concepts .book-next-corner { right:-3px; bottom:-3px; width:64px; }
+  .book-game-concepts .book-previous-corner { bottom:2px; left:2px; width:40px; height:40px; font-size:26px; }
+  .book-reveal-picture { width:clamp(68px,40%,80px); }
+}
+@media(prefers-reduced-motion:reduce) {
+  .book-reveal-picture,.book-next-corner::before,.book-next-corner::after,.book-picture.is-revealed,
+  .book-spread.is-opening-cover,.book-spread.is-opening-cover .book-reading-left,.book-opening-leaf,
+  .book-preview-mockup,.book-back-cover>img { animation:none; }
+}

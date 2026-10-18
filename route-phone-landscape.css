@@ -1,0 +1,38 @@
+body.route-phone-active {
+  height: 100dvh !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+}
+
+body.route-phone-active > main,
+body.route-phone-active > .correct-answer-overlay,
+body.route-phone-active > .reward-message-dialog { display: none !important; }
+
+#route-phone-stage {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: grid;
+  place-items: center;
+  background: #f8f5e8;
+}
+
+#route-phone-stage[hidden] { display: none; }
+
+#route-phone-viewport {
+  position: relative;
+  width: var(--route-frame-width);
+  height: var(--route-frame-height);
+}
+
+#route-phone-frame {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 1280px;
+  height: 720px;
+  border: 0;
+  transform-origin: top left;
+  background: #fff9ec;
+}

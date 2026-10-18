@@ -1,0 +1,75 @@
+.missing-sound-page .lesson-panel.kraft-clue-panel {
+  padding:70px 68px 44px 80px;
+  border:0 solid transparent;
+  border-radius:0;
+  background:transparent;
+  border-image:url('assets/game-style/detective-kraft-clue-faithful.webp') 20% 20% 42% 14% fill / 70px 110px 150px 76px stretch;
+  box-shadow:none;
+}
+.kraft-clue-panel .word-pattern span:not(.is-missing) {
+  background:#fffaf2;
+  border-color:#d5c6a9;
+}
+.kraft-clue-panel .missing-answer-options button:not(.is-correct):not(.is-wrong) {
+  background:#fffaf2;
+  border-color:#d5c6a9;
+}
+.kraft-clue-panel .skip-question-button { background:#fffaf2; }
+@media(min-width:681px) and (max-height:760px) {
+  .missing-sound-page .lesson-panel.kraft-clue-panel {
+    min-height:0;
+    padding:64px 68px 38px 80px;
+  }
+}
+@media(max-width:680px) {
+  .missing-sound-page { padding:10px 12px; }
+  .missing-sound-page .lesson-header {
+    grid-template-columns:48px minmax(0,1fr) 48px;
+    gap:4px;
+    margin-bottom:6px;
+  }
+  .missing-sound-page .lesson-heading { grid-column:2; grid-row:1; }
+  .missing-sound-page .lesson-heading h1 { font-size:1.85rem; }
+  .missing-sound-page .lesson-header .route-link {
+    grid-column:1;
+    grid-row:1;
+    width:48px;
+    height:48px;
+  }
+  .missing-sound-page .clue-progress { margin-bottom:6px; }
+  .missing-sound-page .lesson-panel.kraft-clue-panel {
+    padding:42px 32px 40px;
+    border-image-width:45px 70px 98px 49px;
+  }
+  .kraft-clue-panel .missing-question-view {
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
+    align-items:start;
+  }
+  .kraft-clue-panel .skip-question-button {
+    position:static;
+    grid-column:3;
+    grid-row:1;
+    justify-self:end;
+    margin:0;
+  }
+  .kraft-clue-panel .missing-prompt {
+    grid-column:1 / -1;
+    grid-row:1;
+    justify-self:center;
+    margin:0 0 8px;
+    padding-top:4px;
+  }
+  .kraft-clue-panel .missing-question-view > :not(.skip-question-button):not(.missing-prompt) { grid-column:1 / -1; }
+  .kraft-clue-panel .word-pattern { flex-wrap:wrap; min-height:64px; margin-bottom:8px; }
+  .kraft-clue-panel .word-pattern span { min-height:62px; }
+  .missing-sound-page .kraft-clue-panel .play-word-button.question-play-button {
+    width:64px;
+    height:64px;
+    margin-bottom:8px;
+    justify-self:center;
+  }
+  .kraft-clue-panel .missing-answer-options { gap:8px; }
+  .kraft-clue-panel .missing-answer-options button { min-height:60px; }
+  .kraft-clue-panel .answer-feedback { margin-top:6px; }
+}

@@ -1,0 +1,27 @@
+/* Add a group here when its paper gameplay artwork is ready. */
+.train-header .train-title-art { display:none; }
+.train-page:has(#play:is([data-sound-group="1"],[data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"])) .train-title-text { display:none; }
+.train-page:has(#play:is([data-sound-group="1"],[data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"])) .train-title-art {
+  display:block; width:320px; max-width:100%; height:82px; object-fit:contain;
+}
+.train-page:has(#play:is([data-sound-group="1"],[data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]):not([hidden])) .train-header h1 {
+  top:0; width:320px; max-width:calc(100% - 360px); margin:0;
+}
+#setup.train-panel .station-title { top:1%; height:13%; }
+#setup .station-title > img { display:block; width:340px; max-width:100%; height:100%; object-fit:contain; }
+#setup .station-selector-label { top:15%; }
+.train-page .clue-progress #counter { background:var(--group-selector-color); color:#20333b; }
+@media(max-width:1000px) {
+  .train-page:has(#play:is([data-sound-group="1"],[data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]):not([hidden])) .train-header h1 {
+    top:86px; width:300px; max-width:94%;
+  }
+  .train-page:has(#play:is([data-sound-group="1"],[data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"])) .train-title-art { height:76px; }
+}
+@media(max-width:760px), (max-width:1000px) and (orientation:portrait) {
+  #setup.train-panel .station-title { top:5.5%; height:8%; }
+  #setup .station-title > img { width:300px; }
+  #setup .station-selector-label { top:14%; }
+}
+@media(max-width:650px) {
+  .train-page:has(#play:is([data-sound-group="1"],[data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]):not([hidden])) .train-header h1 { top:96px; }
+}

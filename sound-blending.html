@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>「聲」「聲」相惜 | 小小「聲」探</title>
+  <link rel="icon" href="assets/favicon-paper-32.png">
+  <link rel="stylesheet" href="styles.css?v=20261013-ck-grouped-audited">
+  <link rel="stylesheet" href="game-cover-titles.css?v=20261011-platform-huninn">
+  <link rel="stylesheet" href="sound-blending.css?v=20261012-reading-prompt">
+  <link rel="stylesheet" href="sound-station.css?v=20261010-cover-title">
+  <link rel="stylesheet" href="train-stations.css?v=20261011-number-pulse">
+  <link rel="stylesheet" href="train-devices.css?v=20261011-centered-answer">
+  <link rel="stylesheet" href="train-signals.css?v=20261012-left-to-right">
+  <link rel="stylesheet" href="train-tunnels-express.css?v=20261012-left-to-right">
+  <link rel="stylesheet" href="sound-clues.css?v=20261011-group-icons">
+  <link rel="stylesheet" href="group-colors.css?v=20261010-soft-style">
+  <link rel="stylesheet" href="group-selector-pastels.css?v=20261012-1">
+  <script src="extra-word-assets.js?v=20261013-lap-tip&amp;rerecorded=1" defer></script>
+  <script src="sound-blending.js?v=20261014-signal-cart-departs-on-next&amp;personal-audio=1&amp;rerecorded=1&amp;ue=3&amp;th=20261018" defer></script>
+  <link rel="stylesheet" href="practice-return.css?v=20261013-paper-navigation">
+  <link rel="stylesheet" href="group-mission-hints.css?v=20261012-1">
+  <link rel="stylesheet" href="train-cover.css?v=20261012-map">
+  <link rel="stylesheet" href="train-paper-one.css?v=20261013-tunnel-lantern-alignment">
+  <link rel="stylesheet" href="train-paper-two.css?v=20261012-1">
+  <link rel="stylesheet" href="train-paper-stations.css?v=20261012-paper-2-7">
+  <link rel="stylesheet" href="train-paper-mail-mine.css?v=20261014-lamps-follow-art">
+  <link rel="stylesheet" href="train-title.css?v=20261012-paper-title-2-7">
+  <link rel="stylesheet" href="train-paper-seven.css?v=20261013-final">
+  <link rel="stylesheet" href="train-paper-four.css?v=20261012-right-engine">
+  <link rel="stylesheet" href="practice-evidence-frames.css?v=20261013-final">
+    <link rel="stylesheet" href="detective-cursor.css?v=20261013-paper-pencil">
+  <script src="group-mission-hints.js?v=20261012-mail-mine" defer></script>
+  <script src="train-cover.js?v=20261012-mail-mine" defer></script>
+  <link rel="stylesheet" href="game-cover-return.css?v=20261013-logos">
+  <link rel="stylesheet" href="practice-cover-full-bleed.css?v=20261017-phone-height-3">
+  <link rel="stylesheet" href="practice-game-full-bleed.css?v=20261017-fifth-lamps-visible">
+  <link rel="stylesheet" href="themed-completions.css?v=20261014-train-tickets">
+  <link rel="stylesheet" href="practice-skip.css?v=20261014-1">
+  <link rel="stylesheet" href="creator-mark.css?v=20261016-tooltip">
+  <link rel="stylesheet" href="train-cover-mobile-scene.css?v=20261017-one-railway-2">
+  <link rel="stylesheet" href="train-group-one-mobile.css?v=20261017-1">
+  <link rel="stylesheet" href="train-group-two-mobile.css?v=20261017-1">
+  <link rel="stylesheet" href="office-landscape.css?v=20261018-tablet-scale">
+  <script src="office-landscape.js?v=20261018-tablet-scale" defer></script>
+</head>
+<body class="office-landscape">
+<main class="train-page">
+  <header class="train-header">
+    <a class="back-link practice-return" href="practice-room.html" aria-label="返回聲探事務所" title="返回聲探事務所"><img src="assets/navigation-paper/office.png" alt="" aria-hidden="true"></a>
+    <button id="change-group" class="train-action-button" aria-label="換組別" title="換組別"><img src="assets/game-style/train-compact-logo.png" alt="" aria-hidden="true"></button>
+    <h1 aria-label="「聲」「聲」相惜"><span class="train-title-text">「聲」「聲」相惜</span><img class="train-title-art" src="assets/game-style/train-paper-title.png" alt="" aria-hidden="true"></h1>
+  </header>
+  <section id="setup" class="train-panel">
+    <span class="creator-mark" tabindex="0" role="img" aria-label="yyy 標誌。本平台由實習教育心理學家設計"><img src="assets/yyy-logo-transparent.png" alt=""><span class="creator-mark-tooltip" aria-hidden="true">本平台由實習教育心理學家設計</span></span>
+    <div class="station-scene">
+      <h2 class="station-title game-cover-title"><img src="assets/game-style/train-paper-title.png" alt="「聲」「聲」相惜"></h2>
+      <div id="groups" class="train-groups station-platforms" aria-label="選擇練習組別"></div>
+    </div>
+  </section>
+  <section id="play" class="train-panel" hidden>
+    <div class="train-topline">
+      <div class="clue-progress"><span id="counter" role="img"></span><button id="clue-book" class="clue-book" type="button" aria-haspopup="dialog" aria-label="開啟線索簿" title="線索簿"><span id="clue-slots" class="clue-book-pages" aria-hidden="true"></span><span id="clue-stamp" class="clue-stamp" hidden>線索集齊</span></button></div>
+      <button id="skip-round" class="practice-skip" type="button" aria-label="跳過本組題目，查看字詞總覽">跳過</button>
+    </div>
+    <p id="progress" class="clue-sr" role="status"></p>
+    <div class="railway"><div class="train-stage"><div id="express-turntable" aria-hidden="true" hidden></div><img id="cargo-vehicle" src="assets/game-style/train-paper-two-vehicle.png" alt="" hidden><img id="crane-vehicle" src="assets/game-style/train-paper-three-vehicle.png" alt="" hidden><img id="signal-engine" src="assets/game-style/train-paper-five-vehicle.png" alt="" hidden><img id="tunnel-engine" src="assets/game-style/train-paper-six-vehicle.png" alt="" hidden><img id="express-engine" src="assets/game-style/train-express-engine.webp" alt="" hidden><div id="station-hook" aria-hidden="true" hidden></div><div id="train" class="sound-train" tabindex="-1" aria-label="由左至右的聲音車卡"></div></div></div>
+    <div id="train-actions" class="train-controls" hidden>
+      <button id="blend" class="train-action-button" aria-label="連起來" title="連起來"><img src="assets/icons/link-2.svg" alt="" aria-hidden="true"></button>
+      <button id="try-reading" class="train-action-button train-reading-button" aria-label="試讀完成" aria-describedby="reading-prompt" title="試讀完成"><img src="assets/icons/try-reading.svg?v=20261012-red-lips" alt="" aria-hidden="true"><span id="reading-prompt" class="train-reading-prompt">請自己讀一次</span></button>
+      <button id="reveal" class="train-play-button" aria-label="播放答案" title="播放答案"><img src="assets/icons/play.svg" alt="" aria-hidden="true"></button>
+    </div>
+    <div class="answer-space"><div id="answer" class="train-answer" hidden><img id="word-picture" alt=""><strong id="word-label" lang="en"></strong><button id="next" class="train-action-button" aria-label="開動火車，下一題" title="下一題"><img src="assets/icons/train-front.svg" alt="" aria-hidden="true"></button></div></div>
+    <p id="audio-status" class="train-status" role="status"></p>
+  </section>
+  <section id="complete" class="train-panel" hidden>
+    <p class="clue-finish-stamp">線索集齊</p>
+    <h2 class="train-kicker" tabindex="-1">抵達終點！</h2>
+    <div id="collection" class="train-collection"></div>
+    <p id="review-status" class="train-status" role="status"></p>
+    <div class="train-controls"><button id="again" class="train-action-button round-replay-button" aria-label="同組再玩一次" title="同組再玩一次"><img src="assets/game-style/replay-paper-seal-v2.png" alt="" aria-hidden="true"></button><button id="choose" class="train-action-button secondary" aria-label="返回惺惺相惜首頁" title="返回惺惺相惜首頁"><img src="assets/game-style/train-compact-logo.png" alt="" aria-hidden="true"></button></div>
+  </section>
+  <dialog id="clue-dialog" class="clue-dialog" aria-labelledby="clue-dialog-title">
+    <header class="clue-dialog-header"><h2 id="clue-dialog-title">線索簿</h2><button id="clue-close" class="clue-close" type="button" aria-label="關閉線索簿" title="關閉"><img src="assets/icons/x.svg" alt=""></button></header>
+    <div class="clue-review-book"><div id="clue-review" class="clue-book-pages"></div><span id="clue-review-stamp" class="clue-stamp" hidden>線索集齊</span></div>
+    <p id="clue-review-status" class="train-status" role="status"></p>
+  </dialog>
+</main>
+</body>
+</html>

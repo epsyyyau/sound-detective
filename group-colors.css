@@ -1,0 +1,12 @@
+/* Shared group identity; keep question feedback and difficulty colours separate. */
+[data-sound-group="1"] { --group-color:#f2ce39; --group-tint:#fff6cf; --group-ink:#705600; --wagon-filter:none; }
+[data-sound-group="2"] { --group-color:#e96b65; --group-tint:#ffebe8; --group-ink:#933e39; --wagon-filter:hue-rotate(-58deg) saturate(.95); }
+[data-sound-group="3"] { --group-color:#60aae6; --group-tint:#e7f3ff; --group-ink:#245d8c; --wagon-filter:hue-rotate(175deg) saturate(.8); }
+[data-sound-group="4"] { --group-color:#73be88; --group-tint:#eaf6e9; --group-ink:#316d40; --wagon-filter:hue-rotate(70deg) saturate(.6); }
+[data-sound-group="5"] { --group-color:#ae86df; --group-tint:#f1eafa; --group-ink:#68438f; --wagon-filter:hue-rotate(200deg) saturate(.85); }
+[data-sound-group="6"] { --group-color:#efa14d; --group-tint:#fff0df; --group-ink:#88501a; --wagon-filter:hue-rotate(-20deg) saturate(.8); }
+[data-sound-group="7"] { --group-color:#ed96c5; --group-tint:#fdebf4; --group-ink:#8c3d69; --wagon-filter:hue-rotate(280deg) saturate(.65); }
+
+.magic-routes .rack-route[data-sound-group] { --rack-liquid:var(--group-color); }
+.family-choice[data-sound-group] .family-group-title { color:var(--group-ink); }
+.journey-card[data-sound-group] header { box-shadow:inset 7px 0 var(--group-color); }

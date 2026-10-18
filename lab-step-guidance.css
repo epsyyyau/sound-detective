@@ -1,0 +1,174 @@
+/* Reserve guidance and answer geometry even while their content is hidden. */
+#game[data-sound-group] .magic-audio button { position:relative; }
+#game[data-sound-group] .magic-audio button::after {
+  position:absolute; top:calc(100% + 6px); left:50%; transform:translateX(-50%);
+  width:max-content; padding:2px 8px; border-radius:0; background:transparent;
+  color:#173f49; font:700 16px/1.4 var(--chinese-font); visibility:hidden;
+}
+#game[data-sound-group] #source-audio::after { content:'聽原字'; }
+#game[data-sound-group] #target-audio::after { content:'聽目標字'; }
+#game.is-stamp-game[data-sound-group="7"] .magic-audio { top:-28px; }
+#game[data-guide-phase='source']:not([data-guide-busy='true']) #source-audio::after,
+#game[data-guide-phase='target']:not([data-guide-busy='true']) #target-audio::after { visibility:visible; }
+#game[data-sound-group="6"].is-scanner-game .magic-audio { top:-40px; }
+#game[data-sound-group] .magic-choice-station { position:relative; }
+#setup .lab-station-name { background:transparent; }
+#game.is-scanner-game .magic-choice-station { position:absolute; top:66%; }
+#game.is-scanner-game.is-mechanical-game .magic-stage { inset:38% 24.5% 40%; width:auto; aspect-ratio:auto; }
+#game.is-scanner-game .magic-letters { inset:0; width:auto; }
+#game.is-scanner-game .pick-sound { height:64px; }
+#game.is-scanner-game .listen-sound { width:32px; height:32px; margin-top:-8px; padding:6px; }
+#game .lab-step-hint {
+  position:absolute; left:0; right:0; bottom:-34px; margin:0; min-height:24px;
+  color:#173f49; font:700 16px/1.4 var(--chinese-font); text-align:center;
+  visibility:hidden; pointer-events:none;
+}
+#game .lab-step-hint { text-shadow:0 1px 2px #fffdf0; }
+#game.is-light-grid-game #position-hint { top:47%; bottom:auto; }
+#game.is-light-grid-game #choice-hint { top:80%; bottom:auto; }
+#game.is-mechanical-game .magic-workspace { gap:46px; }
+#game.is-mechanical-game .magic-audio { margin-bottom:38px; }
+#game.is-mechanical-game .magic-stage { width:min(100%,calc((100svh - 510px) * var(--machine-ratio)),900px); }
+#game.is-stamp-game .letter-card > span { font-size:40px; }
+
+#game.is-potion-game .letter-card { background:none; isolation:isolate; }
+#game.is-potion-game .letter-card::before {
+  content:''; position:absolute; inset:0; z-index:2; pointer-events:none;
+  background:url('assets/game-style/lab-paper-open-bottle.png') center / 100% 100% no-repeat;
+}
+#game.is-potion-game .letter-card > span {
+  z-index:3; inset:48% 16% 19%; border:1px solid #ead8ac; border-radius:5px;
+  background:#fff6df; color:#173f49; box-shadow:0 1px 2px #829b8a33;
+}
+#game.is-potion-game .letter-card::after { z-index:4; }
+#game.is-potion-game .bottle-liquid {
+  z-index:1; left:9%; right:9%; bottom:8%; height:52%;
+  opacity:.9; mix-blend-mode:normal; border-radius:14% 14% 18% 18% / 7% 7% 10% 10%;
+}
+#game.is-potion-game .potion-reaction { z-index:4; }
+/* Empty glass, live liquid and an opaque paper label are separate layers. */
+#game.is-potion-game .option-tube img,.lab-tube img {
+  content:url('assets/game-style/lab-paper-empty-tube.png'); z-index:2;
+  left:18%; top:0; width:64%; height:100%; object-fit:fill;
+}
+#game.is-potion-game .option-tube .tube-liquid,.lab-tube .tube-liquid {
+  z-index:1; left:26%; right:26%; bottom:8%; height:62%; opacity:1;
+  border-radius:50% 50% 40% 40% / 5% 5% 22% 22%;
+}
+#game.is-potion-game .tube-letter,.lab-tube .tube-letter {
+  z-index:3; inset:44% 22% 25%; background:#fff6df;
+  border:1px solid #ead8ac; border-radius:5px; box-shadow:0 1px 2px #829b8a33;
+}
+
+#game[data-sound-group] .magic-answer-space {
+  position:absolute; left:50%; right:auto; bottom:16px; top:auto;
+  width:min(820px,calc(100% - 48px)); height:88px; min-height:88px;
+  margin:0; transform:translateX(-50%); border:0; background:none; box-shadow:none;
+}
+#game[data-sound-group] .magic-answer {
+  display:grid; width:100%; height:100%; min-height:0; box-sizing:border-box;
+  grid-template-columns:64px minmax(0,1fr) 28px minmax(90px,1fr) 48px 48px;
+  grid-template-rows:1fr; grid-template-areas:'picture segments arrow word replay next';
+  align-items:center; justify-items:center; gap:10px; padding:12px 22px;
+  margin:0; border:0; border-radius:8px;
+  background:url('assets/game-style/lab-paper-answer-tray.png') center / 100% 100% no-repeat;
+  box-shadow:none;
+}
+#game[data-sound-group] #answer-segments { grid-area:segments; gap:5px; width:100%; }
+#game[data-sound-group] #answer-segments > span { flex:0 1 48px; height:54px; font-size:36px; }
+#game[data-sound-group] #answer-segments .is-changed { background:#deedb6; }
+#game[data-sound-group] .magic-answer #picture { grid-area:picture; width:62px; height:62px; border-radius:0; }
+#game[data-sound-group] .magic-answer #answer-arrow { grid-area:arrow; width:28px; height:28px; border-radius:0; filter:brightness(0); opacity:.7; }
+#game[data-sound-group] .magic-answer strong {
+  grid-area:word; width:100%; min-width:0; padding:3px 6px; border:1px solid #e7d7b9;
+  border-radius:5px; color:#173f49; font-size:40px; line-height:1.1;
+  text-align:center; overflow-wrap:anywhere; background:#fff9eb99;
+}
+#game[data-sound-group] .magic-answer button {
+  width:48px; height:48px; min-width:48px; min-height:48px; padding:9px;
+  border:2px solid #fffdf3; border-radius:50%; background:#138b8c;
+  box-shadow:0 2px 3px #275c5630; flex-basis:auto;
+}
+#game[data-sound-group] .magic-answer #answer-audio { grid-area:replay; }
+#game[data-sound-group] .magic-answer #next { grid-area:next; }
+#game[data-sound-group] .magic-answer button img { width:26px; height:26px; }
+@media(max-width:1000px) {
+  #game.is-scanner-game { min-height:800px; aspect-ratio:auto; background-size:auto 100%; }
+  #game:is(.is-potion-game,.is-bubble-game) .magic-workspace { gap:54px; }
+  #game:is(.is-potion-game,.is-bubble-game) .magic-answer-space { position:relative; inset:auto; transform:none; margin:50px auto 0; }
+}
+@media(max-width:760px) {
+  #game.is-scanner-game.is-mechanical-game .magic-stage { inset:37% 4% 42%; }
+  #game.is-scanner-game .magic-choice-station { top:64%; }
+  #game.is-scanner-game.is-mechanical-game .magic-answer-space { position:absolute; left:50%; bottom:16px; top:auto; transform:translateX(-50%); margin:0; }
+  #game.is-mechanical-game .magic-stage { width:min(100%,900px); }
+  #game.is-mechanical-game .magic-workspace { gap:46px; }
+  #game[data-sound-group] .magic-answer-space {
+    position:relative; inset:auto; width:calc(100% - 16px); height:128px; min-height:128px;
+    transform:none; margin:50px auto 0;
+  }
+  #game[data-sound-group] .magic-answer {
+    grid-template-columns:52px minmax(0,1fr) 44px 44px; grid-template-rows:56px 44px;
+    grid-template-areas:'picture segments segments segments' 'picture word replay next';
+    padding:10px 14px; gap:8px;
+  }
+  #game[data-sound-group] .magic-answer #picture { width:50px; height:50px; }
+  #game[data-sound-group] .magic-answer #answer-arrow { display:none; }
+  #game[data-sound-group] #answer-segments > span { height:46px; font-size:32px; }
+  #game[data-sound-group] .magic-answer strong { font-size:30px; padding:2px; }
+  #game[data-sound-group] .magic-answer button { width:44px; height:44px; min-width:44px; min-height:44px; padding:8px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  #game[data-sound-group] .magic-audio button.bubble-guided:not(:disabled) { animation:none; outline:3px solid #e2b23e; outline-offset:5px; }
+}
+
+@media(max-width:680px) {
+  #game.is-potion-game #position-hint {
+    left:50%; right:auto; bottom:-22px; z-index:6;
+    width:max-content; max-width:calc(100% - 24px); min-height:0;
+    padding:4px 12px; transform:translateX(-50%);
+    border:1px solid #c9b58a; border-radius:4px;
+    background:#fff8e9f5; box-shadow:0 2px 5px #23564d38;
+    line-height:1.35; text-shadow:none;
+  }
+}
+
+/* One shared image coordinate system keeps every bubble inside the reservoir. */
+#game.is-bubble-game .magic-choice-station {
+  width:100%; height:auto; min-height:0; aspect-ratio:4 / 3; align-self:end; margin:0;
+}
+#game.is-bubble-game .bubble-flask { inset:0; width:100%; height:100%; transform:none; object-fit:fill; }
+#game.is-bubble-game .magic-choices { inset:0; width:100%; height:100%; display:block; padding:0; margin:0; transform:none; }
+#game.is-bubble-game .magic-option:nth-child(n) {
+  position:absolute; width:16%; height:21.3333%; transform:none;
+  margin:0; min-width:0; grid-column:auto;
+}
+#game.is-bubble-game .magic-option:nth-child(1) { left:45%; top:21.3333%; }
+#game.is-bubble-game .magic-option:nth-child(2) { left:36%; top:39.3333%; }
+#game.is-bubble-game .magic-option:nth-child(3) { left:54%; top:39.3333%; }
+#game.is-bubble-game .pick-sound { width:100%; height:100%; min-width:0; min-height:0; padding:0; }
+#game.is-bubble-game .bubble-sound { font-size:40px; }
+#game.is-bubble-game .magic-letters {
+  position:relative; width:100%; height:auto; aspect-ratio:2.55; gap:0;
+  padding:8% 8% 7%; transform:none;
+  background:url('assets/game-style/lab-paper-two-letter-rack.png') center / 100% 100% no-repeat;
+}
+#game.is-bubble-game .magic-letters::before,#game.is-bubble-game .magic-letters::after { display:none; }
+#game.is-bubble-game .letter-card {
+  flex:1 1 0; max-width:none; height:100%; aspect-ratio:auto;
+  border:0; background:none; box-shadow:none; filter:none;
+}
+#game.is-bubble-game .letter-card::after { inset:0 3%; border-width:3px; }
+#game.is-bubble-game .letter-card > span { font-size:64px; }
+.lab-extracted-bubble {
+  position:fixed; z-index:50; display:grid; place-items:center; pointer-events:none;
+  border-radius:50%; background:url('assets/game-style/bubble-iridescent.png') center / 110% 110% no-repeat;
+  color:#123f49; font:700 40px/1 var(--phonics-font); transform-origin:center;
+}
+@media(max-width:1000px) {
+  #game.is-bubble-game .magic-choice-station { width:min(100%,440px); align-self:center; }
+}
+@media(max-width:560px) {
+  #game.is-bubble-game .letter-card > span { font-size:40px; }
+  #game.is-bubble-game .bubble-sound,.lab-extracted-bubble { font-size:32px; }
+}
