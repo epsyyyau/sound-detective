@@ -226,12 +226,6 @@ function turnPage(direction) {
   leaf.setAttribute('aria-hidden', 'true');
   const face = document.createElement('div');
   face.className = 'book-turn-face';
-  const source = spread.querySelector(direction > 0 ? '.book-reading-right' : '.book-reading-left');
-  const page = source.cloneNode(true);
-  page.querySelectorAll('button').forEach(button => button.remove());
-  page.querySelectorAll('[id]').forEach(node => node.removeAttribute('id'));
-  page.removeAttribute('id');
-  face.append(page);
   const back = document.createElement('div');
   back.className = 'book-turn-back';
   leaf.append(face, back);

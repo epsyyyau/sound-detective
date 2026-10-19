@@ -293,16 +293,14 @@
 }
 .book-turn-face,.book-turn-back {
   position:absolute; inset:0; overflow:hidden; backface-visibility:hidden; -webkit-backface-visibility:hidden;
-  border-radius:4px; background:#fff8e8;
+  border:5px solid #e7d3aa; border-radius:4px;
+  background:linear-gradient(90deg,#e3cda8,#fff8e8 14%,#fff6e1 100%);
   box-shadow:0 5px 15px #3048464d;
 }
 .book-turn-back {
   transform:rotateY(180deg);
   border:5px solid #e7d3aa;
   background:linear-gradient(90deg,#e3cda8,#fff8e8 14%,#fff6e1 100%);
-}
-.book-turn-face>.book-reading-left,.book-turn-face>.book-reading-right {
-  width:100%; height:100%; transform:none; box-shadow:none;
 }
 @keyframes book-leaf-next { from { transform:rotateY(0); } to { transform:rotateY(-180deg); } }
 @keyframes book-leaf-previous { from { transform:rotateY(0); } to { transform:rotateY(180deg); } }
