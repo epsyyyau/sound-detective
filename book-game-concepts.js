@@ -98,6 +98,7 @@ const preview = document.querySelector('#book-preview');
 const previewImage = document.querySelector('#book-preview-image');
 const previewVolume = document.querySelector('.book-preview-volume');
 const previewMockup = document.querySelector('#book-preview-mockup');
+const previewMockupLayout = document.querySelector('.book-preview-mockup-layout');
 const mockupOpen = document.querySelector('#book-preview-mockup-open');
 const previewTitle = document.querySelector('#book-preview-title');
 const previewInside = document.querySelector('#book-preview-inside');
@@ -257,6 +258,7 @@ for (const cover of document.querySelectorAll('[data-book]')) {
     preview.setAttribute('aria-label', `《${activeBook.name}》封面`);
     previewVolume.hidden = Boolean(activeBook.coverMockup);
     previewMockup.hidden = !activeBook.coverMockup;
+    previewMockupLayout.hidden = !activeBook.coverMockup;
     if (activeBook.coverMockup) {
       previewMockup.querySelector('img').src = `assets/book-game/${activeBook.coverMockup}`;
       mockupOpen.setAttribute('aria-label', `揭開《${activeBook.name}》`);

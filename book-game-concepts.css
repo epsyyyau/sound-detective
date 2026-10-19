@@ -209,7 +209,8 @@ body { margin:0; background:#bce8d9; }
 }
 .book-game-concepts .book-preview-corner:hover::after,
 .book-game-concepts .book-preview-corner:focus-visible::after { opacity:1; filter:blur(2px); }
-.book-game-concepts .book-preview-corner:focus-visible { outline:4px solid #fff9bb; outline-offset:-5px; }
+.book-game-concepts .book-preview-corner:focus-visible { outline:none; }
+.book-game-concepts .book-preview-corner:focus-visible::after { box-shadow:0 0 0 3px #fff9bb; }
 .book-preview.is-opening .book-preview-corner { opacity:0; pointer-events:none; }
 @keyframes book-corner-glow { 0%,100% { opacity:.2; transform:scale(.75); } 50% { opacity:1; transform:scale(1.25); } }
 @keyframes book-pop-out {

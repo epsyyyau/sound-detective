@@ -8,11 +8,11 @@
   <link rel="preload" as="image" href="assets/book-game/reveal-picture-paper-seal-v2.png">
   <link rel="stylesheet" href="styles.css?v=20261019-lock-page-zoom">
   <link rel="stylesheet" href="detective-cursor.css?v=20261013-paper-pencil">
-  <link rel="stylesheet" href="book-game-concepts.css?v=20261016-cover-glow-only">
+  <link rel="stylesheet" href="book-game-concepts.css?v=20261019-round-cover-focus">
   <link rel="stylesheet" href="book-reference-spines.css?v=20261016-pink-spine-edge">
-  <link rel="stylesheet" href="book-reading-pages.css?v=20261019-bolder-arrow-motion">
+  <link rel="stylesheet" href="book-reading-pages.css?v=20261019-clean-arrow-layer">
   <link rel="stylesheet" href="creator-mark.css?v=20261016-tooltip">
-  <script src="book-game-concepts.js?v=20261019-hide-old-art" defer></script>
+  <script src="book-game-concepts.js?v=20261019-arrow-layer" defer></script>
   <link rel="stylesheet" href="office-landscape.css?v=20261018-tablet-scale">
   <script src="office-landscape.js?v=20261019-paper-rotate-icon" defer></script>
   <link rel="stylesheet" href="ui-motion.css?v=20261019-soft-navigation">
@@ -42,9 +42,11 @@
     <section id="book-preview" class="book-preview" aria-label="故事書封面" hidden>
       <button id="book-preview-return" class="book-return" type="button" aria-label="返回書架" title="返回書架"><img src="assets/practice-room/reading-book.png" alt=""></button>
       <div class="book-preview-stage">
-        <div id="book-preview-mockup" class="book-preview-mockup" hidden>
-          <img src="assets/book-game/cat-book-complete-cover-v1.png" alt="">
-          <button id="book-preview-mockup-open" class="book-preview-corner" type="button" aria-label="揭開《Cat in a Cap》" title="揭開《Cat in a Cap》"></button>
+        <div class="book-preview-mockup-layout" hidden>
+          <div id="book-preview-mockup" class="book-preview-mockup" hidden>
+            <img src="assets/book-game/cat-book-complete-cover-v1.png" alt="">
+            <button id="book-preview-mockup-open" class="book-preview-corner" type="button" aria-label="揭開《Cat in a Cap》" title="揭開《Cat in a Cap》"></button>
+          </div>
           <img class="book-cover-turn-arrow" src="assets/book-game/book-cover-left-paper-arrow.webp" alt="" aria-hidden="true">
         </div>
         <div class="book-preview-volume">
