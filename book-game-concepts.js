@@ -148,7 +148,7 @@ function renderPage() {
   const [sentence, description, objects] = activeBook.pages[pageIndex];
   const pageImage = activeBook.pageImages?.[pageIndex];
   const waitingForArt = Boolean(activeBook.pageImages && !pageImage);
-  spreadImage.hidden = waitingForArt;
+  spreadImage.hidden = true;
   if (!waitingForArt) {
     const image = pageImage || activeBook.image;
     spreadImage.src = `assets/book-game/${image}${refreshedPageImages.has(image) ? '?v=20261018' : ''}`;
@@ -326,6 +326,7 @@ mockupOpen.addEventListener('click', openSelectedBook);
 previewReturn.addEventListener('click', showShelf);
 revealPicture.addEventListener('click', () => {
   revealPicture.hidden = true;
+  spreadImage.hidden = Boolean(activeBook.pageImages && !activeBook.pageImages[pageIndex]);
   bookPicture.hidden = false;
   bookPicture.classList.add('is-revealed');
   theEnd.hidden = pageIndex !== activeBook.pages.length - 1;

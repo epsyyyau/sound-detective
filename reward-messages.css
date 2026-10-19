@@ -15,6 +15,10 @@
 
 .reward-message-dialog::backdrop { background: #193a3d9c; }
 
+body.reward-letter .reward-message-dialog { background-image: url('assets/reward-messages/paper-note-frame-pale-green.png'); }
+body.reward-missing .reward-message-dialog { background-image: url('assets/reward-messages/paper-note-frame-gold.png'); }
+body.reward-cipher .reward-message-dialog { background-image: url('assets/reward-messages/paper-note-frame-coral.png'); }
+
 .reward-message-icon {
   display: block;
   position: absolute;

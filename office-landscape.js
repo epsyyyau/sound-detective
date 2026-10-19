@@ -60,6 +60,18 @@
     frame.style.transform = `scale(${scale})`;
   }
 
-  addEventListener('resize', update);
+  let settleTimer;
+  function scheduleUpdate() {
+    update();
+    requestAnimationFrame(update);
+    clearTimeout(settleTimer);
+    settleTimer = setTimeout(update, 300);
+  }
+
+  addEventListener('resize', scheduleUpdate);
+  addEventListener('orientationchange', scheduleUpdate);
+  addEventListener('pageshow', scheduleUpdate);
+  portrait.addEventListener('change', scheduleUpdate);
+  globalThis.visualViewport?.addEventListener('resize', scheduleUpdate);
   update();
 })();

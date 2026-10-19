@@ -154,7 +154,7 @@
 }
 .book-opening-leaf {
   position:absolute; z-index:5; left:50%; top:0; width:50%; height:100%;
-  transform-origin:left center; transform-style:preserve-3d; pointer-events:none;
+  transform-origin:left center; transform-style:preserve-3d; -webkit-transform-style:preserve-3d; pointer-events:none;
   animation:book-cover-leaf 1100ms cubic-bezier(.25,.55,.2,1) both;
 }
 .book-opening-leaf .book-preview-front,.book-opening-back {
@@ -228,6 +228,7 @@
 .book-previous-corner::before { content:'←'; }
 .book-previous-corner:disabled { visibility:hidden; }
 .book-reveal,.book-picture { position:absolute; inset:4%; }
+.book-reveal[hidden],.book-picture[hidden],.book-picture img[hidden] { display:none !important; }
 .book-game-concepts .book-reveal {
   display:grid; place-items:center; width:92%; height:92%; padding:0;
   border:2px solid #eadbbf; border-radius:3px;
@@ -280,7 +281,7 @@
 }
 .book-turn-leaf {
   position:absolute; z-index:5; top:0; left:50%; width:50%; height:100%;
-  transform-origin:left center; transform-style:preserve-3d; pointer-events:none;
+  transform-origin:left center; transform-style:preserve-3d; -webkit-transform-style:preserve-3d; pointer-events:none;
   animation:book-leaf-next 950ms ease-in-out both;
 }
 .book-turn-leaf.is-previous {
@@ -288,7 +289,7 @@
   animation-name:book-leaf-previous;
 }
 .book-turn-face,.book-turn-back {
-  position:absolute; inset:0; overflow:hidden; backface-visibility:hidden;
+  position:absolute; inset:0; overflow:hidden; backface-visibility:hidden; -webkit-backface-visibility:hidden;
   border-radius:4px; background:#fff8e8;
   box-shadow:0 5px 15px #3048464d;
 }
