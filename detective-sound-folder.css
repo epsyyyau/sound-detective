@@ -48,6 +48,7 @@
   position:relative;
   top:-12px;
 }
+.sound-file-panel [data-next-question].lesson-icon-action { top:-24px; }
 .sound-file-panel [data-start-quiz].lesson-icon-action {
   display:flex;
   align-items:center;
