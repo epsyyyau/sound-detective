@@ -1,4 +1,6 @@
 (() => {
+  document.addEventListener('gesturestart', event => event.preventDefault(), {passive: false});
+  document.addEventListener('gesturechange', event => event.preventDefault(), {passive: false});
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const pressed = new Map();
   let leaving = false;

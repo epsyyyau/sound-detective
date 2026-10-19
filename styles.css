@@ -1,4 +1,5 @@
-html, body, button, a, input, select, textarea, [role="button"] { touch-action: manipulation; }
+html, body { touch-action: pan-x pan-y; }
+button, a, input, select, textarea, [role="button"] { touch-action: manipulation; }
 
 /* Keep Chinese and English teaching letterforms independently configurable. */
 @font-face {
