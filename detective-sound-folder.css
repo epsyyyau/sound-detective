@@ -81,7 +81,7 @@
   .sound-file-panel .answer-options .has-answer-image.is-compact img { width:78px; height:74px; }
   .sound-file-panel .answer-options .has-answer-image.is-compact small { font-size:.72rem; }
   .sound-file-panel .quiz-view .answer-feedback { margin-top:2px; }
-  .sound-file-panel .quiz-view .next-question-button.lesson-icon-action { width:52px; height:52px; min-height:52px; margin-top:0; top:0; }
+  .sound-file-panel .quiz-view .next-question-button.lesson-icon-action { width:52px; height:52px; min-height:52px; margin-top:0; top:-24px; }
 }
 @media(min-width:681px) and (max-height:900px) {
   .sound-lesson-page:has(.sound-file-panel) .lesson-header .route-link {
