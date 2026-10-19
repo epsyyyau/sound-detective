@@ -96,8 +96,50 @@
   .sound-lesson-page:has(.sound-file-panel) .lesson-heading > p:last-child { grid-column:2; grid-row:2; }
 }
 @media(max-width:680px) {
+  .sound-lesson-page:has(.sound-file-panel) { padding:8px 12px; }
+  .sound-lesson-page:has(.sound-file-panel) .lesson-header {
+    grid-template-columns:58px minmax(0,1fr);
+    gap:6px;
+    margin-bottom:6px;
+  }
+  .sound-lesson-page:has(.sound-file-panel) .lesson-header .route-link {
+    grid-column:1;
+    grid-row:1;
+    width:58px;
+    height:58px;
+  }
+  .sound-lesson-page:has(.sound-file-panel) .lesson-heading {
+    display:grid;
+    grid-column:2;
+    grid-row:1;
+    grid-template-columns:44px minmax(0,1fr);
+    align-items:center;
+    column-gap:8px;
+    text-align:left;
+  }
+  .sound-lesson-page:has(.sound-file-panel) .lesson-heading [data-group-label] {
+    grid-column:1;
+    grid-row:1 / 3;
+    margin:0;
+  }
+  .sound-lesson-page:has(.sound-file-panel) .lesson-heading h1 {
+    grid-column:2;
+    grid-row:1;
+    margin:0;
+    font-size:1.65rem;
+  }
+  .sound-lesson-page:has(.sound-file-panel) .lesson-heading > p:last-child {
+    grid-column:2;
+    grid-row:2;
+    margin:0;
+    font-size:.8rem;
+  }
+  .sound-lesson-page:has(.sound-file-panel) .level-track.circle-level-track {
+    gap:6px;
+    margin-bottom:6px;
+  }
   .sound-lesson-page .lesson-panel.sound-file-panel {
-    padding:62px 32px 36px 44px;
+    padding:62px 32px 15px 44px;
     border-image-width:188px 48px 26px 55px;
   }
   .sound-file-panel [data-learn-sounds]:not(.many-sounds):not(.visual-sounds) {
@@ -109,7 +151,13 @@
   .sound-file-panel [data-learn-sounds]:not(.many-sounds):not(.visual-sounds) .learn-sound-button:not(.has-sound-image):not(.has-duration-cue) {
     min-height:112px;
   }
-  .sound-file-panel .quiz-view .lesson-prompt { padding-top:18px; }
+  .sound-file-panel .quiz-view .lesson-prompt { padding-top:0; }
+  .sound-file-panel .answer-options button.has-answer-image:not(.is-compact) {
+    min-height:120px;
+    grid-template-rows:65px auto auto;
+  }
+  .sound-file-panel .answer-options button.has-answer-image:not(.is-compact) img { height:65px; }
+  .sound-file-panel .answer-options button.has-duration-cue:not(.is-compact) { min-height:120px; }
 }
 .sound-file-panel .complete-view [data-route-return="true"] {
   width:96px;
