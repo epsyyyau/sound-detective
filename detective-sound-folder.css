@@ -27,6 +27,19 @@
   background:#fffaf0;
   border-color:#c5d4bc;
 }
+.sound-file-panel .answer-options button.is-correct { position:relative; }
+.sound-file-panel .answer-options button.is-correct::after {
+  content:"";
+  position:absolute;
+  right:7px;
+  bottom:7px;
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  background:#07828b url('assets/icons/check.svg') center/19px 19px no-repeat;
+  box-shadow:0 2px 4px #24474a40;
+  pointer-events:none;
+}
 .sound-file-panel .skip-question-button { background:#fffaf0; }
 .sound-file-panel .lesson-prompt { margin:6px 0 8px; }
 .sound-file-panel .play-sound-button { margin-bottom:12px; }
