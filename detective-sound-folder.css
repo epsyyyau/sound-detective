@@ -173,6 +173,12 @@
   .sound-file-panel .answer-options button.has-answer-image:not(.is-compact) img { height:65px; }
   .sound-file-panel .answer-options button.has-duration-cue:not(.is-compact) { min-height:120px; }
 }
+@media(max-width:680px) and (orientation:portrait) {
+  .sound-file-panel .answer-options button.is-correct::after {
+    right:-10px;
+    bottom:-10px;
+  }
+}
 .sound-file-panel .complete-view [data-route-return="true"] {
   width:96px;
   height:96px;
