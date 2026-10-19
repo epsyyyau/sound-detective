@@ -8,9 +8,13 @@
   aspect-ratio:1195 / 1316;
   animation:book-mockup-pop-out 650ms cubic-bezier(.18,.9,.22,1.25) both;
 }
-.book-preview-mockup img {
+.book-preview-mockup > img:first-child {
   display:block; width:100%; height:100%; object-fit:contain; pointer-events:none;
   filter:drop-shadow(18px 22px 14px #214c4a69);
+}
+.book-preview-mockup > .book-cover-turn-arrow {
+  position:absolute; right:-110px; bottom:12%; width:105px; height:auto;
+  pointer-events:none; filter:drop-shadow(2px 4px 2px #214c4a55);
 }
 .book-preview-volume {
   width:min(50vw,560px,calc((100svh - 150px) * 2 / 3));
@@ -119,6 +123,10 @@
   .book-preview-mockup { width:min(96vw,calc((100svh - 160px) * 1195 / 1316)); }
   .book-back-cover>img { width:min(96vw,calc((100svh - 150px) * 1195 / 1316)); }
   .book-preview-volume,.book-generic-back { width:min(72vw,calc((100svh - 150px) * 2 / 3)); }
+}
+@media(max-width:700px) and (orientation:portrait) {
+  .book-preview-mockup { left:-32px; width:min(72vw,calc((100svh - 160px) * 1195 / 1316)); }
+  .book-preview-mockup > .book-cover-turn-arrow { right:-77px; width:72px; }
 }
 .book-preview-picture-cue {
   position:absolute; left:50%; top:50%; width:34%; aspect-ratio:1;
