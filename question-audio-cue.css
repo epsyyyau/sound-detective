@@ -23,8 +23,15 @@
 .sound-lesson-page .question-play-button img { display:block; width:48%; height:48%; pointer-events:none; }
 .sound-lesson-page .question-play-button:hover { background:var(--teal-dark); transform:none; }
 .sound-lesson-page .question-play-button:focus-visible { outline:3px solid var(--teal); outline-offset:5px; transform:none; }
-/* Reserve the answer space so revealing choices does not move the question. */
-.question-cue-options.awaiting-play { visibility:hidden; pointer-events:none; }
+/* Keep choices in place while listening without allowing an early answer. */
+.question-cue-options { transition:opacity .24s ease-out; }
+.question-cue-options.awaiting-play { opacity:.42; pointer-events:none; }
+.question-cue-options.needs-choice { animation:question-choices-pop .34s ease-out; transform-origin:center; }
+@keyframes question-choices-pop {
+  0% { transform:scale(.96); }
+  65% { transform:scale(1.015); }
+  100% { transform:scale(1); }
+}
 .question-play-button.needs-listen,
 .question-cue-options.needs-choice:not(.has-full-sequence) > button:not(:disabled) {
   animation: question-cue-breathe 2.2s ease-in-out infinite;
@@ -52,6 +59,8 @@
   .sound-lesson-page.segment-sound-page { padding-top:16px; padding-bottom:16px; }
 }
 @media (prefers-reduced-motion:reduce) {
+  .question-cue-options { transition:none; }
+  .question-cue-options.needs-choice { animation:none; }
   .sound-lesson-page .question-cue-options > button.is-wrong:not(:disabled) {
     animation:none;
     outline:none;
