@@ -76,10 +76,10 @@
 #game.is-bubble-game .letter-card:not(:disabled):hover,
 #game.is-bubble-game .letter-card:focus-visible,
 #game.is-bubble-game .letter-card[aria-pressed='true'] { transform:none; filter:drop-shadow(0 4px 3px #785b5033); }
-#game.is-bubble-game .letter-card:not(:disabled):hover::after,
-#game.is-bubble-game .letter-card:focus-visible::after,
-#game.is-bubble-game .letter-card[aria-pressed='true']::after {
-  border-color:#ff8a78; box-shadow:inset 0 0 0 2px #ffe5d6,0 0 0 2px #df5b4d,0 3px 4px #ad514a55;
+#game.is-bubble-game .letter-card:not(.bubble-wrong):not(:disabled):hover::after,
+#game.is-bubble-game .letter-card:not(.bubble-wrong):focus-visible::after,
+#game.is-bubble-game .letter-card:not(.bubble-wrong)[aria-pressed='true']::after {
+  border-color:#258451; box-shadow:inset 0 0 0 2px #e5fff0,0 0 0 2px #176442,0 3px 4px #245b3c55;
 }
 #game.is-bubble-game .magic-choice-station { position:relative; z-index:1; min-width:0; min-height:0; }
 #game.is-bubble-game .bubble-flask {
