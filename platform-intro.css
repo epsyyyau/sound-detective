@@ -23,8 +23,15 @@
 .intro-about-references { margin:0 0 12px; padding-left:24px; }
 .intro-dialog .intro-about-references li { margin-bottom:8px; font-size:17px; line-height:1.55; }
 .intro-dialog .intro-about-note { font-size:16px; color:#4d6063; }
-.intro-parents ul { margin:16px 0 18px; }
-.intro-parents li { margin-bottom:10px; }
+.intro-parents ul { margin:16px 0 18px; padding:0; list-style:none; }
+.intro-parents li { display:grid; grid-template-columns:1.15em minmax(0,1fr); align-items:start; column-gap:.4em; margin-bottom:10px; }
+.intro-parent-icon { display:block; width:1.15em; height:1.15em; margin-top:.24em; background:url("assets/parent-learning-paper-icons-sheet.png") no-repeat; background-size:300% 200%; background-position:var(--icon-x) var(--icon-y); }
+.intro-parent-icon.is-ear { --icon-x:0%; --icon-y:0%; }
+.intro-parent-icon.is-steps { --icon-x:50%; --icon-y:0%; }
+.intro-parent-icon.is-care { --icon-x:100%; --icon-y:0%; }
+.intro-parent-icon.is-star { --icon-x:0%; --icon-y:100%; }
+.intro-parent-icon.is-retry { --icon-x:50%; --icon-y:100%; }
+.intro-parent-icon.is-joy { --icon-x:100%; --icon-y:100%; }
 .intro-parent-closing { margin:0; color:#17545a; }
 .intro-start-lead { margin:0 0 16px; }
 .intro-start-item { display:grid; grid-template-columns:96px minmax(0,1fr); align-items:start; gap:18px; padding:18px 0; border-top:1px solid #d8e4db; }

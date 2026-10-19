@@ -81,12 +81,12 @@ const introSections = {
   parents: ['家長陪學', `
     <div class="intro-parents">
       <ul>
-        <li><strong>一起聆聽：</strong>先讓孩子聆聽聲音，再鼓勵孩子模仿發音，嘗試將聲音拼讀成字。</li>
-        <li><strong>循序漸進：</strong>由簡單的聲音開始，按孩子的能力逐步挑戰不同遊戲。</li>
-        <li><strong>耐心陪伴：</strong>每個孩子都有自己的學習步伐，不必急於求成，也無須與他人比較。</li>
-        <li><strong>多加鼓勵：</strong>欣賞孩子的每一次嘗試和進步，即使答錯，也要肯定他們的努力。</li>
-        <li><strong>從錯誤中學習：</strong>遇到困難時，可以重播聲音、一起示範，再鼓勵孩子自行嘗試。</li>
-        <li><strong>愉快學習：</strong>每次練習不必太長，按孩子的興趣和專注力適時休息，讓拼音學習成為愉快的親子時光。</li>
+        <li><span class="intro-parent-icon is-ear" aria-hidden="true"></span><span><strong>一起聆聽：</strong>先讓孩子聆聽聲音，再鼓勵孩子模仿發音，嘗試將聲音拼讀成字。</span></li>
+        <li><span class="intro-parent-icon is-steps" aria-hidden="true"></span><span><strong>循序漸進：</strong>由簡單的聲音開始，按孩子的能力逐步挑戰不同遊戲。</span></li>
+        <li><span class="intro-parent-icon is-care" aria-hidden="true"></span><span><strong>耐心陪伴：</strong>每個孩子都有自己的學習步伐，不必急於求成，也無須與他人比較。</span></li>
+        <li><span class="intro-parent-icon is-star" aria-hidden="true"></span><span><strong>多加鼓勵：</strong>欣賞孩子的每一次嘗試和進步，即使答錯，也要肯定他們的努力。</span></li>
+        <li><span class="intro-parent-icon is-retry" aria-hidden="true"></span><span><strong>從錯誤中學習：</strong>遇到困難時，可以重播聲音、一起示範，再鼓勵孩子自行嘗試。</span></li>
+        <li><span class="intro-parent-icon is-joy" aria-hidden="true"></span><span><strong>愉快學習：</strong>每次練習不必太長，按孩子的興趣和專注力適時休息，讓拼音學習成為愉快的親子時光。</span></li>
       </ul>
       <p class="intro-parent-closing"><strong>學習不是比快，而是一步一步累積進步。您的耐心陪伴與鼓勵，就是孩子學習的最大動力！</strong></p>
     </div>`],
