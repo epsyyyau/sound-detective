@@ -64,7 +64,7 @@ const books = {
       ['A bug sat on a pig.', '小蟲停在小豬背上。'],
       ['The pig did a big hop. The bug got a bump!', '小豬跳起來，小蟲被顛了一下。', [['pig', 22, 16, 63, -9], ['bug', 54, 17, 22]]],
       ['The bug fell on a snout.', '小蟲掉在小豬的鼻子上。', [['pig', 7, 32, 54], ['bug', 43, 35, 21, -16]]],
-      ['The pig went "Buzz!" The bug went "Oink!"', '小豬和小蟲學對方的叫聲。', [['rug', 8, 59, 80], ['pig', 14, 27, 57], ['bug', 68, 43, 21]]]
+      ['The pig went "Oink!" The bug went "Buzz!"', '小豬「哼哼」叫，小蟲「嗡嗡」叫。', [['rug', 8, 59, 80], ['pig', 14, 27, 57], ['bug', 68, 43, 21]]]
     ]
   },
   king: {
