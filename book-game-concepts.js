@@ -221,6 +221,9 @@ function turnPage(direction) {
     return;
   }
   turning = true;
+  bookPicture.hidden = true;
+  spreadImage.hidden = true;
+  next.hidden = true;
   const leaf = document.createElement('div');
   leaf.className = `book-turn-leaf${direction < 0 ? ' is-previous' : ''}`;
   leaf.setAttribute('aria-hidden', 'true');
