@@ -15,6 +15,11 @@
 .book-preview-mockup > .book-cover-turn-arrow {
   position:absolute; right:-110px; bottom:12%; width:105px; height:auto;
   pointer-events:none; filter:drop-shadow(2px 4px 2px #214c4a55);
+  animation:book-cover-arrow-nudge 1.5s ease-in-out infinite alternate;
+}
+@keyframes book-cover-arrow-nudge {
+  from { transform:translateX(0); }
+  to { transform:translateX(-8px); }
 }
 .book-preview-volume {
   width:min(50vw,560px,calc((100svh - 150px) * 2 / 3));
@@ -329,5 +334,5 @@
 @media(prefers-reduced-motion:reduce) {
   .book-reveal-picture,.book-next-corner::before,.book-next-corner::after,.book-picture.is-revealed,
   .book-spread.is-opening-cover,.book-spread.is-opening-cover .book-reading-left,.book-opening-leaf,
-  .book-preview-mockup,.book-back-cover>img { animation:none; }
+  .book-preview-mockup,.book-preview-mockup > .book-cover-turn-arrow,.book-back-cover>img { animation:none; }
 }
