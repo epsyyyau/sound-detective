@@ -25,7 +25,7 @@
 .intro-dialog .intro-about-note { font-size:16px; color:#4d6063; }
 .intro-parents ul { margin:16px 0 18px; padding:0; list-style:none; }
 .intro-parents li { display:grid; grid-template-columns:1.15em minmax(0,1fr); align-items:start; column-gap:.4em; margin-bottom:10px; }
-.intro-parents li strong { color:#17545a; }
+.intro-parents li strong { color:#17545a; font-weight:900; }
 .intro-parent-icon { display:block; width:1.15em; height:1.15em; margin-top:.24em; background:url("assets/parent-learning-paper-icons-sheet.png") no-repeat; background-size:300% 200%; background-position:var(--icon-x) var(--icon-y); }
 .intro-parent-icon.is-ear { --icon-x:0%; --icon-y:0%; }
 .intro-parent-icon.is-steps { --icon-x:50%; --icon-y:0%; }
