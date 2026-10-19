@@ -59,6 +59,16 @@
   .sound-file-panel .lesson-prompt { margin:4px 0 6px; }
   .sound-file-panel .learn-sounds { margin-bottom:20px; }
 }
+@media(min-width:1100px) and (max-height:760px) {
+  .sound-lesson-page .sound-file-panel .question-play-button { width:76px; height:76px; margin-bottom:6px; }
+  .sound-file-panel .answer-options:has(.has-answer-image) { display:grid; grid-template-columns:repeat(3,180px); gap:6px; }
+  .sound-file-panel .answer-options:has(.has-answer-image) > button { width:180px; min-height:88px; }
+  .sound-file-panel .answer-options button.has-answer-image.is-compact { width:180px; min-height:88px; grid-template-columns:78px minmax(0,1fr); }
+  .sound-file-panel .answer-options .has-answer-image.is-compact img { width:78px; height:74px; }
+  .sound-file-panel .answer-options .has-answer-image.is-compact small { font-size:.72rem; }
+  .sound-file-panel .quiz-view .answer-feedback { margin-top:2px; }
+  .sound-file-panel .quiz-view .next-question-button.lesson-icon-action { width:52px; height:52px; min-height:52px; margin-top:0; top:0; }
+}
 @media(min-width:681px) and (max-height:900px) {
   .sound-lesson-page:has(.sound-file-panel) .lesson-header .route-link {
     width:88px;
