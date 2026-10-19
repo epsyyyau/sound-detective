@@ -157,8 +157,11 @@
   transform-origin:left center; transform-style:preserve-3d; -webkit-transform-style:preserve-3d; pointer-events:none;
   animation:book-cover-leaf 1100ms cubic-bezier(.25,.55,.2,1) both;
 }
-.book-opening-leaf .book-preview-front,.book-opening-back {
+.book-opening-leaf .book-preview-front,.book-opening-mockup-front,.book-opening-back {
   position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden;
+}
+.book-opening-mockup-front img {
+  display:block; width:100%; height:100%; object-fit:contain;
 }
 .book-opening-back {
   display:grid; place-items:center; transform:rotateY(180deg); border:5px solid #e7d3aa;

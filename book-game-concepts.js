@@ -300,9 +300,19 @@ function openSelectedBook() {
   const coverLeaf = document.createElement('div');
   coverLeaf.className = 'book-opening-leaf';
   coverLeaf.setAttribute('aria-hidden', 'true');
-  const coverFront = preview.querySelector('.book-preview-front').cloneNode(true);
-  coverFront.querySelectorAll('button').forEach(button => button.remove());
-  coverFront.querySelectorAll('[id]').forEach(node => node.removeAttribute('id'));
+  let coverFront;
+  if (activeBook.coverMockup) {
+    coverFront = document.createElement('div');
+    coverFront.className = 'book-opening-mockup-front';
+    const coverImage = document.createElement('img');
+    coverImage.src = previewMockup.querySelector('img').src;
+    coverImage.alt = '';
+    coverFront.append(coverImage);
+  } else {
+    coverFront = preview.querySelector('.book-preview-front').cloneNode(true);
+    coverFront.querySelectorAll('button').forEach(button => button.remove());
+    coverFront.querySelectorAll('[id]').forEach(node => node.removeAttribute('id'));
+  }
   coverLeaf.append(coverFront);
   const coverBack = document.createElement('div');
   coverBack.className = 'book-opening-back';
