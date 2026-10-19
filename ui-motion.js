@@ -66,4 +66,76 @@
     leaving = false;
     document.documentElement.classList.remove('ui-leaving');
   });
+
+  // Warm the next screens only after the current screen has finished loading.
+  const firstScreenArt = {
+    'platform-intro.html': ['assets/parent-learning-paper-icons-sheet.png'],
+    'sound-library.html': ['assets/library-frames-pastel/1-folder.webp'],
+    'learning-map.html': ['assets/learning-map/letter-detective-logo.webp', 'assets/learning-map/missing-detective-logo.webp'],
+    'practice-room.html': ['assets/practice-room/detective-office-paper-v5.png', 'assets/practice-room/office-paper-mobile-v1.png'],
+    'letter-sounds.html': ['assets/platform-wallpaper.png'],
+    'missing-sounds.html': ['assets/platform-wallpaper.png'],
+    'pseudoword-sounds.html': ['assets/platform-wallpaper.png'],
+    'segment-sounds.html': ['assets/platform-wallpaper.png'],
+    'sound-blending.html': ['assets/game-style/train-background.png', 'assets/game-style/train-cover-map.webp'],
+    'sound-changing.html': ['assets/game-style/lab-background.png', 'assets/game-style/lab-evidence-cover-numbered.png'],
+    'word-families.html': ['assets/game-style/family-background.png'],
+    'book-game-concepts.html': ['assets/book-game/reading-room-cover-decorated-v3.png'],
+  };
+  const controller = new AbortController();
+  const pending = [];
+  const seen = new Set();
+  let active = 0;
+
+  function enqueue(url, page = false) {
+    const absolute = new URL(url, location.href);
+    if (absolute.origin !== location.origin || seen.has(absolute.href)) return;
+    seen.add(absolute.href);
+    pending.push({url: absolute.href, page});
+    pump();
+  }
+
+  function pump() {
+    while (active < 2 && pending.length && !controller.signal.aborted) {
+      const item = pending.shift();
+      active += 1;
+      fetch(item.url, {priority: 'low', signal: controller.signal}).then(async response => {
+        if (!item.page || !response.ok) return;
+        const doc = new DOMParser().parseFromString(await response.text(), 'text/html');
+        for (const node of doc.querySelectorAll('link[rel="stylesheet"][href], script[src]')) {
+          enqueue(new URL(node.getAttribute('href') || node.getAttribute('src'), item.url));
+        }
+      }).catch(() => {}).finally(() => {
+        active -= 1;
+        pump();
+      });
+    }
+  }
+
+  function warmNextScreens() {
+    if (navigator.connection?.saveData) return;
+    const routes = new Set(Array.from(document.querySelectorAll('a[href]'), link => {
+      const url = new URL(link.href, location.href);
+      return url.origin === location.origin ? url.pathname.split('/').pop() : '';
+    }));
+    if (location.pathname.endsWith('/') || location.pathname.endsWith('/index.html')) {
+      routes.add('platform-intro.html');
+      routes.add('sound-library.html');
+      routes.add('learning-map.html');
+      routes.add('practice-room.html');
+    }
+    routes.delete(location.pathname.split('/').pop());
+    for (const route of routes) {
+      if (!firstScreenArt[route]) continue;
+      enqueue(route, true);
+      for (const art of firstScreenArt[route]) enqueue(art);
+    }
+  }
+
+  addEventListener('load', () => {
+    const start = () => setTimeout(warmNextScreens, 400);
+    if ('requestIdleCallback' in window) requestIdleCallback(start, {timeout: 2500});
+    else setTimeout(start, 1000);
+  }, {once: true});
+  addEventListener('pagehide', () => controller.abort(), {once: true});
 })();
