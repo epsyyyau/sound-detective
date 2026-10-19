@@ -69,3 +69,29 @@
   .reward-message-text { margin-bottom: 8px; font-size: 1rem; }
   .reward-message-continue { min-height: 40px; }
 }
+
+@media (max-width: 680px) and (orientation: portrait) {
+  .reward-message-icon {
+    top: 31%;
+    width: clamp(96px, 28vw, 116px);
+    height: clamp(96px, 28vw, 116px);
+  }
+}
+
+@media (max-width: 950px) and (max-height: 480px) and (orientation: landscape) {
+  .reward-message-icon {
+    top: 28%;
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 380px) and (orientation: portrait) {
+  .reward-message-icon { top: 27%; width: 96px; height: 96px; }
+  .reward-message-text { top: 65%; }
+  .reward-message-continue { top: 76%; }
+}
+
+@media (max-width: 340px) and (orientation: portrait) {
+  .reward-message-icon { top: 25%; width: 88px; height: 88px; }
+}
