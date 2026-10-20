@@ -66,14 +66,19 @@ class QuestionAudioCue {
       if (!ok) { audio.pause(); onFailure(); }
     };
     const ended = () => finish(true);
+    const reachedEnd = () => {
+      if (Number.isFinite(audio.duration) && audio.duration > 0 && audio.currentTime >= audio.duration - 0.05) finish(true);
+    };
     const failed = () => finish(false);
     const timer = setTimeout(failed, 15000);
     this.cleanup = () => {
       clearTimeout(timer);
       audio.removeEventListener('ended', ended);
+      audio.removeEventListener('timeupdate', reachedEnd);
       audio.removeEventListener('error', failed);
     };
     audio.addEventListener('ended', ended);
+    audio.addEventListener('timeupdate', reachedEnd);
     audio.addEventListener('error', failed);
     try { return Promise.resolve(audio.play()).catch(failed); }
     catch { failed(); return Promise.resolve(); }

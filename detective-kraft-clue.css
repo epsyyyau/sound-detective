@@ -41,7 +41,7 @@
     padding:42px 32px 40px;
     border-image-width:45px 70px 98px 49px;
   }
-  .kraft-clue-panel .missing-question-view {
+  .kraft-clue-panel .missing-question-view:not([hidden]) {
     display:grid;
     grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
     align-items:start;

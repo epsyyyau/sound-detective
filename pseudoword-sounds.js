@@ -342,7 +342,8 @@ async function playWord() {
   const question = questions[questionIndex];
   activeAudio = new Audio(question.audio);
   await audioCue.play(activeAudio, () => {
-    feedback.textContent = "未能播放暗號，請再次按下播放按鈕。";
+    audioCue.setPhase('choose');
+    feedback.textContent = "未能播放暗號，您仍可選擇答案，或再次按下播放按鈕。";
     feedback.className = "answer-feedback is-wrong";
   });
 }
