@@ -2,5 +2,18 @@
 .complete-view .complete-mark img { display:block; width:100%; height:100%; object-fit:contain; }
 .complete-view .completion-route-link { display:grid; place-items:center; width:88px; height:88px; padding:6px; margin:22px auto 0; background:none; border:0; box-shadow:none; }
 .complete-view .completion-route-link img { width:100%; height:100%; object-fit:contain; filter:none; }
+.complete-view:not([hidden]) :is(.completion-route-link, [data-route-return="true"]) img {
+  animation: completion-map-pop 1.8s ease-in-out infinite;
+  transform-origin: center;
+}
+@keyframes completion-map-pop {
+  0%, 100% { transform: scale(1); }
+  35% { transform: scale(1.16); }
+  55% { transform: scale(.96); }
+  70% { transform: scale(1.05); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .complete-view:not([hidden]) :is(.completion-route-link, [data-route-return="true"]) img { animation: none; }
+}
 .complete-view h2 { margin:0; line-height:1.4; }
 @media(max-width:600px) { .complete-view .complete-mark { width:112px; height:112px; } .complete-view .completion-route-link { width:76px; height:76px; } }
