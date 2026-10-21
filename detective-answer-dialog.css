@@ -35,10 +35,10 @@
 .detective-answer-overlay .next-question-button img { width:28px; height:28px; }
 .correct-segments { font-family:var(--font-phonics); font-size:1.25rem; color:#37535c; }
 .detective-answer-overlay .pseudoword-answer-note {
-  max-width:245px;
+  max-width:230px;
   margin:0 auto;
   color:#37535c;
-  font-size:.85rem;
+  font-size:.78rem;
   line-height:1.45;
   text-wrap:balance;
 }
@@ -50,8 +50,8 @@
   padding-bottom:30px;
 }
 .detective-answer-overlay .correct-answer-dialog:has(.pseudoword-answer-note:not([hidden])) .correct-word-picture {
-  width:128px;
-  height:95px;
+  width:112px;
+  height:82px;
 }
 .detective-answer-overlay .correct-answer-dialog:has(.pseudoword-answer-note:not([hidden])) .correct-word {
   margin:0;
