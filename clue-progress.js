@@ -81,9 +81,11 @@ class ClueProgress {
       }
       this.row.append(slot);
     });
-    // Keep long challenge rows horizontal without moving the game vertically.
+    // Desktop rows can scroll; wrapped phone rows keep every clue visible.
     const active = this.row.children[this.current];
-    if (active) this.row.scrollLeft = active.offsetLeft - this.row.offsetLeft - (this.row.clientWidth - active.offsetWidth) / 2;
+    if (active && this.row.scrollWidth > this.row.clientWidth) {
+      this.row.scrollLeft = active.offsetLeft - this.row.offsetLeft - (this.row.clientWidth - active.offsetWidth) / 2;
+    }
   }
 }
 

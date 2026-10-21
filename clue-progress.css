@@ -96,6 +96,15 @@
   .has-clue-progress .clue-progress { margin-bottom:4px; }
 }
 @media(max-width:680px) {
-  .clue-slot { flex-basis:30px; width:30px; height:30px; }
-  .clue-slot img { width:22px; height:22px; }
+  .clue-progress {
+    flex-wrap:wrap;
+    justify-content:center;
+    width:100%;
+    max-width:420px;
+    box-sizing:border-box;
+    gap:4px 3px;
+    overflow-x:visible;
+  }
+  .clue-slot { flex-basis:24px; width:24px; height:24px; }
+  .clue-slot img { width:19px; height:19px; }
 }
