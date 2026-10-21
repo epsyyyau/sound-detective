@@ -256,6 +256,28 @@ let questionIndex = 0;
 let rewardSolvedCount = 0;
 let acceptingAnswer = true;
 let activeAudio;
+const picturePreloads = new Map();
+
+function preloadPicture(src) {
+  if (!picturePreloads.has(src)) {
+    const image = new Image();
+    image.decoding = "async";
+    const ready = new Promise((resolve) => {
+      image.onload = async () => {
+        try {
+          if (image.decode) await image.decode();
+          resolve(true);
+        } catch {
+          resolve(true);
+        }
+      };
+      image.onerror = () => resolve(false);
+    });
+    image.src = src;
+    picturePreloads.set(src, ready);
+  }
+  return picturePreloads.get(src);
+}
 
 const questionView = document.querySelector("[data-question-view]");
 const clueProgress = new ClueProgress('paper');
@@ -350,6 +372,7 @@ function renderQuestion() {
   stopAudio();
   acceptingAnswer = true;
   const question = questions[questionIndex];
+  questions.slice(questionIndex, questionIndex + 3).forEach(({ picture }) => preloadPicture(picture));
   const level = levels[question.levelIndex];
   const levelStart = levels.slice(0, question.levelIndex).reduce((sum, item) => sum + item.count, 0);
   const levelQuestionIndex = questionIndex - levelStart;
@@ -404,14 +427,18 @@ function chooseAnswer(button) {
   feedback.textContent = "";
   feedback.className = "answer-feedback is-correct";
   completeWord.textContent = question.word;
-  correctPicture.onload = () => { correctPicture.hidden = false; };
-  correctPicture.onerror = () => { correctPicture.hidden = true; };
   correctPicture.hidden = true;
-  correctPicture.src = question.picture;
   correctPicture.alt = `${question.word} 的圖片`;
   setQuestionAdvanceIcon(nextButton, questionIndex === questions.length - 1);
-  correctOverlay.hidden = false;
-  nextButton.focus();
+  const answeredIndex = questionIndex;
+  preloadPicture(question.picture).then((ready) => {
+    if (questionIndex !== answeredIndex) return;
+    if (ready) correctPicture.src = question.picture;
+    else correctPicture.removeAttribute("src");
+    correctPicture.hidden = !ready;
+    correctOverlay.hidden = false;
+    nextButton.focus();
+  });
 }
 
 function finishActivity() {
