@@ -1,4 +1,4 @@
-.missing-sound-page.has-clue-progress .level-track.paper-level-track {
+.sound-lesson-page.has-clue-progress .level-track.paper-level-track {
   display:flex;
   justify-content:center;
   align-items:center;
@@ -6,7 +6,7 @@
   margin:0 auto 6px;
 }
 
-.missing-sound-page.has-clue-progress .paper-level-track .paper-level-button {
+.sound-lesson-page.has-clue-progress .paper-level-track .paper-level-button {
   position:relative;
   display:block;
   flex:0 0 108px;
@@ -19,16 +19,16 @@
   opacity:.3;
 }
 
-.missing-sound-page.has-clue-progress .paper-level-track .paper-level-button.is-current,
-.missing-sound-page.has-clue-progress .paper-level-track .paper-level-button.is-complete {
+.sound-lesson-page.has-clue-progress .paper-level-track .paper-level-button.is-current,
+.sound-lesson-page.has-clue-progress .paper-level-track .paper-level-button.is-complete {
   opacity:1;
 }
 
-.missing-sound-page.has-clue-progress .paper-level-track .paper-level-button.is-current {
+.sound-lesson-page.has-clue-progress .paper-level-track .paper-level-button.is-current {
   filter:drop-shadow(0 3px 4px #17455040);
 }
 
-.missing-sound-page.has-clue-progress .paper-level-track .paper-level-button::after { display:none; }
+.sound-lesson-page.has-clue-progress .paper-level-track .paper-level-button::after { display:none; }
 
 .paper-level-art {
   position:absolute;
@@ -47,7 +47,7 @@
 .paper-level-track.is-challenge .paper-level-button:nth-child(2) .paper-level-art { filter:hue-rotate(17deg) saturate(1.05); }
 .paper-level-track.is-challenge .paper-level-button:nth-child(3) .paper-level-art { filter:hue-rotate(150deg) saturate(1.18); }
 
-.missing-sound-page.has-clue-progress .paper-level-track .paper-level-button i {
+.sound-lesson-page.has-clue-progress .paper-level-track .paper-level-button i {
   position:absolute;
   z-index:1;
   display:grid;
@@ -72,14 +72,14 @@
 .paper-level-art.is-folder + i { left:47%; top:56%; }
 
 @media(max-width:680px) {
-  .missing-sound-page.has-clue-progress .level-track.paper-level-track { gap:4px; }
-  .missing-sound-page.has-clue-progress .paper-level-track .paper-level-button {
+  .sound-lesson-page.has-clue-progress .level-track.paper-level-track { gap:4px; }
+  .sound-lesson-page.has-clue-progress .paper-level-track .paper-level-button {
     flex-basis:min(27vw,96px);
     width:min(27vw,96px);
     height:auto;
     aspect-ratio:4 / 3;
   }
-  .missing-sound-page.has-clue-progress .paper-level-track .paper-level-button i {
+  .sound-lesson-page.has-clue-progress .paper-level-track .paper-level-button i {
     width:24px;
     height:24px;
     font-size:1.25rem;

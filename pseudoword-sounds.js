@@ -185,7 +185,9 @@ function takeQuestions(candidates, count, levelIndex, sessionState) {
 }
 
 const levels = isChallenge
-  ? [{ name: "暗號混合", short: "首、中、尾音", count: 24 }]
+  ? Array.from({ length: 3 }, (_, index) => ({
+      name: `第 ${index + 1} 關`, short: "首、中、尾音混合挑戰", count: 8,
+    }))
   : [
       { name: "第 1 關", short: "找出首音", count: 6, position: "start" },
       { name: "第 2 關", short: "找出中間音", count: 6, position: "middle" },
@@ -236,6 +238,8 @@ const infoButton = document.querySelector("[data-code-info]");
 const infoBox = infoButton.closest(".pseudoword-info");
 
 levelTrack.classList.toggle("single-level", levels.length === 1);
+levelTrack.classList.add("paper-level-track");
+levelTrack.classList.toggle("is-challenge", isChallenge);
 setLessonIdentity(groupNumber, modeName);
 document.querySelector("[data-group-sounds]").textContent = groupData[groupNumber].sounds;
 document.querySelector("[data-mode-label]").textContent = modeName;
@@ -255,7 +259,9 @@ function renderLevelTrack(currentLevel) {
       button.classList.add("is-complete");
     }
     button.setAttribute("aria-label", `${level.name}：${level.short}，${level.coveredSounds.join(" · ")}`);
-    button.innerHTML = `<i>${index + 1}</i>`;
+    button.classList.add("paper-level-button");
+    const icon = isChallenge ? "folder" : ["magnifier", "listening", "trail"][index];
+    button.innerHTML = `<span class="paper-level-art is-${icon}" aria-hidden="true"></span><i>${index + 1}</i>`;
     levelTrack.append(button);
   });
 }

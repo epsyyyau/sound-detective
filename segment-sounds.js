@@ -197,6 +197,11 @@ const groupNumber = groupData[requestedGroup] ? requestedGroup : 1;
 const isChallenge = parameters.get("mode") === "challenge";
 const modeName = isChallenge ? "挑戰版" : "輕量版";
 const questionTotal = isChallenge ? 16 : 12;
+const levels = (isChallenge ? [5, 5, 6] : [4, 4, 4]).map((count, index) => ({
+  name: `第 ${index + 1} 關`,
+  short: isChallenge ? "混合拆音挑戰" : "拆音練習",
+  count,
+}));
 
 function normalizeSegment(segment) {
   if (typeof segment !== "string") return segment;
@@ -259,7 +264,10 @@ const questionsPerType = questionTotal / 2;
 const questions = shuffled([
   ...shuffled(realSourceRecords).slice(0, questionsPerType),
   ...shuffled(pseudowordSourceRecords).slice(0, questionsPerType),
-]);
+]).map((question, index) => ({
+  ...question,
+  levelIndex: index < levels[0].count ? 0 : index < levels[0].count + levels[1].count ? 1 : 2,
+}));
 const soundPool = [...new Map(
   [...records, ...pseudowordRecords]
     .flatMap((record) => record.segments)
@@ -274,6 +282,8 @@ let acceptingAnswer = true;
 
 const questionView = document.querySelector("[data-question-view]");
 const clueProgress = new ClueProgress('puzzle');
+const levelTrack = document.querySelector("[data-level-track]");
+const levelLabel = document.querySelector("[data-level-label]");
 const completeView = document.querySelector("[data-complete-view]");
 const progressBar = document.querySelector("[data-progress-bar]");
 const progressText = document.querySelector("[data-progress-text]");
@@ -295,11 +305,32 @@ const infoButton = document.querySelector("[data-code-info]");
 const infoBox = infoButton.closest(".pseudoword-info");
 
 setLessonIdentity(groupNumber, modeName);
+levelTrack.classList.add("paper-level-track");
+levelTrack.classList.toggle("is-challenge", isChallenge);
 document.querySelector("[data-group-sounds]").textContent = groupData[groupNumber].sounds;
 document.querySelector("[data-mode-label]").textContent = modeName;
-document.querySelector("[data-level-label]").textContent = isChallenge ? "混合拆音挑戰" : "混合拆音練習";
 document.querySelector("[data-complete-title]").textContent = `成功找到第${["一", "二", "三", "四", "五", "六", "七"][groupNumber - 1]}組暗號！`;
 document.title = `第 ${groupNumber} 組拆音「聲」探 | 小小「聲」探`;
+
+function renderLevelTrack(currentLevel) {
+  levelTrack.innerHTML = "";
+  levels.forEach((level, index) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.disabled = true;
+    button.classList.add("paper-level-button");
+    if (index === currentLevel) {
+      button.classList.add("is-current");
+      button.setAttribute("aria-current", "step");
+    } else if (index < currentLevel) {
+      button.classList.add("is-complete");
+    }
+    button.setAttribute("aria-label", `${level.name}：${level.short}`);
+    const icon = isChallenge ? "folder" : ["magnifier", "listening", "trail"][index];
+    button.innerHTML = `<span class="paper-level-art is-${icon}" aria-hidden="true"></span><i>${index + 1}</i>`;
+    levelTrack.append(button);
+  });
+}
 
 function stopAudio() {
   if (!activeAudio) return;
@@ -463,14 +494,19 @@ function renderQuestion() {
   acceptingAnswer = true;
   selectedTiles = [];
   const question = questions[questionIndex];
-  clueProgress.show(questions.length, questionIndex);
+  const level = levels[question.levelIndex];
+  const levelStart = levels.slice(0, question.levelIndex).reduce((sum, item) => sum + item.count, 0);
+  const levelQuestionIndex = questionIndex - levelStart;
+  clueProgress.show(level.count, levelQuestionIndex, question.levelIndex);
+  renderLevelTrack(question.levelIndex);
+  levelLabel.textContent = level.name;
   infoBox.hidden = !question.isPseudoword;
   questionTitle.textContent = "破解暗號";
   const playLabel = question.isPseudoword ? "播放暗號" : "播放詞語";
   playWordButton.setAttribute("aria-label", playLabel);
   playWordButton.title = playLabel;
-  progressText.textContent = `第 ${questionIndex + 1} / ${questions.length} 題`;
-  progressBar.style.width = `${(questionIndex / questions.length) * 100}%`;
+  progressText.textContent = `第 ${levelQuestionIndex + 1} / ${level.count} 題`;
+  progressBar.style.width = `${(levelQuestionIndex / level.count) * 100}%`;
   correctOverlay.hidden = true;
   soundSlots.classList.remove("is-wrong");
   soundOptions.innerHTML = "";
