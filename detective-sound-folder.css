@@ -18,6 +18,14 @@
 }
 .sound-file-panel .has-sound-image .sound-name small { white-space:nowrap; }
 @media(min-width:681px) {
+  .sound-file-panel .answer-options:not(:has(.has-answer-image, .has-duration-cue)):has(> :nth-child(6):last-child) {
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,120px));
+    justify-content:center;
+  }
+  .sound-file-panel .answer-options:not(:has(.has-answer-image, .has-duration-cue)):has(> :nth-child(6):last-child) > button {
+    width:100%;
+  }
   .sound-file-panel .learn-sound-button.has-sound-image.is-compact {
     grid-template-columns:minmax(0,1fr) minmax(0,1fr);
   }
