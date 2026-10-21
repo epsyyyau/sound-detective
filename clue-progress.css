@@ -13,6 +13,9 @@
   height:58px;
   padding:0 10px 10px 0;
 }
+.has-clue-progress .circle-level-track button:not(.is-current):not(.is-complete) {
+  opacity:.3;
+}
 .has-clue-progress .circle-level-track i {
   position:relative;
   z-index:1;

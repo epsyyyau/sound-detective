@@ -16,7 +16,7 @@
   border:0;
   background:transparent;
   box-shadow:none;
-  opacity:.7;
+  opacity:.3;
 }
 
 .missing-sound-page.has-clue-progress .paper-level-track .paper-level-button.is-current,
@@ -34,14 +34,15 @@
   position:absolute;
   inset:0;
   display:block;
-  background:url("assets/game-style/missing-level-icons-v2.webp") no-repeat;
-  background-size:200% 200%;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
 }
 
-.paper-level-art.is-magnifier { background-position:0 0; }
-.paper-level-art.is-listening { background-position:100% 0; }
-.paper-level-art.is-trail { background-position:0 100%; clip-path:inset(10% 0 0); }
-.paper-level-art.is-folder { background-position:100% 100%; }
+.paper-level-art.is-magnifier { background-image:url("assets/game-style/missing-level-magnifier.webp"); }
+.paper-level-art.is-listening { background-image:url("assets/game-style/missing-level-listening.webp"); }
+.paper-level-art.is-trail { background-image:url("assets/game-style/missing-level-trail.webp"); }
+.paper-level-art.is-folder { background-image:url("assets/game-style/missing-level-folder.webp"); }
 .paper-level-track.is-challenge .paper-level-button:nth-child(1) .paper-level-art { filter:hue-rotate(-48deg) saturate(.92); }
 .paper-level-track.is-challenge .paper-level-button:nth-child(2) .paper-level-art { filter:hue-rotate(17deg) saturate(1.05); }
 .paper-level-track.is-challenge .paper-level-button:nth-child(3) .paper-level-art { filter:hue-rotate(150deg) saturate(1.18); }
@@ -51,8 +52,8 @@
   z-index:1;
   display:grid;
   place-items:center;
-  width:28px;
-  height:28px;
+  width:1.5em;
+  height:1.5em;
   padding:0;
   border:0;
   border-radius:0;
@@ -60,13 +61,15 @@
   box-shadow:none;
   color:#174550;
   font:900 1.5rem/1 "Fredoka", "Huninn Chinese", sans-serif;
+  font-style:normal;
+  text-align:center;
   transform:translate(-50%,-50%);
 }
 
-.paper-level-art.is-magnifier + i { left:69%; top:58%; }
-.paper-level-art.is-listening + i { left:32%; top:58%; }
-.paper-level-art.is-trail + i { left:84%; top:64%; }
-.paper-level-art.is-folder + i { left:55%; top:56%; }
+.paper-level-art.is-magnifier + i { left:62%; top:43%; }
+.paper-level-art.is-listening + i { left:27%; top:48%; }
+.paper-level-art.is-trail + i { left:79%; top:61%; }
+.paper-level-art.is-folder + i { left:47%; top:56%; }
 
 @media(max-width:680px) {
   .missing-sound-page.has-clue-progress .level-track.paper-level-track { gap:4px; }
