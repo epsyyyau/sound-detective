@@ -25,6 +25,3 @@
 @media(max-width:400px) {
   .library-page.detective-sound-library { padding-inline:12px; }
 }
-.detective-sound-library .is-single-group .sound-group[data-sound-group="5"] .sound-tile.duration-sound-tile {
-  padding:21% 16% 24%;
-}

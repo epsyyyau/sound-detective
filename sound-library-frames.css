@@ -115,7 +115,7 @@
 .detective-sound-library .sound-tile.duration-sound-tile .duration-arrow.is-long { --arrow-length:28px; }
 .detective-sound-library [data-sound-group="5"] .sound-tile.duration-sound-tile {
   gap:0;
-  padding:21% 16% 24%;
+  --frame-padding:25% 17% 18%;
 }
 .detective-sound-library [data-sound-group="5"] .sound-tile.duration-sound-tile strong { font-size:1.5rem; }
 .detective-sound-library [data-sound-group="5"] .sound-tile.duration-sound-tile .duration-arrow { height:8px; }
