@@ -65,6 +65,20 @@
     pointer-events:none;
   }
   .telegram-envelope-panel .word-pattern { flex-wrap:wrap; }
+  .telegram-envelope-panel .word-pattern:has(> span:nth-child(4):last-child) {
+    box-sizing:border-box;
+    width:100%;
+    padding-left:80px;
+    gap:4px;
+    flex-wrap:nowrap;
+  }
+  .telegram-envelope-panel .word-pattern:has(> span:nth-child(4):last-child) span {
+    flex:1 1 0;
+    min-width:0;
+    max-width:48px;
+    padding-inline:0;
+    font-size:clamp(1.8rem,9vw,2.3rem);
+  }
   .telegram-envelope-panel .lesson-progress { margin-right:82px; }
   .pseudoword-page .telegram-envelope-panel .pseudoword-question-tools {
     position:absolute;
