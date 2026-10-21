@@ -13,7 +13,18 @@
   ];
 
   let dialog;
-  function show(index) {
+  let pendingImage = 0;
+  const imageCache = new Map();
+  function loadImage(url) {
+    if (!imageCache.has(url)) {
+      const image = new Image();
+      image.src = url;
+      imageCache.set(url, image.decode().then(() => url).catch(() => null));
+    }
+    return imageCache.get(url);
+  }
+
+  async function show(index) {
     if (window.parent !== window && new URLSearchParams(location.search).has("route-phone-frame")) {
       window.parent.postMessage({ type: "sound-detective:reward", index }, location.origin);
       return;
@@ -25,10 +36,16 @@
       dialog.querySelector("button").addEventListener("click", () => dialog.close());
       document.body.append(dialog);
     }
+    const request = ++pendingImage;
     const [icon, message] = rewards[((index % rewards.length) + rewards.length) % rewards.length];
-    dialog.querySelector("img").src = `assets/reward-messages/${icon}`;
+    const imageElement = dialog.querySelector("img");
+    imageElement.style.visibility = "hidden";
+    const url = await loadImage(`assets/reward-messages/${icon}`);
+    if (request !== pendingImage) return;
+    if (url) imageElement.src = url;
     dialog.querySelector(".reward-message-text").textContent = message;
     if (!dialog.open) dialog.showModal();
+    imageElement.style.visibility = url ? "visible" : "hidden";
     dialog.querySelector("button").focus();
   }
 
