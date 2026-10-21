@@ -68,7 +68,7 @@
 }
 #game.is-bubble-game .letter-card {
   position:relative; z-index:1; display:grid; place-items:center; flex:1 1 0; max-width:200px; aspect-ratio:1;
-  border:0; border-radius:8px; background:transparent url('assets/game-style/bubble-glass-tile.png') center / 117% 117% no-repeat;
+  border:0; border-radius:8px; background:transparent url('assets/game-style/bubble-glass-tile.webp') center / 117% 117% no-repeat;
   box-shadow:none; transform:none; filter:drop-shadow(0 4px 2px #296a6b33);
 }
 #game.is-bubble-game .letter-card::after { content:''; position:absolute; inset:3%; border:5px solid transparent; border-radius:8px; pointer-events:none; }
@@ -95,7 +95,7 @@
 #game.is-bubble-game .magic-option:nth-child(2) { transform:translateY(-60%); }
 #game.is-bubble-game .pick-sound {
   position:relative; display:grid; place-items:center; width:var(--bubble-size); min-width:0; height:var(--bubble-size); min-height:0; padding:8px;
-  border:0; border-radius:50%; background:transparent url('assets/game-style/bubble-iridescent.png') center / 110% 110% no-repeat;
+  border:0; border-radius:50%; background:transparent url('assets/game-style/bubble-iridescent.webp') center / 110% 110% no-repeat;
   box-shadow:none; color:#123f49; filter:drop-shadow(0 3px 2px #528d8a20);
 }
 #game.is-bubble-game .bubble-sound { position:relative; font:700 3.6rem/1 var(--phonics-font); text-shadow:0 2px 0 #ffffff88; }

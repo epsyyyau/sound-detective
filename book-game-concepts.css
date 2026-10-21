@@ -5,7 +5,7 @@ body { margin:0; background:#bce8d9; }
 .book-game-concepts button:focus-visible { outline:4px solid #155f9e; outline-offset:5px; }
 .book-shelf {
   position:relative; display:grid; place-items:center; min-height:100svh; overflow:hidden;
-  background:#bce8d9 url('assets/book-game/reading-room-cover-decorated-v3.png') center/cover no-repeat;
+  background:#bce8d9 url('assets/book-game/reading-room-cover-decorated-v3.webp') center/cover no-repeat;
 }
 .book-shelf h1 {
   position:absolute; z-index:4; top:1.5%; left:50%; transform:translateX(-50%);
@@ -117,7 +117,7 @@ body { margin:0; background:#bce8d9; }
   --preview-spine:#b96758; --preview-title:#fff6dd;
   position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center;
   gap:18px; min-height:100svh; padding:48px 20px 28px;
-  background:#80d9d4 url('assets/book-game/reading-nook-background-v1.png') center/cover no-repeat;
+  background:#80d9d4 url('assets/book-game/reading-nook-background-v1.webp') center/cover no-repeat;
 }
 .book-preview[data-book="hen"] { --preview-spine:#cf963e; --preview-title:#1e3f71; }
 .book-preview[data-book="train"] { --preview-spine:#087f96; --preview-title:#fff6dd; }

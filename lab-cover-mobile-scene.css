@@ -5,7 +5,7 @@
     min-height:760px;
     padding:0;
     overflow:visible;
-    background:#a9dcca url('assets/game-style/lab-paper-cover-mobile-v1.png') center / 100% 100% no-repeat;
+    background:#a9dcca url('assets/game-style/lab-paper-cover-mobile-v1.webp') center / 100% 100% no-repeat;
   }
   .magic-page #setup .lab-intro {
     position:absolute;

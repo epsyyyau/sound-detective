@@ -23,7 +23,7 @@
 #express-turntable { position:absolute; inset:0; background:url('assets/game-style/train-express-background.webp') center/100% 100% no-repeat; clip-path:ellipse(42% 21% at 48% 62%); transform-origin:48% 62%; pointer-events:none; }
 #express-engine { position:absolute; left:79%; top:35%; width:21%; height:25%; object-fit:contain; pointer-events:none; }
 #play.is-express-station .sound-train { transform-origin:48% 62%; }
-#play.is-express-station .sound-car { top:34%; width:17%; height:27%; background:url('assets/game-style/train-wagon.png') center/100% 100% no-repeat; }
+#play.is-express-station .sound-car { top:34%; width:17%; height:27%; background:url('assets/game-style/train-wagon.webp') center/100% 100% no-repeat; }
 #play.is-express-station .sound-car::before { filter:hue-rotate(285deg) saturate(.75); mask:radial-gradient(ellipse 12% 12% at 28% 80%,transparent 97%,#000 100%),radial-gradient(ellipse 12% 12% at 71% 80%,transparent 97%,#000 100%); mask-composite:intersect; }
 #play.is-express-station .car-letter { inset:20% 12% 30%; font-size:4rem; }
 #play.is-express-station .cargo-speaker { bottom:2%; }

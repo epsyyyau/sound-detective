@@ -28,7 +28,7 @@
 .magnet-flight { border:3px solid #e5c48c; border-radius:50%; background:#fff3d8; }
 #game.is-magnet-game #position-hint { bottom:-32px; }
 #game.is-light-grid-game .magic-workspace { inset:43% 5% 22%; width:auto; height:auto; transform:none; }
-#game.is-light-grid-game .light-grid-console { content:url('assets/game-style/lab-paper-light-console.png'); }
+#game.is-light-grid-game .light-grid-console { content:url('assets/game-style/lab-paper-light-console.webp'); }
 #game.is-light-grid-game .magic-choice-station { position:static; }
 /* Coordinates follow the individual ivory windows in the 1500 x 397 artwork. */
 #game.is-light-grid-game .magic-letters,
@@ -92,7 +92,7 @@
   #game.is-light-grid-game .magic-workspace::after { content:''; position:absolute; z-index:0; left:-6px; top:200px; width:26px; height:205px; border:5px solid #b87940; border-right:0; border-radius:8px 0 0 8px; pointer-events:none; }
   #game.is-light-grid-game { padding-top:320px; }
   #game.is-light-grid-game .light-grid-console { display:none; }
-  #game.is-light-grid-game .magic-stage { inset:0 0 auto; height:230px; z-index:1; background:url('assets/game-style/lab-paper-light-console.png') left center/160% 100% no-repeat; }
+  #game.is-light-grid-game .magic-stage { inset:0 0 auto; height:230px; z-index:1; background:url('assets/game-style/lab-paper-light-console.webp') left center/160% 100% no-repeat; }
   #game.is-light-grid-game .magic-audio { bottom:calc(100% + 40px); left:0; right:0; }
   /* The main artwork is 160% wide; the right rack is cropped at 290% x 180%. */
   #game.is-light-grid-game .letter-card { width:18.1333%; }
@@ -100,7 +100,7 @@
   #game.is-light-grid-game .magic-letters > .letter-card:nth-child(2) { --window-x:49.6%; }
   #game.is-light-grid-game .magic-letters > .letter-card:nth-child(3) { --window-x:72.8533%; }
   #game.is-light-grid-game .letter-card > span { font-size:36px; }
-  #game.is-light-grid-game .magic-choice-station { display:block; position:absolute; z-index:1; top:295px; left:0; right:0; height:120px; background:url('assets/game-style/lab-paper-light-console.png') right bottom/290% 180% no-repeat; }
+  #game.is-light-grid-game .magic-choice-station { display:block; position:absolute; z-index:1; top:295px; left:0; right:0; height:120px; background:url('assets/game-style/lab-paper-light-console.webp') right bottom/290% 180% no-repeat; }
   #game.is-light-grid-game .pick-sound { top:6.4%; width:25.1333%; height:59.4%; }
   #game.is-light-grid-game .magic-option:nth-child(1) { --window-x:5.8467%; }
   #game.is-light-grid-game .magic-option:nth-child(2) { --window-x:36.78%; }

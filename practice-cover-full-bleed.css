@@ -51,7 +51,7 @@ body:has(.family-page #family-map:not([hidden])) { margin:0; }
   .train-page #setup .station-group:nth-child(7) { --name-y:85%; }
 }
 @media(max-width:700px), (max-width:1000px) and (orientation:portrait) {
-  .family-page:has(#family-map:not([hidden])) .family-header { position:relative; inset:auto; height:92px; min-height:92px; grid-template-columns:48px minmax(0,1fr) 92px; padding:0 8px; background:url('assets/family-map/paper-town-cover.png') center top/cover no-repeat; }
+  .family-page:has(#family-map:not([hidden])) .family-header { position:relative; inset:auto; height:92px; min-height:92px; grid-template-columns:48px minmax(0,1fr) 92px; padding:0 8px; background:url('assets/family-map/paper-town-cover.webp') center top/cover no-repeat; }
   .family-page:has(#family-map:not([hidden])) #family-map-title { height:80px; }
   .family-page .family-map-canvas,
   .family-page .family-map:has(.group-mission-hint) .family-map-canvas { height:auto; min-height:calc(100svh - 92px); aspect-ratio:400/1000; }

@@ -5,7 +5,7 @@
     height:max(100svh,760px);
     min-height:760px;
     aspect-ratio:auto;
-    background:#c7efad url('assets/game-style/train-cover-mobile-scene-v1.png') center / 100% 100% no-repeat;
+    background:#c7efad url('assets/game-style/train-cover-mobile-scene-v1.webp') center / 100% 100% no-repeat;
   }
   .train-page #setup.train-panel .station-title {
     top:5%;

@@ -12,9 +12,9 @@ SoundWordExtras.forEach(record=>blendingGroups[record.group-1].words.push([recor
 const extraBlendingAssets=new Map(SoundWordExtras.map(record=>[record.word,record]));
 const soundFiles = { c:'ck', k:'ck', 'oo-short':'book', 'oo-long':'moon', 'th-thin':'three', 'th-this':'this', 'ue-oo':'moon' };
 const trainArtwork = {
-  tender: { file: 'assets/game-style/train-tender.png', width: 270 },
-  wagon: { file: 'assets/game-style/train-wagon.png', width: 300 },
-  engine: { file: 'assets/family-map/train.png', width: 450 },
+  tender: { file: 'assets/game-style/train-tender.webp', width: 270 },
+  wagon: { file: 'assets/game-style/train-wagon.webp', width: 300 },
+  engine: { file: 'assets/family-map/train.webp', width: 450 },
 };
 function trainPiece(element, kind) {
   const { file, width } = trainArtwork[kind];
@@ -75,7 +75,7 @@ for (let i=0; i<3; i++) {
 $('train').before(bridgeDeck);
 const bridgeEngine = document.createElement('img');
 bridgeEngine.id = 'bridge-engine';
-bridgeEngine.src = 'assets/game-style/train-paper-one-engine.png';
+bridgeEngine.src = 'assets/game-style/train-paper-one-engine.webp';
 bridgeEngine.alt = '';
 bridgeEngine.hidden = true;
 $('train').before(bridgeEngine);
@@ -127,7 +127,7 @@ function render() {
   $('change-group').querySelector('img').src='assets/game-style/train-compact-logo.png';
   for(const id of ['signal-engine','tunnel-engine']) $(id).style.removeProperty('transform');
   $('express-engine').hidden=group!==6;
-  $('express-engine').src=group===6?'assets/game-style/train-paper-one-engine.png':'assets/game-style/train-express-engine.webp';
+  $('express-engine').src=group===6?'assets/game-style/train-paper-one-engine.webp':'assets/game-style/train-express-engine.webp';
   $('express-turntable').hidden=group!==6;
   $('play').classList.toggle('is-cargo-station',group===1);
   $('play').classList.toggle('is-device-station',group===2 || group===3 || group===4 || group===5 || group===6);

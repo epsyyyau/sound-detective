@@ -71,18 +71,18 @@
 
   // Warm the next screens only after the current screen has finished loading.
   const firstScreenArt = {
-    'platform-intro.html': ['assets/parent-learning-paper-icons-sheet.png'],
+    'platform-intro.html': ['assets/parent-learning-paper-icons-sheet.webp'],
     'sound-library.html': ['assets/library-frames-pastel/1-folder.webp'],
     'learning-map.html': ['assets/learning-map/letter-detective-logo.webp', 'assets/learning-map/missing-detective-logo.webp'],
-    'practice-room.html': ['assets/practice-room/detective-office-paper-v5.png', 'assets/practice-room/office-paper-mobile-v1.png'],
-    'letter-sounds.html': ['assets/platform-wallpaper.png'],
-    'missing-sounds.html': ['assets/platform-wallpaper.png'],
-    'pseudoword-sounds.html': ['assets/platform-wallpaper.png'],
-    'segment-sounds.html': ['assets/platform-wallpaper.png'],
-    'sound-blending.html': ['assets/game-style/train-background.png', 'assets/game-style/train-cover-map.webp'],
-    'sound-changing.html': ['assets/game-style/lab-background.png', 'assets/game-style/lab-evidence-cover-numbered.png'],
-    'word-families.html': ['assets/game-style/family-background.png'],
-    'book-game-concepts.html': ['assets/book-game/reading-room-cover-decorated-v3.png'],
+    'practice-room.html': ['assets/practice-room/detective-office-paper-v5.webp', 'assets/practice-room/office-paper-mobile-v1.webp'],
+    'letter-sounds.html': ['assets/platform-wallpaper.webp'],
+    'missing-sounds.html': ['assets/platform-wallpaper.webp'],
+    'pseudoword-sounds.html': ['assets/platform-wallpaper.webp'],
+    'segment-sounds.html': ['assets/platform-wallpaper.webp'],
+    'sound-blending.html': ['assets/game-style/train-background.webp', 'assets/game-style/train-cover-map.webp'],
+    'sound-changing.html': ['assets/game-style/lab-background.webp', 'assets/game-style/lab-evidence-cover-numbered.webp'],
+    'word-families.html': ['assets/game-style/family-background.webp'],
+    'book-game-concepts.html': ['assets/book-game/reading-room-cover-decorated-v3.webp'],
   };
   const controller = new AbortController();
   const pending = [];

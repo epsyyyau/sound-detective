@@ -74,13 +74,13 @@ body:has(.magic-page #game:not([hidden])) { margin:0; }
   .train-page #play[data-sound-group="6"] { --game-scene:url('assets/game-style/train-paper-six-background.webp'); }
   .train-page #play[data-sound-group="7"] { --game-scene:url('assets/game-style/train-paper-seven-connected.webp'); }
   .train-page #play:is([data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) {
-    background-image:var(--game-scene),url('assets/game-style/train-background.png');
+    background-image:var(--game-scene),url('assets/game-style/train-background.webp');
     background-size:100% auto,cover; background-position:center var(--paper-scene-top),center; background-repeat:no-repeat;
   }
 }
 @media(max-width:650px) {
   .train-page #play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"]) {
-    background-image:var(--game-scene),url('assets/game-style/train-background.png');
+    background-image:var(--game-scene),url('assets/game-style/train-background.webp');
     background-size:100% auto,cover; background-position:center var(--paper-scene-top),center; background-repeat:no-repeat;
   }
 }

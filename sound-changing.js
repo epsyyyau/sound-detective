@@ -177,7 +177,7 @@ function render(){
     return part;
   }));
   if(isMechanicalGame()||isScannerGame())el('progress').innerHTML=`<span class="mechanical-group-number" aria-hidden="true">${route+1}</span><span class="bubble-progress-count">${step+1}/${roundTasks.length}</span>`;
-  else if(guided)el('progress').innerHTML=`<span class="bubble-progress-group"><img src="${route===3?'assets/game-style/light-grid-console.png':`assets/icons/${route===2?'magnet-blue':bubble?'flask-coral':'test-tube-gold'}.svg`}" alt="" aria-hidden="true">${route+1}</span><span class="bubble-progress-count">${step+1}/${roundTasks.length}</span>`;
+  else if(guided)el('progress').innerHTML=`<span class="bubble-progress-group"><img src="${route===3?'assets/game-style/light-grid-console.webp':`assets/icons/${route===2?'magnet-blue':bubble?'flask-coral':'test-tube-gold'}.svg`}" alt="" aria-hidden="true">${route+1}</span><span class="bubble-progress-count">${step+1}/${roundTasks.length}</span>`;
   else el('progress').textContent=`${magicRoutes[route].name} · ${step+1} / ${roundTasks.length}`;
   el('progress').setAttribute('aria-label',`${magicRoutes[route].name}，第 ${step+1} 題，共 ${roundTasks.length} 題`);
   el('instruction').textContent=guided?'':'先讀原字，再聽變字任務。';el('feedback').textContent='';
@@ -240,7 +240,7 @@ async function scanLightGrid(card,pick,token){
   sweep.remove();card.classList.remove('light-scanning');
   if(token!==epoch)return;
   const lamp=document.createElement('i');lamp.className='circuit-lamp';lamp.setAttribute('aria-hidden','true');
-  const bulb=document.createElement('img');bulb.src='assets/game-style/lab-paper-light-console.png';bulb.alt='';lamp.append(bulb);el('stage').append(lamp);
+  const bulb=document.createElement('img');bulb.src='assets/game-style/lab-paper-light-console.webp';bulb.alt='';lamp.append(bulb);el('stage').append(lamp);
   await animate(lamp,[{opacity:0},{opacity:1,offset:.5},{opacity:.7}],380);
 }
 function clearMagnet(){

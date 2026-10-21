@@ -37,7 +37,7 @@ function renderPaperFamilyQuestion(){
   root.style.setProperty('--paper-scenery',`url('assets/game-style/family-${theme.scene}-scene.png')`);
   const scene=document.createElement('img');scene.className='paper-scenery';scene.src=`assets/game-style/family-${theme.scene}-scene.png`;scene.alt='';root.append(scene);
   const heading=document.createElement('h2');heading.className='paper-title';heading.textContent=theme.name;heading.dataset.group=selectedStop.number;root.append(heading);
-  const back=paperButton('返回物換「聲」移封面');back.className='paper-back';const backImage=document.createElement('img');backImage.src='assets/game-style/family-paper-return.png';backImage.alt='';back.append(backImage);back.onclick=returnToMap;root.append(back);
+  const back=paperButton('返回物換「聲」移封面');back.className='paper-back';const backImage=document.createElement('img');backImage.src='assets/game-style/family-paper-return.webp';backImage.alt='';back.append(backImage);back.onclick=returnToMap;root.append(back);
   const progress=document.createElement('span');progress.className='paper-progress';progress.setAttribute('role','status');root.append(progress);paperProgress();
   const skip=paperButton('跳過本組題目，查看字詞總覽');skip.className='paper-skip practice-skip';skip.textContent='跳過';skip.onclick=skipFamilyRound;root.append(skip);
   const hint=document.createElement('p');hint.className='paper-hint';hint.setAttribute('role','status');hint.setAttribute('aria-live','polite');root.append(hint);paperHint('請選擇字頭。');
@@ -181,7 +181,7 @@ function buildPaperTraffic(root){
     const light=document.createElement('span');light.className='paper-traffic-light';light.setAttribute('aria-hidden','true');light.innerHTML='<i></i><i></i><i></i>';
     const barrier=document.createElement('span');barrier.className='paper-barrier';barrier.setAttribute('aria-hidden','true');gate.append(light,barrier);root.append(gate);
   }
-  const car=document.createElement('div');car.className='paper-driving-car';car.setAttribute('aria-hidden','true');const image=document.createElement('img');image.src='assets/game-style/family-inspector-rear.png';image.alt='';
+  const car=document.createElement('div');car.className='paper-driving-car';car.setAttribute('aria-hidden','true');const image=document.createElement('img');image.src='assets/game-style/family-inspector-rear.webp';image.alt='';
   const letter=document.createElement('span');letter.className='paper-car-letter';car.append(image,letter);root.append(car);
 }
 function resetPaperTraffic(){

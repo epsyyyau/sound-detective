@@ -214,7 +214,7 @@ function renderMapStops(){
     button.style.setProperty('--mobile-x',`${familyCoverPositions[index][0]}%`);button.style.setProperty('--mobile-y',`${familyCoverPositions[index][1]}%`);
     button.style.setProperty('--sign-delay',`${index*.13}s`);
     const crop=document.createElement('span');crop.className='family-cover-landmark';crop.setAttribute('aria-hidden','true');
-    const art=document.createElement('img');art.src='assets/family-map/paper-town-cover.png';art.alt='';
+    const art=document.createElement('img');art.src='assets/family-map/paper-town-cover.webp';art.alt='';
     Object.assign(art.style,{width:`${1672/w*100}%`,height:`${941/h*100}%`,left:`${-x/w*100}%`,top:`${-y/h*100}%`});crop.append(art);button.append(crop);
     const sign=document.createElement('span');sign.className='family-stop-sign';sign.setAttribute('aria-hidden','true');
     const number=document.createElement('strong');number.className='family-stop-number';number.textContent=stop.number;
@@ -274,7 +274,7 @@ function returnToMap(){
 function setFamilyNavigation(onMap){
   ['back','choose'].forEach(id=>{
     const button=familyUI(id),image=document.createElement('img');
-    image.src=id==='choose'||onMap?'assets/game-style/family-paper-return.png':'assets/icons/house-plus.svg';
+    image.src=id==='choose'||onMap?'assets/game-style/family-paper-return.webp':'assets/icons/house-plus.svg';
     image.alt='';image.setAttribute('aria-hidden','true');button.replaceChildren(image);
     const label=id==='choose'?'返回物換「聲」移首頁':onMap?'返回物換「聲」移封面':'選擇字族';
     button.setAttribute('aria-label',label);button.title=label;
@@ -296,7 +296,7 @@ function familyImage(word){
 function updateFamilyProgress(task){
   const completed=familyRound.filter(item=>familySolvedWords.has(item.word)).length;
   const progress=familyUI('progress');
-  progress.innerHTML=`<span class="family-progress-station"><img src="assets/home-red-dimensional.png" alt="" aria-hidden="true">${selectedStop?selectedStop.number:''}</span><span class="family-progress-ending" lang="en">${task.ending}</span><span class="family-progress-count">${completed}/${familyRound.length}</span>`;
+  progress.innerHTML=`<span class="family-progress-station"><img src="assets/home-red-dimensional.webp" alt="" aria-hidden="true">${selectedStop?selectedStop.number:''}</span><span class="family-progress-ending" lang="en">${task.ending}</span><span class="family-progress-count">${completed}/${familyRound.length}</span>`;
   progress.setAttribute('aria-label',`${selectedStop?`第 ${selectedStop.number} 站，`:''}${task.ending} 字族，已完成 ${completed} 題，共 ${familyRound.length} 題`);
 }
 function renderFamilyQuestion(){

@@ -70,11 +70,11 @@ const introSections = {
         <div><h4 id="guide-changing-title"><a href="sound-changing.html">一「聲」之差</a></h4><p>替換字詞中的一個字母，觀察發音與拼寫如何改變，練習靈活運用已學聲音。</p></div>
       </section>
       <section class="intro-guide-item" aria-labelledby="guide-families-title">
-        <a class="intro-guide-logo intro-guide-title-logo" href="word-families.html" aria-label="前往物換「聲」移"><img src="assets/family-map/paper-town-title.png" alt=""></a>
+        <a class="intro-guide-logo intro-guide-title-logo" href="word-families.html" aria-label="前往物換「聲」移"><img src="assets/family-map/paper-town-title.webp" alt=""></a>
         <div><h4 id="guide-families-title"><a href="word-families.html">物換「聲」移</a></h4><p>比較有共同字尾與聲音模式的字詞，發現字族規律，並嘗試運用規律拼讀新字。</p></div>
       </section>
       <section class="intro-guide-item" aria-labelledby="guide-books-title">
-        <a class="intro-guide-logo intro-guide-title-logo" href="book-game-concepts.html" aria-label="前往句句有「聲」"><img src="assets/book-game/story-paper-title-v2.png" alt=""></a>
+        <a class="intro-guide-logo intro-guide-title-logo" href="book-game-concepts.html" aria-label="前往句句有「聲」"><img src="assets/book-game/story-paper-title-v2.webp" alt=""></a>
         <div><h4 id="guide-books-title"><a href="book-game-concepts.html">句句有「聲」</a></h4><p>在八本故事中把字詞放進句子閱讀，練習連貫拼讀，並透過圖畫理解故事內容。</p></div>
       </section>
     </div>`],

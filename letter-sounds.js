@@ -59,7 +59,7 @@ const soundGroups = {
       hint: "會震動",
       cue: "（會震動）",
       instruction: "聲帶會震動",
-      image: "assets/th-this-card.png",
+      image: "assets/th-this-card.webp",
       audio: "this.mp3",
     },
   ],

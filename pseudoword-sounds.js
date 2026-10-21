@@ -1,7 +1,7 @@
 const shortOo = { id: "oo-short", label: "oo", cue: "short", description: "短音" };
 const longOo = { id: "oo-long", label: "oo", cue: "long", description: "長音" };
-const thinTh = { id: "th-thin", label: "th", image: "assets/th-thin-voiceless.png", description: "（不震動）" };
-const thisTh = { id: "th-this", label: "th", image: "assets/th-this-voiced.png", description: "（會震動）" };
+const thinTh = { id: "th-thin", label: "th", image: "assets/th-thin-voiceless.webp", description: "（不震動）" };
+const thisTh = { id: "th-this", label: "th", image: "assets/th-this-voiced.webp", description: "（會震動）" };
 
 const groupData = {
   1: {

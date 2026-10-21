@@ -1,9 +1,9 @@
 const books = {
   cat: {
-    name: 'Cat in a Cap', cover: 'cat-page-cover.png', coverMockup: 'cat-book-complete-cover-v1.png', backCover: 'cat-book-back-cover-v1.png',
+    name: 'Cat in a Cap', cover: 'cat-page-cover.webp', coverMockup: 'cat-book-complete-cover-v1.png', backCover: 'cat-book-back-cover-v1.png',
     backCoverAlt: '小貓躲在藍色帽子裏，帽子放在綠色地氈上，旁邊有星星。', coverIncludesTitle: true,
-    pageImages: ['cat-page-1.png', 'cat-page-2.png', 'cat-page-3.png', 'cat-page-4.png'],
-    titleLines: ['Cat in', 'a Cap'], image: 'cat-and-cap-open.png', theme: 'room',
+    pageImages: ['cat-page-1.webp', 'cat-page-2.webp', 'cat-page-3.webp', 'cat-page-4.webp'],
+    titleLines: ['Cat in', 'a Cap'], image: 'cat-and-cap-open.webp', theme: 'room',
     pages: [
       ['A cat sat on a mat.', '小貓坐在地氈上。'],
       ['A blue cap fell on the mat.', '藍帽掉在小貓旁邊。', [['mat', 12, 57, 73], ['cap', 48, 42, 33, -18], ['cat', 5, 25, 45]]],
@@ -12,10 +12,10 @@ const books = {
     ]
   },
   hen: {
-    name: 'Hen and Pen', cover: 'hen-page-cover.png', coverMockup: 'hen-book-complete-cover-v1.png', coverIncludesTitle: true,
-    backArt: 'hen-back-art-v1.png', backCoverAlt: '母雞與小雞坐在草窩旁，紅筆在空中彈起。',
-    titleLines: ['Hen and', 'Pen'], image: 'hen-and-pen-open.png', theme: 'farm',
-    pageImages: ['hen-page-1.png', 'hen-page-2.png', 'hen-page-3.png', 'hen-page-4.png'],
+    name: 'Hen and Pen', cover: 'hen-page-cover.webp', coverMockup: 'hen-book-complete-cover-v1.webp', coverIncludesTitle: true,
+    backArt: 'hen-back-art-v1.webp', backCoverAlt: '母雞與小雞坐在草窩旁，紅筆在空中彈起。',
+    titleLines: ['Hen and', 'Pen'], image: 'hen-and-pen-open.webp', theme: 'farm',
+    pageImages: ['hen-page-1.webp', 'hen-page-2.webp', 'hen-page-3.webp', 'hen-page-4.webp'],
     pages: [
       ['A hen got a red pen.', '母雞找到一枝紅筆。'],
       ['A chick got the pen.', '小雞拿走了紅筆。', [['hen', 5, 28, 43], ['chick', 43, 41, 28], ['pen', 59, 61, 30, -24]]],
@@ -24,9 +24,9 @@ const books = {
     ]
   },
   train: {
-    name: 'Chick on the Track', cover: 'chick-page-cover.png', coverMockup: 'train-book-complete-cover-v1.png', coverIncludesTitle: true, titleLines: ['Chick on', 'the Track'], image: 'chick-and-train-open.png', theme: 'rail',
-    backArt: 'chick-back-art-v1.png', backCoverAlt: '小雞坐在母雞背上，旁邊有玩具火車。',
-    pageImages: ['chick-page-1.png', 'chick-page-2.png', 'chick-page-3.png', 'chick-page-4.png'],
+    name: 'Chick on the Track', cover: 'chick-page-cover.webp', coverMockup: 'train-book-complete-cover-v1.webp', coverIncludesTitle: true, titleLines: ['Chick on', 'the Track'], image: 'chick-and-train-open.webp', theme: 'rail',
+    backArt: 'chick-back-art-v1.webp', backCoverAlt: '小雞坐在母雞背上，旁邊有玩具火車。',
+    pageImages: ['chick-page-1.webp', 'chick-page-2.webp', 'chick-page-3.webp', 'chick-page-4.webp'],
     pages: [
       ['A chick sat on the track.', '小雞坐在玩具鐵軌上。'],
       ['The train did not zip.', '小火車因小雞擋路而停下。', [['train', 8, 30, 69], ['chick', 71, 51, 24]]],
@@ -35,9 +35,9 @@ const books = {
     ]
   },
   pup: {
-    name: 'Pup in the Rain', cover: 'pup-page-cover.png', coverMockup: 'pup-book-complete-cover-v1.png', coverIncludesTitle: true, titleLines: ['Pup in', 'the Rain'], image: 'wet-pup-open.png', theme: 'rain',
-    backArt: 'pup-back-art-v1.png', backCoverAlt: '濕漉漉的小狗站在床上甩水。',
-    pageImages: ['pup-page-1.png', 'pup-page-2.png', 'pup-page-3.png', 'pup-page-4.png'],
+    name: 'Pup in the Rain', cover: 'pup-page-cover.webp', coverMockup: 'pup-book-complete-cover-v1.webp', coverIncludesTitle: true, titleLines: ['Pup in', 'the Rain'], image: 'wet-pup-open.webp', theme: 'rain',
+    backArt: 'pup-back-art-v1.webp', backCoverAlt: '濕漉漉的小狗站在床上甩水。',
+    pageImages: ['pup-page-1.webp', 'pup-page-2.webp', 'pup-page-3.webp', 'pup-page-4.webp'],
     pages: [
       ['A pup ran in the rain.', '小狗在雨中奔跑。'],
       ['The pup got wet.', '小狗全身濕透了。', [['rain', 9, 3, 39], ['rain', 54, 3, 38], ['dog', 30, 35, 52]]],
@@ -46,9 +46,9 @@ const books = {
     ]
   },
   pin: {
-    name: 'Pin in a Tin', cover: 'pin-page-cover.png', coverMockup: 'pin-book-complete-cover-v1.png', coverIncludesTitle: true, titleLines: ['Pin in', 'a Tin'], image: 'pin-and-tin-open.png', theme: 'kitchen',
-    backArt: 'pin-back-art-v1.png', backCoverAlt: 'Pat 在鐵罐和平底鍋之間玩小針。',
-    pageImages: ['pin-page-1.png', 'pin-page-2.png', 'pin-page-3.png', 'pin-page-4.png'],
+    name: 'Pin in a Tin', cover: 'pin-page-cover.webp', coverMockup: 'pin-book-complete-cover-v1.webp', coverIncludesTitle: true, titleLines: ['Pin in', 'a Tin'], image: 'pin-and-tin-open.webp', theme: 'kitchen',
+    backArt: 'pin-back-art-v1.webp', backCoverAlt: 'Pat 在鐵罐和平底鍋之間玩小針。',
+    pageImages: ['pin-page-1.webp', 'pin-page-2.webp', 'pin-page-3.webp', 'pin-page-4.webp'],
     pages: [
       ['A pin sat in a tin.', '小針放在鐵罐裏。'],
       ['Pat taps the tin.', 'Pat 輕敲鐵罐。', [['tin', 28, 30, 53], ['hand', 4, 9, 42, 18], ['pin', 59, 49, 24, 25]]],
@@ -57,9 +57,9 @@ const books = {
     ]
   },
   pig: {
-    name: 'Pig and Bug', cover: 'pig-page-cover.png', coverMockup: 'pig-book-complete-cover-v1.png', coverIncludesTitle: true, titleLines: ['Pig and', 'Bug'], image: 'pig-and-bug-open.png', theme: 'meadow',
-    backArt: 'pig-back-art-v1.png', backCoverAlt: '小豬和小蟲在草地上開心地玩耍。',
-    pageImages: ['pig-page-1.png', 'pig-page-2.png', 'pig-page-3.png', 'pig-page-4.png'],
+    name: 'Pig and Bug', cover: 'pig-page-cover.webp', coverMockup: 'pig-book-complete-cover-v1.webp', coverIncludesTitle: true, titleLines: ['Pig and', 'Bug'], image: 'pig-and-bug-open.webp', theme: 'meadow',
+    backArt: 'pig-back-art-v1.webp', backCoverAlt: '小豬和小蟲在草地上開心地玩耍。',
+    pageImages: ['pig-page-1.webp', 'pig-page-2.webp', 'pig-page-3.webp', 'pig-page-4.webp'],
     pages: [
       ['A bug sat on a pig.', '小蟲停在小豬背上。'],
       ['The pig did a big hop. The bug got a bump!', '小豬跳起來，小蟲被顛了一下。', [['pig', 22, 16, 63, -9], ['bug', 54, 17, 22]]],
@@ -68,9 +68,9 @@ const books = {
     ]
   },
   king: {
-    name: 'King and Ring', cover: 'king-page-cover.png', coverMockup: 'king-book-complete-cover-v1.png', coverIncludesTitle: true, titleLines: ['King and', 'Ring'], image: 'king-and-ring-open.png', theme: 'castle',
-    backArt: 'king-back-art-v1.png', backCoverAlt: '國王與小豬一起看書，戒指落在旁邊。',
-    pageImages: ['king-page-1.png', 'king-page-2.png', 'king-page-3.png', 'king-page-4.png'],
+    name: 'King and Ring', cover: 'king-page-cover.webp', coverMockup: 'king-book-complete-cover-v1.webp', coverIncludesTitle: true, titleLines: ['King and', 'Ring'], image: 'king-and-ring-open.webp', theme: 'castle',
+    backArt: 'king-back-art-v1.webp', backCoverAlt: '國王與小豬一起看書，戒指落在旁邊。',
+    pageImages: ['king-page-1.webp', 'king-page-2.webp', 'king-page-3.webp', 'king-page-4.webp'],
     pages: [
       ['A king got a ring.', '國王拿著一隻戒指。'],
       ['The ring fell in a book.', '戒指掉進一本打開的書裏。', [['king', 7, 27, 48], ['book', 49, 49, 47], ['ring', 66, 38, 17, 28]]],
@@ -79,9 +79,9 @@ const books = {
     ]
   },
   quack: {
-    name: 'Duck in a Sack', cover: 'queen-page-cover.png', coverMockup: 'duck-book-complete-cover-v1.png', coverIncludesTitle: true, titleLines: ['Duck in', 'a Sack'], image: 'quack-in-sack-open.png', theme: 'garden',
-    backArt: 'queen-back-art-v1.png', backCoverAlt: '皇后望著從布袋跳出來的小鴨。',
-    pageImages: ['queen-page-1.png', 'queen-page-2.png', 'queen-page-3.png', 'queen-page-4.png'],
+    name: 'Duck in a Sack', cover: 'queen-page-cover.webp', coverMockup: 'duck-book-complete-cover-v1.webp', coverIncludesTitle: true, titleLines: ['Duck in', 'a Sack'], image: 'quack-in-sack-open.webp', theme: 'garden',
+    backArt: 'queen-back-art-v1.webp', backCoverAlt: '皇后望著從布袋跳出來的小鴨。',
+    pageImages: ['queen-page-1.webp', 'queen-page-2.webp', 'queen-page-3.webp', 'queen-page-4.webp'],
     pages: [
       ['A duck sat in a sack.', '小鴨躲在布袋裏。'],
       ['The sack went "Quack!"', '布袋裏傳出呱呱聲。', [['sack', 24, 31, 56], ['quack', 60, 17, 31, -12]]],
@@ -91,7 +91,7 @@ const books = {
   }
 };
 
-const refreshedPageImages = new Set(['chick-page-1.png', 'pin-page-2.png', 'pig-page-4.png']);
+const refreshedPageImages = new Set(['chick-page-1.webp', 'pin-page-2.webp', 'pig-page-4.webp']);
 
 const shelf = document.querySelector('#book-shelf');
 const preview = document.querySelector('#book-preview');
@@ -180,7 +180,7 @@ function renderPage() {
     const picture = document.createElement(asset === 'nest' ? 'span' : 'img');
     if (asset === 'nest') picture.className = 'book-scene-nest';
     else {
-      picture.src = asset === 'home' ? 'assets/home-illustrated-muted.png' : `assets/pictures/transparent/${asset}.png`;
+      picture.src = asset === 'home' ? 'assets/home-illustrated-muted.webp' : `assets/pictures/transparent/${asset}.png`;
       picture.alt = '';
       if (asset === 'pen' && activeBook.theme === 'farm') picture.classList.add('book-scene-red-pen');
     }

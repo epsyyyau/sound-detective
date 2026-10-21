@@ -1,15 +1,15 @@
 (() => {
   const rewards = [
-    ["01-clue-found.png", "做得好！"],
-    ["02-listening.png", "聽得真仔細！"],
-    ["03-sounds-together.png", "線索連起來了！"],
-    ["04-progress.png", "繼續加油！"],
-    ["05-detective-badge.png", "出色的「聲」探！"],
-    ["06-unlocked.png", "你解開新線索！"],
-    ["07-compass.png", "繼續向前探索！"],
-    ["08-evidence.png", "又有新發現！"],
-    ["09-trail.png", "一步一步進步！"],
-    ["10-rosette.png", "你做到了！"],
+    ["01-clue-found.webp", "做得好！"],
+    ["02-listening.webp", "聽得真仔細！"],
+    ["03-sounds-together.webp", "線索連起來了！"],
+    ["04-progress.webp", "繼續加油！"],
+    ["05-detective-badge.webp", "出色的「聲」探！"],
+    ["06-unlocked.webp", "你解開新線索！"],
+    ["07-compass.webp", "繼續向前探索！"],
+    ["08-evidence.webp", "又有新發現！"],
+    ["09-trail.webp", "一步一步進步！"],
+    ["10-rosette.webp", "你做到了！"],
   ];
 
   let dialog;

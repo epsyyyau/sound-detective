@@ -17,7 +17,7 @@
 #game.is-mechanical-game .magic-stage { position:relative; inset:auto; width:100%; height:auto; min-height:0; aspect-ratio:2.7; margin:0; }
 #game.is-scanner-game.is-mechanical-game .magic-stage { position:relative; inset:auto; width:100%; height:auto; aspect-ratio:2.7; }
 #game.is-mechanical-game .mechanical-art { inset:0; width:100%; height:100%; object-fit:fill; filter:none; }
-#game.is-rotary-game #rotary-machine { content:url('assets/game-style/lab-paper-rotary-base.png'); }
+#game.is-rotary-game #rotary-machine { content:url('assets/game-style/lab-paper-rotary-base.webp'); }
 #game.is-stamp-game #stamp-machine { content:url('assets/game-style/lab-paper-press.png'); }
 #game.is-mechanical-game .magic-letters { inset:31% 25.2% 26% 10.4%; width:auto; height:auto; padding:0; gap:9%; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); transform:none; }
 #game.is-scanner-game .magic-letters { inset:37% 31.4% 31.5% 21.3%; gap:4.65%; }

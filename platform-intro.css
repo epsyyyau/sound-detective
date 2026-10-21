@@ -29,7 +29,7 @@
 .intro-parents li { min-width:0; padding:0 10px 10px; text-align:center; }
 .intro-parents li h3 { margin:0 0 6px; color:#17545a; font-size:clamp(19px,2vw,23px); font-weight:900; line-height:1.3; }
 .intro-dialog .intro-parents li p { max-width:29ch; margin:0 auto; font-size:clamp(16px,1.35vw,18px); line-height:1.55; text-wrap:pretty; }
-.intro-parent-icon { display:block; width:clamp(106px,13vw,150px); height:clamp(106px,13vw,150px); margin:0 auto 2px; background:url("assets/parent-learning-paper-icons-sheet.png") no-repeat; background-size:300% 200%; background-position:var(--icon-x) var(--icon-y); }
+.intro-parent-icon { display:block; width:clamp(106px,13vw,150px); height:clamp(106px,13vw,150px); margin:0 auto 2px; background:url("assets/parent-learning-paper-icons-sheet.webp") no-repeat; background-size:300% 200%; background-position:var(--icon-x) var(--icon-y); }
 .intro-parent-icon.is-ear { --icon-x:0%; --icon-y:0%; }
 .intro-parent-icon.is-steps { --icon-x:50%; --icon-y:0%; }
 .intro-parent-icon.is-care { --icon-x:100%; --icon-y:0%; }

@@ -7,7 +7,7 @@
   box-sizing: border-box;
   padding: 0;
   border: 0;
-  background: url('assets/reward-messages/paper-note-frame-no-tape.png') center / 100% 100% no-repeat;
+  background: url('assets/reward-messages/paper-note-frame-no-tape.webp') center / 100% 100% no-repeat;
   color: #213943;
   text-align: center;
   overflow: visible;
@@ -15,9 +15,9 @@
 
 .reward-message-dialog::backdrop { background: #193a3d9c; }
 
-body.reward-letter .reward-message-dialog { background-image: url('assets/reward-messages/paper-note-frame-pale-green.png'); }
-body.reward-missing .reward-message-dialog { background-image: url('assets/reward-messages/paper-note-frame-gold.png'); }
-body.reward-cipher .reward-message-dialog { background-image: url('assets/reward-messages/paper-note-frame-coral.png'); }
+body.reward-letter .reward-message-dialog { background-image: url('assets/reward-messages/paper-note-frame-pale-green.webp'); }
+body.reward-missing .reward-message-dialog { background-image: url('assets/reward-messages/paper-note-frame-gold.webp'); }
+body.reward-cipher .reward-message-dialog { background-image: url('assets/reward-messages/paper-note-frame-coral.webp'); }
 
 .reward-message-icon {
   display: block;

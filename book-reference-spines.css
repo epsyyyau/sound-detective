@@ -1,5 +1,5 @@
 .book-shelf {
-  background-image:url('assets/book-game/reading-room-tall-wall-v4.png');
+  background-image:url('assets/book-game/reading-room-tall-wall-v4.webp');
 }
 .book-platform-return {
   position:absolute;
@@ -77,7 +77,7 @@
   border:0;
   border-radius:0;
   background-color:transparent;
-  background-image:url('assets/book-game/paper-story-spines-transparent-v2.png');
+  background-image:url('assets/book-game/paper-story-spines-transparent-v2.webp');
   background-size:1536px 1024px;
   background-repeat:no-repeat;
   box-shadow:none;

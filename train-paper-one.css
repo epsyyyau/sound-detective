@@ -37,7 +37,7 @@ body:has(#play[data-sound-group="1"]:not([hidden])) { background:#e5f2da; }
 #play[data-sound-group="1"] .wagon-frame { display:none; }
 #play[data-sound-group="1"] .train-engine { flex:1.2 1 0!important; aspect-ratio:1.2!important; }
 #play[data-sound-group="1"] .train-engine > .train-sprite {
-  background-image:url('assets/game-style/train-paper-one-engine.png')!important;
+  background-image:url('assets/game-style/train-paper-one-engine.webp')!important;
   background-size:contain; background-position:center bottom; transform:none;
 }
 #play[data-sound-group="1"] .car-letter { inset:25% 17% 38%; font-size:64px; color:#203947; }

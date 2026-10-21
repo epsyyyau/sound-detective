@@ -9,7 +9,7 @@
 .family-panel { width:min(100%,920px); margin:auto; padding:16px 22px; background:#ffffffed; border:2px solid #a6cec2; border-radius:8px; text-align:center; }
 .family-panel h2 { margin:4px 0 8px; font-size:1.35rem; }
 .family-panel h3 { margin:8px 0; font-size:1rem; color:var(--muted); }
-#family-game,#family-complete { width:min(100%,1160px); min-height:calc(100dvh - 82px); background:#fffbdc url('assets/game-style/family-background.png') center / cover no-repeat; }
+#family-game,#family-complete { width:min(100%,1160px); min-height:calc(100dvh - 82px); background:#fffbdc url('assets/game-style/family-background.webp') center / cover no-repeat; }
 #family-game { padding:10px 18px; }
 .family-page:has(#family-game:not([hidden])) { position:relative; width:100%; padding:8px; }
 .family-page:has(#family-game:not([hidden])) .family-header { position:absolute; z-index:4; inset:20px 24px auto; display:grid; grid-template-columns:1fr auto 1fr; margin:0; pointer-events:none; }

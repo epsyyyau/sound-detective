@@ -3,7 +3,7 @@
   padding:46px 82px 40px;
   border:0 solid transparent;
   border-radius:0;
-  border-image-source:url('assets/game-style/detective-telegram-envelope-full-flap.png');
+  border-image-source:url('assets/game-style/detective-telegram-envelope-full-flap.webp');
   border-image-slice:0 10% 0 32% fill;
   border-image-width:0 90px 0 224px;
   border-image-repeat:stretch;
@@ -61,7 +61,7 @@
     width:64px;
     height:64px;
     border-radius:50%;
-    background:url('assets/game-style/detective-telegram-envelope-full-flap.png') -107px -190px / 655px 455px no-repeat;
+    background:url('assets/game-style/detective-telegram-envelope-full-flap.webp') -107px -190px / 655px 455px no-repeat;
     pointer-events:none;
   }
   .telegram-envelope-panel .word-pattern { flex-wrap:wrap; }

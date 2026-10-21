@@ -25,7 +25,7 @@ body:has(.magic-page #complete:not([hidden])) { margin:0; }
 .family-page #family-complete {
   display:flex; flex-direction:column; justify-content:center; align-items:center;
   padding:96px 19% 16px;
-  background-image:url('assets/game-style/family-completion-post-office.png');
+  background-image:url('assets/game-style/family-completion-post-office.webp');
 }
 .family-page #family-complete-title,
 .train-page #complete .train-kicker,
@@ -66,11 +66,11 @@ body:has(.magic-page #complete:not([hidden])) { margin:0; }
 .family-page #family-complete:is([data-sound-group="1"],[data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"]) .family-collection button::after { content:none; }
 .family-page #family-complete[data-sound-group="1"] .family-collection button {
   min-height:168px; padding:23px 13px 17px; gap:2px;
-  background-image:url('assets/game-style/family-complete-stamp-scallop-v2.png');
+  background-image:url('assets/game-style/family-complete-stamp-scallop-v2.webp');
 }
 .family-page #family-complete[data-sound-group="1"] .family-collection-row:nth-child(odd) button:nth-child(even),
 .family-page #family-complete[data-sound-group="1"] .family-collection-row:nth-child(even) button:nth-child(odd) {
-  background-image:url('assets/game-style/family-complete-stamp-rounded-v2.png');
+  background-image:url('assets/game-style/family-complete-stamp-rounded-v2.webp');
 }
 .family-page #family-complete[data-sound-group="1"] .family-collection img {
   height:86px;
@@ -78,7 +78,7 @@ body:has(.magic-page #complete:not([hidden])) { margin:0; }
 .family-page #family-complete[data-sound-group="2"] .family-collection button {
   min-height:181px; padding:18px 13px 17px; gap:0;
   justify-content:space-between;
-  background-image:url('assets/game-style/family-complete-photo-v2.png');
+  background-image:url('assets/game-style/family-complete-photo-v2.webp');
 }
 .family-page #family-complete[data-sound-group="2"] .family-collection img {
   height:96px;
@@ -88,7 +88,7 @@ body:has(.magic-page #complete:not([hidden])) { margin:0; }
 }
 .family-page #family-complete[data-sound-group="3"] .family-collection button {
   min-height:180px; padding:43px 14px 13px; gap:3px;
-  background-image:url('assets/game-style/family-complete-cargo-v2.png');
+  background-image:url('assets/game-style/family-complete-cargo-v2.webp');
 }
 .family-page #family-complete[data-sound-group="3"] .family-collection img {
   height:82px;
@@ -98,7 +98,7 @@ body:has(.magic-page #complete:not([hidden])) { margin:0; }
 }
 .family-page #family-complete[data-sound-group="4"] .family-collection button {
   min-height:184px; padding:30px 14px 40px; gap:2px;
-  background-image:url('assets/game-style/family-complete-traffic-ticket-v2.png');
+  background-image:url('assets/game-style/family-complete-traffic-ticket-v2.webp');
 }
 .family-page #family-complete[data-sound-group="4"] .family-collection img {
   height:74px;
@@ -108,7 +108,7 @@ body:has(.magic-page #complete:not([hidden])) { margin:0; }
 }
 .family-page #family-complete[data-sound-group="5"] .family-collection button {
   min-height:180px; padding:19px 13px 22px; gap:3px;
-  background-image:url('assets/game-style/family-complete-library-folio-v2.png');
+  background-image:url('assets/game-style/family-complete-library-folio-v2.webp');
 }
 .family-page #family-complete[data-sound-group="5"] .family-collection img {
   height:88px;
@@ -118,7 +118,7 @@ body:has(.magic-page #complete:not([hidden])) { margin:0; }
 }
 .family-page #family-complete[data-sound-group="6"] .family-collection button {
   min-height:184px; padding:28px 13px 17px; gap:2px;
-  background-image:url('assets/game-style/family-complete-workshop-sign-v2.png');
+  background-image:url('assets/game-style/family-complete-workshop-sign-v2.webp');
 }
 .family-page #family-complete[data-sound-group="6"] .family-collection img {
   height:86px;
@@ -128,7 +128,7 @@ body:has(.magic-page #complete:not([hidden])) { margin:0; }
 }
 .family-page #family-complete[data-sound-group="7"] .family-collection button {
   min-height:184px; padding:38px 13px 22px; gap:2px;
-  background-image:url('assets/game-style/family-complete-bridge-plaque-v2.png');
+  background-image:url('assets/game-style/family-complete-bridge-plaque-v2.webp');
 }
 .family-page #family-complete[data-sound-group="7"] .family-collection img {
   height:76px;
@@ -140,14 +140,14 @@ body:has(.magic-page #complete:not([hidden])) { margin:0; }
 .train-page #complete {
   display:flex; flex-direction:column; justify-content:center; align-items:center;
   padding:96px 18% 28px;
-  background-image:url('assets/game-style/train-completion-terminal.png');
+  background-image:url('assets/game-style/train-completion-terminal.webp');
 }
 .train-page #complete .clue-finish-stamp { margin:0 0 8px; }
 .train-page #complete .train-collection { flex-wrap:nowrap; gap:clamp(8px,1.2vw,16px); width:100%; margin:16px 0; }
 .train-page #complete .train-collection button {
   position:relative; isolation:isolate; flex:1 1 0; min-width:0; width:auto; min-height:200px;
   padding:31px 12px 38px; gap:2px; border:0; border-radius:0;
-  background:transparent url('assets/game-style/train-complete-ticket-neutral-v2.png') center / 100% 100% no-repeat;
+  background:transparent url('assets/game-style/train-complete-ticket-neutral-v2.webp') center / 100% 100% no-repeat;
   box-shadow:none; outline:none;
 }
 .train-page #complete .train-collection button::before,
@@ -174,7 +174,7 @@ body:has(.magic-page #complete:not([hidden])) { margin:0; }
   position:relative; isolation:isolate; overflow:visible; flex:0 0 clamp(130px,11.4vw,158px);
   width:clamp(130px,11.4vw,158px); min-height:0; aspect-ratio:1041 / 1449;
   padding:clamp(42px,4.8vw,52px) 12px clamp(19px,2vw,27px); gap:3px; border:0; border-radius:0; outline:none;
-  color:#173f49; background:transparent url('assets/game-style/lab-complete-specimen-card-neutral.png') center / 100% 100% no-repeat;
+  color:#173f49; background:transparent url('assets/game-style/lab-complete-specimen-card-neutral.webp') center / 100% 100% no-repeat;
   box-shadow:none;
 }
 .magic-page #complete .magic-collection button::before {

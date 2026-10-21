@@ -1,5 +1,5 @@
 /* Signal faces stay at the station while the separate locomotive departs. */
-#play.is-signal-station { background-image:url('assets/game-style/train-signals-background.png'); overflow:clip; }
+#play.is-signal-station { background-image:url('assets/game-style/train-signals-background.webp'); overflow:clip; }
 #signal-engine { position:absolute; left:0; top:53%; width:25%; height:28%; object-fit:contain; pointer-events:none; }
 #play.is-signal-station .sound-car { top:28.3%; width:13%; height:21.5%; border-radius:50%; background:none; }
 #play.is-signal-station .sound-car::before { display:none; }

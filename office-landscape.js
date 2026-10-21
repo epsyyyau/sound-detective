@@ -36,7 +36,7 @@
     prompt.id = 'office-landscape-rotate';
     prompt.setAttribute('role', 'status');
     const logo = document.createElement('img');
-    logo.src = 'assets/icons/rotate-phone-paper.png';
+    logo.src = 'assets/icons/rotate-phone-paper.webp';
     logo.alt = '';
     const message = document.createElement('span');
     message.textContent = '請將設備轉為橫向';

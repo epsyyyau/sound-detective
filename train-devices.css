@@ -5,9 +5,9 @@
 .train-page:has(#play.is-device-station:not([hidden])) .train-header h1 { position:absolute; left:50%; top:4px; transform:translateX(-50%); white-space:nowrap; font-size:2rem; }
 .train-page:has(#play.is-device-station:not([hidden])) .train-header > img { display:none; }
 #play.is-device-station { --crane-drop:8.2cqw; position:relative; padding:0; aspect-ratio:16/9; container-type:inline-size; overflow:hidden; background:center/100% 100% no-repeat; }
-#play.is-crane-station { background-image:url('assets/game-style/train-crane-scenery.png'); }
+#play.is-crane-station { background-image:url('assets/game-style/train-crane-scenery.webp'); }
 #crane-vehicle { position:absolute; left:16%; top:23%; width:82%; height:81%; pointer-events:none; }
-#play.is-bridge-station { background-image:url('assets/game-style/train-bridge-background.png'); }
+#play.is-bridge-station { background-image:url('assets/game-style/train-bridge-background.webp'); }
 #play.is-device-station .train-topline { position:absolute; z-index:5; inset:12px 18px auto 108px; align-items:flex-start; }
 #play.is-device-station .clue-book { width:156px; height:80px; }
 #play.is-device-station::after { content:attr(data-question-progress); position:absolute; top:100px; right:28px; color:#08777a; font:700 1.4rem var(--phonics-font); }
@@ -15,7 +15,7 @@
 #play.is-device-station .train-stage { width:100%; height:100%; min-width:0; }
 #play.is-device-station .train-stage::before { display:none; }
 #play.is-device-station .sound-train { position:absolute; inset:0; display:block; width:100%; height:100%; transition:none; }
-#play.is-device-station .sound-car { position:absolute; top:33%; width:13%; height:23%; translate:-50% 0; transition:none; background:url('assets/game-style/cargo-letter-crate.png') center/100% 100% no-repeat; }
+#play.is-device-station .sound-car { position:absolute; top:33%; width:13%; height:23%; translate:-50% 0; transition:none; background:url('assets/game-style/cargo-letter-crate.webp') center/100% 100% no-repeat; }
 /* Recolour only the illustrated corner brackets, leaving the wood unchanged. */
 #play.is-device-station .sound-car::before { content:''; position:absolute; inset:0; background:inherit; filter:hue-rotate(190deg) saturate(.75); mask:linear-gradient(#000 0 0) top left/24% 24%,linear-gradient(#000 0 0) top right/24% 24%,linear-gradient(#000 0 0) bottom left/24% 24%,linear-gradient(#000 0 0) bottom right/24% 24%; mask-repeat:no-repeat; }
 #play.is-device-station .car-letter { inset:12% 7% 16%; font-size:5rem; }

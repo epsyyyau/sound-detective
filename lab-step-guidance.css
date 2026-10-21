@@ -162,7 +162,7 @@
 #game.is-bubble-game .letter-card > span { font-size:64px; }
 .lab-extracted-bubble {
   position:fixed; z-index:50; display:grid; place-items:center; pointer-events:none;
-  border-radius:50%; background:url('assets/game-style/bubble-iridescent.png') center / 110% 110% no-repeat;
+  border-radius:50%; background:url('assets/game-style/bubble-iridescent.webp') center / 110% 110% no-repeat;
   color:#123f49; font:700 40px/1 var(--phonics-font); transform-origin:center;
 }
 @media(max-width:1000px) {

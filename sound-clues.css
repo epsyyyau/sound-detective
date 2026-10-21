@@ -10,7 +10,7 @@
   padding:0;
   border:0;
   border-radius:0;
-  background:transparent url('assets/game-style/clue-notebook.png') center / 100% 100% no-repeat;
+  background:transparent url('assets/game-style/clue-notebook.webp') center / 100% 100% no-repeat;
   color:var(--teal-dark);
 }
 .train-page .clue-book:disabled { opacity:1; cursor:wait; }
@@ -66,7 +66,7 @@
 .clue-dialog-header h2 { margin:0; font-size:1.25rem; }
 .train-page .clue-close { display:grid; place-items:center; width:44px; height:44px; min-height:44px; padding:8px; border:0; background:transparent; }
 .clue-close img { width:28px; height:28px; }
-.clue-review-book { position:relative; width:100%; aspect-ratio:5 / 2; background:url('assets/game-style/clue-notebook.png') center / 100% 100% no-repeat; }
+.clue-review-book { position:relative; width:100%; aspect-ratio:5 / 2; background:url('assets/game-style/clue-notebook.webp') center / 100% 100% no-repeat; }
 .clue-review-book .clue-book-pages { inset:14% 7% 17%; gap:30px; }
 .clue-review-book .clue-page { gap:8px; }
 .train-page .clue-review-book .clue-slot { height:138px; padding:6px; background:#ffffff70; border:1px dashed #aabdac; color:#245f59; }

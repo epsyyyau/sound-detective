@@ -14,7 +14,7 @@
     height:max(100svh,760px);
     min-height:760px;
     aspect-ratio:auto;
-    background:#9be5e9 url('assets/game-style/train-group-two-mobile-background-v1.png') center / 100% 100% no-repeat;
+    background:#9be5e9 url('assets/game-style/train-group-two-mobile-background-v1.webp') center / 100% 100% no-repeat;
   }
   .train-page:has(#play[data-sound-group="2"]:not([hidden])) .train-header {
     inset:0 0 auto;

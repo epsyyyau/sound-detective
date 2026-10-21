@@ -1,4 +1,4 @@
-#complete { display:flex; flex-direction:column; align-items:center; justify-content:center; width:min(100%,1160px); min-height:calc(100svh - 82px); margin-inline:auto; padding:24px; background:#fff7dd url('assets/game-style/lab-background.png') center / 100% 100% no-repeat; }
+#complete { display:flex; flex-direction:column; align-items:center; justify-content:center; width:min(100%,1160px); min-height:calc(100svh - 82px); margin-inline:auto; padding:24px; background:#fff7dd url('assets/game-style/lab-background.webp') center / 100% 100% no-repeat; }
 #complete h2 { margin:0; color:#154956; font-size:1.65rem; line-height:1.4; }
 #complete .magic-collection { width:100%; gap:14px; margin:24px 0 8px; }
 #complete .magic-collection button { width:148px; min-height:172px; padding:10px; gap:10px; border:2px solid #83b9a8; border-radius:8px; background:#f7fffc; color:#154956; font-size:2rem; }

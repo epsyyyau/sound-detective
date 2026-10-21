@@ -1,4 +1,4 @@
-body:has(.train-page) { background:#eef7e2 url('assets/game-style/train-background.png') center / cover fixed; }
+body:has(.train-page) { background:#eef7e2 url('assets/game-style/train-background.webp') center / cover fixed; }
 .train-page { width:min(100%,1240px); margin:auto; padding:8px 20px 12px; }
 .train-page:has(#setup:not([hidden])) { width:min(100%,1100px); }
 .train-page:has(#setup:not([hidden])) .train-header > img { width:46px; height:46px; }
@@ -28,7 +28,7 @@ body:has(.train-page) { background:#eef7e2 url('assets/game-style/train-backgrou
 .train-groups button { padding:6px 10px 10px; }
 .train-groups strong { padding-inline: 8px; }
 .group-train { position:relative; isolation:isolate; display:flex; width:min(100%,440px); margin:6px auto 0; padding-bottom:8px; align-items:end; }
-.group-train::before, .train-stage::before { content:""; position:absolute; left:0; right:0; top:86%; height:20%; background:url('assets/game-style/train-track.png') center / 100% 260% no-repeat; pointer-events:none; }
+.group-train::before, .train-stage::before { content:""; position:absolute; left:0; right:0; top:86%; height:20%; background:url('assets/game-style/train-track.webp') center / 100% 260% no-repeat; pointer-events:none; }
 .group-train-piece { position: relative; z-index: 1; min-width: 0; display: block; }
 .group-train-letter { position:absolute; z-index:2; inset:23% 12% 30%; display:flex; flex-direction:column; align-items:center; justify-content:center; font-family:var(--phonics-font); font-size:20px; font-weight:700; line-height:1; color:var(--ink); }
 .group-train-letter small { margin-top:2px; font-family:var(--chinese-font); font-size:9px; white-space:nowrap; }
