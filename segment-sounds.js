@@ -268,6 +268,25 @@ const questions = shuffled([
   ...question,
   levelIndex: index < levels[0].count ? 0 : index < levels[0].count + levels[1].count ? 1 : 2,
 }));
+const picturePreloads = new Map();
+
+function preloadPicture(src) {
+  if (!picturePreloads.has(src)) {
+    const image = new Image();
+    const ready = new Promise((resolve) => {
+      image.onload = async () => {
+        try {
+          if (image.decode) await image.decode();
+        } catch { /* A loaded image can still be displayed if decoding rejects. */ }
+        resolve(true);
+      };
+      image.onerror = () => resolve(false);
+    });
+    image.src = src;
+    picturePreloads.set(src, ready);
+  }
+  return picturePreloads.get(src);
+}
 const soundPool = [...new Map(
   [...records, ...pseudowordRecords]
     .flatMap((record) => record.segments)
@@ -438,19 +457,24 @@ function showCorrectAnswer(question) {
   correctTitle.textContent = "拆音成功";
   correctSegments.textContent = question.segments.map(sound => sound.label).join(' · ');
   correctPseudowordNote.hidden = !question.isPseudoword;
+  setQuestionAdvanceIcon(nextButton, questionIndex === questions.length - 1);
   if (!question.isPseudoword) {
-    correctPicture.onload = () => { correctPicture.hidden = false; };
-    correctPicture.onerror = () => { correctPicture.hidden = true; };
-    correctPicture.src = question.picture;
-    correctPicture.alt = `${question.word} 的圖片`;
+    const answeredIndex = questionIndex;
+    preloadPicture(question.picture).then((ready) => {
+      if (questionIndex !== answeredIndex) return;
+      if (ready) correctPicture.src = question.picture;
+      else correctPicture.removeAttribute("src");
+      correctPicture.alt = `${question.word} 的圖片`;
+      correctPicture.hidden = !ready;
+      correctOverlay.hidden = false;
+      nextButton.focus();
+    });
+    return;
   } else {
-    correctPicture.onload = null;
-    correctPicture.onerror = null;
     correctPicture.src = "assets/pseudoword-envelope.webp";
     correctPicture.alt = "「聲」探暗號信封";
     correctPicture.hidden = false;
   }
-  setQuestionAdvanceIcon(nextButton, questionIndex === questions.length - 1);
   correctOverlay.hidden = false;
   nextButton.focus();
 }
@@ -574,3 +598,4 @@ undoButton.addEventListener("click", undoSelection);
 resetButton.addEventListener("click", resetSelection);
 nextButton.addEventListener("click", goToNextQuestion);
 renderQuestion();
+questions.filter((question) => !question.isPseudoword).forEach((question) => preloadPicture(question.picture));
