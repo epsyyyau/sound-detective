@@ -179,6 +179,26 @@
     bottom:-10px;
   }
 }
+@media(max-width:680px) and (max-height:740px) {
+  .sound-file-panel .answer-options:not(:has(.has-answer-image, .has-duration-cue)) {
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:6px;
+  }
+  .sound-file-panel .answer-options:not(:has(.has-answer-image, .has-duration-cue)) > button {
+    width:100%;
+    min-width:0;
+    min-height:52px;
+    font-size:1.8rem;
+  }
+  .sound-lesson-page .sound-file-panel .question-play-button {
+    width:72px;
+    height:72px;
+    margin-bottom:5px;
+  }
+  .sound-file-panel .play-sound-button { margin-bottom:6px; }
+  .sound-file-panel .lesson-prompt { margin:3px 0 5px; }
+}
 .sound-file-panel .complete-view [data-route-return="true"] {
   width:96px;
   height:96px;
