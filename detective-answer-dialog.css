@@ -33,8 +33,29 @@
   place-items:center;
 }
 .detective-answer-overlay .next-question-button img { width:28px; height:28px; }
-.detective-answer-overlay[data-answer-theme="pseudo"] .correct-word { margin:38px 0; }
 .correct-segments { font-family:var(--font-phonics); font-size:1.25rem; color:#37535c; }
+.detective-answer-overlay .pseudoword-answer-note {
+  max-width:245px;
+  margin:0 auto;
+  color:#37535c;
+  font-size:.85rem;
+  line-height:1.45;
+  text-wrap:balance;
+}
+.detective-answer-overlay .pseudoword-answer-note[hidden],
+.detective-answer-overlay .correct-segments[hidden] { display:none; }
+.detective-answer-overlay .correct-answer-dialog:has(.pseudoword-answer-note:not([hidden])) {
+  gap:4px;
+  padding-top:102px;
+  padding-bottom:30px;
+}
+.detective-answer-overlay .correct-answer-dialog:has(.pseudoword-answer-note:not([hidden])) .correct-word-picture {
+  width:128px;
+  height:95px;
+}
+.detective-answer-overlay .correct-answer-dialog:has(.pseudoword-answer-note:not([hidden])) .correct-word {
+  margin:0;
+}
 /* Scroll the whole clipboard on short screens, keeping its controls on the paper. */
 .detective-answer-overlay[data-answer-theme="segment"]:not([hidden]) {
   display:flex;

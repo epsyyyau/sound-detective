@@ -233,6 +233,7 @@ const feedback = document.querySelector("[data-feedback]");
 const nextButton = document.querySelector("[data-next-question]");
 const correctOverlay = document.querySelector("[data-correct-overlay]");
 const completeWord = document.querySelector("[data-complete-word]");
+const correctSegments = document.querySelector("[data-correct-segments]");
 const audioCue = new QuestionAudioCue(document.querySelector("[data-play-word]"), answerOptions);
 const infoButton = document.querySelector("[data-code-info]");
 const infoBox = infoButton.closest(".pseudoword-info");
@@ -374,6 +375,7 @@ function chooseAnswer(button) {
   feedback.textContent = "";
   feedback.className = "answer-feedback is-correct";
   completeWord.textContent = question.word;
+  correctSegments.textContent = question.segments.map(sound => sound.label).join(" · ");
   setQuestionAdvanceIcon(nextButton, questionIndex === questions.length - 1);
   correctOverlay.hidden = false;
   nextButton.focus();

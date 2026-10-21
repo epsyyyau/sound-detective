@@ -295,6 +295,8 @@ const feedback = document.querySelector("[data-feedback]");
 const nextButton = document.querySelector("[data-next-question]");
 const correctOverlay = document.querySelector("[data-correct-overlay]");
 const correctPicture = document.querySelector("[data-correct-picture]");
+const correctSegments = document.querySelector("[data-correct-segments]");
+const correctPseudowordNote = document.querySelector("[data-correct-pseudoword-note]");
 const completeWord = document.querySelector("[data-complete-word]");
 const audioCue = new QuestionAudioCue(document.querySelector("[data-play-word]"), answerOptions);
 levelTrack.classList.toggle("single-level", levels.length === 1);
@@ -433,6 +435,18 @@ function chooseAnswer(button) {
   feedback.textContent = "";
   feedback.className = "answer-feedback is-correct";
   completeWord.textContent = question.word;
+  correctPseudowordNote.hidden = !question.isPseudoword;
+  correctSegments.hidden = !question.isPseudoword;
+  if (question.isPseudoword) {
+    correctSegments.textContent = question.segments.map(sound => sound.label).join(" · ");
+    correctPicture.src = "assets/pseudoword-envelope.webp";
+    correctPicture.alt = "「聲」探暗號信封";
+    correctPicture.hidden = false;
+    setQuestionAdvanceIcon(nextButton, questionIndex === questions.length - 1);
+    correctOverlay.hidden = false;
+    nextButton.focus();
+    return;
+  }
   correctPicture.hidden = true;
   correctPicture.alt = `${question.word} 的圖片`;
   setQuestionAdvanceIcon(nextButton, questionIndex === questions.length - 1);

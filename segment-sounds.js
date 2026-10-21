@@ -301,6 +301,7 @@ const playWordButton = document.querySelector("[data-play-word]");
 const audioCue = new QuestionAudioCue(playWordButton, soundOptions);
 const correctTitle = document.querySelector("[data-correct-title]");
 const correctSegments = document.querySelector("[data-correct-segments]");
+const correctPseudowordNote = document.querySelector("[data-correct-pseudoword-note]");
 const infoButton = document.querySelector("[data-code-info]");
 const infoBox = infoButton.closest(".pseudoword-info");
 
@@ -436,14 +437,18 @@ function showCorrectAnswer(question) {
   correctPicture.hidden = true;
   correctTitle.textContent = "拆音成功";
   correctSegments.textContent = question.segments.map(sound => sound.label).join(' · ');
+  correctPseudowordNote.hidden = !question.isPseudoword;
   if (!question.isPseudoword) {
     correctPicture.onload = () => { correctPicture.hidden = false; };
     correctPicture.onerror = () => { correctPicture.hidden = true; };
     correctPicture.src = question.picture;
     correctPicture.alt = `${question.word} 的圖片`;
   } else {
-    correctPicture.removeAttribute("src");
-    correctPicture.alt = "";
+    correctPicture.onload = null;
+    correctPicture.onerror = null;
+    correctPicture.src = "assets/pseudoword-envelope.webp";
+    correctPicture.alt = "「聲」探暗號信封";
+    correctPicture.hidden = false;
   }
   setQuestionAdvanceIcon(nextButton, questionIndex === questions.length - 1);
   correctOverlay.hidden = false;
