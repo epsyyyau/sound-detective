@@ -505,7 +505,7 @@ function renderQuestion() {
   clueProgress.show(level.count, levelQuestionIndex, question.levelIndex);
   renderLevelTrack(question.levelIndex);
   levelLabel.textContent = level.name;
-  infoBox.hidden = !question.isPseudoword;
+  infoBox.hidden = true;
   questionTitle.textContent = "破解暗號";
   const playLabel = question.isPseudoword ? "播放暗號" : "播放詞語";
   playWordButton.setAttribute("aria-label", playLabel);

@@ -52,7 +52,7 @@
 
         <div class="missing-question-view pseudoword-question-view" data-question-view>
           <div class="pseudoword-question-tools">
-            <div class="pseudoword-info">
+            <div class="pseudoword-info" hidden>
               <button type="button" data-code-info aria-expanded="false" aria-label="甚麼是「聲」探暗號？">
                 <img src="assets/pseudoword-envelope.webp" alt="">
               </button>
@@ -88,9 +88,8 @@
         <div class="correct-answer-mark" aria-hidden="true">✓</div>
         <h2 id="pseudoword-correct-title">找到暗號</h2>
         <img class="correct-word-picture" data-correct-picture src="assets/pseudoword-envelope.webp" alt="「聲」探暗號信封">
-        <strong class="correct-word" data-complete-word></strong>
-        <span class="correct-segments" data-correct-segments></span>
         <p class="pseudoword-answer-note">這是「聲」探暗號，並非真正的英文字詞。</p>
+        <strong class="correct-word" data-complete-word></strong>
         <button class="next-question-button lesson-icon-action" type="button" data-next-question aria-label="下一題" title="下一題"><img src="assets/icons/arrow-right.svg" alt="" aria-hidden="true"></button>
       </section>
     </div>
@@ -101,7 +100,7 @@
     <script src="lesson-navigation.js?v=20261010-1"></script>
     <script src="clue-progress.js?v=20261012-after-dialog&amp;wrap=1"></script>
     <script src="reward-messages.js?v=20261021-no-stale-icon"></script>
-    <script src="pseudoword-sounds.js?v=20261021-code-answer"></script>
+    <script src="pseudoword-sounds.js?v=20261021-code-answer-order"></script>
     <script src="route-phone-landscape.js?v=20261018"></script>
   </body>
 </html>

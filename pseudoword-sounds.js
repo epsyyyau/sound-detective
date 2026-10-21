@@ -233,10 +233,7 @@ const feedback = document.querySelector("[data-feedback]");
 const nextButton = document.querySelector("[data-next-question]");
 const correctOverlay = document.querySelector("[data-correct-overlay]");
 const completeWord = document.querySelector("[data-complete-word]");
-const correctSegments = document.querySelector("[data-correct-segments]");
 const audioCue = new QuestionAudioCue(document.querySelector("[data-play-word]"), answerOptions);
-const infoButton = document.querySelector("[data-code-info]");
-const infoBox = infoButton.closest(".pseudoword-info");
 
 levelTrack.classList.toggle("single-level", levels.length === 1);
 levelTrack.classList.add("paper-level-track");
@@ -309,15 +306,9 @@ function renderOption(option) {
   answerOptions.append(button);
 }
 
-function closeInfo() {
-  infoBox.classList.remove("is-open");
-  infoButton.setAttribute("aria-expanded", "false");
-}
-
 function renderQuestion() {
   audioCue.reset();
   stopAudio();
-  closeInfo();
   acceptingAnswer = true;
   const question = questions[questionIndex];
   const level = levels[question.levelIndex];
@@ -375,7 +366,6 @@ function chooseAnswer(button) {
   feedback.textContent = "";
   feedback.className = "answer-feedback is-correct";
   completeWord.textContent = question.word;
-  correctSegments.textContent = question.segments.map(sound => sound.label).join(" · ");
   setQuestionAdvanceIcon(nextButton, questionIndex === questions.length - 1);
   correctOverlay.hidden = false;
   nextButton.focus();
@@ -407,14 +397,6 @@ function goToNextQuestion() {
   if (rewardDue) RewardMessages.show((groupNumber - 1) * 5 + 7 + rewardSolvedCount / 5 - 1);
 }
 
-infoButton.addEventListener("click", () => {
-  const open = !infoBox.classList.contains("is-open");
-  infoBox.classList.toggle("is-open", open);
-  infoButton.setAttribute("aria-expanded", String(open));
-});
-document.addEventListener("click", (event) => {
-  if (!infoBox.contains(event.target)) closeInfo();
-});
 document.querySelector("[data-play-word]").addEventListener("click", playWord);
 document.querySelector("[data-next-question]").addEventListener("click", goToNextQuestion);
 document.querySelector("[data-skip-question]").addEventListener("click", goToNextQuestion);
