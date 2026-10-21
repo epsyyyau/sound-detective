@@ -19,8 +19,7 @@
   opacity:.3;
 }
 
-.sound-lesson-page.has-clue-progress .paper-level-track .paper-level-button.is-current,
-.sound-lesson-page.has-clue-progress .paper-level-track .paper-level-button.is-complete {
+.sound-lesson-page.has-clue-progress .paper-level-track .paper-level-button.is-current {
   opacity:1;
 }
 
@@ -43,6 +42,8 @@
 .paper-level-art.is-listening { background-image:url("assets/game-style/missing-level-listening.webp"); }
 .paper-level-art.is-trail { background-image:url("assets/game-style/missing-level-trail.webp"); }
 .paper-level-art.is-folder { background-image:url("assets/game-style/missing-level-folder.webp"); }
+.paper-level-art.is-notebook { background-image:url("assets/game-style/letter-level-notebook.webp"); }
+.paper-level-art.is-compass { background-image:url("assets/game-style/letter-level-compass.webp"); }
 .paper-level-track.is-challenge .paper-level-button:nth-child(1) .paper-level-art { filter:hue-rotate(-48deg) saturate(.92); }
 .paper-level-track.is-challenge .paper-level-button:nth-child(2) .paper-level-art { filter:hue-rotate(17deg) saturate(1.05); }
 .paper-level-track.is-challenge .paper-level-button:nth-child(3) .paper-level-art { filter:hue-rotate(150deg) saturate(1.18); }
@@ -70,9 +71,12 @@
 .paper-level-art.is-listening + i { left:27%; top:48%; }
 .paper-level-art.is-trail + i { left:79%; top:61%; }
 .paper-level-art.is-folder + i { left:47%; top:56%; }
+.paper-level-art.is-notebook + i { left:50%; top:48%; }
+.paper-level-art.is-compass + i { left:50%; top:50%; }
 
 @media(max-width:680px) {
   .sound-lesson-page.has-clue-progress .level-track.paper-level-track { gap:4px; }
+  .sound-lesson-page.has-clue-progress .level-track.paper-level-track.is-five-levels { flex-wrap:nowrap; }
   .sound-lesson-page.has-clue-progress .paper-level-track .paper-level-button {
     flex-basis:min(27vw,96px);
     width:min(27vw,96px);
@@ -83,5 +87,12 @@
     width:24px;
     height:24px;
     font-size:1.25rem;
+  }
+  .sound-lesson-page.has-clue-progress .paper-level-track.is-five-levels .paper-level-button {
+    flex-basis:min(16vw,88px);
+    width:min(16vw,88px);
+  }
+  .sound-lesson-page.has-clue-progress .paper-level-track.is-five-levels .paper-level-button i {
+    font-size:clamp(.9rem,4vw,1.25rem);
   }
 }

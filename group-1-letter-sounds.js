@@ -82,14 +82,17 @@ function buildQuestions(level) {
 
 function renderLevelTrack() {
   levelTrack.innerHTML = "";
+  levelTrack.classList.add("paper-level-track", "is-five-levels");
   levels.forEach((level, index) => {
     const button = document.createElement("button");
     button.type = "button";
     button.disabled = index > unlockedLevel;
     button.className = index === currentLevel ? "is-current" : "";
+    button.classList.add("paper-level-button");
     button.setAttribute("aria-label", `${level.name}：${level.short}`);
     if (index === currentLevel) button.setAttribute("aria-current", "step");
-    button.innerHTML = `<i>${index + 1}</i>`;
+    const icon = ["magnifier", "listening", "trail", "notebook", "compass"][index];
+    button.innerHTML = `<span class="paper-level-art is-${icon}" aria-hidden="true"></span><i>${index + 1}</i>`;
     button.addEventListener("click", () => openLevel(index));
     levelTrack.appendChild(button);
   });
