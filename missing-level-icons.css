@@ -1,0 +1,84 @@
+.missing-sound-page.has-clue-progress .level-track.paper-level-track {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:12px;
+  margin:0 auto 6px;
+}
+
+.missing-sound-page.has-clue-progress .paper-level-track .paper-level-button {
+  position:relative;
+  display:block;
+  flex:0 0 108px;
+  width:108px;
+  height:81px;
+  padding:0;
+  border:0;
+  background:transparent;
+  box-shadow:none;
+  opacity:.7;
+}
+
+.missing-sound-page.has-clue-progress .paper-level-track .paper-level-button.is-current,
+.missing-sound-page.has-clue-progress .paper-level-track .paper-level-button.is-complete {
+  opacity:1;
+}
+
+.missing-sound-page.has-clue-progress .paper-level-track .paper-level-button.is-current {
+  filter:drop-shadow(0 3px 4px #17455040);
+}
+
+.missing-sound-page.has-clue-progress .paper-level-track .paper-level-button::after { display:none; }
+
+.paper-level-art {
+  position:absolute;
+  inset:0;
+  display:block;
+  background:url("assets/game-style/missing-level-icons-v2.webp") no-repeat;
+  background-size:200% 200%;
+}
+
+.paper-level-art.is-magnifier { background-position:0 0; }
+.paper-level-art.is-listening { background-position:100% 0; }
+.paper-level-art.is-trail { background-position:0 100%; clip-path:inset(10% 0 0); }
+.paper-level-art.is-folder { background-position:100% 100%; }
+.paper-level-track.is-challenge .paper-level-button:nth-child(1) .paper-level-art { filter:hue-rotate(-48deg) saturate(.92); }
+.paper-level-track.is-challenge .paper-level-button:nth-child(2) .paper-level-art { filter:hue-rotate(17deg) saturate(1.05); }
+.paper-level-track.is-challenge .paper-level-button:nth-child(3) .paper-level-art { filter:hue-rotate(150deg) saturate(1.18); }
+
+.missing-sound-page.has-clue-progress .paper-level-track .paper-level-button i {
+  position:absolute;
+  z-index:1;
+  display:grid;
+  place-items:center;
+  width:28px;
+  height:28px;
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  color:#174550;
+  font:900 1.5rem/1 "Fredoka", "Huninn Chinese", sans-serif;
+  transform:translate(-50%,-50%);
+}
+
+.paper-level-art.is-magnifier + i { left:69%; top:58%; }
+.paper-level-art.is-listening + i { left:32%; top:58%; }
+.paper-level-art.is-trail + i { left:84%; top:64%; }
+.paper-level-art.is-folder + i { left:55%; top:56%; }
+
+@media(max-width:680px) {
+  .missing-sound-page.has-clue-progress .level-track.paper-level-track { gap:4px; }
+  .missing-sound-page.has-clue-progress .paper-level-track .paper-level-button {
+    flex-basis:min(27vw,96px);
+    width:min(27vw,96px);
+    height:auto;
+    aspect-ratio:4 / 3;
+  }
+  .missing-sound-page.has-clue-progress .paper-level-track .paper-level-button i {
+    width:24px;
+    height:24px;
+    font-size:1.25rem;
+  }
+}
