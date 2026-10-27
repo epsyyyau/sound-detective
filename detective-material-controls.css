@@ -16,6 +16,19 @@
   background:linear-gradient(145deg,#48bbc1,#07828b);
   box-shadow:inset 0 2px 2px #c8fbf078,0 3px 4px #24474a30;
 }
+.sound-lesson-page :is(.sound-file-panel,.kraft-clue-panel,.telegram-envelope-panel,.analysis-board-panel) .question-play-button {
+  border:5px solid #b67b2b;
+  background:#f1bd55;
+  box-shadow:0 5px 0 #8f5e22,0 9px 12px #624b2d3d,inset 0 4px 2px #fff2c294;
+}
+.sound-lesson-page :is(.sound-file-panel,.kraft-clue-panel,.telegram-envelope-panel,.analysis-board-panel) .question-play-button:hover {
+  background:#f1bd55;
+}
+.sound-lesson-page :is(.sound-file-panel,.kraft-clue-panel,.telegram-envelope-panel,.analysis-board-panel) .question-play-button img {
+  width:68%;
+  height:68%;
+  filter:drop-shadow(0 2px 1px #513f2740);
+}
 .sound-file-panel .complete-view [data-route-return="true"] { background:transparent; border:0; box-shadow:none; }
 :is(.sound-file-panel,.kraft-clue-panel,.telegram-envelope-panel,.analysis-board-panel) .next-question-button.lesson-icon-action {
   padding:0;
