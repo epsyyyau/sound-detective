@@ -17,9 +17,29 @@
   box-shadow:inset 0 2px 2px #c8fbf078,0 3px 4px #24474a30;
 }
 .sound-lesson-page :is(.sound-file-panel,.kraft-clue-panel,.telegram-envelope-panel,.analysis-board-panel) .question-play-button {
+  width:64px;
+  height:64px;
+  min-width:64px;
+  min-height:64px;
   border:5px solid #b67b2b;
   background:#f1bd55;
   box-shadow:0 5px 0 #8f5e22,0 9px 12px #624b2d3d,inset 0 4px 2px #fff2c294;
+}
+@media (min-width:681px) and (max-height:760px) {
+  .sound-lesson-page .sound-file-panel .question-play-button {
+    width:52px;
+    height:52px;
+    min-width:52px;
+    min-height:52px;
+  }
+}
+@media (max-width:680px) and (orientation:portrait) and (max-height:850px) {
+  .sound-lesson-page .sound-file-panel .question-play-button {
+    width:56px;
+    height:56px;
+    min-width:56px;
+    min-height:56px;
+  }
 }
 .sound-lesson-page :is(.sound-file-panel,.kraft-clue-panel,.telegram-envelope-panel,.analysis-board-panel) .question-play-button:hover {
   background:#f1bd55;
