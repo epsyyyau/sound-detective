@@ -53,6 +53,20 @@
   padding:0;
   place-items:center;
 }
+.sound-lesson-page .quiz-view .next-question-button.lesson-icon-action:not([hidden]),
+.detective-answer-overlay:not([hidden]) .next-question-button.lesson-icon-action {
+  animation:detective-next-float 2s ease-in-out infinite;
+}
+@keyframes detective-next-float {
+  0%,100% { transform:translateY(0); }
+  50% { transform:translateY(-6px); }
+}
+@media (prefers-reduced-motion:reduce) {
+  .sound-lesson-page .quiz-view .next-question-button.lesson-icon-action:not([hidden]),
+  .detective-answer-overlay:not([hidden]) .next-question-button.lesson-icon-action {
+    animation:none;
+  }
+}
 :is(.kraft-clue-panel,.telegram-envelope-panel) .word-pattern span:not(.is-missing) {
   border-color:transparent;
   background:transparent;
