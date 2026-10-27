@@ -56,10 +56,11 @@
 .sound-lesson-page .quiz-view .next-question-button.lesson-icon-action:not([hidden]),
 .detective-answer-overlay:not([hidden]) .next-question-button.lesson-icon-action {
   animation:detective-next-breathe 2.2s ease-in-out infinite;
+  transform-origin:center;
 }
 @keyframes detective-next-breathe {
-  0%,100% { transform:scale(.96); }
-  50% { transform:scale(1.04); }
+  0%,100% { transform:scale(.94); }
+  50% { transform:scale(1.08); }
 }
 @media (prefers-reduced-motion:reduce) {
   .sound-lesson-page .quiz-view .next-question-button.lesson-icon-action:not([hidden]),
