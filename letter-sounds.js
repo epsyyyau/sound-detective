@@ -364,6 +364,7 @@ function createAnswerButton(soundId, target) {
     button.innerHTML = soundMarkup(sound);
   } else if (sound.image) {
     button.classList.add("has-answer-image");
+    if (soundId === "th-thin" || soundId === "th-this") button.classList.add("is-th-choice");
     if (level.soundIds.length > 2) button.classList.add("is-compact");
     button.innerHTML = `
         <img src="${sound.image}" alt="" aria-hidden="true">

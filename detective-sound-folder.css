@@ -291,3 +291,18 @@
   border:0;
 }
 .sound-file-panel .complete-view [data-route-return="true"] img { width:100%; height:100%; object-fit:contain; }
+@media(max-width:680px) {
+  .sound-file-panel .answer-options button.has-answer-image.is-th-choice {
+    display:flex;
+    width:clamp(86px,12vw,120px);
+    min-height:60px;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:3px;
+    padding:5px;
+  }
+  .sound-file-panel .answer-options .is-th-choice img { display:none; }
+  .sound-file-panel .answer-options .is-th-choice .answer-sound-name strong { font-size:1.8rem; }
+  .sound-file-panel .answer-options .is-th-choice small { font-size:.68rem; line-height:1.1; white-space:nowrap; }
+}
