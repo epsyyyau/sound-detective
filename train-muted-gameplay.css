@@ -1,10 +1,10 @@
 /* Soften scenery only; interactive cars, letters and controls stay fully opaque. */
-.train-page #play:is([data-sound-group="1"],[data-sound-group="2"]) {
+.train-page #play[data-sound-group] {
   isolation: isolate;
   background-color: #fff9e9;
   background-image: none;
 }
-.train-page #play:is([data-sound-group="1"],[data-sound-group="2"])::before {
+.train-page #play[data-sound-group]::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -13,20 +13,40 @@
   opacity: .7;
   background: var(--muted-train-scene) center / cover no-repeat;
 }
-.train-page #play:is([data-sound-group="1"],[data-sound-group="2"]) > * {
+.train-page #play[data-sound-group] > * {
   z-index: 1;
 }
 .train-page #play[data-sound-group="1"] { --muted-train-scene: url('assets/game-style/train-paper-one-background.webp'); }
 .train-page #play[data-sound-group="2"] { --muted-train-scene: url('assets/game-style/train-paper-two-background.webp'); }
+.train-page #play[data-sound-group="3"] { --muted-train-scene: url('assets/game-style/train-paper-three-background.webp'); }
+.train-page #play[data-sound-group="4"] { --muted-train-scene: url('assets/game-style/train-paper-four-empty-river.webp'); }
+.train-page #play[data-sound-group="5"] { --muted-train-scene: url('assets/game-style/train-paper-five-background.webp'); }
+.train-page #play[data-sound-group="6"] { --muted-train-scene: url('assets/game-style/train-paper-six-background.webp'); }
+.train-page #play[data-sound-group="7"] { --muted-train-scene: url('assets/game-style/train-paper-seven-connected.webp'); }
 @media (min-width: 1001px) {
   .train-page #play[data-sound-group="1"]::before { background-size: 100% 100%; }
-  .train-page #play[data-sound-group="2"]::before {
+  .train-page #play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"])::before {
     background-size: 100% var(--train-scene-height);
     background-position: center var(--train-scene-top);
   }
+  .train-page #play[data-sound-group="7"]::before { background-size: 100% 100%; }
+}
+@media (max-width: 1000px) {
+  .train-page #play:is([data-sound-group="3"],[data-sound-group="4"],[data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"])::before {
+    background-size: 100% auto;
+    background-position: center var(--paper-scene-top);
+  }
+  .train-page #play:is([data-sound-group="5"],[data-sound-group="6"],[data-sound-group="7"])::before {
+    background: var(--muted-train-scene) center var(--paper-scene-top) / 100% auto no-repeat,
+      url('assets/game-style/train-background.webp') center / cover no-repeat;
+  }
+  .train-page #play[data-sound-group="5"]::before {
+    background: var(--muted-train-scene) center var(--paper-scene-top) / 100% auto no-repeat,
+      linear-gradient(to bottom, #cbdafd 0 var(--paper-scene-top), #fff8e9 var(--paper-scene-top));
+  }
 }
 @media (max-width: 650px) {
-  .train-page #play[data-sound-group="2"]::before {
+  .train-page #play:is([data-sound-group="2"],[data-sound-group="3"],[data-sound-group="4"])::before {
     background: var(--game-scene) center var(--paper-scene-top) / 100% auto no-repeat,
       url('assets/game-style/train-background.webp') center / cover no-repeat;
   }
