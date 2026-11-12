@@ -13,8 +13,12 @@
   close.className = 'game-rules-close';
   close.setAttribute('aria-label', '關閉遊戲規則');
   close.textContent = '×';
-  const copy = document.createElement('p');
-  copy.textContent = button.dataset.gameRules;
+  const copy = document.createElement('ol');
+  for (const step of button.dataset.gameRules.split('|')) {
+    const item = document.createElement('li');
+    item.textContent = step.trim();
+    copy.append(item);
+  }
   dialog.append(close, heading, copy);
   document.body.append(dialog);
 

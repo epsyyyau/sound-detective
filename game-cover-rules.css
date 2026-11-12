@@ -33,7 +33,9 @@
 }
 .game-rules-dialog::backdrop { background: #2039439c; backdrop-filter: blur(3px); }
 .game-rules-dialog h2 { margin: 0 0 22px; font-size: clamp(24px, 4vw, 32px); }
-.game-rules-dialog p { margin: 0; font-size: clamp(18px, 2.5vw, 22px); line-height: 1.8; text-align: left; }
+.game-rules-dialog ol { margin: 0; padding: 0; list-style: none; counter-reset: rule-step; display: grid; gap: 14px; text-align: left; }
+.game-rules-dialog li { counter-increment: rule-step; display: grid; grid-template-columns: 34px 1fr; align-items: start; gap: 10px; font-size: clamp(17px, 2.5vw, 21px); line-height: 1.5; }
+.game-rules-dialog li::before { content: counter(rule-step); display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: #f8e5a1; color: #203943; font-weight: 800; }
 .game-rules-close {
   position: absolute;
   top: 8px;
