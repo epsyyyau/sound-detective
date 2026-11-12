@@ -74,7 +74,7 @@
   position: absolute;
   z-index: 0;
   inset: 0;
-  background: url('assets/game-style/lab-evidence-cover-numbered.webp') center / 100% 100% no-repeat;
+  background: url('assets/game-style/lab-paper-cover.webp') center / 100% 100% no-repeat;
   filter: saturate(.8);
   pointer-events: none;
 }
