@@ -17,3 +17,6 @@
 }
 #play #blend.needs-blend::after { content: '連起來'; }
 #play #reveal.needs-play::after { content: '聽答案'; }
+.train-page #play[data-sound-group] .train-reading-button.is-read .train-reading-prompt {
+  visibility: visible;
+}
