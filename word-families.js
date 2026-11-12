@@ -58,6 +58,21 @@ const familyGroups = [
   [['ip','chip ship sip zip'],['op','chop shop'],['ish','dish fish wish'],['in','chin thin pin']],
 ].map(families=>families.map(([ending,words])=>({ending,words:words.split(' ')})));
 const familyPicture = word => soundWordPicture(word,`assets/pictures/${familyWords[word].picture}`);
+const familyPictureCache = new Map();
+function preloadFamilyPicture(word) {
+  const source = familyPicture(word);
+  if (!familyPictureCache.has(source)) {
+    const image = new Image();
+    image.decoding = 'async';
+    image.src = source;
+    familyPictureCache.set(source, image);
+  }
+  return familyPictureCache.get(source);
+}
+function preloadFamilyRoundPictures(round) {
+  const words = new Set(round.flatMap(task => task.options));
+  for (const word of words) preloadFamilyPicture(word);
+}
 const familyAudio = word => familyWords[word].audio||`assets/word-audio/real/group-${familyWords[word].group}/${word}.m4a?v=20261011-rerecorded`;
 // Teaching groups remain asset metadata; the game is organised by shared endings.
 const familyCatalog = [];
@@ -286,6 +301,7 @@ function setFamilyNavigation(onMap){
 function startStop(stop){
   resetFamily();selectedStop=stop;selectedFamily=familyCatalog.find(family=>family.ending===stop.endings[0]);
   familyRound=buildStopRound(stop);familyStep=0;
+  preloadFamilyRoundPictures(familyRound);
   familySolvedWords.clear();familyUI('onsets').dataset.ending='';
   setFamilyNavigation(true);
   showFamilyView('game');renderFamilyQuestion();

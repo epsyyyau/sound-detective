@@ -99,6 +99,8 @@ function choosePaperLetter(letter,button){
     const speaker=target.querySelector('.paper-speaker');speaker.title=`聆聽 ${target.dataset.ending} 字族`;speaker.setAttribute('aria-label',speaker.title);
   });
   if(selectedStop.number===4)resetPaperTraffic();
+  const task=familyRound.find(item=>item.word===letter+button.dataset.ending&&item.ending===button.dataset.ending);
+  task?.options.forEach(preloadFamilyPicture);
   document.querySelector('.paper-audio-status').textContent='';paperHint('');
   joinPaperFamily(button.dataset.ending);
 }
