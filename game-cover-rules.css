@@ -1,4 +1,4 @@
-.game-rules-button {
+:is(.train-page, .magic-page, .family-page, .book-game-concepts) .game-rules-button {
   position: absolute;
   z-index: 20;
   top: max(12px, env(safe-area-inset-top));
@@ -9,7 +9,10 @@
   height: 48px;
   padding: 0;
   border: 0;
+  border-radius: 0;
   background: transparent;
+  box-shadow: none;
+  appearance: none;
   cursor: pointer;
 }
 .game-rules-button img { display: block; width: 44px; height: 44px; object-fit: contain; }
