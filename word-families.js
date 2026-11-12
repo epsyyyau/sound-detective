@@ -228,14 +228,16 @@ function renderMapStops(){
 }
 async function openFamilyStop(stop){
   if(!familyMapArmed||trainResolve)return;
+  const sceneReady=loadPaperScene(paperThemes[stop.number].scene);
   setMapReady(false);familyUI('train').disabled=true;familyUI('startover').disabled=true;
   familyUI('map-status').textContent=`前往第 ${stop.number} 站。`;
   if(matchMedia('(max-width:600px) and (orientation:portrait)').matches){
+    await sceneReady;
     familyUI('train').disabled=false;familyUI('startover').disabled=false;
     startStop(stop);
     return;
   }
-  const arrived=await moveTrainTo(stop.number);
+  const [arrived]=await Promise.all([moveTrainTo(stop.number),sceneReady]);
   familyUI('train').disabled=false;familyUI('startover').disabled=false;
   if(!arrived)return;
   startStop(stop);

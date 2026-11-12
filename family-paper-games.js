@@ -7,6 +7,20 @@ const paperThemes={
   6:{name:'招牌修復工房',scene:'workshop',colour:'#f0c69c'},
   7:{name:'字族連接橋',scene:'bridge',colour:'#e9bfd2'}
 };
+const paperSceneCache = new Map();
+function loadPaperScene(scene) {
+  if (!paperSceneCache.has(scene)) {
+    const image = new Image();
+    image.src = `assets/game-style/family-${scene}-scene.webp`;
+    paperSceneCache.set(scene, { image, ready: image.decode().catch(() => {}) });
+  }
+  return paperSceneCache.get(scene).ready;
+}
+if (typeof window !== 'undefined') {
+  window.addEventListener('load', () => {
+    for (const theme of Object.values(paperThemes)) loadPaperScene(theme.scene);
+  }, { once: true });
+}
 let paperLetter='',paperSource=null,paperDrag=null,paperActiveEnding='';
 function paperFamilyBanks(round,endings){
   return endings.map((ending,index)=>({ending,side:index===0?'left':'right',tasks:round.filter(task=>task.ending===ending)}));
@@ -34,8 +48,9 @@ function renderPaperFamilyQuestion(){
   resetFamily();paperLetter='';paperSource=null;paperActiveEnding='';familyPhase='paper-choose';
   const theme=paperThemes[selectedStop.number],root=familyUI('paper');
   root.replaceChildren();root.dataset.scene=theme.scene;root.dataset.soundGroup=selectedStop.number;root.dataset.flow='choose-letter';root.style.setProperty('--paper-group',theme.colour);
-  root.style.setProperty('--paper-scenery',`url('assets/game-style/family-${theme.scene}-scene.png')`);
-  const scene=document.createElement('img');scene.className='paper-scenery';scene.src=`assets/game-style/family-${theme.scene}-scene.png`;scene.alt='';root.append(scene);
+  const scenery = `assets/game-style/family-${theme.scene}-scene.webp`;
+  root.style.setProperty('--paper-scenery', `url('${scenery}')`);
+  const scene=document.createElement('img');scene.className='paper-scenery';scene.src=scenery;scene.alt='';root.append(scene);
   const heading=document.createElement('h2');heading.className='paper-title';heading.textContent=theme.name;heading.dataset.group=selectedStop.number;root.append(heading);
   const back=paperButton('返回物換「聲」移封面');back.className='paper-back';const backImage=document.createElement('img');backImage.src='assets/game-style/family-paper-return.webp';backImage.alt='';back.append(backImage);back.onclick=returnToMap;root.append(back);
   const progress=document.createElement('span');progress.className='paper-progress';progress.setAttribute('role','status');root.append(progress);paperProgress();

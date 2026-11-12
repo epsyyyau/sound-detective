@@ -1,0 +1,19 @@
+#play #blend,
+#play #reveal { position: relative; }
+#play #blend.needs-blend::after,
+#play #reveal.needs-play::after {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  padding: 0 4px;
+  border-radius: 3px;
+  background: #fffaf0e8;
+  color: #203947;
+  font: 700 14px/20px var(--chinese-font);
+  white-space: nowrap;
+  pointer-events: none;
+}
+#play #blend.needs-blend::after { content: '連起來'; }
+#play #reveal.needs-play::after { content: '聽答案'; }
