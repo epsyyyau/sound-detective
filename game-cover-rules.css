@@ -2,11 +2,11 @@
   position: absolute;
   z-index: 20;
   top: max(12px, env(safe-area-inset-top));
-  right: 16px;
+  right: 12px;
   display: grid;
   place-items: center;
-  width: 48px;
-  height: 48px;
+  width: 80px;
+  height: 68px;
   padding: 0;
   border: 0;
   border-radius: 0;
@@ -16,6 +16,7 @@
   cursor: pointer;
 }
 .game-rules-button img { display: block; width: 44px; height: 44px; object-fit: contain; }
+.game-rules-button span { color: #203943; font: 700 15px/1.2 var(--chinese-font, sans-serif); white-space: nowrap; text-shadow: 0 1px 2px #fff9e9; }
 .game-rules-button:hover { transform: scale(1.06); }
 .game-rules-button:focus-visible { outline: 3px solid #087d80; outline-offset: 2px; }
 .game-rules-dialog {
@@ -49,7 +50,11 @@
   cursor: pointer;
 }
 .game-rules-close:focus-visible { outline: 3px solid #087d80; }
-.family-page:has(#family-map:not([hidden])) .family-map-actions { margin-right: 56px; }
+.family-page:has(#family-map:not([hidden])) .family-map-actions { margin-right: 86px; }
+.family-page:has(#family-map[hidden]) .game-rules-button { display: none; }
+@media (max-width: 1000px) and (orientation: portrait) {
+  .family-page:has(#family-map:not([hidden])) .family-map-actions { position: absolute; top: 72px; right: 12px; margin: 0; }
+}
 
 /* Keep cover art muted while the selectable paper pieces retain their original colours. */
 .train-page #setup .station-scene { position: relative; background-image: none; isolation: isolate; }
@@ -137,5 +142,5 @@
     -webkit-mask-image: radial-gradient(ellipse 24% 7% at 25% 25%, #000 60%, transparent 100%), radial-gradient(ellipse 24% 7% at 76% 25%, #000 60%, transparent 100%), radial-gradient(ellipse 25% 8% at 25% 46%, #000 60%, transparent 100%), radial-gradient(ellipse 20% 8% at 72% 47%, #000 60%, transparent 100%), radial-gradient(ellipse 24% 8% at 25% 66%, #000 60%, transparent 100%), radial-gradient(ellipse 24% 8% at 76% 66%, #000 60%, transparent 100%), radial-gradient(ellipse 37% 8% at 47% 86%, #000 60%, transparent 100%);
     mask-image: radial-gradient(ellipse 24% 7% at 25% 25%, #000 60%, transparent 100%), radial-gradient(ellipse 24% 7% at 76% 25%, #000 60%, transparent 100%), radial-gradient(ellipse 25% 8% at 25% 46%, #000 60%, transparent 100%), radial-gradient(ellipse 20% 8% at 72% 47%, #000 60%, transparent 100%), radial-gradient(ellipse 24% 8% at 25% 66%, #000 60%, transparent 100%), radial-gradient(ellipse 24% 8% at 76% 66%, #000 60%, transparent 100%), radial-gradient(ellipse 37% 8% at 47% 86%, #000 60%, transparent 100%);
   }
-  .game-rules-button { right: 8px; }
+  :is(.train-page, .magic-page, .family-page, .book-game-concepts) .game-rules-button { right: 4px; }
 }
