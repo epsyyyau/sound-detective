@@ -20,7 +20,7 @@
 .game-rules-button:hover { transform: scale(1.06); }
 .game-rules-button:focus-visible { outline: 3px solid #087d80; outline-offset: 2px; }
 .game-rules-dialog {
-  width: min(460px, calc(100vw - 32px));
+  width: min(540px, calc(100vw - 32px));
   max-height: min(80svh, 560px);
   padding: 38px 34px 34px;
   border: 0;
