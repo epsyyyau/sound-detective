@@ -21,6 +21,7 @@ body:has(.magic-page) { background:#fff8e8; }
 .magic-panel h2 { margin:8px 0; font-size:1.25rem; }
 .magic-page button { min-height:44px; border:2px solid transparent; border-radius:8px; background:#0f7377; color:white; font:inherit; font-weight:700; padding:8px 16px; cursor:pointer; }
 .magic-page button:disabled { opacity:.5; cursor:default; }
+#game .magic-choices.is-choice-locked .pick-sound:disabled { opacity:.42; }
 .magic-page button:focus-visible,.magic-page a:focus-visible { outline:3px solid #2567aa; outline-offset:3px; }
 .magic-page .secondary { background:#fff0c9; color:#644314; border-color:#e6c274; }
 .magic-page .quiet { background:#fffdf2e8; color:#0f7377; box-shadow:0 3px 8px #29463716; }

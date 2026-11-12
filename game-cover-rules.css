@@ -1,0 +1,138 @@
+.game-rules-button {
+  position: absolute;
+  z-index: 20;
+  top: max(12px, env(safe-area-inset-top));
+  right: 16px;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.game-rules-button img { display: block; width: 44px; height: 44px; object-fit: contain; }
+.game-rules-button:hover { transform: scale(1.06); }
+.game-rules-button:focus-visible { outline: 3px solid #087d80; outline-offset: 2px; }
+.game-rules-dialog {
+  width: min(460px, calc(100vw - 32px));
+  max-height: min(80svh, 560px);
+  padding: 38px 34px 34px;
+  border: 0;
+  border-radius: 8px;
+  background: #fff9e9;
+  color: #203943;
+  box-shadow: 0 12px 0 #bbd4bd, 0 22px 45px #20394355;
+  font-family: var(--chinese-font, sans-serif);
+  text-align: center;
+}
+.game-rules-dialog::backdrop { background: #2039439c; backdrop-filter: blur(3px); }
+.game-rules-dialog h2 { margin: 0 0 22px; font-size: clamp(24px, 4vw, 32px); }
+.game-rules-dialog p { margin: 0; font-size: clamp(18px, 2.5vw, 22px); line-height: 1.8; text-align: left; }
+.game-rules-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #203943;
+  font: 32px/1 sans-serif;
+  cursor: pointer;
+}
+.game-rules-close:focus-visible { outline: 3px solid #087d80; }
+.family-page:has(#family-map:not([hidden])) .family-map-actions { margin-right: 56px; }
+
+/* Keep cover art muted while the selectable paper pieces retain their original colours. */
+.train-page #setup .station-scene { position: relative; background-image: none; isolation: isolate; }
+.train-page #setup .station-scene::before,
+.train-page #setup .station-scene::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: url('assets/game-style/train-cover-map.webp') center / 100% 100% no-repeat;
+}
+.train-page #setup .station-scene::before { z-index: 0; filter: saturate(.8); }
+.train-page #setup .station-scene::after {
+  z-index: 0;
+  -webkit-mask-image: radial-gradient(ellipse 13% 9% at 28% 31%, #000 45%, transparent 100%), radial-gradient(ellipse 12% 10% at 34% 52%, #000 40%, transparent 100%), radial-gradient(ellipse 17% 8% at 16% 77%, #000 42%, transparent 100%), radial-gradient(ellipse 9% 8% at 84% 75%, #000 35%, transparent 100%);
+  mask-image: radial-gradient(ellipse 13% 9% at 28% 31%, #000 45%, transparent 100%), radial-gradient(ellipse 12% 10% at 34% 52%, #000 40%, transparent 100%), radial-gradient(ellipse 17% 8% at 16% 77%, #000 42%, transparent 100%), radial-gradient(ellipse 9% 8% at 84% 75%, #000 35%, transparent 100%);
+}
+.train-page #setup .station-scene > * { z-index: 1; }
+.magic-page #setup { position: relative; background-image: none; isolation: isolate; }
+.magic-page #setup::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background: url('assets/game-style/lab-evidence-cover-numbered.webp') center / 100% 100% no-repeat;
+  filter: saturate(.8);
+  pointer-events: none;
+}
+.family-page .family-map-canvas { position: relative; }
+.family-page .family-map-background { filter: saturate(.8); }
+.family-page .family-map-canvas::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: url('assets/family-map/paper-town-cover.webp') center / 100% 100% no-repeat;
+  -webkit-mask-image: radial-gradient(ellipse 10% 17% at 11% 23%, #000 65%, transparent 100%), radial-gradient(ellipse 13% 18% at 42% 25%, #000 65%, transparent 100%), radial-gradient(ellipse 11% 18% at 65% 26%, #000 65%, transparent 100%), radial-gradient(ellipse 10% 17% at 87% 27%, #000 65%, transparent 100%), radial-gradient(ellipse 16% 20% at 18% 68%, #000 65%, transparent 100%), radial-gradient(ellipse 13% 19% at 50% 68%, #000 65%, transparent 100%), radial-gradient(ellipse 16% 19% at 81% 68%, #000 65%, transparent 100%);
+  mask-image: radial-gradient(ellipse 10% 17% at 11% 23%, #000 65%, transparent 100%), radial-gradient(ellipse 13% 18% at 42% 25%, #000 65%, transparent 100%), radial-gradient(ellipse 11% 18% at 65% 26%, #000 65%, transparent 100%), radial-gradient(ellipse 10% 17% at 87% 27%, #000 65%, transparent 100%), radial-gradient(ellipse 16% 20% at 18% 68%, #000 65%, transparent 100%), radial-gradient(ellipse 13% 19% at 50% 68%, #000 65%, transparent 100%), radial-gradient(ellipse 16% 19% at 81% 68%, #000 65%, transparent 100%);
+  pointer-events: none;
+}
+.family-page .family-stops { z-index: 2; }
+.book-shelf { background-image: none; isolation: isolate; }
+.book-shelf::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background: url('assets/book-game/reading-room-tall-wall-v4.webp') center / cover no-repeat;
+  filter: saturate(.8);
+  pointer-events: none;
+}
+@media (max-width: 1000px) {
+  .magic-page #setup::before { background: url('assets/game-style/lab-paper-room.webp') center top / auto 300% no-repeat; }
+}
+@media (max-width: 760px), (max-width: 1000px) and (orientation: portrait) {
+  .train-page #setup { background-image: none; }
+  .train-page #setup .station-scene::before { background-image: url('assets/game-style/train-cover-mobile.webp'); }
+  .train-page #setup .station-scene::after { display: none; }
+}
+@media (max-width: 700px), (max-width: 1000px) and (orientation: portrait) {
+  .family-page:has(#family-map:not([hidden])) .family-header { background-image: none; }
+  .family-page .family-map-canvas { background-image: none; }
+  .family-page .family-map-canvas::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('assets/family-map/paper-town-cover.webp') center top / cover no-repeat;
+    filter: saturate(.8);
+    pointer-events: none;
+  }
+}
+@media (max-width: 600px) and (orientation: portrait) {
+  .train-page #setup .station-scene::before { background-image: url('assets/game-style/train-cover-mobile-scene-v1.webp'); }
+  .train-page #setup .station-scene::after {
+    display: block;
+    background-image: url('assets/game-style/train-cover-mobile-scene-v1.webp');
+    -webkit-mask-image: radial-gradient(ellipse 22% 5% at 25% 28%, #000 50%, transparent 100%), radial-gradient(ellipse 22% 6% at 72% 29%, #000 50%, transparent 100%), radial-gradient(ellipse 22% 7% at 26% 44%, #000 50%, transparent 100%), radial-gradient(ellipse 23% 8% at 72% 45%, #000 50%, transparent 100%), radial-gradient(ellipse 18% 6% at 19% 68%, #000 50%, transparent 100%), radial-gradient(ellipse 17% 7% at 80% 69%, #000 50%, transparent 100%), radial-gradient(ellipse 30% 7% at 50% 88%, #000 50%, transparent 100%);
+    mask-image: radial-gradient(ellipse 22% 5% at 25% 28%, #000 50%, transparent 100%), radial-gradient(ellipse 22% 6% at 72% 29%, #000 50%, transparent 100%), radial-gradient(ellipse 22% 7% at 26% 44%, #000 50%, transparent 100%), radial-gradient(ellipse 23% 8% at 72% 45%, #000 50%, transparent 100%), radial-gradient(ellipse 18% 6% at 19% 68%, #000 50%, transparent 100%), radial-gradient(ellipse 17% 7% at 80% 69%, #000 50%, transparent 100%), radial-gradient(ellipse 30% 7% at 50% 88%, #000 50%, transparent 100%);
+  }
+  .magic-page:has(#setup:not([hidden])) #setup { background-image: none; }
+  .magic-page #setup::before { background: url('assets/game-style/lab-paper-cover-mobile-v1.webp') center / 100% 100% no-repeat; }
+  .family-page .family-map-canvas::before { background: url('assets/family-map/paper-town-cover-mobile-v1.webp') center / 100% 100% no-repeat; }
+  .family-page .family-map-canvas::after {
+    background-image: url('assets/family-map/paper-town-cover-mobile-v1.webp');
+    -webkit-mask-image: radial-gradient(ellipse 24% 7% at 25% 25%, #000 60%, transparent 100%), radial-gradient(ellipse 24% 7% at 76% 25%, #000 60%, transparent 100%), radial-gradient(ellipse 25% 8% at 25% 46%, #000 60%, transparent 100%), radial-gradient(ellipse 20% 8% at 72% 47%, #000 60%, transparent 100%), radial-gradient(ellipse 24% 8% at 25% 66%, #000 60%, transparent 100%), radial-gradient(ellipse 24% 8% at 76% 66%, #000 60%, transparent 100%), radial-gradient(ellipse 37% 8% at 47% 86%, #000 60%, transparent 100%);
+    mask-image: radial-gradient(ellipse 24% 7% at 25% 25%, #000 60%, transparent 100%), radial-gradient(ellipse 24% 7% at 76% 25%, #000 60%, transparent 100%), radial-gradient(ellipse 25% 8% at 25% 46%, #000 60%, transparent 100%), radial-gradient(ellipse 20% 8% at 72% 47%, #000 60%, transparent 100%), radial-gradient(ellipse 24% 8% at 25% 66%, #000 60%, transparent 100%), radial-gradient(ellipse 24% 8% at 76% 66%, #000 60%, transparent 100%), radial-gradient(ellipse 37% 8% at 47% 86%, #000 60%, transparent 100%);
+  }
+  .game-rules-button { right: 8px; }
+}

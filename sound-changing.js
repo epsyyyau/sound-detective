@@ -81,6 +81,8 @@ function say(path, status=el('feedback')) {
 function show(id){['setup','game','complete'].forEach(key=>el(key).hidden=key!==id);}
 function stateControls(){
   el('game').dataset.guideBusy=String(busy);
+  const choicesLocked=!solved&&(!heard||(isGuidedGame()&&!bubbleFlow.canChooseBubble()));
+  el('choices').classList.toggle('is-choice-locked',choicesLocked);
   el('source-audio').disabled=busy;el('target-audio').disabled=busy||(isGuidedGame()&&!bubbleFlow.sourceHeard);
   el('next').disabled=busy;el('answer-audio').disabled=busy;
   el('letters').querySelectorAll('button').forEach(b=>b.disabled=busy||solved||(isGuidedGame()&&bubbleFlow.phase!=='position'));
