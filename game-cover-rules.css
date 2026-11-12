@@ -54,6 +54,29 @@
 .game-rules-close:focus-visible { outline: 3px solid #087d80; }
 .family-page:has(#family-map:not([hidden])) .family-map-actions { margin-right: 86px; }
 .family-page:has(#family-map[hidden]) .game-rules-button { display: none; }
+.family-page:has(#family-map[hidden]) #family-paper .game-rules-in-game { display: grid; }
+.magic-page #game,
+.book-game-concepts :is(#book-open,#book-back-cover) { position: relative; }
+.train-page #play[data-sound-group] .game-rules-in-game,
+.magic-page #game .game-rules-in-game,
+.family-page #family-paper .game-rules-in-game,
+.book-game-concepts :is(#book-preview,#book-open,#book-back-cover) .game-rules-in-game {
+  top: max(12px, env(safe-area-inset-top));
+  right: 12px;
+}
+.train-page #play[data-sound-group] #counter { right: 106px; }
+.magic-page #game .magic-toolbar { padding-right: 92px; }
+.family-page #family-paper .paper-progress,
+.family-page #family-paper .paper-skip { right: calc(3% + 88px); }
+@media (max-width: 700px) {
+  .train-page #play[data-sound-group] #counter { right: 180px; }
+  .train-page #play #skip-round { right: 94px; }
+  .magic-page #game .magic-toolbar { padding-right: 78px; }
+}
+@media (max-width: 600px) and (orientation: portrait) {
+  .family-page #family-paper .paper-progress,
+  .family-page #family-paper .paper-skip { right: 100px; }
+}
 @media (max-width: 1000px) and (orientation: portrait) {
   .family-page:has(#family-map:not([hidden])) .family-map-actions { position: absolute; top: 72px; right: 12px; margin: 0; }
 }

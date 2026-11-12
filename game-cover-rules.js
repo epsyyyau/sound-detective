@@ -22,10 +22,26 @@
   dialog.append(close, heading, copy);
   document.body.append(dialog);
 
-  button.addEventListener('click', () => dialog.showModal());
+  let lastTrigger = button;
+  function openRules(trigger) {
+    lastTrigger = trigger;
+    dialog.showModal();
+  }
+  window.addGameRulesButton = (target) => {
+    if (!target || target.querySelector(':scope > .game-rules-in-game')) return;
+    const inGameButton = button.cloneNode(true);
+    inGameButton.removeAttribute('data-game-rules');
+    inGameButton.classList.add('game-rules-in-game');
+    inGameButton.addEventListener('click', () => openRules(inGameButton));
+    target.prepend(inGameButton);
+  };
+  for (const selector of ['.train-page #play', '.magic-page #game', '.book-game-concepts #book-preview', '.book-game-concepts #book-open', '.book-game-concepts #book-back-cover']) {
+    window.addGameRulesButton(document.querySelector(selector));
+  }
+  button.addEventListener('click', () => openRules(button));
   close.addEventListener('click', () => dialog.close());
   dialog.addEventListener('click', (event) => {
     if (event.target === dialog) dialog.close();
   });
-  dialog.addEventListener('close', () => button.focus());
+  dialog.addEventListener('close', () => (lastTrigger.isConnected ? lastTrigger : button).focus());
 })();

@@ -48,6 +48,7 @@ function renderPaperFamilyQuestion(){
   resetFamily();paperLetter='';paperSource=null;paperActiveEnding='';familyPhase='paper-choose';
   const theme=paperThemes[selectedStop.number],root=familyUI('paper');
   root.replaceChildren();root.dataset.scene=theme.scene;root.dataset.soundGroup=selectedStop.number;root.dataset.flow='choose-letter';root.style.setProperty('--paper-group',theme.colour);
+  if (typeof window !== 'undefined') window.addGameRulesButton?.(root);
   const scenery = `assets/game-style/family-${theme.scene}-scene.webp`;
   root.style.setProperty('--paper-scenery', `url('${scenery}')`);
   const scene=document.createElement('img');scene.className='paper-scenery';scene.src=scenery;scene.alt='';root.append(scene);
