@@ -180,7 +180,7 @@ function renderPage() {
     const picture = document.createElement(asset === 'nest' ? 'span' : 'img');
     if (asset === 'nest') picture.className = 'book-scene-nest';
     else {
-      picture.src = asset === 'home' ? 'assets/home-illustrated-muted.webp' : `assets/pictures/transparent/${asset}.png`;
+      picture.src = asset === 'home' ? 'assets/home-illustrated-muted.webp' : `assets/pictures/optimized/transparent/${asset}.webp`;
       picture.alt = '';
       if (asset === 'pen' && activeBook.theme === 'farm') picture.classList.add('book-scene-red-pen');
     }

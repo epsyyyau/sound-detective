@@ -6,15 +6,21 @@ const SoundCartoonWordsV4=Object.freeze('lip gap sing den moon sun point queen t
 const SoundCartoonWordsV5=Object.freeze('zoom star neck mouth chat'.split(' '));
 const SoundTransparentWords=new Set([...SoundCartoonWords,...SoundCartoonWordsV2,...SoundCartoonWordsV3,...SoundCartoonWordsV4,...SoundCartoonWordsV5]);
 const SoundPictureRevisions=Object.freeze({lap:'assets/pictures/revised/lap-v2.png',tip:'assets/pictures/revised/tip-v2.png'});
+function optimizedPicturePath(path){
+  if(!path?.startsWith('assets/pictures/')||path.includes('/optimized/')||!/\.png(?=\?|$)/i.test(path))return path;
+  return path.replace('assets/pictures/','assets/pictures/optimized/').replace(/\.png(?=\?|$)/i,'.webp');
+}
 function soundWordPicture(word,fallback){
-  if(Object.hasOwn(SoundPictureRevisions,word))return SoundPictureRevisions[word];
-  if(SoundTransparentWords.has(word))return `assets/pictures/transparent/${word}.png`;
-  if(word==='mouth')return 'assets/pictures/cartoon-v5/mouth-v2.png';
-  if(SoundCartoonWordsV5.includes(word))return `assets/pictures/cartoon-v5/${word}.png`;
-  if(SoundCartoonWordsV4.includes(word))return `assets/pictures/cartoon-v4/${word}.png`;
-  if(SoundCartoonWordsV3.includes(word))return `assets/pictures/cartoon-v3/${word}.png`;
-  if(SoundCartoonWordsV2.includes(word))return `assets/pictures/cartoon-v2/${word}.png`;
-  return SoundCartoonWords.includes(word)?`assets/pictures/cartoon-v1/${word}.png`:fallback;
+  let path=fallback;
+  if(Object.hasOwn(SoundPictureRevisions,word))path=SoundPictureRevisions[word];
+  else if(SoundTransparentWords.has(word))path=`assets/pictures/transparent/${word}.png`;
+  else if(word==='mouth')path='assets/pictures/cartoon-v5/mouth-v2.png';
+  else if(SoundCartoonWordsV5.includes(word))path=`assets/pictures/cartoon-v5/${word}.png`;
+  else if(SoundCartoonWordsV4.includes(word))path=`assets/pictures/cartoon-v4/${word}.png`;
+  else if(SoundCartoonWordsV3.includes(word))path=`assets/pictures/cartoon-v3/${word}.png`;
+  else if(SoundCartoonWordsV2.includes(word))path=`assets/pictures/cartoon-v2/${word}.png`;
+  else if(SoundCartoonWords.includes(word))path=`assets/pictures/cartoon-v1/${word}.png`;
+  return optimizedPicturePath(path);
 }
 // Shared recorded vocabulary. Group is the earliest taught sound set.
 const SoundWordExtras = [
