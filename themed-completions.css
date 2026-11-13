@@ -293,3 +293,33 @@ body:has(.magic-page #complete:not([hidden])) { margin:0; }
     width:min(42vw,125px);
   }
 }
+
+/* Fade only the illustrated overview scenery; keep cards and controls vivid. */
+.family-page #family-complete,
+.train-page #complete,
+.magic-page #complete {
+  position:relative;
+  isolation:isolate;
+  background-color:#fff9e9;
+  background-image:none;
+}
+.family-page #family-complete { --overview-scenery:url('assets/game-style/family-completion-post-office.webp'); }
+.train-page #complete { --overview-scenery:url('assets/game-style/train-completion-terminal.webp'); }
+.magic-page #complete { --overview-scenery:url('assets/game-style/lab-paper-room.webp'); }
+.family-page #family-complete::before,
+.train-page #complete::before,
+.magic-page #complete::before {
+  content:'';
+  position:absolute;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  opacity:.7;
+  background-image:var(--overview-scenery);
+  background-position:center;
+  background-size:inherit;
+  background-repeat:no-repeat;
+}
+.family-page #family-complete > *,
+.train-page #complete > *,
+.magic-page #complete > * { position:relative; z-index:1; }

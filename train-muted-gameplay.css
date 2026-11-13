@@ -16,6 +16,8 @@
 .train-page #play[data-sound-group] > * {
   z-index: 1;
 }
+.train-page #play[data-sound-group] > .train-topline { z-index: 30; }
+.train-page #play[data-sound-group] > .game-rules-in-game { z-index: 40; }
 .train-page #play[data-sound-group="1"] { --muted-train-scene: url('assets/game-style/train-paper-one-background.webp'); }
 .train-page #play[data-sound-group="2"] { --muted-train-scene: url('assets/game-style/train-paper-two-background.webp'); }
 .train-page #play[data-sound-group="3"] { --muted-train-scene: url('assets/game-style/train-paper-three-background.webp'); }
