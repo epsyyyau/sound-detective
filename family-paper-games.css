@@ -166,11 +166,11 @@
  .paper-mobile-road{height:100%}
 }
 
-/* Keep the first scene subdued without fading its interactive letters and controls. */
-.paper-play[data-scene="postal"]{background:#f8f8ee}
-.paper-play[data-scene="postal"] .paper-scenery{opacity:.7}
+/* Subdue scenery while keeping the illustrated title and group badge vivid. */
+.paper-play[data-scene]{background:#f8f8ee}
+.paper-play[data-scene] .paper-scenery{opacity:.7}
 @media(min-width:1001px), (min-width:701px) and (orientation:landscape){
- .paper-play[data-scene="postal"]::after{
+ .paper-play[data-scene]::after{
   content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
   background:var(--paper-scenery) center/100% 100% no-repeat;
   -webkit-mask-image:radial-gradient(ellipse 38% 25% at 51% 7%,#000 55%,transparent 75%);
@@ -178,7 +178,7 @@
  }
 }
 @media(max-width:700px), (max-width:1000px) and (orientation:portrait){
- .paper-play[data-scene="postal"]::before{
+ .paper-play[data-scene]::before{
   content:'';position:absolute;inset:0;z-index:0;pointer-events:none;
   background:var(--paper-scenery) center/cover no-repeat;opacity:.7;
  }
