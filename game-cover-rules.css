@@ -52,17 +52,32 @@
   cursor: pointer;
 }
 .game-rules-close:focus-visible { outline: 3px solid #087d80; }
-.family-page:has(#family-map:not([hidden])) .family-map-actions { margin-right: 86px; }
-.family-page:has(#family-map:not([hidden])) #family-startover {
-  width: 72px;
-  height: 68px;
-  padding: 5px;
-  border: 2px solid #fff9e9;
-  border-radius: 8px;
-  background: #fff9e9;
-  box-shadow: 0 3px 8px #173f4933;
+.family-page:has(#family-map:not([hidden])) .family-map-actions {
+  position:absolute;
+  z-index:20;
+  top:max(12px,env(safe-area-inset-top));
+  right:104px;
+  margin:0;
 }
-.family-page:has(#family-map:not([hidden])) #family-startover img { width: 56px; height: 56px; }
+.family-page:has(#family-map:not([hidden])) #family-startover {
+  display:grid;
+  place-items:center;
+  width: 80px;
+  height: 68px;
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+}
+.family-page:has(#family-map:not([hidden])) #family-startover img { width: 50px; height: 50px; }
+.family-page:has(#family-map:not([hidden])) #family-startover span {
+  color:#203943;
+  font:700 15px/1.2 var(--chinese-font,sans-serif);
+  white-space:nowrap;
+  text-shadow:0 1px 2px #fff9e9;
+}
+.family-page:has(#family-map:not([hidden])) #family-startover:hover { transform:scale(1.06); }
 .family-page:has(#family-map[hidden]) .game-rules-button { display: none; }
 .family-page:has(#family-map[hidden]) #family-paper .game-rules-in-game { display: grid; }
 .magic-page #game,
@@ -88,7 +103,14 @@
   .family-page #family-paper .paper-skip { right: 100px; }
 }
 @media (max-width: 1000px) and (orientation: portrait) {
-  .family-page:has(#family-map:not([hidden])) .family-map-actions { position: absolute; top: 72px; right: 12px; margin: 0; }
+  .family-page:has(#family-map:not([hidden])) .family-map-actions { top:88px; right:84px; }
+  .family-page:has(#family-map:not([hidden])) > .family-header .game-rules-button { top:88px; right:4px; }
+  .family-page:has(#family-map:not([hidden])) #family-startover,
+  .family-page:has(#family-map:not([hidden])) > .family-header .game-rules-button { width:64px; height:56px; }
+  .family-page:has(#family-map:not([hidden])) #family-startover img,
+  .family-page:has(#family-map:not([hidden])) > .family-header .game-rules-button img { width:38px; height:38px; }
+  .family-page:has(#family-map:not([hidden])) #family-startover span,
+  .family-page:has(#family-map:not([hidden])) > .family-header .game-rules-button span { font-size:12px; }
 }
 
 /* Keep cover art muted while the selectable paper pieces retain their original colours. */
